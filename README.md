@@ -2,7 +2,7 @@
 
 Teste para a vaga de front end júnior
 
-- Codificar layout seguindo o [wireframe](https://docs.google.com/drawings/d/1mLc2X7tkzF4wTUMjzlt4o4E5KN66ToIJQs-ZgtHkq2E/edit?usp=sharing)
+- Codificar layout seguindo o [wireframe](https://docs.google.com/drawings/d/1XE4MIaBPukIFu1uDQ4BCe9BAr8TiZ8AHw2fPj5tea90/edit?usp=sharing)
 - Paleta de cores: https://coolors.co/ffffff-f6f6f6-f5e5d9-272727-000000
 - Fontes: [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) e [PT Sans](https://fonts.google.com/specimen/PT+Sans)
 - O wireframe representa o layout macro do site, você tem liberdade para escolher os espaçamentos, tamanho de fontes, uso das cores, efeitos e outros detalhes.
@@ -17,4 +17,6 @@ Teste para a vaga de front end júnior
 -- Na pasta **dist** ficam os arquivos finais (comprimidos e minificados).
 - Não deve ser usado nenhum framework de css (como bootstrap), para que possamos avaliar melhor a sua qualidade técnica;
 
-**Obs 1: Caso não consiga terminar todo o layout no prazo, mande o que conseguiu fazer, o importante é entregar algo para ser avaliado**
+**Obs 1: Caso tenha dificuldade para compilar o sass e gulp, codifique o teste como preferir, o importante é o teste ser feito**
+
+**Obs 2: Caso não consiga terminar todo o layout no prazo, mande o que conseguiu fazer, o importante é entregar algo para ser avaliado**
