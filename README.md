@@ -10,7 +10,7 @@ Teste para a vaga de front end júnior
 - No banner com slider, usar o [swiper](http://idangero.us/swiper/)
 - Deve ser feito o responsivo, mantendo as mesmas sessões do desktop. Você tem liberdade para decidir os pontos de quebra e o estilo das sessões no mobile.
 - Você tem total liberdade para criar efeitos nas sessões do site, explore o artista dentro de você hehehe;
-- O envio deve ser feito através dos arquivos zipados ou no github (pode ser feito ull pull request para esse repositório);
+- O envio deve ser feito através dos arquivos zipados ou no github (pode ser feito pull request para esse repositório);
 - Deve ser utilizado sass e gulp para o pré-processamento do código;
 - Entregar uma pasta com os arquivos de desenvolvimento e outra pasta com os arquivos minificados e comprimidos (src/dist);
 -- Na pasta **src** ficam os arquivos de desenvolvimento.
