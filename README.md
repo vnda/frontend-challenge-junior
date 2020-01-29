@@ -2,7 +2,7 @@
 
 Teste para a vaga de front end júnior
 
-- Codificar layout seguindo o [wireframe](https://docs.google.com/drawings/d/1XE4MIaBPukIFu1uDQ4BCe9BAr8TiZ8AHw2fPj5tea90/edit?usp=sharing)
+- Codificar layout seguindo o [wireframe](https://drive.google.com/file/d/10xpr_7qaEXNBT4v2dOKqanS4_tOcgEJs/view)
 - Paleta de cores: https://coolors.co/ffffff-f6f6f6-f5e5d9-272727-000000
 - Fontes: [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) e [PT Sans](https://fonts.google.com/specimen/PT+Sans)
 - O wireframe representa o layout macro do site, você tem liberdade para escolher os espaçamentos, tamanho de fontes, uso das cores, efeitos e outros detalhes.
