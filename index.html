@@ -1,0 +1,185 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Super Simple Gulp File</title>
+  <link rel="stylesheet" href="dist/style.css">
+  <link rel="stylesheet" href="dist/swiper.min.css">
+  <link rel="stylesheet" href="dist/aos.css">
+</head>
+
+<body>
+
+
+  <div id="header">
+    <div class="menu">
+      <div class="logo">LOGO</div>
+      <ul class="menuNav">
+        <li><a href="">MENU</a></li>
+        <li><a href="">MENU</a></li>
+        <li><a href="">MENU</a></li>
+        <li><a href="">MENU</a></li>
+        <li><a href="">MENU</a></li>
+      </ul>
+      <div class="botoes">
+        <button id="search-button">
+          <svg id="search-icon" class="search-icon" viewBox="0 0 24 24">
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+            <path d="M0 0h24v24H0z" fill="none" />
+          </svg>
+        </button>
+        <button id="user-button">
+          <svg viewBox="-42 0 512 512.002">
+            <path
+              d="m210.351562 246.632812c33.882813 0 63.222657-12.152343 87.195313-36.128906 23.972656-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.132812 87.195312 23.976563 23.96875 53.3125 36.125 87.1875 36.125zm0 0" />
+            <path
+              d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.039063 5.339844-10.972656 0-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.605469 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.058594 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.796875-1.023438 19.964844-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.441406 23.734375 65.066406 23.734375h246.53125c26.625 0 48.511719-7.984375 65.0625-23.734375 16.757813-15.945312 25.253906-37.585937 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm0 0" />
+          </svg>
+        </button>
+      </div>
+      <div id="nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <nav class="navigation">
+      <ul>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#"> <svg width="20" height="20" viewBox="-42 0 512 512.002">
+              <path
+                d="m210.351562 246.632812c33.882813 0 63.222657-12.152343 87.195313-36.128906 23.972656-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.132812 87.195312 23.976563 23.96875 53.3125 36.125 87.1875 36.125zm0 0" />
+              <path
+                d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.039063 5.339844-10.972656 0-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.605469 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.058594 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.796875-1.023438 19.964844-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.441406 23.734375 65.066406 23.734375h246.53125c26.625 0 48.511719-7.984375 65.0625-23.734375 16.757813-15.945312 25.253906-37.585937 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm0 0" />
+            </svg> LOGIN</a></li>
+        <li><a href="#"> <svg v-align="left" width="20" height="20" viewBox="0 0 24 24">
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+              <path d="M0 0h24v24H0z" fill="none" />
+            </svg>PROCURAR</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="loader"></div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url(https://picsum.photos/1920/1080?random=1);"></div>
+      <div class="swiper-slide" style="background-image: url(https://picsum.photos/1920/1080?random=2);"></div>
+      <div class="swiper-slide" style="background-image: url(https://picsum.photos/1920/1080?random=3);"></div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="baixoBanner">
+    <div class="circulo" style="background-image: url(https://picsum.photos/140/140?random=1)"> <a href=""></a></div>
+    <div class="circulo" style="background-image: url(https://picsum.photos/140/140?random=2)"> <a href=""></a></div>
+    <div class="circulo" style="background-image: url(https://picsum.photos/140/140?random=3)"> <a href=""></a></div>
+    <div class="circulo" style="background-image: url(https://picsum.photos/140/140?random=4)"> <a href=""></a></div>
+    <div class="circulo" style="background-image: url(https://picsum.photos/140/140?random=5)"> <a href=""></a></div>
+    <div class="circulo" style="background-image: url(https://picsum.photos/140/140?random=6)"> <a href=""></a></div>
+  </div>
+
+
+
+  <!-- secao1 -->
+  <div class="secao1" data-aos="fade-up" data-aos-delay="70">
+    <div class="textoSecao1">
+      <span>Lorem Ipsum lorem dor</span>
+      <br>
+      <br>
+      <h1>Lorem Ipsum <br> dolor sit amet</h1>
+      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat</span>
+    </div>
+    <div class="bannerSecao1">
+      <img src="https://picsum.photos/370/430?random=3" alt="">
+      <div class="descBanner1">
+        <h3>Titulo do Banner</h3>
+        <span>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempo</span>
+      </div>
+    </div>
+    <div class="bannerSecao2">
+      <img src="https://picsum.photos/370/200?random=3" alt="">
+      <div class="descBanner1">
+        <h3>Titulo do Banner</h3>
+        <span>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempo</span>
+      </div>
+      <br>
+      <br>
+      <img src="https://picsum.photos/370/430?random=3" alt="">
+      <div class="descBanner1">
+        <h3 style="margin:0; padding-top:10px;">Titulo do Banner</h3>
+        <span>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempo</span>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="secao2" data-aos="fade-right" data-aos-delay="30">
+    <div class="bannerSecao3">
+      <img src="https://picsum.photos/270/380?random=3" alt="">
+    </div>
+    <div class="textoSecao3">
+      <span>Lorem Ipsum lorem dor</span>
+      <br>
+      <br>
+      <h1>Lorem Ipsum <br> dolor sit amet</h1>
+      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat magna aliqua.</span>
+      <br>
+      <br>
+      <button>Call-to-action ></button>
+    </div>
+    <div class="bannerSecao4">
+      <div class="swiper-container" id="swipper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url(https://picsum.photos/600/360?random=1);"></div>
+          <div class="swiper-slide" style="background-image: url(https://picsum.photos/600/360?random=2);"></div>
+        </div>
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="marca" data-aos="fade-up-right">
+    <div><span>@instadamarca</span> </div>
+  </div>
+
+  <div class="secao3" data-aos="fade-up-right" data-aos-delay="30">
+    <div id="img1"> <img src="https://picsum.photos/350/350?random=1" alt=""></div>
+    <div id="img2">
+      <div id="card" alt=""><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat magna aliqua.</span></div>
+    </div>
+    <div id="img3"><img src="https://picsum.photos/350/350?random=2" alt=""></div>
+  </div>
+
+  </div>
+  <script src="dist/all.js"></script>
+</body>
+
+</html>
