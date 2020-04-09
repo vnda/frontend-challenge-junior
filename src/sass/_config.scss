@@ -4,3 +4,13 @@ $dark-color: #272727;
 $light-color: #f6f6f6;
 $white: #FFF;
 $black: #000;
+
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return $black;
+  } @else {
+    @return $white;
+  }
+}

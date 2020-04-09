@@ -1,7 +1,8 @@
 const gulp = require('gulp');
-const uglify = require('gulp-uglify');
+const terser = require('gulp-terser');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
+const babel = require('gulp-babel');
 
 
 //Copia TODOS OS HTML
@@ -21,7 +22,8 @@ gulp.task('copyFonts', async () =>{
 gulp.task('scripts', async()=> {
   gulp.src('src/js/*.js')
     .pipe(concat('main.js'))
-    .pipe(uglify())
+    .pipe(babel())
+    .pipe(terser())
     .pipe(gulp.dest('dist/js'));
 });
 

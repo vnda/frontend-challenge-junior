@@ -1,4 +1,4 @@
-@import "node_modules/swiper/swiper.scss";
+// @import "node_modules/swiper/swiper.scss";
 @import 'mixin';
 
 
@@ -29,11 +29,84 @@
   max-width: 1400px;
   padding: 0 2rem;
   margin: auto;
-  overflow: hidden;
 }
 
-// flex-container($direction, $wrap, $justify-content, $align-items, $align-content)
+/*Linhas*/
 .linha {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.linha-beetween {
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Colunas */
+
+.col-20 {
+  max-width: 20%;
+  flex: 1 1 20%;
+  padding: 0 20px;
+}
+
+.col-25 {
+  max-width: 25%;
+  flex: 1 1 25%;
+  padding: 0 20px;
+}
+
+.col-33 {
+  max-width: 33.33333%;
+  flex: 1 1 33.33333%;
+  padding: 0 20px;
+}
+
+.col-50 {
+  max-width: 50%;
+  flex: 1 1 50%;
+  padding: 0 20px;
+}
+.col-66 {
+  max-width: 66.66666%;
+  flex: 1 1 66.66666%;
+  padding: 0 20px;
+}
+
+// BUTTONS
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: set-text-color($main-color);
+    background-color: $main-color;
+  }
+
+  &-light {
+    @extend %btn-shared;
+    color: set-text-color($light-color);;
+    background-color: $light-color;
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    color: set-text-color($dark-color);;
+    background-color: $dark-color;
+  }
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $main-color;
+  color: set-text-color($main-color);
 }
