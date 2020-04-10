@@ -1,18 +1,11 @@
 /* FONT FACE */
 @mixin font-face($name, $file, $weight, $style) {
   @font-face {
-  font-family: "#{$name}";
-  font-weight: #{$weight};
-  font-style: #{$style};
-  src: url("../fonts/#{$name}/#{$file}.eot");
-  src: url("../fonts/#{$name}/#{$file}.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/#{$name}/#{$file}.ttf") format("truetype");
-}
-}
-
-/* ::after, ::before */
-@mixin pseudo($display: block, $pos: absolute, $content: ''){
-  content: $content;
-  display: $display;
-  position: $pos;
+    font-family: "#{$name}";
+    font-weight: #{$weight};
+    font-style: #{$style};
+    src: url("../fonts/#{$name}/#{$file}.eot");
+    src: url("../fonts/#{$name}/#{$file}.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/#{$name}/#{$file}.ttf") format("truetype");
+  }
 }

@@ -74,6 +74,17 @@
   padding: 0 20px;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .col-mb-100 {
+    max-width: 100%;
+    flex: 1 1 100%;
+    padding: 0;
+  }
+}
+
 // BUTTONS
 %btn-shared {
   display: inline-block;
