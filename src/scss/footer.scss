@@ -1,0 +1,106 @@
+
+/* Footer definitions */
+
+.footer {
+  height: 280px;
+  width: 100%;
+  padding-right: $bordas;
+  padding-left: $bordas;
+  padding-top: $bordas;
+  margin-top: $bordas;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $dark-gray-color;
+  font-family: "PTSans-Regular";
+  font-weight: 300;
+
+  %menu {
+    padding-left: $grid-8pt*3;
+    align-items: flex-start;
+  }
+
+  %table {
+    table {
+      width: 60%;
+      height: 25%;
+      text-align: left;
+      padding-top: $grid-8pt*2;
+
+      tr {
+        th {
+          font-size: 12px;
+          font-weight: 300;
+          color: $dark-gray-color;
+        }
+      }
+    }
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: -$grid-8pt*6;
+    left: 45vw;
+    padding: 0 $grid-8pt*2;
+    background-color: $white-color;
+  }
+
+  .menu-default{
+    @extend %menu;
+    @extend %table;
+    flex: 2;
+  }
+
+  .menu-email {
+    @extend %menu;
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    position: relative;
+
+    .container-input {
+      width: 70%;
+      height: 25%;
+      text-align: left;
+      border-bottom: 1px solid $dark-gray-color;
+      padding-top: $grid-8pt*2;
+      display: flex;
+      justify-content: space-between;
+      font-family: "PTSans-Regular";
+
+      input {
+        border: 0;
+        outline: none;
+        width: 85%;
+        height: 100%;
+      }
+
+      .send-email {
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        background-color: unset;
+
+        &:after {
+          content: '\003E';
+          margin-left: 2px;
+        }
+      }
+    }
+
+    span {
+      position: absolute;
+      bottom: 50px;
+      color: $dark-gray-color;
+      font-size: 14px;
+    }
+    
+  }
+
+  .menu-network {
+    @extend %menu;
+    @extend %table;
+    flex: 1;
+  }
+}
