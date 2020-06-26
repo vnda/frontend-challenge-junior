@@ -32,7 +32,7 @@
 
 <section>
     <div class="mt-50 mb-50">
-        <ul class="lista-no-style img-rouded d-flex justify-between w-75 ml-auto mr-auto">
+        <ul class="lista-no-style img-rouded d-flex justify-between w-75 ml-auto mr-auto secao-imagens">
             <li><img src="https://picsum.photos/100/100"></li>
             <li><img src="https://picsum.photos/100/100"></li>
             <li><img src="https://picsum.photos/100/100"></li>
@@ -53,7 +53,7 @@
         </div>
         <div class="parte2">
             <div class="parte2-1">
-                <div class="position-relative">
+                <div class="position-relative primeira-figura">
                     <figure class="text-center position-absolute top--160 background-cor-3">
                         <img src="https://picsum.photos/300/320" class="img-fluid">
                         <figcaption class="m-auto w-75">
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="parte2-2">
-                <div class="position-relative">
+                <div class="position-relative segunda-figura">
                     <div class="position-absolute top--200 background-cor-3">
                         <figure class="text-center ml-0 mr-0">
                             <img src="https://picsum.photos/100/50" class="img-fluid">
@@ -89,7 +89,7 @@
 <section class="secao-3-fake"></section>
 <section class="mb-50 w-90">
     <div class="background-cor-3 p-40">
-        <div>
+        <div class="secao-carousel">
             <div class="d-inline-block">
                 <img src="https://picsum.photos/220/290" class="img-fluid">
             </div>
@@ -100,6 +100,23 @@
                     corrupti fugit dolorem magni repellat unde reiciendis laborum iure dolores illum maxime, voluptas provident?</p>
                 <button class="botao-acao">Call-to-action &gt;</button>
             </div>
+            <div class="d-inline-block position-relative">
+                <!-- Slider main container -->
+                <div  class="swiper-container position-absolute bottom-15 left-700" [swiper]="config" [(index)]="index" (indexChange)="onIndexChange($event)">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="https://picsum.photos/800/600" class="img-fluid"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/801/600" class="img-fluid"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/802/600" class="img-fluid"></div>
+                    </div>
+                   
+                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-pagination"></div>
+                   
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -108,12 +125,12 @@
         <a href="#">@instadamarca</a>
     </h3>
     <div>
-        <ul class="lista-no-style d-flex justify-between m-auto w-90 pl-0 li-item-max-w-30">
+        <ul class="lista-no-style d-flex justify-between m-auto w-90 pl-0 li-item-max-w-30 secao-insta">
             <li>
                 <img src="https://picsum.photos/400" class="img-fluid">
             </li>
             <li>
-                <div class="mt-50">
+                <div class="mt-50 frase-insta">
                     <div class="d-flex text-left align-center wh-390 p-20 back background-cor-1">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam animi quisquam nobis rem neque omnis consequuntur labore est similique, 
                             atque excepturi, ipsam velit ipsum deleniti rerum maxime adipisci natus perspiciatis.</p>
@@ -126,7 +143,7 @@
         </ul>
     </div>
 </section>
-<footer class="mt-200">
+<footer class="mt-200 w-max-100">
     <section>
         <div class="h-30 position-relative">
             <h2 class="position-absolute text-center m-0 h-30 p-10 hr-logo">LOGO</h2>
@@ -134,7 +151,7 @@
         </div>
     </section>
     <section class="pt-50">
-        <div class="d-flex justify-between w-90">
+        <div class="d-flex justify-between w-90 secao-footer">
             <div>
                 <nav>
                     <ul>
@@ -151,10 +168,10 @@
                 </nav>
             </div>
             <div>
-                <ul class="pl-0 lista-no-style">
+                <ul class="pl-0 lista-no-style input-footer">
                     <li class="ml-0">MENU</li>
                 </ul>
-                <div class="d-flex align-end">
+                <div class="d-flex align-end input-footer">
                     <div class="input-container">
                         <input id="name" class="input" type="text" required />
                         <label class="label" for="name">Email</label>
