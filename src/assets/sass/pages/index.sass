@@ -1,0 +1,735 @@
+@import '../_includes'
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+h2,h3,h4
+    font-family: 'Playfair Display', serif
+    color: #272727
+
+h2 
+    line-height: 1.2em
+    font-size: 1.8em
+
+ul
+    list-style: none
+    padding: 0
+
+span 
+    font-style: italic
+
+p, span
+    color: #272727
+
+p, span, a
+    font-family: 'PT Sans', sans-serif
+
+button:active,
+button:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus,
+input[type="text"]:focus
+    outline: none
+
+a:active 
+    border: none
+
+input[type="submit"],
+button.cta
+    border: solid 6px transparent
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),linear-gradient(101deg,#d9f1f5,#f5d9d9)
+    background-origin: border-box
+    background-clip: content-box,border-box
+    text-transform: uppercase
+    font-weight: 600
+    color: #74798c
+    transition: all .3s ease
+    &:hover
+        cursor: pointer
+        color: #272727 
+
+.swiper-button-next:focus, 
+.swiper-button-prev:focus,
+.swiper-button-next:active, 
+.swiper-button-prev:active 
+    outline: none!important
+
+header 
+    transition: height 0.2s linear
+    .logo
+        height: 55px
+        margin-top: 20px
+    img 
+        height: 100%
+    nav 
+    ul 
+        display: flex
+        flex-direction: column
+        li 
+            margin: 0
+            position: relative
+            a
+                font-size: 16px
+                color: #cecece
+                text-transform: uppercase
+                letter-spacing: 1px
+                transition: all 0.5s ease
+                &:hover
+                    color: #fff
+    #search-btn
+        position: relative
+        background: transparent
+        border: none
+        color: #cecece
+        transition: all 0.5s ease
+        &:hover
+            cursor: pointer
+            color: #fff
+        &:active, &:focus
+            outline: none
+            border: none
+        &.active
+            color: #fff
+    .search
+        background: transparent
+        box-shadow: none
+        -moz-box-shadow: none
+        -webkit-box-shadow: none
+        border: none
+        border-bottom: 1px solid #b3b0b0
+        transform: translateX(-30%)
+        opacity: 0
+        color: #fff
+        padding: 5px 0
+        transition: transform 0.2s ease-out
+        &::-webkit-input-placeholder 
+            color: #ccc
+            font-style: italic
+            font-size: 12px
+        &:-ms-input-placeholder
+            color: #ccc
+            font-style: italic
+            font-size: 12px
+        &::placeholder 
+            color: #ccc
+            font-style: italic
+            font-size: 12px
+                
+        &:active, 
+        &:focus
+            outline: none
+            border: none
+            border-bottom: 2px solid #fff
+        &.open 
+            transform: translateX(0)
+            opacity: 1
+            width: 185px
+
+    &.fixed
+        position: fixed
+        height: 50px
+        background: #fff
+        .container
+            height: 50px
+            .logo 
+                margin-top: 5px
+                height: 40px
+            ul li a
+                color: #757272
+                &:hover
+                    color:#f9565e
+            .nav-center ul li a:hover
+                color:#fff
+            button 
+                i
+                    color: #757272
+                &:hover
+                    i
+                        color:#f9565e
+            .search
+                color: #f9565e
+                &:focus
+                    border-color: #f9565e
+    
+    #search-result-wrapper
+        &.hidden
+            display: none
+        #search-result-output
+            flex-direction: column
+            position: absolute
+            z-index: 9
+            width: 185px
+            margin-top: 12px
+            li 
+                text-align: left
+                padding: 2px 10px
+                margin: 1px
+                background: rgba(227, 163, 161, 0.85)
+                &:hover
+                    a, a:hover
+                        font-weight: 600
+                a 
+                    font-size: 13px
+                    width: 100%
+                    color: #000
+                    transition: all 0.1s ease
+                
+
+i.fas 
+    font-size: 17px               
+
+
+.container
+    max-width: 1024px
+    width: 100%
+    height: 100%
+    margin: 0 auto
+    display: table
+
+main 
+    width: 100%
+
+.swiper-container
+    overflow: hidden
+
+.swiper-button-next:after, 
+.swiper-container-rtl .swiper-button-prev:after ,
+.swiper-button-prev:after, 
+.swiper-container-rtl .swiper-button-next:after
+    color: #b3b0b0
+    font-size: 15px
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active
+    background: #eb7e89
+
+            
+
+.spotlight
+    > div 
+        width: 150px
+        height: 150px
+        margin: 1%
+        border-radius: 75px
+        overflow: hidden
+        position: relative
+        a
+            position: absolute
+            top: 0
+            width: 100%
+            text-align: center
+            font-style: italic
+            height: 100%
+            color: #fff
+            font-size: 15px
+            z-index: 1
+            line-height: 230px
+            &:before
+                position: absolute
+                height: 100%
+                width: 100%
+                left: 0
+                content: ''
+                background: rgba(0,0,0,0.3)
+                z-index: -1
+
+.posts
+    background: #F5E5D9
+    .post
+        background: #f5e5d9
+
+
+.bouncing-effect 
+    -moz-animation: bouncing 4s infinite
+    -webkit-animation: bouncing 4s infinite
+    animation: bouncing 4s infinite
+
+@-moz-keyframes bouncing
+    0%, 20%, 50%, 80%, 100% 
+        -moz-transform: translateY(0)
+        transform: translateY(0)
+  
+    40% 
+        -moz-transform: translateY(-30px)
+        transform: translateY(-30px)
+  
+    70% 
+        -moz-transform: translateY(-15px)
+        transform: translateY(-15px)
+  
+
+@-webkit-keyframes bouncing 
+    0%, 20%, 50%, 80%, 100% 
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+  
+    40% 
+        -webkit-transform: translateY(-30px)
+        transform: translateY(-30px)
+  
+    70% 
+        -webkit-transform: translateY(-15px)
+        transform: translateY(-15px)
+  
+
+@keyframes bouncing 
+    0%, 20%, 50%, 80%, 100% 
+        -moz-transform: translateY(0)
+        -ms-transform: translateY(0)
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+  
+    40% 
+        -moz-transform: translateY(-30px)
+        -ms-transform: translateY(-30px)
+        -webkit-transform: translateY(-30px)
+        transform: translateY(-30px)
+  
+    70% 
+        -moz-transform: translateY(-15px)
+        -ms-transform: translateY(-15px)
+        -webkit-transform: translateY(-15px)
+        transform: translateY(-15px)
+  
+
+.secondary-banner
+    .container
+        background: #F6F6F6
+    .right-col
+        position: relative
+        .swiper-secondary
+            max-width: 350px
+            overflow: hidden
+            position: relative
+    .left-col
+        .cta
+            padding: 10px 31px
+            margin-top: 25px
+            box-shadow: 2px 1000px 1px #f6f6f6 inset
+            -webkit-box-shadow: 2px 1000px 1px #f6f6f6 inset
+            -moz-box-shadow: 2px 1000px 1px #f6f6f6 inset
+            &:hover 
+                box-shadow: none
+                -webkit-box-shadow: none
+                -moz-box-shadow: none
+
+
+
+.instagram
+    padding: 25px 0
+    h3
+        text-align: center
+        font-size: 1.7em
+        font-style: italic
+        i
+            margin-right: 7px
+            color: #f4d9da
+            font-size: 32px
+    .one-third-col:nth-of-type(2) p
+        animation: floating 5s ease-in-out infinite
+        text-align: center
+
+@keyframes floating
+	0% 
+        box-shadow: 0 5px 10px 0px rgba(0,0,0,0.1)
+        -webkit-box-shadow: 0 5px 10px 0px rgba(0,0,0,0.1)
+        -moz-box-shadow: 0 5px 10px 0px rgba(0,0,0,0.1)
+        transform: translatey(0px)
+	
+	50% 
+		box-shadow: 0 10px 10px 0px rgba(0,0,0,0.1)
+        -webkit-box-shadow: 0 10px 10px 0px rgba(0,0,0,0.1)
+        -moz-box-shadow: 0 10px 10px 0px rgba(0,0,0,0.1)
+		transform: translatey(-10px)
+	
+	100% 
+		box-shadow: 0 5px 10px 0px rgba(0,0,0,0.1)
+        -webkit-box-shadow: 0 5px 10px 0px rgba(0,0,0,0.1)
+        -moz-box-shadow: 0 5px 10px 0px rgba(0,0,0,0.1)
+		transform: translatey(0px)
+	
+footer
+    border-top: 2px solid #f4d9da
+    margin-top: 75px
+    .logo
+        width: 130px
+        height: auto
+        margin: 0 auto
+        display: block
+        margin-top: -45px
+        background-color: #fff
+        padding: 20px
+    .main-footer
+        padding: 25px 0
+        display: inline-block
+        width: 100%
+        h3
+            text-align: center
+            margin-bottom: 25px
+        ul
+            li
+                text-align: center
+                margin: 5px 0
+                a
+                    text-transform: uppercase
+                    color: #000
+                    font-size: 14px
+                    letter-spacing: 2px
+                    transition:all 0.3s ease
+                    i
+                        margin-right: 5px
+                    &:hover 
+                        color: #f9565e 
+                    
+        form
+            display: table
+            margin: 0 auto
+            input[type="text"]
+                height: 35px
+                box-sizing: border-box
+                border: 5px solid #dcedf1
+                border-right: none
+            input[type="submit"]  
+                height: 35px
+                padding: 0 15px
+                font-size: 11px 
+                box-shadow: none
+                -webkit-box-shadow: none
+                -moz-box-shadow: none
+                position: relative
+                top: -1px
+                
+
+
+    .copyright
+        clear: both
+        text-align: center
+        padding: 25px 0
+
+
+
+// xs + sm devices
+@media (max-width: 1023px)
+    .container
+        padding: 0 15px
+    header
+        .logo
+            float: left
+            height: 38px
+        #menu-btn
+            background: transparent
+            border: none
+            float: right
+            margin: 20px 0
+            i
+                font-size: 35px
+                color: #272727
+        .menus-wrapper 
+            display: block
+            clear: both
+            &.hidden-xxs-xs
+                display: none
+        nav
+            &.nav-right ul
+                flex-direction: row
+                float: right
+                padding: 15px 0
+                li
+                    margin: 0 8px
+                    button i, a i
+                        transition: all .5s ease
+                    button:hover i, a:hover i, a:active i
+                        color: #f9565e
+            &.nav-center ul
+                li
+                    transition: all .5s ease
+                    &:hover
+                        background: #f9565e
+                        a, a:active 
+                            color: #fff
+                    a
+                        width: 100%
+                        display: block
+            ul
+                text-align: right
+                clear: both
+                li
+                    a, i
+                        color: #272727
+        &.fixed
+            width: 100%
+            z-index: 9
+            height: 40px
+            .container
+                background: #ffffff
+                a:hover, a:active
+                    color: #ffff
+                button
+                    i 
+                        color: #272727
+                #menu-btn
+                    margin: 13px 0
+                    i 
+                        font-size: 23px
+                        color: #272727
+        .search
+            color: #f9565e
+            &:focus
+                border-color: #f9565e
+    #search-result-wrapper
+        #search-result-output
+            margin-top: 0!important
+    
+    .spotlight
+        padding: 35px 15px
+        display: inline-flex
+        flex-wrap: wrap
+        justify-content: center
+    
+    .posts
+        padding: 35px 0 75px
+        position: relative
+        margin-bottom: 100px
+        .main-post
+            text-align: center
+            p
+                max-width: 80%
+                margin: 0 auto
+                padding: 25px 0
+        .arrow-continue
+            position: absolute
+            bottom: -60px
+            left: 48%
+        .post
+            margin-bottom: 40px
+            p, h4
+                margin: 15px 0
+        
+    .secondary-banner
+        .container
+            padding: 65px 15px
+            .content
+                padding: 50px 30px
+
+    .instagram
+        padding: 50px 0
+        .container
+            &> div
+                margin: 35px 0
+                p
+                    padding: 35px
+                iframe
+                    margin: 0 auto!important
+    
+    footer 
+        .main-footer
+            padding: 0
+            h3
+                margin: 25px 0 10px 0
+                    
+
+
+// extra small devices
+@media (max-width: 342px)
+    .spotlight > div 
+        //max-width: 135px
+
+@media (max-width: 414px)
+    .secondary-banner 
+        .right-col 
+            .swiper-secondary 
+                max-width: 270px
+                margin: auto
+    
+    .spotlight
+        &> div 
+            //float: left
+            &:nth-of-type(even)
+                //float: right
+    
+    .posts
+        .post
+            text-align: center
+            img
+                margin: 0 auto
+        
+    .secondary-banner
+        .container
+            img
+                margin: 0 auto
+    
+    .instagram
+        .container
+            padding: 0
+                
+
+// small devices
+@media (min-width: 415px) and (max-width: 1023px)
+    .posts
+        .right-col
+            margin-top: 30px
+            .first-col,
+            .second-col
+                padding: 0 15px
+                width: 50%
+            .first-col
+                float: left
+            .second-col
+                float: right
+            .post
+                img
+                    margin: 0 auto
+                h4, p
+                    text-align: center
+
+    .secondary-banner
+        img, .right-col .swiper-secondary
+            margin: 0 auto
+
+    .instagram 
+        img
+            margin: 0 auto
+
+    
+
+
+
+//desktop
+@media (min-width: 1024px) 
+    #menu-btn
+        display: none
+    header 
+        height: 95px
+        -webkit-box-shadow: 0 0px 40px 1px rgba(0,0,0,.10)
+        -moz-box-shadow: 0 0px 40px 1px rgba(0,0,0,.10)
+        box-shadow: 0 0px 40px 1px rgba(0,0,0,.10)
+        z-index: 99
+        position: absolute
+        width: 100%
+        .logo
+            display: inline-block
+        .menus-wrapper
+            display: contents
+        nav 
+            display: table-cell
+            vertical-align: middle
+            ul 
+                flex-direction: row
+                li 
+                    margin: 0 25px
+        .nav-right 
+            ul 
+                float: right
+                li
+                    margin: 0 8px
+
+    .spotlight
+        display: flex
+        margin-top: 50px
+        margin-bottom: 50px
+        > div
+            border: 10px solid transparent
+            transition: all 0.2s ease
+            &:hover
+                border: 10px solid #F5E5D9
+                cursor: pointer
+                a 
+                    opacity: 1
+                    line-height: 200px
+                    transition: all 0.3s ease
+        a
+            opacity: 0
+       
+
+
+    .posts
+        max-height: 500px
+        padding-top: 45px
+        text-align: center
+        .arrow-continue
+            margin-top: 70px
+        h4 
+            margin: 15px
+        .main-post
+            text-align: left
+            padding-right: 126px
+            h2 
+                margin: 30px 0px
+        .left-col
+            width: 40%
+            float: left
+        .right-col
+            width: 60%
+            float: right
+            .first-col,
+            .second-col
+                width: 50%
+                float: left
+                padding: 0 15px
+                .post
+                    padding-bottom: 30px
+                    margin-bottom: 20px
+                    p
+                        margin: 0 10px
+    
+    .main-banner
+        .swiper-container
+            height: 100vh
+
+    .secondary-banner
+        margin-top: 30%
+        .container
+            box-shadow: -12em 0 0 0 #F6F6F6, 0em 0 0 0
+            border-right: 6em solid #fff
+            padding: 45px 0
+        .right-col
+            width: 40%
+            float: left
+            padding: 0 15px
+            right: -6em
+            top: 6em
+            .swiper-secondary
+                float: right
+        .left-col
+            width: 60%
+            float: left 
+            .image
+                width: 50%
+                max-width: 250px
+                float: left
+            .content
+                float: left
+                max-width: 50%
+                padding-left: 30px
+                h2
+                    margin: 30px 0px
+
+    .instagram
+        margin-top: 50px
+        h3
+            margin-bottom: 45px
+        .one-third-col
+            width: 33.33%
+            float: left
+            box-sizing: border-box
+            padding: 0 15px
+        .one-third-col:nth-of-type(2) p
+            margin-top: 8em
+            padding: 50px 35px
+
+    .main-footer
+        > div 
+            float: left
+        .first-col,
+        .third-col
+            width: 30%
+        .second-col
+            width: 40%
+        
+
+
+
+
+
+                
+
+
+            
+
