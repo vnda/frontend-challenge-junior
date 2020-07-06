@@ -1,0 +1,136 @@
+@import 'colors';
+/*Dispositivos médios*/ 
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+    .banners-text{
+        .banner-1, .banner-2, .banner-3{
+            width: 200px !important;
+        }
+    }
+
+    .produtos .grid-template-columns-1{
+        grid-template-columns: 1fr 1fr;
+        .produtos-img-1 {
+            grid-area: img1;
+        }
+        .text {
+            grid-area: text1;
+        }
+
+        .produtos-img-2 {
+            grid-area: img2;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0;
+            margin-bottom: 10px;
+
+        }
+        grid-template-areas:
+            "img1 text1"
+            "img2 img2";
+
+        background-image: linear-gradient(to right, $grafite, $grafite 70%, $grafite 70%, $grafite  100%, $grafite 100%) !important;
+    }
+
+    .instagram{
+        .capa{
+            height: 180px !important;
+        }
+
+        p{
+            padding: 0px !important;
+            font-size: 11px !important;
+        }
+    }
+
+    .footer .menus form>input{
+        width: 300px !important;
+    }
+}
+
+/*Dispositivos pequenos*/
+
+@media only screen and (max-width: 787px){
+    header{
+        display: none;
+    }
+
+    .menu-responsivo{
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+    }
+
+    .banner{
+        height: auto !important;
+        padding-top: 0px !important;
+    }
+
+    .features{
+        .circles ul {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+
+    .banners-text{
+        height: auto !important;
+    }
+
+    .produtos{
+        margin-top: 0 !important;
+
+        .grid-template-columns-1{
+            grid-template-columns: 1fr;
+
+            background-image: linear-gradient(to right, $grafite, $grafite 70%, $grafite 70%, $grafite  100%, $grafite 100%) !important;
+
+            .produtos-img-1, .text, .produtos-img-2{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .text{
+                text-align: center;
+            }
+        }
+       
+    }
+
+    .instagram{
+        .fotos {
+            grid-template-columns: 1fr !important;
+        }
+
+        .imagem, .imagem2{
+            margin-top: 20px !important;
+        }
+
+        .capa{
+            height: 225px !important;
+        }
+
+        p{
+            padding: 0px !important;
+        }
+    } 
+
+    .footer{
+        .menus{
+            grid-template-columns: 1fr !important;
+            row-gap: 20px;
+            text-align: center;
+
+            form>input{
+                width: 220px !important;
+            }
+        }
+
+        .copy{
+            p{
+                font-size: 12px !important;
+            }
+        }
+    }
+}

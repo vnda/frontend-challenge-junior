@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_7" data-name="Retângulo 7" width="22" height="22" transform="translate(2071 787)" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="searchGreen" transform="translate(-2071 -787)" clip-path="url(#clip-path)">
+    <path id="search" d="M66.743,65.164l6.014,6.014-1.579,1.579-6.014-6.014a8.931,8.931,0,1,1,1.579-1.579Zm-7.056,1.221a6.7,6.7,0,1,0-6.7-6.7A6.7,6.7,0,0,0,59.687,66.386Z" transform="translate(2020.243 736.243)" fill-rule="evenodd"/>
+  </g>
+</svg>
