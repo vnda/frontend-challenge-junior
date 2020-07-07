@@ -1,0 +1,61 @@
+//--------- Social Media Panel
+
+.social-media-panel {
+  padding-top: $headerHeight + 20;
+  height: 90vh;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  .media-box {
+    height: 28vw;
+    width: 28vw;
+    max-width: 400px;
+    max-height: 400px;
+    background: $darkBrown;
+  }
+  .social-media-middle {
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+    .media-box {
+      margin: 0 40px 40px 40px;
+    }
+    h1 {
+      font-weight: 400;
+      margin: 0 0 40px 0;
+      font-size: 2.5rem;
+    }
+  }
+  .social-media-left {
+    margin-top: 40px;
+  }
+  .social-media-right {
+    margin-top: 40px;
+  }
+}
+
+// Media Queries
+
+@media only screen and (max-width: $max-mobile) {
+  .social-media-panel {
+    height: unset;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .media-box {
+      height: 50vw;
+      width: 50vw;
+    }
+    .social-media-left {
+      margin-top: 0;
+    }
+    .social-media-middle {
+      h1 {
+        margin: 40px 0;
+      }
+    }
+    .social-media-right {
+      margin-top: 0;
+    }
+  }
+}

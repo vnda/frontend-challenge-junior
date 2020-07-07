@@ -1,0 +1,56 @@
+//--------- Circles Panel
+.circles-panel {
+  display: flex;
+  justify-content: center;
+  .circle {
+    margin: auto 20px;
+    background: $darkBrown;
+    border-radius: 50%;
+    font-size: 60px;
+    width: $circleSize;
+    height: $circleSize;
+  }
+}
+
+.circle-container-mobile {
+  flex-direction: column;
+  display: flex;
+  padding: 20px;
+  .circle {
+    margin-top: 50px;
+  }
+}
+
+.circle-row {
+  margin: 100px 0;
+  display: flex;
+}
+
+// Media queries
+
+@media only screen and (min-width: $min-sm-desktop) {
+  .circle-container-mobile {
+    display: none;
+  }
+  .circle-container-tablet {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $max-mobile) {
+  .circle-container-desktop {
+    display: none;
+  }
+  .circle-container-tablet {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $min-sm-tablet) and (max-width: $max-xl-tablet) {
+  .circle-container-mobile {
+    display: none;
+  }
+  .circle-container-desktop {
+    display: none;
+  }
+}

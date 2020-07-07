@@ -1,0 +1,91 @@
+//variables
+@import "util/variables.scss";
+
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  background: $bodyBgColor;
+}
+
+.App {
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.loading-overlay {
+  font-family: "PT Sans", sans-serif;
+  position: fixed;
+  z-index: 1000;
+  color: $lightBrown;
+  width: 100vw;
+  height: 100vh;
+  background: $darkBrown;
+  display: flex;
+  justify-content: center;
+  span {
+    display: inline-flex;
+    align-items: center;
+    height: fit-content;
+    align-self: center;
+  }
+  h1 {
+    margin-left: 10px;
+    font-size: 60px;
+    color: $lightBrown;
+    animation-name: logo-color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes logo-color {
+  0% {
+    color: $darkBrown;
+  }
+  100% {
+    color: $lightBrown;
+  }
+}
+
+//----------- Animations
+
+.fade-from-bottom {
+  opacity: 1 !important;
+  transform: translateY(-70px);
+  transition: all 1.2s ease-in-out;
+}
+
+.fade-from-right {
+  opacity: 1 !important;
+  transform: translateX(-70px);
+  transition: all 1.2s ease-in-out;
+}
+
+.fade-from-left {
+  opacity: 1 !important;
+  transform: translateX(70px);
+  transition: all 1.2s ease-in-out;
+}
+
+.fade-object-bottom {
+  position: relative;
+  opacity: 0;
+  top: 70px;
+}
+
+.fade-object-right {
+  position: relative;
+  opacity: 0;
+  left: 70px;
+}
+
+.fade-object-left {
+  position: relative;
+  opacity: 0;
+  right: 70px;
+}
