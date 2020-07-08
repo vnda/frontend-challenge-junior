@@ -1,0 +1,137 @@
+//--------- Second Showcase Panel
+.showcase-two {
+  display: flex;
+  padding-top: 150px;
+  background: white;
+  height: 90vh;
+}
+
+.showcase-two-left {
+  display: inline-flex;
+  width: 60%;
+}
+
+.showcase-two-background {
+  padding: 60px;
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(to right, $lightBrown 85%, #fff 15%);
+  width: 100vw;
+  height: 60vh;
+  .showcase-two-banner-image {
+    img {
+      border-radius: 15px;
+    }
+  }
+  .text-card {
+    padding: 0 30px 0;
+    height: inherit;
+    justify-content: space-between;
+    h1 {
+      line-height: 35px;
+      font-size: 40px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  button {
+    border: none;
+    width: fit-content;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    background: black;
+    cursor: pointer;
+  }
+}
+
+.showcase-two-banner-image {
+  height: inherit;
+  width: 300px;
+}
+
+.products-card {
+  align-self: flex-end;
+}
+
+.products-swiper-container {
+  background: black;
+  width: 450px;
+  height: 300px;
+}
+
+// Media Queries
+
+@media only screen and (min-width: $min-xl-desktop) {
+  .showcase-one-background {
+    padding: 0 15vw;
+  }
+  .showcase-two-background {
+    padding: 0 15vw;
+  }
+}
+
+@media only screen and (max-width: $max-sm-desktop) {
+  .showcase-two-background {
+    background: $lightBrown;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100vw;
+    height: unset;
+  }
+  .showcase-two {
+    height: unset;
+  }
+  .showcase-two-left {
+    margin: 60px;
+    button {
+      margin-top: 20px;
+    }
+  }
+  .showcase-two-right {
+    margin: 60px;
+  }
+}
+
+@media only screen and (min-width: $min-md-desktop) {
+  .showcase-two-banner-image {
+    max-height: 550px;
+  }
+}
+
+@media only screen and (max-width: $max-xl-tablet) {
+  .showcase-two-left {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    .showcase-two-banner-image {
+      min-height: 300px;
+    }
+    .text-card {
+      max-width: unset;
+      text-align: center;
+      margin: 20px 0;
+      h1 {
+        margin: 20px 0;
+      }
+      p {
+        margin: 20px 0;
+      }
+    }
+    button {
+      align-self: center;
+    }
+  }
+}
+
+@media only screen and (max-width: $max-mobile) {
+  .showcase-two-banner-image {
+    width: 90vw;
+  }
+  .products-swiper-container {
+    width: 90vw;
+  }
+}

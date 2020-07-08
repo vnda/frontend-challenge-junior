@@ -1,0 +1,15 @@
+//--------- Sliding Panel
+
+.sliding-panel {
+  background: $darkBrown;
+  height: calc(93vh - 73px);
+  padding-top: $headerHeight;
+}
+
+html:root {
+  --swiper-theme-color: $swiperColor;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+}
