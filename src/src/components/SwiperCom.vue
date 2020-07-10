@@ -29,15 +29,10 @@
 </template>
 
 <script>
-import Swiper, { Navigation, Pagination } from 'swiper';
-import 'swiper/swiper-bundle.css';
-
-Swiper.use([Navigation, Pagination]);
 
 export default {
   name: 'SwiperCom',
   mounted() {
-    // eslint-disable-next-line no-unused-vars
     const mySwiper = new Swiper('.swiper-container', {
       navigation: {
         nextEl: '.swiper-button-next',
