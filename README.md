@@ -20,3 +20,16 @@ Teste para a vaga de front end júnior
 **Obs 1: Caso tenha dificuldade para compilar o sass e gulp, codifique o teste como preferir, o importante é o teste ser feito**
 
 **Obs 2: Caso não consiga terminar todo o layout no prazo, mande o que conseguiu fazer, o importante é entregar algo para ser avaliado**
+
+# Challenge
+
+## Feito com
+* Vue.js
+* Sass.js
+* Swiper
+
+## Src
+Dentro da pasta *src* há um readme com as instruções para build.
+
+## Dist
+Ali estão os aruivos finais minificados.
