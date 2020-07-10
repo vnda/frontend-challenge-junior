@@ -25,7 +25,7 @@ Teste para a vaga de front end júnior
 
 ## Feito com
 * Vue.js
-* Sass.js
+* Sass
 * Swiper
 
 ## Src
