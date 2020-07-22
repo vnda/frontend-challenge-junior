@@ -5,7 +5,6 @@ var sass = require("gulp-sass");
 var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
 var concat = require("gulp-concat");
-var webserver = require("gulp-webserver");
 
 sass.compiler = require("node-sass");
 

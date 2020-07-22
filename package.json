@@ -1,7 +1,10 @@
 {
   "name": "vnda",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/index.html",
+  "scripts": {
+    "start": "npx http-server ./dist"
+  },
   "license": "MIT",
   "devDependencies": {
     "gulp": "^4.0.2",
@@ -9,8 +12,9 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-webserver": "^0.9.1",
     "node-sass": "^4.14.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
 }
