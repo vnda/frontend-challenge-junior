@@ -1,0 +1,35 @@
+header {
+  background-color: $cultured;
+  height: 60px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1500px;
+  width: 90%;
+  height: 60px;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 2.4em;
+}
+
+header nav {
+  flex: 1;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline;
+  text-transform: uppercase;
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+header .icons img {
+  width: 30px;
+  padding: 0 5px;
+}
