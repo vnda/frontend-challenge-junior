@@ -2,14 +2,24 @@ section.section-1 {
   background-color: $primary-color;
   height: 65vh;
 
+  .arrow {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    left: 0;
+    top: 57.5vh;
+  }
+
   .container {
     height: 65vh;
+    position: relative;
   }
   .section-text {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     width: 25vw;
+    min-width: 300px;
   }
   h1 {
     margin-top: 20px;
@@ -21,11 +31,11 @@ section.section-1 {
     text-align: center;
     display: flex;
 
-    .card-2-3{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 250px;
+    .card-2-3 {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 250px;
     }
 
     .card-1 {
