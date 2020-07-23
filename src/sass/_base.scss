@@ -27,3 +27,12 @@ a {
 ul {
   list-style: none;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1500px;
+  width: 90%;
+  margin: auto;
+}
