@@ -7,6 +7,34 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    z-index: -2;
+  }
+  // Efeito opaco na imagem de background para aparecer o texto acima dela
+  .image:before {
+    content: "";
+    display: block;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    left: 0;
+    opacity: 0.45;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .main-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64vh;
+    width: 60%;
+    flex-direction: column;
+    text-align: center;
+    h1 {
+        font-size: 40px;
+    }
   }
 
   img {
