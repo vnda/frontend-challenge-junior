@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -148,12 +153,35 @@
           </div>
         </div>
         <div class="section-2-slider">
-          <div class="slider-image">
-            <img src="https://picsum.photos/500/350" alt="" />
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide slider-image">
+                <img src="https://picsum.photos/550/330" alt="" />
+              </div>
+              <div class="swiper-slide slider-image">
+                <img src="https://picsum.photos/501/331" alt="" />
+              </div>
+              <div class="swiper-slide slider-image">
+                <img src="https://picsum.photos/502/332" alt="" />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
           </div>
+
+          <div class="slider-image"></div>
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./scripts/scripts.js"></script>
   </body>
 </html>
