@@ -1,0 +1,66 @@
+// MIXINS
+@mixin pseudo-ready($position: absolute) {
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    position: relative;
+  }
+}
+// SPINNER STYLE
+.wrap-loader {
+  text-align: center;
+  position: absolute;
+  background-color: $primary-color;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .text {
+    margin: 1rem 0 0;
+    font-weight: 300;
+    font-size: 1.25em;
+    font-family: "PT Sans", sans-serif;
+    color: $black;
+  }
+}
+.loader {
+  position: relative;
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  text-indent: -9999rem;
+  border-radius: 50%;
+  border-top: 10px solid rgba($black, 0.2);
+  border-right: 10px solid rgba($black, 0.2);
+  border-bottom: 10px solid rgba($black, 0.2);
+  border-left: 10px solid $black;
+  animation: rotation 1s infinite linear;
+}
+
+.wrap-loader.hidden {
+  animation: fadeOut 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
