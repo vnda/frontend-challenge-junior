@@ -31,13 +31,12 @@ header {
   .icons img {
     width: 30px;
     padding: 0 5px;
+    transition: all 0.3s ease 0s;
   }
 
   // HOVER
   .icons img:hover {
-    height: 40px;
-    width: 40px;
-    transition: 0.5s;
+    transform: translateY(-7px);
   }
 
   li a:hover {

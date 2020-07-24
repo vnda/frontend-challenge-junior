@@ -33,7 +33,7 @@ main {
     flex-direction: column;
     text-align: center;
     h1 {
-        font-size: 40px;
+      font-size: 40px;
     }
   }
 
@@ -49,12 +49,18 @@ main {
     height: 30vh;
     flex: 1;
     width: 100%;
+
     .dot {
       height: 150px;
       width: 150px;
       border-radius: 50%;
       margin: 20px;
       display: inline-block;
+      transition: all 0.3s ease 0s;
+    }
+    .dot:hover {
+      transform: translateY(-30px);
+      cursor: pointer;
     }
     // Fazendo com que as dots dentro de circle ficam com imagens diferentes
     // Em cada classe eu mudei apenas 1px na url da foto

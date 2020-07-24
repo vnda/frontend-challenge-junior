@@ -1,3 +1,4 @@
+// variaveis
 let email = document.querySelector(".email");
 let text = document.querySelector(".email-text");
 let facebook = document.querySelector(".fb");
@@ -6,12 +7,13 @@ let iconeFb = document.querySelector(".fb img");
 let instagram = document.querySelector(".insta");
 let textInsta = document.querySelector(".insta p");
 let iconeInsta = document.querySelector(".insta img");
+
 // input email
 email.addEventListener("keyup", () => {
   text.innerHTML = "";
 });
 
-// facebook e instagram
+// animações facebook e instagram
 
 facebook.addEventListener("mouseover", (e) => {
   iconeFb.src = "../src/assets/facebook-hover.svg";

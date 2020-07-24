@@ -37,6 +37,10 @@ ul {
   margin: auto;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 :root {
   --swiper-theme-color: #fff !important;
 }
