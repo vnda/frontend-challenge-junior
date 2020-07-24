@@ -32,6 +32,20 @@ footer {
     }
   }
 
+  p,
+  a,
+  h1,
+  h2,
+  img {
+    cursor: pointer;
+  }
+  p:hover,
+  a:hover,
+  h1:hover,
+  h2:hover {
+    color: white;
+  }
+
   .container {
     margin-top: 30px;
     height: 180px;
@@ -41,7 +55,9 @@ footer {
     font-weight: normal;
     text-transform: uppercase;
   }
-  .menu-1,.menu-2,.menu-3{
+  .menu-1,
+  .menu-2,
+  .menu-3 {
     height: 100%;
   }
   .menu-1 {
@@ -63,14 +79,28 @@ footer {
   .menu-2 {
     margin-left: 50px;
     width: 50%;
+    position: relative;
+
+    .email {
+      width: 90%;
+      background-color: $primary-color;
+      border: none;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      outline: none;
+    }
     .line {
       display: flex;
       flex: 1;
       justify-content: space-between;
       margin-top: 35px;
       position: relative;
+      z-index: 2;
     }
-    .line:before {
+    .line:after {
       content: "";
       display: block;
       width: 100%;
@@ -102,7 +132,7 @@ footer {
       margin-top: 30px;
     }
 
-    .insta{
+    .insta {
       margin-top: 7px;
     }
 

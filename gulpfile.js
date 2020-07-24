@@ -5,6 +5,7 @@ var sass = require("gulp-sass");
 var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
 var concat = require("gulp-concat");
+const minify = require("gulp-babel-minify");
 
 sass.compiler = require("node-sass");
 
@@ -19,8 +20,14 @@ gulp.task("html", compilaHTML);
 function compilaJS() {
   return gulp
     .src("./src/js/*.js")
-    .pipe(uglify())
-    .pipe(concat("scripts.js"))
+    .pipe(concat('scripts.js'))
+    .pipe(
+      minify({
+        mangle: {
+          keepClassName: true,
+        },
+      })
+    )
     .pipe(gulp.dest("./dist/scripts"));
 }
 

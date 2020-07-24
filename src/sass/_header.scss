@@ -13,6 +13,7 @@ header {
   nav {
     flex: 1;
     text-align: center;
+    color: $eerie-black;
     ul li {
       display: inline;
       text-transform: uppercase;
@@ -21,8 +22,31 @@ header {
     }
   }
 
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .icons img {
     width: 30px;
     padding: 0 5px;
+  }
+
+  // HOVER
+  .icons img:hover {
+    height: 40px;
+    width: 40px;
+    transition: 0.5s;
+  }
+
+  li a:hover {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    color: $black;
+    transition: 0.3s;
+    font-size: 18px;
   }
 }
