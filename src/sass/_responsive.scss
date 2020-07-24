@@ -1,0 +1,266 @@
+@media (max-width: 1200px) {
+  // all
+  h1 {
+    font-size: 30px !important;
+  }
+  p {
+    font-size: 12px !important;
+  }
+  .container {
+    width: 100% !important;
+  }
+  // main
+  .circles {
+    grid-template-columns: 1fr 1fr 1fr !important;
+    align-items: center !important;
+    justify-items: center !important;
+    width: 100% !important;
+    height: 450px !important;
+  }
+  // section-2
+  .section-2 {
+    height: auto !important;
+  }
+  .section-2-text {
+    width: 100% !important;
+  }
+  .section-2-slider {
+    width: 60% !important;
+  }
+  .section-2 .container {
+    display: flex;
+    flex-direction: column;
+    height: 100% !important;
+  }
+  .background {
+    height: 100% !important;
+  }
+  .swiper-container {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  //   section instagram
+  section.instagram {
+    margin-top: 100px !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .section-cards {
+    flex-direction: column;
+
+    .card-2-3 {
+      width: 100% !important;
+      align-items: flex-end;
+    }
+    .card-1,
+    .card-2,
+    .card-3 {
+      width: 80% !important;
+      height: 300px !important;
+      margin-right: 0 !important;
+    }
+  }
+  .instagram div.content {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "b" "a" "c";
+    justify-content: center !important;
+    align-content: center !important;
+    justify-items: center !important;
+    align-items: center !important;
+
+    .item-1,
+    .item-2,
+    .item-3 {
+      width: 90%;
+    }
+    .item-1 {
+      grid-area: a;
+    }
+    .item-2 {
+      grid-area: b;
+    }
+    .item-3 {
+      grid-area: c;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 25px !important;
+  }
+
+  .circles {
+    grid-template-columns: 1fr 1fr !important;
+    width: 100% !important;
+    height: 70vh !important;
+  }
+
+  // Menu responsivo
+  header nav,
+  header .icons {
+    display: none;
+  }
+  header {
+    .container {
+      align-items: center !important;
+    }
+
+    .menu-toggle {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+
+    .one,
+    .two,
+    .three {
+      background-color: rgb(0, 0, 0);
+      height: 5px;
+      width: 100%;
+      margin: 6px auto;
+
+      transition-duration: 0.3s;
+    }
+
+    .container.on {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100vw;
+      height: 100vh;
+
+      background-color: $primary-color;
+
+      z-index: 10;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container.on nav {
+      display: block;
+    }
+
+    .container.on .menu-toggle {
+      position: absolute;
+      right: 0;
+      top: 5px;
+    }
+
+    .container.on .menu-toggle .one {
+      transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .container.on .menu-toggle .two {
+      opacity: 0;
+    }
+
+    .container.on .menu-toggle .three {
+      transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .container.on .logo {
+      display: none;
+    }
+    .container.on nav ul {
+      text-align: center;
+      display: block;
+    }
+
+    .container.on nav ul a {
+      transition-duration: 0.5s;
+      font-size: 3rem;
+      line-height: 4rem;
+      display: block;
+    }
+  }
+
+  //   Section-1
+  .section-1 {
+    margin-top: 15px;
+    .container {
+      display: flex;
+      flex-direction: column !important;
+      height: auto !important;
+      .arrow {
+        display: none;
+      }
+      .section-cards {
+        align-items: center;
+        justify-content: center;
+        .card-1,
+        .card-2,
+        .card-3 {
+          margin: 20px 0 0 0 !important;
+          width: 80% !important;
+          height: 300px !important;
+        }
+        .card-2-3 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  // Section-2
+  .section-2 {
+    margin-top: 100px !important;
+
+    .container,
+    .section-2-text,
+    .section-2-slider {
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+      text-align: center;
+      width: 90%;
+      height: auto !important;
+    }
+    .section-2-slider {
+      width: 300px !important;
+      height: 200px !important;
+      margin-top: 10px !important;
+    }
+    .section-2-text {
+      margin: 0 !important;
+    }
+  }
+
+  //   footer
+  footer {
+      height: auto !important;
+      .container {
+          display: flex;
+          flex-direction: column !important;
+          justify-content: center !important;
+          align-items: center !important;
+          height: auto !important;
+          text-align: center !important;
+          .menu-2 , .menu-3{
+              margin: 0 !important;
+          }
+          .menu-2 {
+              margin-top: 30px !important;
+              margin-bottom: 30px !important;
+          }
+          .social {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+      }
+  }
+}
+
+@media (max-width: 380px) {
+  .dot {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}

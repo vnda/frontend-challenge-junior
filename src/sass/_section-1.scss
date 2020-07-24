@@ -1,6 +1,6 @@
 section.section-1 {
   background-color: $primary-color;
-  height: 65vh;
+  height: 600px;
 
   .arrow {
     position: absolute;
@@ -11,7 +11,7 @@ section.section-1 {
   }
 
   .container {
-    height: 65vh;
+    height: 600px;
     position: relative;
   }
   .section-text {
@@ -57,7 +57,7 @@ section.section-1 {
       justify-content: center;
       flex-direction: column;
       margin-left: 15px;
-      height: 40vh;
+      height: 300px;
       margin-top: 30px;
     }
 

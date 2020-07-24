@@ -42,9 +42,9 @@ main {
   }
 
   .circles {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    justify-content: center;
     height: 30vh;
     flex: 1;
     width: 100%;
