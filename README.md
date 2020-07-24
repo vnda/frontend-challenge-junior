@@ -1,5 +1,6 @@
 # Frontend challenge júnior
-
+    <!-- npm install -->
+    <!-- npm start -->
 Teste para a vaga de front end júnior
 
 - Codificar layout seguindo o [wireframe](https://drive.google.com/file/d/10xpr_7qaEXNBT4v2dOKqanS4_tOcgEJs/view)
