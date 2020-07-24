@@ -1,0 +1,35 @@
+.fadeInUp-1 {
+  animation: fadeIn 0.5s;
+}
+
+.fadeInUp-2 {
+  animation: fadeIn 1s;
+}
+
+.fadeInUp-3 {
+  animation: fadeIn 1.5s;
+}
+
+.fadeInUp-4 {
+  animation: fadeIn 2.0s;
+}
+
+.fadeInUp-5 {
+  animation: fadeIn 2.5s;
+}
+
+.fadeInUp-6 {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(500px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
