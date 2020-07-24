@@ -37,6 +37,23 @@ main {
     }
   }
 
+  .typewriter:after {
+    content: "|";
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .5s infinite;
+  }
+
+  @keyframes pisca {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
   img {
     width: 100%;
     height: 100%;
