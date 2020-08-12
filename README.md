@@ -1,10 +1,25 @@
 # Frontend challenge júnior
-### Para visualizar a aplicação, baixe ela e depois execute os comandos abaixo:
+
+## ℹ Sobre o Projeto
+É um teste técnico que fiz em um processo seletivo para a vaga de front-end júnior na Vnda-Ecommerce. <br>
+Passei no teste com uma **nota de 9.5**.
+
+## :eyes: Ver o resultado
+
+### Ver deploy
+Você pode ver o resultado através deste <a href="https://marcusgoncalvess.github.io/frontend-challenge-junior/dist/">link do github pages</a>
+
+### Ver rodando na sua máquina
   ```js
+// Para clonar o projeto
+git clone https://github.com/marcusGoncalvess/frontend-challenge-junior.git
+// Entre na pasta do projeto e rode os comandos
 npm install
-npm start
+npm run start
 ```
-### o comando "npm start" criará um servidor na porta :8080 para poder visualizar a aplicação.
+O comando "npm run start" criará um servidor na porta :8080 para poder visualizar a aplicação.
+
+
 ## Requisitos do desafio
 Teste para a vaga de front end júnior
 
@@ -22,7 +37,3 @@ Teste para a vaga de front end júnior
 -- Na pasta **src** ficam os arquivos de desenvolvimento.
 -- Na pasta **dist** ficam os arquivos finais (comprimidos e minificados).
 - Não deve ser usado nenhum framework de css (como bootstrap), para que possamos avaliar melhor a sua qualidade técnica;
-
-**Obs 1: Caso tenha dificuldade para compilar o sass e gulp, codifique o teste como preferir, o importante é o teste ser feito**
-
-**Obs 2: Caso não consiga terminar todo o layout no prazo, mande o que conseguiu fazer, o importante é entregar algo para ser avaliado**
