@@ -6,9 +6,9 @@ Passei no teste com uma **nota de 9.5**.
 
 ## :eyes: Ver o resultado
 
-### Ver deploy
-Você pode ver o resultado através deste <a href="https://marcusgoncalvess.github.io/frontend-challenge-junior/dist/">link do github pages</a>
-
+### Ver deploy no GitHub Pages
+Você pode ver o resultado através deste <a href="https://marcusgoncalvess.github.io/frontend-challenge-junior/dist/">link</a><br>
+### Ou <br>
 ### Ver rodando na sua máquina
 ```bash
 # Para clonar o projeto
