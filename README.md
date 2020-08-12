@@ -10,10 +10,10 @@ Passei no teste com uma **nota de 9.5**.
 Você pode ver o resultado através deste <a href="https://marcusgoncalvess.github.io/frontend-challenge-junior/dist/">link do github pages</a>
 
 ### Ver rodando na sua máquina
-  ```js
-// Para clonar o projeto
+```bash
+# Para clonar o projeto
 git clone https://github.com/marcusGoncalvess/frontend-challenge-junior.git
-// Entre na pasta do projeto e rode os comandos
+# Entre na pasta do projeto e rode os comandos
 npm install
 npm run start
 ```
