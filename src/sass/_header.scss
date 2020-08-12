@@ -1,0 +1,51 @@
+header {
+  background-color: $cultured;
+  height: 6vh;
+
+  h1 {
+    font-size: 2.4em;
+  }
+
+  .container {
+    height: 6vh;
+  }
+
+  nav {
+    flex: 1;
+    text-align: center;
+    color: $eerie-black;
+    ul li {
+      display: inline;
+      text-transform: uppercase;
+      padding: 0 10px;
+      font-size: 15px;
+    }
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons img {
+    width: 30px;
+    padding: 0 5px;
+    transition: all 0.3s ease 0s;
+  }
+
+  // HOVER
+  .icons img:hover {
+    transform: translateY(-7px);
+  }
+
+  li a:hover {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    color: $black;
+    transition: 0.3s;
+    font-size: 18px;
+  }
+}

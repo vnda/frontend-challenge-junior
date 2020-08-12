@@ -1,0 +1,144 @@
+footer {
+  background-color: $primary-color;
+  .logo {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    h1 {
+      font-size: 2em;
+      position: relative;
+      width: 100%;
+      span {
+        background-color: $primary-color;
+        display: inline-block;
+        width: 100px;
+        position: relative;
+        z-index: 1;
+      }
+    }
+    // Linha da logo do footer
+    h1:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $black;
+      position: absolute;
+      left: 0%;
+      top: 50%;
+    }
+  }
+
+  p,
+  a,
+  h1,
+  h2,
+  img {
+    cursor: pointer;
+  }
+  p:hover,
+  a:hover,
+  h1:hover,
+  h2:hover {
+    color: rgba(0, 0, 0, 0.452);
+  }
+
+  .container {
+    margin-top: 30px;
+    height: 180px;
+  }
+
+  h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .menu-1,
+  .menu-2,
+  .menu-3 {
+    height: 100%;
+  }
+  .menu-1 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+    .grid-menu {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    p {
+      margin-top: 5px;
+    }
+  }
+
+  .menu-2 {
+    margin-left: 50px;
+    width: 50%;
+    position: relative;
+
+    .email {
+      width: 90%;
+      background-color: $primary-color;
+      border: none;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      outline: none;
+    }
+    .line {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      margin-top: 35px;
+      position: relative;
+      z-index: 2;
+    }
+    .line:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $black;
+      position: absolute;
+      left: 0%;
+      top: 150%;
+      z-index: 1;
+    }
+
+    .copy {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  }
+
+  .menu-3 {
+    width: 25%;
+    margin-left: 50px;
+    .social {
+      display: flex;
+    }
+    .fb {
+      margin-top: 30px;
+    }
+
+    .insta {
+      margin-top: 7px;
+    }
+
+    .icon {
+      width: 18px;
+      margin-right: 5px;
+    }
+  }
+}
