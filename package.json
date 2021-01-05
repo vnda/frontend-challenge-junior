@@ -1,0 +1,15 @@
+{
+  "name": "frontend-challenge-junior",
+  "version": "1.0.0",
+  "description": "Teste para a vaga de front end júnior",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme Sá",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}

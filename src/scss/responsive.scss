@@ -1,0 +1,97 @@
+@media only screen and (max-width: 787px){
+    #header{
+        position: inherit;
+    }
+    .menu {
+        padding: 0;
+        height: auto;
+        min-height: 160px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .banner {
+        padding-top: 0;
+        height: auto;
+    }
+    .circulos {
+        height: auto;
+    }
+    .circulo img{
+        width: 100px;
+    }
+    .section2{
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10%;
+    }
+    .section2 > div {
+        padding-top: 20px;
+    }
+    .textoSection2, .leftBannerSection2{
+        width: auto;
+        justify-content: center;
+    }
+    .textoSection2 .seta{
+        top: 5px;
+        font-size: 80px;
+    }
+    .leftBannerSection2 {
+        flex-direction: column;
+    }
+    .rightBannersSection2{
+        margin-top: 0;
+    }
+    .section3 {
+        height: auto;
+        margin-top: 0;
+        background: #f6f6f6;
+        padding: 10%;
+    }
+    .textoSection3 {
+        width: auto;
+        padding: 0;
+    }
+    .bannerSection3 img {
+        width: 340px;
+    }
+    .section3 .bannerCarrossel {
+        width: 115%;
+    }
+    .section4 {
+        height: auto;
+        padding: 10% 5%;
+        background: #f5e5d9;
+    }
+    .instagramMarca {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .instagramMarca img {
+        width: 350px;
+    }    
+    .fotoInsta{
+        margin-top: 15px;
+        height: 350px;
+    }
+    #fotoInsta2{
+        top: 0;
+    }
+    .secaoFooter {
+        width: 300px;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+    .submenus{
+        padding-left: 0;
+    }
+    #footer h2{
+        margin: 10px 0;
+    }
+    .emailFooter h2{
+        text-align: center;
+    }
+    .emailFooter .email{
+        margin-top: 0;
+    }
+}
