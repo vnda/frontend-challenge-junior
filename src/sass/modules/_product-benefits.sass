@@ -1,0 +1,171 @@
+.product-benefits
+    padding: 7rem 0 0
+    background-color: $lightGray
+    color: $gray
+
+    @media screen and (max-width: $lg)
+        padding-top: 5rem
+
+
+    &::after
+        content: ""
+        background-color: $white
+        display: block
+        height: 26rem
+        margin-top: -23rem
+
+        @media screen and (max-width: $lg)
+            height: 35rem
+            margin-top: -37rem
+
+        @media screen and (max-width: $md)
+            height: 90rem
+            margin-top: -85rem
+            
+
+        @media screen and (max-width: $sm)
+            height: 100rem
+            margin-top: -95rem
+    
+    .container
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        padding: 0 5rem
+        max-width: $xl
+        position: relative
+
+        @media screen and (max-width: $lg)
+            padding: 0 4rem
+
+        @media screen and (max-width: $sm)
+            padding: 0 2rem
+    
+    i.fas
+        position: absolute
+        top: 28rem
+        left: 15%
+
+        font-size: 6.5rem
+        opacity: 0.9
+        color: $almond
+        text-shadow: 2px 2px 0 rgba(0,0,0,1)
+
+        @media screen and (max-width: $lg)
+            left: 68%
+            top: 73%
+            font-size: 9rem
+        
+        @media screen and (max-width: $md)
+            display: none
+        
+    
+    @keyframes bounce
+        0%, 20%, 50%, 80%, 100%
+            transform: translateY(0)
+        
+        40%
+            transform: translateY(-30px)
+        
+        60%
+            transform: translateY(-15px)
+
+    .bounce
+        animation: bounce 2s infinite
+        
+    header
+        width: 30%
+        display: flex
+        flex-direction: column
+
+        span.description
+            font-style: italic
+
+        .headline
+            font-size: 2.5rem
+        
+        p
+            font-size: 1.3rem
+            max-width: 560px
+
+        @media screen and (max-width: $lg)
+            width: 100%
+            
+
+    &__features
+        width: 60%
+        display: flex
+        flex-flow: row wrap        
+        padding-left: 10%
+
+        @media screen and (max-width: $lg)
+            width: 100%
+            padding-left: 0
+            margin-top: 2rem
+
+
+        .col
+            width: 50%
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            @media screen and (max-width: $md)
+                width: 100%
+
+        .banner
+            display: flex
+            justify-content: flex-start
+            overflow: hidden
+    
+            flex-direction: column
+            padding: 0 0.5rem
+            margin-bottom: 2rem
+
+            @media screen and (max-width: $md)
+                width: 80%
+
+            img
+                border-top-left-radius: 1rem
+                border-top-right-radius: 1rem
+                object-fit: cover
+                max-height: 22rem
+
+            &__title
+                color: $gray
+                font-size: 1.4rem
+                font-weight: bold
+                font-style: italic
+            
+            &__content
+                background-color: #e0e0e0
+                color: #444
+                text-align: center
+                padding: 1.5rem
+
+                p
+                    font-size: 1.1rem
+                    padding: 0 0.5rem
+
+            
+    .col:nth-child(2)
+        img
+            @media screen and (min-width: $lg)
+                max-height: 240px
+
+        .banner
+            &:nth-child(1)
+                @media screen and (min-width: $lg)
+                    margin-top: -3rem
+
+                @media screen and (min-width: $md) and (max-width: $lg)
+                    margin-top: 7rem
+
+                
+            
+            &:nth-child(2)
+                @media screen and (min-width: $md) and (max-width: $lg)
+                    transform: translateX(-100%) translateY(-7rem)
+
+                
+

@@ -1,0 +1,120 @@
+$navBreakpoint: $lg
+    
+.site-header
+    color: #666
+
+    @media screen and (max-width: $navBreakpoint)
+        padding: 1.2rem 0
+
+    &__logo
+
+        img
+            height: 2rem
+            width: auto
+
+    .container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        max-width: $xl
+
+        padding: 0 1.5rem
+
+    ul
+        list-style: none
+        display: flex
+    
+    &__navigation
+        display: none
+        width: 100%
+        height: 100%
+
+        @media screen and (min-width: $navBreakpoint)
+            display: flex
+            order: 2
+            width: auto
+
+        &.expanded
+            display: flex
+            order: 3
+
+        ul
+            flex-direction: column
+            text-align: center
+            width: 100%
+            margin: 0
+            height: 100%
+
+            @media screen and (min-width: $navBreakpoint)
+                flex-direction: row
+        
+        li
+            height: 100%
+            padding: 1.3rem 0
+            
+            @media screen and (max-width: $navBreakpoint)
+                padding: 1.5rem
+
+        a
+            text-decoration: none
+            color: #666
+            padding: 1.2rem
+            position: relative
+
+            &::before, &::after
+                content: ''
+                display: block
+                height: 5px
+                width: 100%
+                background-color: $almond
+                position: absolute
+                left: 0
+                transform: scaleX(0)
+                z-index: -1
+            &::before
+                top: 0
+
+            &::after
+                bottom: 0
+
+            &:hover::before, &:focus::before, &:hover::after, &:focus::after
+                animation: .3s forwards slideIn ease-out
+
+            @keyframes slideIn
+                0%
+                    transform: scaleX(0)
+
+                100%
+                    transform: scaleX(1)
+
+    ul.quick-links
+        order: 4
+        flex-direction: row
+        display: none
+
+        @media screen and (min-width: $navBreakpoint)
+            display: flex
+
+        &.expanded
+            width: 100%
+            display: flex
+            justify-content: center
+
+            li
+                padding: 1rem
+                font-size: 1.5rem        
+
+        li
+            padding: 0.25rem
+
+            i
+                cursor: pointer
+
+    .navbar-toggler
+        display: none
+        order: 2
+
+        @media screen and (max-width: $navBreakpoint)
+            display: block
+        
