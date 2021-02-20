@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+i,
+button,
+[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+P {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding: 0;
+  margin: 0;
+}
