@@ -20,3 +20,14 @@ Teste para a vaga de front end júnior
 **Obs 1: Caso tenha dificuldade para compilar o sass e gulp, codifique o teste como preferir, o importante é o teste ser feito**
 
 **Obs 2: Caso não consiga terminar todo o layout no prazo, mande o que conseguiu fazer, o importante é entregar algo para ser avaliado**
+
+# Franco Frassanito Wolff
+
+Plugins necessários para utilizar o gulp:
+- gulp-imagemin
+- gulp-concat
+- gulp-terser
+- gulp-sourcemaps
+- gulp-postcss
+- cssnano
+- autoprefixer
