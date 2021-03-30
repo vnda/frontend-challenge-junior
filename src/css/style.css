@@ -131,6 +131,8 @@
   background-color: #272727;
   text-align: center;
   font-family: 'PT Sans', sans-serif;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .icon-bar .icon-img {
@@ -142,8 +144,6 @@
   border-radius: 50%;
   max-width: 150px;
   height: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
@@ -170,11 +170,23 @@
 
 .row .page-article {
   max-width: 40%;
+  min-width: 400px;
   padding: 10px;
   margin: 10px;
 }
 
 .banner-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.banner-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,6 +217,28 @@
 
 .banner .banner-text h2 {
   font-family: 'PT Sans', sans-serif;
+}
+
+@media screen and (max-width: 1275px) {
+  .row {
+    display: inline-block;
+  }
+  .row .page-article {
+    max-width: 80%;
+  }
+  .banner-row {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .banner {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .banner img {
+    width: 100%;
+  }
 }
 
 .post-row {
@@ -300,6 +334,21 @@
   opacity: .5;
 }
 
+@media screen and (max-width: 1275px) {
+  .post-row {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .post-card {
+    max-width: 80%;
+  }
+}
+
 .insta-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,7 +376,7 @@
 
 .insta-gallery {
   width: 100%;
-  height: 500px;
+  min-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,7 +385,8 @@
 }
 
 .insta-img img {
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .insta-txt {
@@ -353,8 +403,9 @@
           align-items: center;
   text-align: justify;
   font-size: 11pt;
-  width: 400px;
-  height: 400px;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
   background-color: #272727;
 }
 
@@ -559,6 +610,9 @@
   }
   .row {
     max-height: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -571,10 +625,24 @@
             align-items: center;
   }
   .row .page-article {
+    padding: 20px;
     max-width: 100%;
+    min-width: 0px;
+    height: auto;
+    max-height: none;
   }
   .banner-row {
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .banner {
     width: 100%;
@@ -587,6 +655,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 10px;
     background: white;
     padding: 0px;
@@ -603,15 +674,19 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 10px;
-    width: 100%;
+    max-width: 100%;
   }
   .post-card img {
     margin: 10px;
   }
   .post-card .post-text {
-    margin: 10px;
-    padding: 0px;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .mini-swiper {
     width: 100%;
@@ -635,6 +710,7 @@
   }
   .insta-row .insta-img {
     width: 100%;
+    max-width: 100%;
   }
   .insta-row .insta-img img {
     width: 100%;
@@ -642,6 +718,7 @@
   .insta-row .insta-txt {
     margin-bottom: 5px;
     width: 100%;
+    max-width: 100%;
   }
   .footer-content {
     width: 100%;
@@ -709,5 +786,6 @@ body {
   font-family: 'Playfair Display', serif;
   margin: 0px;
   color: #272727;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

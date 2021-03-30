@@ -3,19 +3,24 @@
     color: $eerie;
     padding: 25px;
     display: flex; 
-    justify-content: space-around;
+    justify-content: space-around;    
     max-height: 600px;
     h1 {
       font-family: 'PT Sans', sans-serif;
     }
     .page-article {
       max-width: 40%;
+      min-width: 400px;
       padding: 10px;
       margin: 10px;
     }
   } 
-  
   .banner-row{
+    display: flex;    
+    justify-content: space-around; 
+    align-items: flex-start;
+  }
+  .banner-column{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -36,3 +41,22 @@
       }
     }
   }
+
+  @media screen and (max-width: 1275px) {
+    .row {      
+      display: inline-block;
+      .page-article {
+        max-width: 80%;
+      }  
+    }      
+    .banner-row{
+      width: fit-content;
+    }
+    .banner {      
+      width:fit-content;    
+      img{
+        width: 100%;
+      }  
+    }
+  }
+  

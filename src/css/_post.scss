@@ -62,3 +62,13 @@
   .mini-swiper .swiper-img:hover {
     opacity: .5;
   }
+
+  @media screen and (max-width: 1275px) {
+    .post-row {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .post-card {
+      max-width: 80%;
+    }
+  }

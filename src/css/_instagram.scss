@@ -15,14 +15,15 @@
   
   .insta-gallery {
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     display: flex;
     justify-content: space-around;
     
   }
   .insta-img {
     img {
-      width: 400px;
+      max-width: 400px;
+      width: 100%;
     }
   }
   .insta-txt {
@@ -32,8 +33,9 @@
     align-items: center;
     text-align: justify;
     font-size: 11pt;
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
     background-color: $eerie;
     p {
       padding: 20px;
