@@ -1,0 +1,72 @@
+.header {
+    overflow: hidden;
+    background-color: $eerie;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    a {
+      display: inline-block;
+      color: $cultured;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: .3s ease-in-out;
+    } 
+    a:hover{
+      color: $almond;
+      filter: blur(0.5px);
+    }
+    .logo img {
+      width: auto;
+      height: auto;
+      max-width: 200px;
+    }
+    .header-menu-item{
+      display: inline-block;
+      overflow: hidden;
+      transition: .3s ease-in-out;
+      .dropbtn {
+        font-size: 20px;
+        border: none;
+        outline: none;
+        color: $cultured;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; 
+        margin: 0;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $cultured;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px $eerie;
+        z-index: 1000;
+        transition: .3s ease-in-out;
+        a {
+          overflow: hidden;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        a:hover {
+          background-color: $eerie;
+          color: $cultured;
+        }
+      }
+    }
+    
+    .header-menu-item:hover .dropbtn {
+      color: $almond;
+      filter: blur(0.5px);
+    }
+    .header-menu-item:hover .dropdown-content {
+      display: block;
+    }
+  }

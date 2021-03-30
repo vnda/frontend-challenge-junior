@@ -1,0 +1,105 @@
+.footer-row {
+    margin-top: 300px;
+  }
+  .footer-head{
+    background-color: $eerie;
+    height: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 100px;
+    img {
+      width: 200px;
+    }
+  }
+  .footer-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0px;
+  }
+  .side-menu{
+    h1{
+      font-family: 'PT Sans', sans-serif;
+      color: $eerie;
+      padding: 14px 16px;
+    }
+  }
+  .menu-content{
+    width: 100%;
+    display: block;
+    a{
+      display: inline-block;
+      color: $eerie;
+      border: 2px solid white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: .3s ease-in-out;
+    }
+    a:hover{
+      background-color: $cultured;
+      border-radius: 0%;
+      border-color: $eerie;
+    }
+  }
+  .column-menu a{
+    display: inline-block;
+    width: 100%;
+      color: $eerie;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 18px;
+  }
+  .column-menu a:hover{
+    text-decoration: underline;
+  }
+  .center-menu{
+    display: block;
+    width: 500px;  
+    padding: 14px 16px;
+    color: $eerie;
+    h1 {
+      font-family: 'PT Sans', sans-serif;  
+    }
+  }
+  .center-content {
+    width: 100%;
+    border-bottom: 2px solid $eerie;
+    padding: 7px;
+    input {
+      width: 80%;
+      font-family: 'PT Sans', sans-serif;
+      border: none;
+      font-size: 16px;  
+      outline: none;
+    }
+    button {
+      border: none;
+      color: $eerie;
+      background-color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 7px;
+    }
+    button:after {
+      border: none;
+    }
+  }
+  .footer-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $eerie;
+    margin-bottom: 50px;
+    p{
+      font-size: 18dp;
+    }
+    a{
+      text-decoration: none;
+      color: $eerie;
+    }
+  }

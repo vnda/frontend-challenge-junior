@@ -1,0 +1,2 @@
+var swiper=new Swiper(".swiper-banner",{cssMode:!0,spaceBetween:30,centeredSlides:!0,autoplay:{delay:5e3,disableOnInteraction:!1},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",clickable:!0}}),swipermini=new Swiper(".mini-swiper",{cssMode:!0,spaceBetween:30,centeredSlides:!0,autoplay:{delay:5e3,disableOnInteraction:!1},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",clickable:!0}});
+//# sourceMappingURL=script.js.map
