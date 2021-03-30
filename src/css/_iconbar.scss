@@ -1,0 +1,21 @@
+.icon-bar {
+    overflow: hidden;
+    background-color: $eerie;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    .icon-img {
+      display: inline-block;      
+      padding: 25px;
+      img{
+        border-radius: 50%;
+        max-width: 150px;
+        height: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        transition: .3s ease-in-out;
+      }
+      img:hover{
+        opacity: .5;
+      }
+    }
+  }

@@ -1,0 +1,38 @@
+.row {
+    background-color: $almond;
+    color: $eerie;
+    padding: 25px;
+    display: flex; 
+    justify-content: space-around;
+    max-height: 600px;
+    h1 {
+      font-family: 'PT Sans', sans-serif;
+    }
+    .page-article {
+      max-width: 40%;
+      padding: 10px;
+      margin: 10px;
+    }
+  } 
+  
+  .banner-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .banner{
+    background-color: $eerie;
+    text-align: center;
+    margin: 0 10px 10px 0;
+    img {
+      width: 400px;
+      height: auto;
+    }
+    .banner-text {
+      padding: 20px;
+      color: $almond;
+      h2{
+        font-family: 'PT Sans', sans-serif;
+      }
+    }
+  }

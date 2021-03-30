@@ -1,0 +1,22 @@
+.swiper-banner {    
+    width: 100%;;
+    height: 650px;
+    background-color: $eerie; 
+    .swiper-slide {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a{
+        width: 100%;
+      }
+      .swiper-img {
+        width: 100%;
+        transition: .3s ease-in-out;
+      }
+      .swiper-img:hover {
+        opacity: .5;
+      }
+    }
+  }

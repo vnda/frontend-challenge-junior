@@ -1,0 +1,64 @@
+.post-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 750px;
+    background: linear-gradient(90deg, $almond 85%, white 15%);
+    color: $eerie;
+    overflow: visible;
+    padding: 20px;
+  }
+  .post-card{
+    display: flex;
+    align-items: flex-start; 
+    text-align: justify;
+    width: 90%;
+    img {
+      margin: 20px;
+    }
+    .post-text {
+      margin: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      h2{
+        font-family: 'PT Sans', sans-serif;
+      }
+      button{
+        border: none;
+        color: $cultured;
+        background-color: $eerie;
+        border: 2px solid $eerie;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+      }
+      button:hover{
+        background-color: $cultured;
+        color: $eerie;
+        border-radius: 0%;
+      }
+    }
+  }
+  
+  .mini-swiper {    
+    width: 600px;
+    height: 300px;
+    background-color: $cultured;   
+  }
+  .mini-swiper .swiper-slide {  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .mini-swiper .swiper-img {
+    width: 100%;
+    height: 300px;
+    height: 300px;;
+  transition: .3s ease-in-out;
+  }
+  .mini-swiper .swiper-img:hover {
+    opacity: .5;
+  }
