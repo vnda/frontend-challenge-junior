@@ -717,7 +717,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 775px) {
   header {
     -webkit-box-align: start;
         -ms-flex-align: start;
