@@ -344,7 +344,7 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 90px 0;
+  padding: 50px 0;
 }
 
 .products__instagram__left {
@@ -566,12 +566,10 @@ button:hover {
 
 .footer__container__middle__down__email__input button {
   width: 200px;
-  color: #000000;
 }
 
 .footer__container__middle__down__email__input label {
-  padding: 9px 0;
-  padding-left: 5px;
+  padding: 9px 25px;
 }
 
 .footer__container__right {
@@ -641,30 +639,35 @@ button:hover {
   padding-top: 8px;
 }
 
-.separator {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+.separator hr {
+  background: url(../img/logo.png) no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 25px;
+  border: 0;
+  position: relative;
 }
 
-.separator::before, .separator::after {
+.separator hr:before,
+.separator hr:after {
   content: '';
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  border-bottom: 1px solid #000;
+  display: block;
+  position: absolute;
+  background: #d7d7d7;
+  height: 2px;
+  top: 8px;
 }
 
-.separator::before {
-  margin-right: .25em;
+.separator hr:before {
+  left: 0;
+  right: 50%;
+  margin-right: 10px;
 }
 
-.separator::after {
-  margin-left: .25em;
+.separator hr:after {
+  right: 0;
+  left: 50%;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 1078px) {

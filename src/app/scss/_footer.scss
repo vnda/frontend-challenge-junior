@@ -77,11 +77,9 @@
                     }
                     & button {
                         width: 200px;
-                        color: $primaryColor;
                     }
                     & label {
-                        padding: 9px 0;
-                        padding-left: 5px;
+                        padding: 9px 25px;
                     }
                 }
 
@@ -133,18 +131,33 @@
 }
 //line 
 .separator {
-    display: flex;
-    align-items: center;
-    text-align: center;
+    & hr { 
+        background: url(../../img/logo.png) no-repeat top center;
+        background-size: 300px 100px;
+        background-size: contain;
+        display: block;
+        height: 25px;
+        border: 0;
+        position: relative;
+    }
+    & hr:before,
+    & hr:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: #d7d7d7;
+        height: 2px;
+        top: 8px;
+    }
+    & hr:before {
+        left: 0;
+        right: 50%;
+        margin-right: 10px;
+    }
+    & hr:after {
+        right: 0;
+        left: 50%;
+        margin-left: 10px;
+    }
 }
-.separator::before, .separator::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #000;
-}
-.separator::before {
-    margin-right: .25em;
-}
-.separator::after {
-    margin-left: .25em;
-}
+
