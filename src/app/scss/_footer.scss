@@ -1,0 +1,148 @@
+.footer_section{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer__container{
+    height: 300px;
+    width: 100%;
+    background-color: $quaternaryColor;
+    display: flex;
+
+    &__menu{
+        height: 100%;
+        width: 33.3%;
+        background-color: $quaternaryColor;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $quaternaryColor;
+        justify-content: center;
+
+
+        &__block{
+            background-color: $quaternaryColor;
+            width: 100%;
+            height: 120px;
+            display: flex;
+            width: 33.3%;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $quaternaryColor;
+            &__submenu p{
+                padding-top: 8px;
+
+            }
+            &__menu{
+                background-color:$quaternaryColor;
+                height: 80px;
+                width: 80px;
+                &__submenu{
+                    background-color: $quaternaryColor;
+                    width: 90px;
+                    height: 70px;
+                }
+
+            }
+        }
+
+    }
+    &__middle{
+        height: 100%;
+        width: 33.3%;
+        background-color: $quaternaryColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        &__down{
+            background-color: $quaternaryColor;
+            height: 258px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            &__email{
+                
+                &__input{
+                    display: inline-flex;
+                    flex-direction: row;
+                    background-color: $quaternaryColor;
+                    width: 100%;
+                    & input {
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        box-sizing:border-box
+                    }
+                    & button {
+                        width: 200px;
+                    }
+                    & label {
+                        padding: 9px 25px;
+                    }
+                }
+
+            }
+
+        }
+    }
+    &__right{
+        height: 100%;
+        width: 33.3%;
+        background-color: $quaternaryColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__block{
+            background-color: $quaternaryColor;
+            width: 100%;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            &__menu{
+                background-color: $quaternaryColor;
+                height: 80px;
+                width: 80px;
+            }
+            &__submenu{
+                background-color: $quaternaryColor;
+                width: 90px;
+                height: 70px;
+            }
+
+        }
+        &__icon{
+            display: flex;
+            border-radius: 50%;
+        }
+        &__icon img{
+            height: 19px;
+            width: 195px;
+            margin-top: 8px;
+        }
+        &__icon p{
+            padding-top: 8px;
+        }
+    }
+}
+//line 
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+.separator::before {
+    margin-right: .25em;
+}
+.separator::after {
+    margin-left: .25em;
+}

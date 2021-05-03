@@ -1,0 +1,62 @@
+li, a, button {
+    color: $quaternaryColor;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif ;
+    font-size: 16px;
+}
+
+button{
+    color: $primaryColor ;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 5%;
+    background-color: $secondaryColor;
+
+}
+
+
+.logo{
+    cursor: pointer;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav__links li a{
+    transition: all .3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: $tertiaryColor;
+}
+.cta{
+    display: flex;
+    align-self: center;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: $quaternaryColor;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+}
+
+button:hover {
+    background-color: $tertiaryColor;
+
+}
+
+

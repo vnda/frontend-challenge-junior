@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Junior challenge</title>
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@600&display=swap" rel="stylesheet"> 
+  <!--CSS-->
+  <link rel="stylesheet" href="dist/style.css">
+  <!--Jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!--NAVBAR-->
+  <header>
+    <img class="logo" src="img/logo.png" alt="logo" style="width: 50px;">
+    <nav>
+      <ul class="nav__links">
+        <li class="toggle"><span class="bars"></a></li>
+        <li class="item"><a href="#hero">Menu</a></li>
+        <li class="item"><a href="#services">Serviços</a></li>
+        <li class="item"><a href="#products">Produtos</a></li>
+        <li class="item"><a href="#instagram">Redes Sociais</a></li>
+        <li class="item"><a href="#footer">Contato</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="#"><button>Botões</button></a>
+  </header>
+
+    <section class="hero" id="hero">
+      <div class="hero__img">
+        <img src="img/hero_banner.jpg" alt="Banner">
+      </div>
+      <!--CIRCLES-->
+      <div class="hero__circles-container">
+        <div class="hero__circles-container__circle"></div>
+        <div class="hero__circles-container__circle"></div>
+        <div class="hero__circles-container__circle"></div>
+        <div class="hero__circles-container__circle"></div>
+        <div class="hero__circles-container__circle"></div>
+        <div class="hero__circles-container__circle"></div>
+        
+      </div>
+    </section>
+
+  <!--Section services-->
+  <section class="services" id="services">
+    <div class="services__container">
+      <div class="services__container__left">
+        <div class="services__container__text">
+          <p>Lorem ipsum lorem dolor
+          </p>
+          <h1>Lorem ipsum
+            dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Metus vulputate eu scelerisque
+            felis imperdiet proin fermentum. Praesent
+            semper feugiat nibh sed pulvinar proin
+            gravida.</p>
+        </div>
+        <div class="services__container__arrow">
+          <img src="img/down-arrow.svg" alt="Vetor apontado para baixo" style="height: 300px;">
+        </div>
+      </div>
+
+      <div class="services__container__cards">
+        <div class="services__container__cards__left">
+          <img src="img/products.jpg" alt="Vetor apontado para baixo">          
+          <h1>Título do banner
+          </h1>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempo.
+          </p>
+        </div>
+        <div class="services__container__cards__right">
+          <div class="services_container__cards__right__top">
+            <img src="img/products290.jpg" alt="Vetor apontado para baixo">
+            <h1>Título do banner
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempo.
+            </p>
+          </div>
+          <div class="services_container__cards__right__down">
+            <img src="img/products.jpg" alt="Vetor apontado para baixo">
+            <h1>Título do banner
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services__container__2"></div>
+  </section>
+
+<!--Section products-->
+  <section class="products" id="products">
+    <div class="products__container">
+      <div class="products__container__specifications">
+        <div class="products__container__specifications__left">
+          <img src="img/products290.jpg" alt="">
+        </div>
+        <div class="products__container__specifications__right">
+          <p>Lorem ipsum lorem dolor
+          </p>
+          <h1>Lorem ipsum
+            dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna
+              aliqua. Metus vulputate eu scelerisque
+              felis imperdiet proin fermentum. Praesent
+              semper feugiat nibh sed pulvinar proin
+              gravida.</p>
+              <a href=""><button>Call-to-action &rsaquo;</button></a>
+        </div>
+      </div>
+
+    <div class="products__container__swiper">
+      <!--SWIPER-->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide" style="background-image: url(img/slide_1.jpg);"></div>
+          <div class="swiper-slide" style="background-image: url(img/slide_2.jpg);"></div>
+          <div class="swiper-slide" style="background-image: url(img/slide_3.jpg);"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swiper-button-black"></div>
+        <div class="swiper-button-next swiper-button-black"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+<!--Section products instagram-->
+  <section class="products__instagram" id="instagram">
+      <div class="products__instagram__left"><img src="img/instagram.jpg" alt=""></div>
+      <div class="products__instagram__middle">
+        <div class="products__instagram__middle__top">
+          <h3>@instadamarca</h3>
+        </div>
+        <div class="products__instagram__middle__down">
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Metus vulputate eu scelerisque
+            felis imperdiet proin fermentum.
+            Praesent semper feugiat nibh sed
+            pulvinar proin gravida.</p>
+        </div>
+      </div>
+      <div class="products__instagram__right"><img src="img/instagram.jpg" alt=""></div>
+    </section>
+
+<!--Footer-->
+  <footer class="footer__section" id="footer">
+    <div class="separator">LOGO</div>
+    <div class="footer__container">
+ 
+<!--left-->
+      <div class="footer__container__menu">
+ 
+<!--copy of the right side-->
+        <div class="footer__container__menu">
+          <div class="footer__container__menu__block">
+            <div class="footer__container__menu__block__menu">
+              <h2>MENU</h2>
+            </div>
+              <div class="footer__container__menu__block__submenu">
+                <div class="footer__container__menu__icon"><p>Submenu</p></div>
+                <div class="footer__container__menu__icon"><p>Submenu</p></div>
+              </div>
+          </div>
+        </div>
+<!--right-->
+    <div class="footer__container__menu">
+      <div class="footer__container__menu__block">
+        <div class="footer__container__menu__block__menu">
+          <!--empty-->
+        </div>
+          <div class="footer__container__menu__block__submenu">
+            <div class="footer__container__menu__icon"><p>Submenu</p></div>
+            <div class="footer__container__menu__icon"><p>Submenu</p></div>
+          </div>
+      </div>
+    </div>
+
+      </div>
+<!--middle-->
+      <div class="footer__container__middle">
+        <div class="footer__container__middle__down">
+          <h2>MENU</h2>
+            <div class="footer__container__middle__down__email">
+              <div class="footer__container__middle__down__email__input">
+                <label>Email</label><input type="email" id=""><button>Enviar &rsaquo;</button>   
+              </div>
+              <hr style="  width: 90%;
+              margin: auto; opacity: 0.8;">       
+            </div>
+              <p>@Vnda - Tecnologia para ecommerce - CNPJ 00.0000.000/0001-00</p>
+        </div>
+      </div>
+<!--right-->
+    <div class="footer__container__right">
+      <div class="footer__container__right__block">
+        <div class="footer__container__right__block__menu">
+          <h2>MENU</h2>
+        </div>
+          <div class="footer__container__right__block__submenu">
+            <div class="footer__container__right__icon"><img src="img/intagram.svg" alt=""><p>Submenu</p></div>
+            <div class="footer__container__right__icon"><img src="img/fb.svg" alt="Logo facebook"><p>Submenu</p></div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </footer>
+
+  <!--Swiper CDN-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!--JS-->
+  <script src="dist/script.js"></script>
+</body>
+</html>

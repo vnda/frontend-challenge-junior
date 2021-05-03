@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "cssnano": "^5.0.2",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^2.0.1"
+  }
+}
