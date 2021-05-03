@@ -115,6 +115,7 @@ button {
   cursor: pointer;
   -webkit-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
+  color: #000000	;
 }
 
 button:hover {
