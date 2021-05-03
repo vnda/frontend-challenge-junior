@@ -344,6 +344,7 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 90px 0;
 }
 
 .products__instagram__left {
