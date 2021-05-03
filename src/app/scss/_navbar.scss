@@ -6,15 +6,13 @@ li, a, button {
     font-size: 16px;
 }
 
-button{
-    color: $primaryColor ;
-}
+
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7px 5%;
+    padding: 7px 3%;
     background-color: $secondaryColor;
 
 }
@@ -43,6 +41,13 @@ header{
 .cta{
     display: flex;
     align-self: center;
+    & a{
+        margin: 0 10px;
+        & img{
+            height: 24px;
+            width: 24px;
+        }
+    }
 }
 
 button{
