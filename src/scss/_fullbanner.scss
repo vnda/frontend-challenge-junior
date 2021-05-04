@@ -1,0 +1,44 @@
+.fullbanner {
+    height: 100vh;
+
+    //container
+    .swiper-container-main {
+        height: 100%;
+
+        .swiper-slide {
+            position: relative;
+
+            > img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: bottom center;
+            }
+
+            > a {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+
+                //title
+                > .full-banner-title {
+                    font-size: 3rem;
+                    text-align: center;
+                    color: var(--body-bg);
+                    text-shadow: 2px 2px 4px var(--secondary-color);;
+                    @include letter-transform;
+
+                    &:hover {
+                        animation: pulse-effect 1s infinite;
+                    }
+
+                    @media screen and (max-width: $medium) {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

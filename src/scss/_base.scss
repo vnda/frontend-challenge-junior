@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+
+    @media screen and (max-width: $small) {
+        font-size: 55%;
+    }
+
+    @media screen and (max-width: $very-small) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "PT Sans", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    background-color: var(--body-bg);
+
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--secondary-color);
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: none;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+svg {
+    height: 22px;
+    width: 22px;
+    fill: var(--secondary-color);
+}

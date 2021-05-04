@@ -1,0 +1,171 @@
+.header {
+    //container
+    height: 10vh;
+    width: 100%;
+
+    @include flex-between-center;
+
+    padding: 2rem 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transition: background-color 0.3s ease;
+
+    @media screen and (max-width: $small) {
+        padding: 1rem;
+    }
+
+    &:hover {
+        background-color: var(--primary-color);
+    }
+
+    //logo
+    .logo {
+        > a > h1 {
+            display: inline-block;
+            font-size: 4rem;
+            line-height: 4.5rem;
+            @include letter-transform;
+        }
+
+        @media screen and (max-width: $large) {
+            order: 2;
+        }
+    }
+
+    //nav
+    nav {
+        .navbar {
+            @include flex-between-center;
+
+            > li {
+                margin: 0 1.5rem;
+                position: relative;
+                padding: 0.6rem 0;
+                @include letter-transform;
+
+                > a {
+                    @include navUnderline;
+                }
+            }
+
+            @media screen and (max-width: $large) {
+                position: absolute;
+                top: 9vh;
+                left: -40%;
+                z-index: 8;
+                width: 40%;
+                height: 91vh;
+                flex-direction: column;
+                justify-content: space-evenly;
+                background-color: var(--primary-color);
+                transition: transform 0.3s ease-in-out;
+            }
+        }
+
+        //burger nav
+        .burger {
+            display: none;
+            cursor: pointer;
+            padding: 1rem;
+
+            .line {
+                width: 25px;
+                height: 2px;
+                background-color: var(--secondary-color);;
+                margin: 5px;
+                transition: all 0.3s ease;
+            }
+
+            @media screen and (max-width: $large) {
+                display: block;
+            }
+        }
+    }
+
+    //responsive nav
+    .nav-open {
+        transform: translateX(100%);
+    }
+
+    .burger-rotate {
+        .line:nth-child(1) {
+            transform: rotate(-45deg) translate(-4px, 5px);
+        }
+        .line:nth-child(2) {
+            opacity: 0;
+        }
+        .line:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+    }
+
+    //user nav
+    .user-nav {
+        @media screen and (max-width: $large) {
+            order: 3;
+        }
+
+        ul {
+            @include flex-between-center;
+
+            .user-nav-link {
+                transition: all 0.3s ease;
+                display: block;
+                margin: 0 0.6rem;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+
+            //search
+            input {
+                position: absolute;
+                top: 9vh;
+                right: 5%;
+                border: none;
+                opacity: 0;
+                pointer-events: none;
+                background-color: inherit;
+                transition: all 0.1s ease;
+                height: 10vh;
+                padding: 1.5rem 3rem;
+                z-index: 99;
+                border-radius: 0 0 15px 15px;
+
+                &::placeholder {
+                    font-size: 1.3rem;
+                    color: var(--secondary-color);
+                    border-bottom: solid 1px;
+                    padding: 0.3rem;
+                }
+
+                &:hover {
+                    &::placeholder {
+                        background: transparent;
+                    }
+                }
+            }
+
+            input.show {
+                opacity: 1;
+                pointer-events: initial;
+                background: var(--primary-color);
+            }
+        }
+    }
+}
+
+//Header sticky
+.header.sticky {
+    position: sticky;
+    background-color: var(--primary-color);
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+//header background
+header.bg {
+    background-color: var(--primary-color);
+}

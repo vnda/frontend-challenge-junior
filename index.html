@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>Loja - Ecommerce</title>
+    <link rel="icon" href="src/img/icons/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="dist/css/main.min.css">
+
+    <!-- Font Playfair Display -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Font PT Sans-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!--header-->
+    <header class="header">
+        <div class="logo">
+            <a href="#">
+                <h1>Logo</h1>
+            </a>
+        </div>
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+
+        <div class="user-nav">
+            <ul>
+                <li>
+                    <input id="search-field" type="search" placeholder="Busca . . .">
+                    <a id="search-icon" class="user-nav-link" href="javascript:void(0)" alt="pesquisar">
+                        <svg class="user-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                            <path id="Icon_awesome-search" data-name="Icon awesome-search"
+                                d="M24.66,21.614l-4.869-4.868a1.171,1.171,0,0,0-.83-.342h-.8a10.153,10.153,0,1,0-1.758,1.758v.8a1.171,1.171,0,0,0,.342.83l4.869,4.868a1.167,1.167,0,0,0,1.655,0l1.382-1.382a1.177,1.177,0,0,0,0-1.66ZM10.157,16.4a6.249,6.249,0,1,1,6.25-6.249A6.246,6.246,0,0,1,10.157,16.4Z"
+                                transform="translate(0)" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="user-nav-link" alt="usuario">
+                        <svg class="user-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                            <path id="Icon_awesome-user-circle" data-name="Icon awesome-user-circle"
+                                d="M12.5.562A12.5,12.5,0,1,0,25,13.062,12.5,12.5,0,0,0,12.5.562Zm0,4.839A4.435,4.435,0,1,1,8.065,9.837,4.436,4.436,0,0,1,12.5,5.4Zm0,17.339A9.659,9.659,0,0,1,5.116,19.3a5.62,5.62,0,0,1,4.965-3.014,1.233,1.233,0,0,1,.358.055,6.673,6.673,0,0,0,2.061.348,6.648,6.648,0,0,0,2.061-.348,1.233,1.233,0,0,1,.358-.055A5.62,5.62,0,0,1,19.884,19.3,9.659,9.659,0,0,1,12.5,22.74Z"
+                                transform="translate(0 -0.563)" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="user-nav-link" alt="sacola">
+                        <svg class="user-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                            <path id="Icon_material-shopping-basket" data-name="Icon material-shopping-basket"
+                                d="M19.92,12.224,14.943,3.583A1.087,1.087,0,0,0,14,3.03a1.074,1.074,0,0,0-.943.566L8.08,12.224H2.636A1.241,1.241,0,0,0,1.5,13.541a1.273,1.273,0,0,0,.045.356l2.886,12.21A2.341,2.341,0,0,0,6.614,28.03H21.386a2.363,2.363,0,0,0,2.193-1.923L26.466,13.9l.034-.356a1.241,1.241,0,0,0-1.136-1.317Zm-9.33,0L14,6.428l3.409,5.8ZM14,22.761a2.481,2.481,0,0,1-2.273-2.634A2.481,2.481,0,0,1,14,17.493a2.481,2.481,0,0,1,2.273,2.634A2.481,2.481,0,0,1,14,22.761Z"
+                                transform="translate(-1.5 -3.03)" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!--fullbanner-->
+    <section class="fullbanner">
+
+        <div class="swiper-container swiper-container-main">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <a href="#">
+                        <h1 class="full-banner-title">Lorem ipsum sit amet</h1>
+                    </a>
+                    <img src="src/img/full_banner_1.jpeg" alt="mulher com casaco de inverno">
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <h1 class="full-banner-title">Sit amet lorem ipsum</h1>
+                    </a>
+                    <img src="src/img/full_banner_2.jpeg" alt="mulher com casaco de inverno">
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </section>
+
+    <!--thumbnails-->
+    <section class="thumbnails">
+        <div class="swiper-container swiper-container-thumbnails">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="image-wrapper">
+                        <img src="src/img/thumb_1.jpg" alt="jaqueta amarela">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrapper"><img src="src/img/thumb_2.jpg" alt="jaqueta rosa">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrapper"><img src="src/img/thumb_3.jpg" alt="jaqueta preta e rosa">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrapper"><img src="src/img/thumb_4.jpg" alt="jaqueta cinza">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrapper"><img src="src/img/thumb_5.jpg" alt="jaqueta preta e vermelha">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrapper"><img src="src/img/thumb_6.jpg" alt="jaqueta cinza e branco">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrapper"><img src="src/img/thumb_7.jpg" alt="casaco branco">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrapper"><img src="src/img/thumb_8.jpg" alt="jaqueta de couro">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-wrapper"><img src="src/img/thumb_9.jpg" alt="jaqueta jeans">
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+
+    <!--catalog-->
+    <section class="catalog">
+        <article class="text-container">
+            <div class="text-wrapper">
+                <p class="text-sup">Lorem ipsum lorem dolor</p>
+                <h1 class="text-title">Lorem ipsum dolor sit amet</h1>
+                <p class="text-description">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua. Metus vulputate eu scelerisque
+                    felis imperdiet proin fermentum. Praesent
+                    semper feugiat nibh sed pulvinar proin
+                    gravida.</p>
+            </div>
+            <a class="catalog-arrow" href="#collection"><img src="src/img/icons/icon-arrow-down.svg" alt=""></a>
+        </article>
+        <div class="card-container">
+            <div class="catalog-card first">
+                <div class="image-wrapper">
+                    <img src="src/img/catalog_1.png" alt="mulher com casaco marrom">
+                    <img class="b-side" src="src/img/catalog_1b.jpg" alt="mulher com casaco amarelo">
+                    <a href="#"></a>
+                </div>
+                <h2 class="card-title">Título do banner</h2>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+
+
+            <div class="catalog-card second">
+                <div class="image-wrapper">
+                    <img src="src/img/catalog_2.png" alt="mulher com casaco de lã">
+                    <img class="b-side" src="src/img/catalog_2b.jpg" alt="mulher com casaco amarelo">
+                    <a href="#"></a>
+                </div>
+                <h2 class="card-title">Título do banner</h2>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempo.</p>
+
+            </div>
+            <div class="catalog-card third">
+                <div class="image-wrapper">
+                    <img src="src/img/catalog_3.png" alt="mulher com casaco amarelo">
+                    <img class="b-side" src="src/img/catalog_3b.jpg" alt="mulher com casaco amarelo">
+                    <a href="#"></a>
+                </div>
+                <h2 class="card-title">Título do banner</h2>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--collection-->
+    <section class="collection" id="collection">
+        <div class="content-container">
+            <div class="collection-image">
+                <img src="src/img/collection_1.jpg" alt="">
+                <img class="b-side" src="src/img/collection_1b.jpg" alt="">
+            </div>
+            <article class="text-container">
+                <div class="text-wrapper">
+                    <p class="text-sup">Lorem ipsum lorem dolor</p>
+                    <h1 class="text-title">Lorem ipsum dolor sit amet</h1>
+                    <p class="text-description">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna
+                        aliqua. Metus vulputate eu scelerisque
+                        felis imperdiet proin fermentum. Praesent
+                        semper feugiat nibh sed pulvinar proin
+                        gravida.</p>
+                    <button class="collection-btn">Call to action</button>
+                </div>
+            </article>
+
+            <div class="swiper-container swiper-container-collection">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="src/img/collection_1_a.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/img/collection_1_b.jpeg" alt="">
+                    </div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!--instagram-->
+    <section class="instagram">
+
+        <div class="instagram-title">
+            <a href="#">
+                <h1>@instadamarca</h1>
+            </a>
+        </div>
+
+        <div class="cards-container">
+            <div class="instagram-card">
+                <img src="src/img/insta_1.jpg" alt="mulher com casaco rosa">
+                <p class="insta-text">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua.</p>
+                <a href="#"></a>
+            </div>
+            <div class="instagram-card">
+                <img src="src/img/insta_2.jpg" alt="mulher com casaco branco">
+                <p class="insta-text">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua.</p>
+                <a href="#"></a>
+            </div>
+            <div class="instagram-card">
+                <img src="src/img/insta_3.jpg" alt="mulher com casaco rosa">
+                <p class="insta-text">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua.</p>
+                <a href="#"></a>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="footer-wrapper">
+
+            <div class="logo">
+                <a href="#">
+                    <h3>Logo</h3>
+                </a>
+            </div>
+
+            <div class="content-container">
+                <div class="content-wrapper">
+                    <h3>Menu</h3>
+                    <ul class="footer-nav">
+                        <li><a href="">Submenu</a></li>
+                        <li><a href="">Submenu</a></li>
+                        <li><a href="">Submenu</a></li>
+                        <li><a href="">Submenu</a></li>
+                    </ul>
+                </div>
+                <div class="content-wrapper">
+                    <h3>Menu</h3>
+                    <form class="footer-form">
+                        <input type="text" placeholder="Email">
+                        <a class="form-btn" href="">Enviar ></a>
+                    </form>
+
+                </div>
+                <div class="content-wrapper">
+                    <h3>Menu</h3>
+                    <ul class="footer-social-media">
+                        <li>
+                            <svg class="footer-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                                <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram"
+                                    d="M11,7.6a5.641,5.641,0,1,0,5.639,5.641A5.631,5.631,0,0,0,11,7.6ZM11,16.9a3.667,3.667,0,1,1,3.666-3.667A3.673,3.673,0,0,1,11,16.9Zm7.185-9.538a1.315,1.315,0,1,1-1.315-1.316A1.312,1.312,0,0,1,18.182,7.366ZM21.917,8.7a6.512,6.512,0,0,0-1.777-4.61,6.551,6.551,0,0,0-4.609-1.777c-1.816-.1-7.259-.1-9.075,0A6.542,6.542,0,0,0,1.849,4.087,6.533,6.533,0,0,0,.072,8.7c-.1,1.816-.1,7.261,0,9.077a6.512,6.512,0,0,0,1.777,4.61A6.56,6.56,0,0,0,6.457,24.16c1.816.1,7.259.1,9.075,0a6.508,6.508,0,0,0,4.609-1.777,6.554,6.554,0,0,0,1.777-4.61c.1-1.816.1-7.256,0-9.072ZM19.571,19.723a3.712,3.712,0,0,1-2.091,2.091c-1.448.574-4.883.442-6.483.442s-5.04.128-6.483-.442a3.712,3.712,0,0,1-2.091-2.091c-.574-1.448-.442-4.885-.442-6.485S1.854,8.2,2.423,6.753A3.712,3.712,0,0,1,4.514,4.662C5.962,4.087,9.4,4.22,11,4.22s5.04-.128,6.483.442a3.712,3.712,0,0,1,2.091,2.091c.574,1.448.442,4.885.442,6.485S20.146,18.279,19.571,19.723Z"
+                                    transform="translate(0.005 -2.238)" />
+                            </svg>
+                            <a href="#">Submenu</a>
+                        </li>
+                        <li>
+                            <svg class="footer-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                                <path id="Icon_awesome-facebook" data-name="Icon awesome-facebook"
+                                    d="M22.563,11.629A11,11,0,1,0,9.844,22.562V14.829H7.049v-3.2H9.844V9.191c0-2.773,1.641-4.305,4.155-4.305a16.829,16.829,0,0,1,2.463.216V7.824H15.074a1.6,1.6,0,0,0-1.792,1.728v2.077h3.051l-.488,3.2H13.281v7.734A11.051,11.051,0,0,0,22.563,11.629Z"
+                                    transform="translate(-0.563 -0.563)" />
+                            </svg>
+                            <a href="#">Submenu</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="copyright">
+                @Loja - Tecnologia para ecommerce - CNPJ 00.0000.000/0001-00
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--swiper-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+
+</html>

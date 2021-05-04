@@ -1,0 +1,114 @@
+.instagram {
+    //container
+    margin-top: 2rem;
+    padding: 2rem 5rem;
+
+    @media screen and (max-width: $small) {
+        padding: 1rem;
+    }
+    //tittle
+    .instagram-title {
+        text-align: center;
+
+        > a {
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+
+            > h1 {
+                font-size: 3rem;
+            }
+
+            &:hover {
+                animation: pulse-effect 1s infinite;
+            }
+        }
+    }
+
+    //cards
+    .cards-container {
+        height: 100vh;
+
+        @include flex-between-center;
+
+        @media screen and (max-width: $medium) {
+            height: 100%;
+            margin-top: 3rem;
+        }
+
+        @media screen and (max-width: $small) {
+            flex-wrap: wrap;
+        }
+
+        .instagram-card {
+            width: 30%;
+            height: 80%;
+            overflow: hidden;
+            position: relative;
+
+            @media screen and (max-width: $small) {
+                width: 80%;
+                margin: 2rem auto;
+            }
+
+            > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s ease-in-out;
+                display: block;
+            }
+
+            //hover content
+            > .insta-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 80%;
+                font-size: 1.8rem;
+                text-align: center;
+                color: var(--body-bg);;
+                text-shadow: 2px 2px 4px var(--secondary-color);
+                opacity: 0;
+                z-index: 2;
+                transition: all 0.3s ease-in-out;
+
+                @media screen and (max-width: $medium) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            > a {
+                @include cardHoverBtn;
+                z-index: 2;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.0);
+                z-index: 1;
+                transition: 0.5s ease-out;
+                border-radius: 0.5rem;
+            }
+
+            &:hover::before {
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+
+            &:hover .insta-text {
+                opacity: 1;
+            }
+        }
+
+        .instagram-card:nth-child(2) {
+            align-self: flex-end;
+        }
+    }
+}
