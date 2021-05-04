@@ -1,0 +1,37 @@
+.thumbnails {
+    //container
+    margin: 2rem 0;
+    padding: 2rem;
+
+    .swiper-container-thumbnails {
+        .swiper-wrapper {
+            .swiper-slide {
+                height: 100%;
+
+                .image-wrapper {
+                    overflow: hidden;
+                    width: 100%;
+                    position: relative;
+                    border-radius: 100%;
+
+                    > img {
+                        display: block;
+                        width: 100%;
+                        border-radius: 100%;
+                        object-fit: cover;
+                        transition: all 0.3s ease-out;
+                    }
+
+                    > a {
+                        display: block;
+                        @include cardHoverBtn;
+                    }
+
+                    &:hover img {
+                        transform: scale(1.15);
+                    }
+                }
+            }
+        }
+    }
+}
