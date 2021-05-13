@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Layout wireframe</title>
+        <link rel="stylesheet" href="./style.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav">
+                <div class="nav-logo">
+                    <li><a href="#" class="logo">LOGO</a></li>
+                </div>
+                <div class="nav-items">
+                    <li><a href="#">Página inicial</a></li>
+                    <li>
+                        <a href="https://github.com/g-orgo" target="__blank"
+                            >Meu github</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/gabrielorgo/"
+                            target="__blank"
+                            >Meu Linkedin</a
+                        >
+                    </li>
+                </div>
+                <div class="nav-icons">
+                    <img
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTExLjk5OSA1MTEuOTk5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTEuOTk5IDUxMS45OTk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNTA4Ljg3NCw0NzguNzA4TDM2MC4xNDIsMzI5Ljk3NmMyOC4yMS0zNC44MjcsNDUuMTkxLTc5LjEwMyw0NS4xOTEtMTI3LjMwOWMwLTExMS43NS05MC45MTctMjAyLjY2Ny0yMDIuNjY3LTIwMi42NjcNCgkJCVMwLDkwLjkxNywwLDIwMi42NjdzOTAuOTE3LDIwMi42NjcsMjAyLjY2NywyMDIuNjY3YzQ4LjIwNiwwLDkyLjQ4Mi0xNi45ODIsMTI3LjMwOS00NS4xOTFsMTQ4LjczMiwxNDguNzMyDQoJCQljNC4xNjcsNC4xNjUsMTAuOTE5LDQuMTY1LDE1LjA4NiwwbDE1LjA4MS0xNS4wODJDNTEzLjA0LDQ4OS42MjcsNTEzLjA0LDQ4Mi44NzMsNTA4Ljg3NCw0NzguNzA4eiBNMjAyLjY2NywzNjIuNjY3DQoJCQljLTg4LjIyOSwwLTE2MC03MS43NzEtMTYwLTE2MHM3MS43NzEtMTYwLDE2MC0xNjBzMTYwLDcxLjc3MSwxNjAsMTYwUzI5MC44OTYsMzYyLjY2NywyMDIuNjY3LDM2Mi42Njd6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo="
+                    />
+                    <img
+                        src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00MzcuMDE5NTMxIDc0Ljk4MDQ2OWMtNDguMzUxNTYyLTQ4LjM1MTU2My0xMTIuNjQwNjI1LTc0Ljk4MDQ2OS0xODEuMDE5NTMxLTc0Ljk4MDQ2OS02OC4zODI4MTIgMC0xMzIuNjY3OTY5IDI2LjYyODkwNi0xODEuMDE5NTMxIDc0Ljk4MDQ2OS00OC4zNTE1NjMgNDguMzUxNTYyLTc0Ljk4MDQ2OSAxMTIuNjM2NzE5LTc0Ljk4MDQ2OSAxODEuMDE5NTMxIDAgNjguMzc4OTA2IDI2LjYyODkwNiAxMzIuNjY3OTY5IDc0Ljk4MDQ2OSAxODEuMDE5NTMxIDQ4LjM1MTU2MiA0OC4zNTE1NjMgMTEyLjYzNjcxOSA3NC45ODA0NjkgMTgxLjAxOTUzMSA3NC45ODA0NjkgNjguMzc4OTA2IDAgMTMyLjY2Nzk2OS0yNi42Mjg5MDYgMTgxLjAxOTUzMS03NC45ODA0NjkgNDguMzUxNTYzLTQ4LjM1MTU2MiA3NC45ODA0NjktMTEyLjY0MDYyNSA3NC45ODA0NjktMTgxLjAxOTUzMSAwLTY4LjM4MjgxMi0yNi42Mjg5MDYtMTMyLjY2Nzk2OS03NC45ODA0NjktMTgxLjAxOTUzMXptLTMwOC42Nzk2ODcgMzY3LjQwNjI1YzEwLjcwNzAzMS02MS42NDg0MzggNjQuMTI4OTA2LTEwNy4xMjEwOTQgMTI3LjY2MDE1Ni0xMDcuMTIxMDk0IDYzLjUzNTE1NiAwIDExNi45NTMxMjUgNDUuNDcyNjU2IDEyNy42NjAxNTYgMTA3LjEyMTA5NC0zNi4zNDc2NTYgMjQuOTcyNjU2LTgwLjMyNDIxOCAzOS42MTMyODEtMTI3LjY2MDE1NiAzOS42MTMyODFzLTkxLjMxMjUtMTQuNjQwNjI1LTEyNy42NjAxNTYtMzkuNjEzMjgxem00Ni4yNjE3MTgtMjE4LjUxOTUzMWMwLTQ0Ljg4NjcxOSAzNi41MTU2MjYtODEuMzk4NDM4IDgxLjM5ODQzOC04MS4zOTg0MzhzODEuMzk4NDM4IDM2LjUxNTYyNSA4MS4zOTg0MzggODEuMzk4NDM4YzAgNDQuODgyODEyLTM2LjUxNTYyNiA4MS4zOTg0MzctODEuMzk4NDM4IDgxLjM5ODQzN3MtODEuMzk4NDM4LTM2LjUxNTYyNS04MS4zOTg0MzgtODEuMzk4NDM3em0yMzUuMDQyOTY5IDE5Ny43MTA5MzdjLTguMDc0MjE5LTI4LjY5OTIxOS0yNC4xMDkzNzUtNTQuNzM4MjgxLTQ2LjU4NTkzNy03NS4wNzgxMjUtMTMuNzg5MDYzLTEyLjQ4MDQ2OS0yOS40ODQzNzUtMjIuMzI4MTI1LTQ2LjM1OTM3NS0yOS4yNjk1MzEgMzAuNS0xOS44OTQ1MzEgNTAuNzAzMTI1LTU0LjMxMjUgNTAuNzAzMTI1LTkzLjM2MzI4MSAwLTYxLjQyNTc4Mi00OS45NzY1NjMtMTExLjM5ODQzOC0xMTEuNDAyMzQ0LTExMS4zOTg0MzhzLTExMS4zOTg0MzggNDkuOTcyNjU2LTExMS4zOTg0MzggMTExLjM5ODQzOGMwIDM5LjA1MDc4MSAyMC4yMDMxMjYgNzMuNDY4NzUgNTAuNjk5MjE5IDkzLjM2MzI4MS0xNi44NzEwOTMgNi45NDE0MDYtMzIuNTcwMzEyIDE2Ljc4NTE1Ni00Ni4zNTkzNzUgMjkuMjY1NjI1LTIyLjQ3MjY1NiAyMC4zMzk4NDQtMzguNTExNzE4IDQ2LjM3ODkwNi00Ni41ODU5MzcgNzUuMDc4MTI1LTQ0LjQ3MjY1Ny00MS4zMDA3ODEtNzIuMzU1NDY5LTEwMC4yMzgyODEtNzIuMzU1NDY5LTE2NS41NzQyMTkgMC0xMjQuNjE3MTg4IDEwMS4zODI4MTItMjI2IDIyNi0yMjZzMjI2IDEwMS4zODI4MTIgMjI2IDIyNmMwIDY1LjMzOTg0NC0yNy44ODI4MTIgMTI0LjI3NzM0NC03Mi4zNTU0NjkgMTY1LjU3ODEyNXptMCAwIi8+PC9zdmc+"
+                    />
+                    <img
+                        src="data:image/svg+xml;base64,PHN2ZyBpZD0iX3gzMV9fcHgiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTE5LjggMjRoLTE1LjZjLS40OSAwLS45NTYtLjIxMS0xLjI3OC0uNTgtLjMyMy0uMzY5LS40NzItLjg1OC0uNDA3LTEuMzQ0bDIuMDgtMTUuNmMuMTEyLS44NDIuODM3LTEuNDc2IDEuNjg1LTEuNDc2aDExLjQ0Yy44NDkgMCAxLjU3My42MzQgMS42ODYgMS40NzZsMi4wOCAxNS42Yy4wNjQuNDg2LS4wODQuOTc2LS40MDcgMS4zNDQtLjMyMy4zNjktLjc4OS41OC0xLjI3OS41OHptLTEzLjUyLTE4Yy0uMzUgMC0uNjQ3LjI2MS0uNjkzLjYwN2wtMi4wOCAxNS42Yy0uMDI3LjIwMy4wMzIuMzk5LjE2Ny41NTQuMTM1LjE1NC4zMjEuMjM5LjUyNi4yMzloMTUuNmMuMjA1IDAgLjM5Mi0uMDg1LjUyNi0uMjM5LjEzNS0uMTU0LjE5NC0uMzUxLjE2Ny0uNTU0bC0yLjA4LTE1LjZjLS4wNDYtLjM0Ni0uMzQ0LS42MDctLjY5My0uNjA3eiIvPjxwYXRoIGQ9Im0xNC41IDhjLS4yNzYgMC0uNS0uMjI0LS41LS41di00LjVjMC0xLjEwMy0uODk3LTItMi0ycy0yIC44OTctMiAydjQuNWMwIC4yNzYtLjIyNC41LS41LjVzLS41LS4yMjQtLjUtLjV2LTQuNWMwLTEuNjU0IDEuMzQ2LTMgMy0zczMgMS4zNDYgMyAzdjQuNWMwIC4yNzYtLjIyNC41LS41LjV6Ii8+PC9zdmc+"
+                    />
+                </div>
+            </ul>
+        </nav>
+        <div class="nav-img">
+            <img src="https://picsum.photos/1903/704/?blur=1" />
+        </div>
+
+        <section class="img-section">
+            <div class="rounded-img">
+                <img src="https://picsum.photos/100/100/?random=1" />
+                <img src="https://picsum.photos/100/100/?random=2" />
+                <img src="https://picsum.photos/100/100/?random=3" />
+                <img src="https://picsum.photos/100/100/?random=4" />
+                <img src="https://picsum.photos/100/100/?random=5" />
+            </div>
+        </section>
+        <section class="text-section">
+            <div class="text-display">
+                <p>Lorem ipsum</p>
+
+                <h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                </h3>
+
+                <p class="text-minus">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Gravida neque convallis a cras. Commodo viverra
+                    maecenas accumsan lacus vel facilisis volutpat est velit.
+                    Egestas fringilla phasellus faucibus scelerisque. Vulputate
+                    mi sit amet mauris commodo quis imperdiet. A diam maecenas
+                    sed enim ut sem viverra aliquet. Montes nascetur ridiculus
+                    mus mauris vitae ultricies leo integer. Integer eget aliquet
+                    nibh praesent. Porttitor leo a diam sollicitudin. Orci a
+                    scelerisque purus semper eget duis. Aliquam id diam maecenas
+                    ultricies mi eget. Sed faucibus turpis in eu mi bibendum
+                    neque egestas. Habitant morbi tristique senectus et netus et
+                    malesuada. Malesuada nunc vel risus commodo. Erat velit
+                    scelerisque in dictum non consectetur a erat. Dictumst
+                    quisque sagittis purus sit amet volutpat consequat mauris
+                    nunc. Platea dictumst vestibulum rhoncus est pellentesque
+                    elit. Suspendisse sed nisi lacus sed viverra tellus in hac.
+                    Gravida rutrum quisque non tellus orci ac auctor augue
+                    mauris.
+                </p>
+            </div>
+            <div class="card-list">
+                <div class="card uno">
+                    <img src="https://picsum.photos/250/250/?random=15" />
+                    <div class="card-body">
+                        <p class="card-title">Lorem ipsum</p>
+                        <hr />
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Gravida neque convallis a cras.
+                            Commodo viverra maecenas accumsan lacus vel
+                            facilisis volutpat est velit.
+                        </p>
+                    </div>
+                </div>
+                <div class="card dos">
+                    <img src="https://picsum.photos/250/250/?random=14" />
+                    <div class="card-body">
+                        <p class="card-title">Lorem ipsum</p>
+                        <hr />
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Gravida neque convallis a cras.
+                            Commodo viverra maecenas accumsan lacus vel
+                            facilisis volutpat est velit.
+                        </p>
+                    </div>
+                </div>
+                <div class="card tres">
+                    <img src="https://picsum.photos/250/250/?random=16" />
+                    <div class="card-body">
+                        <p class="card-title">Lorem ipsum</p>
+                        <hr />
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Gravida neque convallis a cras.
+                            Commodo viverra maecenas accumsan lacus vel
+                            facilisis volutpat est velit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="production-section">
+            <div class="production-bg">
+                <img src="https://picsum.photos/350/474/?random=24" />
+
+                <div class="text-display">
+                    <p>Lorem ipsum</p>
+
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </h3>
+
+                    <p class="text-minus">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Gravida neque convallis a cras. Commodo
+                        viverra maecenas accumsan lacus vel facilisis volutpat
+                        est velit. Egestas fringilla phasellus faucibus
+                        scelerisque. Vulputate mi sit amet mauris commodo quis
+                        imperdiet. A diam maecenas sed enim ut sem viverra
+                        aliquet. Montes nascetur ridiculus mus mauris vitae
+                        ultricies leo integer. Integer eget aliquet nibh
+                        praesent. Porttitor leo a diam sollicitudin.
+                    </p>
+                    <button>Click to action</button>
+                </div>
+            </div>
+            <div class="product-display">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div
+                            class="swiper-slide"
+                            style="
+                                background-image: url(https://picsum.photos/550/550/?random=333);
+                            "
+                        ></div>
+                        <div
+                            class="swiper-slide"
+                            style="
+                                background-image: url(https://picsum.photos/550/550/?random=3453);
+                            "
+                        ></div>
+                        <div
+                            class="swiper-slide"
+                            style="
+                                background-image: url(https://picsum.photos/550/550/?random=52353);
+                            "
+                        ></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="instagram-section">
+            <p>
+                <a href="https://www.instagram.com/ogro.g/" target="_blank"
+                    >@OGRO.G</a
+                >
+            </p>
+            <div class="instagram-images">
+                <div class="1">
+                    <img
+                        draggable="false"
+                        id="insta-preview-1"
+                        src="https://picsum.photos/250/250/?random=423"
+                    />
+                </div>
+
+                <div class="2">
+                    <img
+                        draggable="false"
+                        id="insta-preview-2"
+                        src="https://picsum.photos/250/250/?random=3523"
+                    />
+                </div>
+
+                <div class="3">
+                    <img
+                        draggable="false"
+                        id="insta-preview-3"
+                        src="https://picsum.photos/250/250/?random=2353"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+        <footer>
+            <div>
+                <p>Menu</p>
+                <hr />
+                <ul>
+                    <li>SubMenu</li>
+                    <li>SubMenu</li>
+                    <li>SubMenu</li>
+                </ul>
+            </div>
+            <div>
+                <p>Menu</p>
+                <hr />
+                <input type="email" />
+                <button type="submit">
+                    <img
+                        src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtOC43NSAxNy42MTJ2NC42MzhjMCAuMzI0LjIwOC42MTEuNTE2LjcxMy4wNzcuMDI1LjE1Ni4wMzcuMjM0LjAzNy4yMzQgMCAuNDYtLjExLjYwNC0uMzA2bDIuNzEzLTMuNjkyeiIvPjxwYXRoIGQ9Im0yMy42ODUuMTM5Yy0uMjMtLjE2My0uNTMyLS4xODUtLjc4Mi0uMDU0bC0yMi41IDExLjc1Yy0uMjY2LjEzOS0uNDIzLjQyMy0uNDAxLjcyMi4wMjMuMy4yMjIuNTU2LjUwNS42NTNsNi4yNTUgMi4xMzggMTMuMzIxLTExLjM5LTEwLjMwOCAxMi40MTkgMTAuNDgzIDMuNTgzYy4wNzguMDI2LjE2LjA0LjI0Mi4wNC4xMzYgMCAuMjcxLS4wMzcuMzktLjEwOS4xOS0uMTE2LjMxOS0uMzExLjM1Mi0uNTNsMi43NS0xOC41Yy4wNDEtLjI4LS4wNzctLjU1OC0uMzA3LS43MjJ6Ii8+PC9zdmc+"
+                    />
+                </button>
+            </div>
+            <div>
+                <p>Menu</p>
+                <hr />
+                <ul>
+                    <li class="linkedin">
+                        <a
+                            href="https://www.linkedin.com/in/gabrielorgo/"
+                            target="_blank"
+                        >
+                            Gabriel Orgo
+                        </a>
+                    </li>
+                    <li class="github">
+                        <a href="https://github.com/g-orgo" target="_blank">
+                            G-orgo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+
+    <script>
+        let instaFrstImg = document.getElementById("insta-preview-1"),
+            instaScndImg = document.getElementById("insta-preview-2"),
+            instaThrdImg = document.getElementById("insta-preview-3");
+
+        instaFrstImg.addEventListener("click", () => {
+            bluringEngine(instaFrstImg, 1);
+        });
+        instaScndImg.addEventListener("click", () => {
+            bluringEngine(instaScndImg, 2);
+        });
+        instaThrdImg.addEventListener("click", () => {
+            bluringEngine(instaThrdImg, 3);
+        });
+
+        function bluringEngine(img, txtId) {
+            let instaImgText = document.getElementsByClassName(
+                `insta-text-${txtId}`
+            );
+            let imgParent = img.parentNode;
+
+            if (!img.classList.contains("blur-it")) {
+                img.classList.add("blur-it");
+
+                let node = document.createElement("p");
+                let txt = document.createTextNode(
+                    `${txtId} Image text, Lorem ipsum`
+                );
+                node.appendChild(txt);
+                node.classList.add("created");
+
+                imgParent.appendChild(node);
+
+                if (txtId == 1) {
+                    let otherImgs1 = document.getElementsByClassName("2")[0];
+                    let otherImgs2 = document.getElementsByClassName("3")[0];
+
+                    otherImgs1.classList.add("hidden");
+                    otherImgs2.classList.add("hidden");
+                }
+                if (txtId == 2) {
+                    let otherImgs1 = document.getElementsByClassName("1")[0];
+                    let otherImgs2 = document.getElementsByClassName("3")[0];
+                    otherImgs1.classList.add("hidden");
+                    otherImgs2.classList.add("hidden");
+                }
+                if (txtId == 3) {
+                    let otherImgs1 = document.getElementsByClassName("1")[0];
+                    let otherImgs2 = document.getElementsByClassName("2")[0];
+                    otherImgs1.classList.add("hidden");
+                    otherImgs2.classList.add("hidden");
+                }
+            } else {
+                let created = document.getElementsByClassName("created")[0];
+                imgParent.removeChild(created);
+                img.classList.remove("blur-it");
+
+                if (txtId == 1) {
+                    let otherImgs1 = document.getElementsByClassName("2")[0];
+                    let otherImgs2 = document.getElementsByClassName("3")[0];
+
+                    otherImgs1.classList.remove("hidden");
+                    otherImgs2.classList.remove("hidden");
+                }
+                if (txtId == 2) {
+                    let otherImgs1 = document.getElementsByClassName("1")[0];
+                    let otherImgs2 = document.getElementsByClassName("3")[0];
+                    otherImgs1.classList.remove("hidden");
+                    otherImgs2.classList.remove("hidden");
+                }
+                if (txtId == 3) {
+                    let otherImgs1 = document.getElementsByClassName("1")[0];
+                    let otherImgs2 = document.getElementsByClassName("2")[0];
+                    otherImgs1.classList.remove("hidden");
+                    otherImgs2.classList.remove("hidden");
+                }
+            }
+        }
+
+        const swiper = new Swiper(".swiper-container", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</html>
