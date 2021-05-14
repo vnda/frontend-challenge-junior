@@ -1,0 +1,17 @@
+.card{
+    width: 300px;
+    text-align: center;
+
+    .card-content{
+    background-color: var(--gray);
+
+        .card-title{
+            padding-top: 1rem;
+            font-weight: 600;
+        }
+        
+        .card-text{
+            padding: 1rem;
+        }
+    }
+}

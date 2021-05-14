@@ -1,0 +1,110 @@
+.first-section{
+    display: grid;
+    grid-template: 1fr 1fr 1fr;
+    gap: 50px;
+    position: relative;
+    margin-bottom: 500px;
+
+    .text-area-wrapper{
+        padding-right: 50%;
+        
+        .subtitle{
+            position: relative;
+        }
+    }
+
+    .arrow-indicator{
+        position: absolute;
+        bottom: 0;
+        transform: translate(50%, 50%);
+    }
+}
+
+.first-card-in-section{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+
+    .card{
+        position: absolute;
+        left: 50%;
+        top: 30%;
+    }
+}
+.third-card-in-section{
+    grid-column-start: 3;
+
+    .card{
+        position: absolute;
+    }
+}
+.second-section{
+    position: relative;
+    display: flex;
+    // grid-template-columns: 1fr 3fr 3fr;
+    gap: 50px;
+    align-items: center;
+    .single-image-section{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    button{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 769px){
+
+    .first-section{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 150px;
+        justify-content: center;
+        
+        .text-area-wrapper{
+            padding-right: 0;
+        }
+    }
+
+    
+    .first-card-in-section{
+
+        .card{
+            position: relative;
+            left: auto;
+            top: auto;
+        }
+    }
+    .third-card-in-section{
+
+        .card{
+            position: relative;
+        }
+    }
+
+    .second-section{
+        flex-wrap: wrap;
+
+        .text-area-wrapper{
+            
+            .subtitle{
+                position: relative;
+            }
+        }
+
+        .single-image-section{
+            width: 100%;
+            height: 100%;
+            align-items: center;
+        }
+    
+        button{
+            position: relative;
+            bottom: 0;
+        }
+    }
+
+}
