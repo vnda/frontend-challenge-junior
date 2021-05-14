@@ -1,0 +1,18 @@
+.avatar-row{
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-icon{
+    border-radius: 50%;
+    margin: 5rem 1rem;
+}
+
+@media screen and (max-width: 769px){
+    .avatar-row{
+        flex-wrap: wrap;
+    }
+    .avatar-icon{
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,13 @@
+header{
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 769px){
+    header{
+        .nav-logo{
+            margin: auto;
+        }
+    }
+}

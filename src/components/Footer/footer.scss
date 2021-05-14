@@ -1,0 +1,114 @@
+footer{
+    border-top: 1px solid var(--gray);
+
+    .foo-logo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gatsby-image-wrapper{
+        margin: auto;
+        transform: translateY(-50%);
+    }
+
+    .foo-nav{
+        display: grid;
+        grid-template-columns: 2fr 4fr 1fr;
+        
+        .menu-item{
+            text-decoration: none;
+            color: var(--eerie-black);
+            font-size: 1.75rem;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    
+
+    .foo-subnav{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 30px;
+        a{
+            text-decoration: none;
+            color: var(--eerie-black);
+            padding: 5px 0;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .foo-input-email{
+            border-bottom: 1px solid var(--gray);
+            padding: 15px 0;
+            input{
+                background-color: transparent;
+                border: none;
+                width: 90%;
+                a{
+                    width: 10%;
+                }
+            }
+        }
+    }
+
+    .foo-social-nav{
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 30px;
+        gap: 5px;
+
+        a{
+            text-decoration: none;
+            color: var(--eerie-black);
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        img{
+            opacity: 0.7;
+            margin-right: 5px;
+        }
+    }
+
+    .copyright{
+        font-size: 0.75rem;
+        color: var(--eerie-black);
+        display: flex;
+
+        padding: 0.5rem 0 1.5rem;
+
+        span{
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 769px){
+    footer{
+        .foo-nav{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .foo-subnav{
+            gap: 25px;
+        }
+        
+        .foo-input-wrapper{
+                width: 100%;
+                margin: 2rem 0;
+
+                .submit-mail-btn{
+                    float: right;
+                    margin-top: -25px;
+                }
+        }
+    }
+}

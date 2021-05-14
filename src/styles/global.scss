@@ -1,0 +1,82 @@
+@import './typography.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #FFFFFF;
+    --cultured: #F6F6F6;  
+    --almond: #F5E5D9;
+    --eerie-black: #272727;
+    --black: #000000;
+
+    --gray: #F6F6F6;
+}
+
+@media (max-width: 1200){
+    html{
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 768){
+    html{
+        font-size: 87.5%;
+    }
+}
+@media (max-width: 576){
+    html{
+        font-size: 80%;
+    }
+}
+
+
+body{
+    background: var(--white);
+}
+
+body, input, textarea, button{
+    font: 500 1rem 'PT Sans', sans-serif;
+    color: var(--eerie-black);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+    font-family: 'Playfair Display', sans-serif;
+    color: var(--eerie-black);
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+button{
+    cursor: pointer;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1960;
+    padding: 1.75rem 2.5rem;
+    position: relative;
+}
+
+.gray-bg-85{
+    background: linear-gradient(90deg, var(--gray) 85%, #f6f6f6 85%);
+}
+
+.gray-bg-100{
+    background-color: var(--gray);
+}
+
+@media screen and (max-width: 769px){
+    .gray-bg-85{
+        background: var(--gray);
+    }
+}

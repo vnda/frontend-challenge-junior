@@ -1,0 +1,22 @@
+.text-area-wrapper{
+    padding-right: 100px;
+
+    .subtitle{
+        position: absolute;
+        top: 0;
+    }
+
+    h1{
+        font-size: 3rem;
+        padding-bottom: 20px;
+    }
+    .text{
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .text-area-wrapper{
+        padding: 0;
+    }
+}
