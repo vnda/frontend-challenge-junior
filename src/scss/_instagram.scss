@@ -1,0 +1,141 @@
+.instagram {
+    a {
+        display: flex;
+        color: $eerieBlack;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overlayInsta {
+        position: relative;
+        width: 50%;
+        top: 20px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(0,0,0,0.3);
+    }
+      
+    .overlayInsta:hover .overlay {
+        opacity: 1;
+    }
+      
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .instagramImages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+        .instagramPic {
+            margin: 10px;
+            background: $black;
+            width: 400px;
+            height: 500px;
+            overflow: hidden;
+
+            img {
+                height: 1000px;
+                object-fit: cover;
+                transform: scale(1) translateX(-100px) translateY(-120px);
+                transition: 1s;
+            }
+
+            img:hover {
+                transform: scale(1.2) translateX(-100px) translateY(-120px);
+            }
+        }
+    }
+
+    .link {
+        margin: 0 5px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        color: $eerieBlack;
+        
+        .instaIcon {
+            font-size: 30px;
+            margin: 0 5px;
+        }
+
+        transition: 1s;
+    }
+
+    .link:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+//Responsiver
+
+@media (max-width: 1300px) {
+    .instagram .instagramImages .instagramPic {
+        width: 300px;
+        height: 400px;
+        img {
+            transform: translateX(-122px);
+        }
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .instagram .instagramImages .instagramPic {
+        width: 200px;
+        height: 300px;
+        img {
+            transform: scale(0.8) translateX(-280px) translateY(-280px);
+        }
+        
+        img:hover {
+            transform: scale(1.2) translateX(-150px) translateY(-120px);
+        }
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 665px) {
+    .instagram .instagramImages .instagramPic {
+        width: 150px;
+        height: 250px;
+        img {
+            transform: scale(0.8) translateX(-220px) translateY(-280px);
+        }
+
+        img:hover {
+            transform: scale(1.2) translateX(-170px) translateY(-160px);
+        }
+    }
+
+
+    .instagram .overlayInsta {
+        top: 0;
+    }
+
+}

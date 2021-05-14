@@ -1,0 +1,30 @@
+.arrow {
+    position: relative;
+    left: 100px;
+    font-size: 70px;
+    transform: translateY(5px);
+
+    animation-name: arrowDownUp;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    color: $eerieBlack;
+}
+
+@keyframes arrowDownUp {
+    from {
+        transform: translateY(5px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
+@media (max-width: 1300px) {
+    .arrow {
+        display: none;
+    }
+}

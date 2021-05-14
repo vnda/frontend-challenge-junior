@@ -1,0 +1,156 @@
+.collection {
+    background: linear-gradient($cultured, $cultured) no-repeat -300px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:100%;
+    width: 100%;
+    margin-top: 350px;
+    padding: 30px;
+
+   
+    margin-bottom: 10px;
+
+    p {
+        font-size: 18px;
+    }
+
+    .collectionItem1 {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .collectionItem1Img {
+            height: 400px;
+            width: 300px;
+            overflow: hidden;
+            margin-right: 20px;
+    
+            img {
+                
+                height: 800px;
+                object-fit: cover;
+                transform: translateX(-170px) translateY(-50px);
+                transition: 0.5s ease-in-out;
+            }
+    
+            img:hover {
+                transform: scale(1.1) translateX(-150px) translateY(-30px);
+                
+            }
+        }
+
+        .collectionItem1Block {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            .collectionItem1Texts {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+
+                h3 {
+                    margin: 30px 0;
+                }
+            }
+
+            .callToAction {
+                width: 150px;
+                height: 50px;
+
+                border-radius: 15px;
+                border: none;
+
+                cursor: pointer;
+                background: $eerieBlack;
+                color: $cultured;
+
+                align-self: flex-end;
+                justify-self: flex-end;
+
+                transition: 0.8s ease-in-out;
+            }
+
+            .callToAction:hover {
+                background: $black;
+            }
+        }
+    }
+
+    .collectionItemSlider {
+        width: 500px;
+        height: 300px;
+        background-color: black;
+
+        .swiperImage Img {
+            transform: translateY(60px);
+        }
+    }
+
+}
+
+@media (max-width: 940px) {
+    .collection {
+        margin-top: 100px;
+        
+        .collectionItemSlider {
+            width: 90%;
+            .swiperImage Img {
+                transform: translateY(100px) scale(1.2);
+            }
+        }
+    }
+
+    .collection .collectionItem1  {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .collection .collectionItem1 .collectionItem1Block {
+        height: 400px;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+
+        .collectionItem1Texts {
+            h3 {
+                margin: 0;
+            }
+
+            margin: 25px 0;
+        }
+
+        .callToAction {
+            margin-bottom: 10px;
+            width: 300px;
+            align-self: center;
+        }
+    }
+
+    
+}
+
+@media (max-width: 1000px) {
+    .collection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .collectionItem1 {
+            padding: 5px;
+
+            .collectionItem1Img {
+                margin-right: 15px;
+            }
+        }
+    }
+}

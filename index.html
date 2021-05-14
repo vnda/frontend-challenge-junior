@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNDA E-Commerce</title>
+
+    <!-- Adding Fonts -->
+        <!-- Playfair Display and PT Sans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&family=Playfair+Display&display=swap" rel="stylesheet">
+
+        <!-- Adding CSS -->
+        <link rel="stylesheet" href="./dist/css/main.min.css">
+
+    <!-- Adding Icons on Navbar-->
+    <script src="https://kit.fontawesome.com/38f39fee2f.js" crossorigin="anonymous"></script>
+    
+    <!-- Adding Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <header id='header'>
+        <div class="logo">
+            <a href="#">
+                <h1>LOJA</h1>
+             </a>
+        </div>
+
+        <nav id='nav'>
+            <ul id='menu'>
+                <li>
+                    <a href="#">Tendências</a>
+                    <span class="underline"></span>
+                </li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Coleções</a></li>
+                <li><a href="#">Outlet</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+
+        <div id='userIcons'>
+            <i class="fas fa-search fa-lg icons"></i>
+            <i class="far fa-user-circle fa-lg icons"></i>
+            <i class="fas fa-shopping-bag fa-lg icons"></i>
+        </div>
+
+        <button id='buttonBurguer'>
+          <span id='hamburguer'></span>
+        </button>
+    </header>
+
+    <main>
+
+      <section class="banner">
+          <img src="./src/images/banner-2.jpg" alt="">
+          <div class="bannerOverlay">
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+          </div>
+      </section>
+
+      <section class="categories">
+          <div class="swiper-container mySwiper">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class='categoriesItem'>
+                    <div class='categoriesImg'>
+                      <img src="./src/images/bloco-novidades.jpg" alt="novidades">
+                    </div>
+                    <h6 class='categoriesDesc'>Novidades</h6>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class='categoriesItem'>
+                    <div class='categoriesImg'>
+                      <img src="./src/images/bloco-acessorios.jpg" alt="Acessórios">
+                    </div>
+                    <h6 class='categoriesDesc'>Acessórios</h6>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class='categoriesItem'>
+                    <div class='categoriesImg'>
+                      <img src="./src/images/bloco-maquiagens.jpg" alt="maquiagens">
+                    </div>
+                    <h6 class='categoriesDesc'>Maquiagens</h6>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class='categoriesItem'>
+                    <div class='categoriesImg'>
+                      <img src="./src/images/bloco-bolsas.jpg" alt="bolsas">
+                    </div>
+                    <h6 class='categoriesDesc'>Bolsas</h6>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class='categoriesItem'>
+                    <div class='categoriesImg'>
+                      <img src="./src/images/bloco-ofertas.jpg" alt="ofertas">
+                    </div>
+                    <h6 class='categoriesDesc'>Ofertas</h6>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class='categoriesItem'>
+                    <div class="categoriesImg">
+                      <img src="./src/images/bloco-roupa-banho.jpg" alt="Roupa Banho">
+                    </div>
+                    <h6 class='categoriesDesc'>Roupas de Banho</h6>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+      </section>
+      <section class="news">
+          <div class='newsDesc newsBlock'>
+            <p>Lorem ipsum dolor</p>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Quisque id sagittis ligula, in bibendum mauris. 
+              Phasellus in magna elit. Nulla nec risus in orci consequat fringilla. 
+              Ut at lectus urna. Nam pulvinar nisl felis, ac convallis lacus efficitur vel. 
+              Pellentesque a maximus velit, sed sodales ipsum.</p>
+          </div>
+          <div class='newsBlock'>
+            <div class='newsImg'>
+              <img src="./src/images/news.jpg" alt="Modelo novidades de inverno">
+              <div>
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class=''>
+            <div class='newsImg2 newsBlock'>
+              <img src="./src/images/news-2.jpg" alt="Modelo novidades de inverno">
+              <div>
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+
+            <div class='newsImg3 newsBlockAlternative'>
+              <img src="./src/images/news-3.jpg" alt="Modelo novidades de inverno">
+              <div>
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+      </section>
+      
+      <div>
+        <a href="#instagram" class='arrow'>
+          <i class="fas fa-angle-double-down arrow"></i>
+        </a>
+      </div>
+
+      <section class="collection">
+
+        <div class="collectionItem1">
+          <div class="collectionItem1Img">
+            <img src="./src/images/collection-1.jpg" alt="Modelo da coleção">
+          </div>
+          <div class='collectionItem1Block'>
+            <div class='collectionItem1Texts'>
+              <p>Lorem ipsum dolor</p>
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Quisque id sagittis ligula, in bibendum mauris. 
+                Phasellus in magna elit. Nulla nec risus in orci consequat fringilla. 
+                Ut at lectus urna. Nam pulvinar nisl felis, ac convallis lacus efficitur vel. 
+                Pellentesque a maximus velit, sed sodales ipsum.
+              </p>
+            </div>
+            <button class='callToAction'>Call-to-Action</button>
+          </div>
+        </div>
+
+        <div class='collectionItemSlider'>
+          <div class="swiper-container collectionSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class='swiperImage'>
+                  <img src="./src/images/collection-slider-1.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class='swiperImage'>
+                  <img src="./src/images/collection-slider-2.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        
+
+      </section>
+      
+      <section class='instagram'>
+          <div>
+            <a href="#" class='link' id="instagram"><i class="fab fa-instagram instaIcon"></i><h5>Instagram da Loja</h5></a>
+          </div>
+          <div class='instagramImages'>
+            <div class='instagramPic'>
+              <img src="./src/images/instagram-1.jpg" alt="Foto do instagram">
+            </div>
+            <div class='overlayInsta instagramPic'>
+              <img src="./src/images/instagram-2.jpg" alt="Foto do instagram">
+              <div class="overlay">
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+              </div>
+            </div>
+            <div class='instagramPic'>
+              <img src="./src/images/instagram-3.jpg" alt="Foto do instagram">
+
+            </div>
+          </div>
+      </section>
+
+    </main>
+
+
+    <footer>
+      <div class="logo">
+        <h1>LOGO</h1>
+      </div>
+      <div class='line'></div>
+      <div class='footerContent'>
+        <div class='footerBlock'>
+          <h3>MENU</h3>
+        </div>
+        <div class='footerBlockPrincipal'>
+          <h3>MENU</h3>
+        </div>
+        <div class='footerBlock'>
+          <h3>MENU</h3>
+        </div>
+      </div>
+      <div class='footerContent'>
+        <div class='footerBlock'>
+          <a href="#">Submenu</a>
+          <a href="#">Submenu</a>
+          <a href="#">Submenu</a>
+          <a href="#">Submenu</a>
+        </div>
+        <div class='footerBlockPrincipal'>
+          <input type="email" placeholder="E-mail">
+          <button>Enviar ></button>
+        </div>
+        <div class='footerBlock'>
+          <a href="#"><i class="fab fa-instagram"></i> Submenu</a>
+          <a href="#"><i class="fab fa-facebook-square"></i> Submenu</a>
+        </div>
+      </div>
+      <div class="cnpj">
+        @Vnda - Tecnologia para ecommerce - CNPJ 00.0000.000/0001-00
+      </div>
+    </footer>
+
+    <script src='./dist/js/scripts.min.js'></script>
+    
+</body>
+</html>

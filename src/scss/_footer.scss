@@ -1,0 +1,107 @@
+footer {
+    margin-top: 2.5%;
+
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    margin: 10 auto 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $eerieBlack;
+
+    .cnpj {
+        padding-bottom: 2%;
+        color: $almond;
+        padding: 0 20px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .logo {
+        background-color: $eerieBlack;
+        height: 110px;
+        width: 110px;
+        padding: 5px;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 26px;
+        font-family: 'Playfair Display', serif;
+        color: $white;
+        z-index: 50;
+    }
+
+    .line {
+        width: 100%;
+        height: 0.5px;
+        background-color: white;
+        transform: translateY(-20px);
+    }
+
+    h3 {
+        color: $almond;
+        margin-bottom: 40px;
+    }
+
+    .footerContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+
+        .footerBlock {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+
+            a:hover {
+                font-weight: bold;
+            }
+        }
+
+        .footerBlockPrincipal {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            
+            input {
+                background: none;
+                border: none;
+                border-bottom: $white 1px solid;
+                width: 70%;
+                height: 50px;
+                margin-right: 5px;
+            }
+
+            button {
+                background: none;
+                border: none;
+
+                cursor: pointer;
+                color: $cultured;
+            }
+
+            button:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width: 665px) {
+    footer .cnpj {
+        font-size: 12px;
+    }
+}

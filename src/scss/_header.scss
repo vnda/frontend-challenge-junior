@@ -1,0 +1,150 @@
+@import "colors";
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 75px;
+    width: 100%;
+
+    background: $almond;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+    a {
+        text-decoration: none;
+        
+        color: $eerieBlack;
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            display: inline;
+        }
+    }
+
+    ul {
+        display: inline;
+    }
+
+    li {
+        list-style: none;
+        padding: 8px 16px;
+        display: inline;
+        a {
+            transition: all 0.05s ease;
+            font-family: 'PT Sans', serif;
+            border-bottom: none;
+
+        }
+
+        a:hover {
+            color: $black;
+            border-bottom: 1px solid $black;
+            padding-bottom: 2px;
+        }
+    }
+
+    .icons {
+        color: $eerieBlack;
+        cursor: pointer;
+        padding: 10px;
+        transition: all 0.05s ease;
+    }
+
+    .icons:hover {
+        transform: scale(1.2);
+    }
+}
+
+#buttonBurguer {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px; 
+    
+        #userIcons {
+            display: none;
+        }
+    }
+
+    #buttonBurguer {
+        display: flex;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background: $almond;
+        height: 0;
+        transition: .5s;
+        visibility: visible;
+        overflow-y: hidden;
+    }
+
+    #nav {
+        li {
+            display: block;
+        }
+    }
+
+    #nav.active #menu {
+        li {
+            display: block;
+        }
+        height: calc(100vh - 75px);
+        visibility: visible;
+        transition: .5s;
+
+
+        li:hover {
+            background: rgba(0,0,0,0.025);
+        }
+
+    }
+
+    #hamburguer {
+        border-top: 2px solid $eerieBlack;
+        width: 20px;
+    }
+    
+    #hamburguer::after, #hamburguer::before {
+        display: block;
+        content: '';
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    
+    #nav.active #hamburguer {
+        background-color: turquoise;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+        content: '';
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        content: '';
+        top: -7px;
+    }
+}
