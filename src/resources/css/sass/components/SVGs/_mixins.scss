@@ -1,0 +1,27 @@
+
+
+@mixin SVGhover {
+    svg{
+
+        path{
+            transition-property: fill;
+            transition-duration: 200ms;
+        }
+        &:hover path{
+            fill: $redwhite;
+        }
+    }
+}
+
+@mixin SVGhover2 {
+    svg{
+
+        path{
+            transition-property: fill;
+            transition-duration: 200ms;
+        }
+        &:hover path{
+            fill: $notblack;
+        }
+    }
+}

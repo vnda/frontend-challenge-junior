@@ -1,0 +1,13 @@
+
+
+
+
+    @keyframes showAnim {
+        from{background-color: transparent;}
+        to{background-color: #000000D9;}        
+    }
+    @keyframes hideAnim {
+        from{background-color: #000000D9; opacity: 1;}     
+        to{background-color: transparent; opacity: 0;}
+           
+    }

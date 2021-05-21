@@ -1,22 +1,27 @@
-# Frontend challenge júnior
+# Desafio Técnico Vnda
+:octocat: Desafio técnico de Front-End proposto pela Vnda, cujo objetivo era realizar uma página a partir de um [wireframe](https://drive.google.com/file/d/10xpr_7qaEXNBT4v2dOKqanS4_tOcgEJs/view).
+A página foi desenvolvida usando **Vue.JS**, **SASS**, **Swiper** (biblioteca) e **Laravel** (como backend).
 
-Teste para a vaga de front end júnior
+<img src='./Print.png'>
 
-- Codificar layout seguindo o [wireframe](https://drive.google.com/file/d/10xpr_7qaEXNBT4v2dOKqanS4_tOcgEJs/view)
-- Paleta de cores: https://coolors.co/ffffff-f6f6f6-f5e5d9-272727-000000
-- Fontes: [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) e [PT Sans](https://fonts.google.com/specimen/PT+Sans)
-- O wireframe representa o layout macro do site, você tem liberdade para escolher os espaçamentos, tamanho de fontes, uso das cores, efeitos e outros detalhes.
-- Para as imagens, pode ser usado geradores de imagens por dimensão, como o [picsum](https://picsum.photos/) e o [placeholder](https://placeholder.com/)
-- No banner com slider, usar o [swiper](http://idangero.us/swiper/)
-- Deve ser feito o responsivo, mantendo as mesmas sessões do desktop. Você tem liberdade para decidir os pontos de quebra e o estilo das sessões no mobile.
-- Você tem total liberdade para criar efeitos nas sessões do site, explore o artista dentro de você hehehe;
-- O envio deve ser feito através dos arquivos zipados ou no github (pode ser feito pull request para esse repositório);
-- Deve ser utilizado sass e gulp para o pré-processamento do código;
-- Entregar uma pasta com os arquivos de desenvolvimento e outra pasta com os arquivos minificados e comprimidos (src/dist);
--- Na pasta **src** ficam os arquivos de desenvolvimento.
--- Na pasta **dist** ficam os arquivos finais (comprimidos e minificados).
-- Não deve ser usado nenhum framework de css (como bootstrap), para que possamos avaliar melhor a sua qualidade técnica;
+### Algumas ressalvas
+1. O senhor(a) deve ter notado a desnecessidade de utilizar Laravel, Jetstream e Inertia neste projeto de Front-End. Acontece que, para seguir a regra de compilar com o ***Gulp*** tentei iniciar um projeto com o **@vue/cli**, isto é, um projeto quase 100% front-end. Entretanto, por alguns erros de dependências, não consegui utilizar o **@vue/cli**. Para não perder tempo, fui para o **Laravel**, onde utilizei o Inertia junto co o Jetstream (porque a instalação é mais fácil). Caso queira uma explicação mais detalhada dessa dificuldade, estarei completamente aberto à esclarecimentos;   
+2. Então por que não compilei com ***Gulp***? O Laravel conta com o ***webpack.mix.js*** e ele já utiliza o **Laravel Mix** para realizar está compilação. Inclusive, é **desaconselhável** o uso do ***Gulp*** a partir do Laravel 6.x. Entretanto, o efeito é o mesmo com ambas as ferramentas.
+3. Meu código e este arquivo estão em português porque não vi a necessidade de utilizar língua estrangeira se meu avaliador é brasileiro. Caso percorra meus repositórios no GitHub, perceberá alguma proficiência em inglês.
 
-**Obs 1: Caso tenha dificuldade para compilar o sass e gulp, codifique o teste como preferir, o importante é o teste ser feito**
+### :smiley: Declaração pessoal
+Agradeço pela oportunidade de mostrar minhas habilidades técnicas para o time da Vnda.<br> Durante este projeto tive maior proximidade com temas como minificação, conclusão de projeto, gerenciamento de dependências e a descoberta de novas funcionalidades do Vue. <br>Obrigado por avaliar meu projeto e caso seja possível, eu gostaria muito de saber a opinião de um desenvolvedor mais experiente.
 
-**Obs 2: Caso não consiga terminar todo o layout no prazo, mande o que conseguiu fazer, o importante é entregar algo para ser avaliado**
+
+# :bulb: Rodando a aplicação
+Como a aplicação usa Laravel, ***é necessário rodar um servidor para a aplicação funcionar***. 
+- Caso esteja usando VSCode, basta abrir o terminar na pasta src ou dist e rodar um `php artisan serve`;
+- Realizei mudanças para que o banco de dados não cause problemas. O banco de dados é um .`sqlite` em `database/` e o arquivo *.env* define o *DB_CONNECTION* como **sqlite**. Caso ocorra algum problema, possivelmente basta dar `um php artisan migrate:fresh` em *src* e *dist*;
+<br>
+<br>
+<br>
+<br>
+
+## :mortar_board: Eu
+- Angelo Schuler Piletti, +55 51 982505194;
+
