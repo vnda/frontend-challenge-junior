@@ -1,0 +1,10 @@
+@import './variables';
+@import './mixins';
+@import './colors';
+@import './fonts';
+@import './sectionanims';
+
+//Isso aqui é um _.scss que tem como função "pegar"
+//  todos os outros _.scss que praticamente todas as 
+//  páginas precisam. Como mixins de fontes e variáveis 
+//  de cores.

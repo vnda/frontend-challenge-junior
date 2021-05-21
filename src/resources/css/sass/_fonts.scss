@@ -1,0 +1,41 @@
+//SERIFADA
+@mixin Font1_S {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    display: swap;
+}
+@mixin Font2_S {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    display: swap;
+}
+@mixin Font3_S {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    display: swap;
+}
+@mixin Font3_SI {
+    @include Font3_S();
+    font-style: italic;
+}
+
+
+//NÃO SERIFADA
+@mixin Font1_SS {
+    font-family: 'PT sans', sans-serif;
+    font-weight: 700;
+    display: swap;
+}
+@mixin Font1_SSI {
+    @include Font1_SS();
+    font-style: italic;
+}
+@mixin Font2_SS {
+    font-family: 'PT sans', sans-serif;
+    font-weight: 400;
+    display: swap;
+}
+@mixin Font2_SSI {
+    @include Font2_SS();
+    font-style: italic;
+}

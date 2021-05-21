@@ -1,0 +1,21 @@
+@mixin anchor {
+    a {
+        @include Font2_SS();
+        color: $white;
+
+        border-bottom: 0px solid $redwhite;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+
+        transition-property: color, border-bottom-right-radius,
+            border-bottom-left-radius;
+        transition-duration: 300ms;
+
+        &:hover {
+            color: $redwhite;
+            border-bottom: 1px solid $redwhite;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+}
