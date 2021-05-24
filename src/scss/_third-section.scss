@@ -1,0 +1,38 @@
+@import "variables";
+
+.third-section {
+    margin-top: 130px;
+    i {
+        font-size: 140px;
+        padding-top: 36%;
+    }
+}
+
+.third-section-insta {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.third-section-box {
+    background: $eerieBlack;
+    min-height: 390px;
+    color: $white;
+    text-align: center;
+}
+
+.insta-text {
+    padding: 80px 30px 0 30px;
+    margin-top: 60px;
+}
+
+@media #{$breakpoint-medium} {
+    .third-section {
+        margin-top: 130px;
+        i {
+            font-size: 140px;
+            padding-top: 23%;
+        }
+    }
+}
