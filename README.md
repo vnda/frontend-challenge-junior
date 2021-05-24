@@ -3,8 +3,8 @@
 Pontos importantes antes de iniciar
 
 - Sinalizar por e-mail para a pessoa que está fazendo o seu recrutamento a data de ínicio e a expectativa de entrega;
-- O prazo médio de entrega do teste é de 7 dias mas caso você sinta que vai precisar de mais tempo sinalize o novo prazo e o motivo;
-- Utilize o prazo dado. Pra gente é mais importante você desenvolver algumas das skills solicitadas ou passar um tempo mais demonstrando suas habilidades do que entregar algo incompleto ou que não atenda todos os requisitos do teste.
+- O prazo médio de entrega do teste é de 7 dias mas caso você tenha algum imprevisto sinalize o novo prazo e o motivo;
+- Pra gente é mais importante você desenvolver algumas das skills solicitadas ou passar um tempo mais demonstrando suas habilidades do que entregar algo incompleto ou que não atenda todos os requisitos do teste.
 
 Teste para a vaga de front end júnior
 
