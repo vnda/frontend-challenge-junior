@@ -1,0 +1,56 @@
+@import "variables";
+
+.footer-logo {
+    text-align: center;
+    border-bottom: solid 1px $eerieBlack;
+}
+
+.footer-button {
+    border-style: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 11px;
+    background: none;
+}
+
+.footer-submenu {
+    list-style: none;
+}
+
+.desktop-input {
+    display: none;
+}
+
+.footer-imput {
+    width: 180px;
+    border-style: none;
+}
+
+.footer-email {
+    border-bottom: solid 1px $eerieBlack;
+}
+
+.footer-last-menu {
+    margin-right: 48px;
+}
+
+.signature {
+    text-align: center;
+}
+
+@media #{$breakpoint-medium} {
+    .footer-mini-menu {
+        text-align: center;
+    }
+    .desktop-input {
+        display: block;
+    }
+    .footer-imput {
+        width: 100%;
+    }
+    .footer-button {
+        font-size: 18px;
+    }
+    .desktop-input-mobile {
+        display: none;
+    }
+}

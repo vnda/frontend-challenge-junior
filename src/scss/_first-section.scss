@@ -1,0 +1,54 @@
+@import "variables";
+
+.first-section-info {
+    text-align: left;
+}
+
+.txt-banner {
+    text-align: center;
+    background-color: $eerieBlack;
+    color: $white;
+}
+
+.first-section {
+    background-color: $almond;
+}
+
+.img-banner {
+    position: relative;
+    min-height: 315px;
+    background-image: url(https://picsum.photos/id/1052/339/320);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.img-mini-banner {
+    position: relative;
+    min-height: 200px;
+    background-image: url(https://picsum.photos/id/171/305/200);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media #{$breakpoint-medium} {
+    .first-section-info, .first-banner-container {
+        margin-top: 105px;
+    }
+    .first-section {
+        max-height: 500px;
+    }
+    .img-banner {
+        position: relative;
+        min-height: 315px;
+        background-image: url(https://picsum.photos/id/1052/800/400);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    .img-mini-banner {
+        position: relative;
+        min-height: 200px;
+        background-image: url(https://picsum.photos/id/171/800/200);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

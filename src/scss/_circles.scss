@@ -1,0 +1,29 @@
+@import "variables";
+
+.circles-container {
+    display: none;
+}
+
+.circles-container-mobile {
+    text-align: center;
+    img {
+        border-radius: 100%;
+        margin: 0px 10px 0px 10px;
+    }
+}
+
+@media #{$breakpoint-medium} {
+    .circles-container {
+        display: block;
+        text-align: center;
+        img {
+            border-radius: 100%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .circles-container-mobile {
+        display: none;
+    }
+}

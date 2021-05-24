@@ -1,0 +1,36 @@
+@import "variables";
+
+.template-header {
+    display: none;
+    background-color: $eerieBlack;
+    color: $white;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.icon-container {
+    float: right;
+}
+
+.header-mobile {
+    color: $white;
+    background-color: $eerieBlack;
+
+    i {
+        float: right;
+    }
+}
+
+@media #{$breakpoint-medium} {
+    .template-header {
+        display: block;
+    }
+    
+    .header-mobile {
+        display: none;
+    }
+}
