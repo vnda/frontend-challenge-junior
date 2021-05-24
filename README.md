@@ -6,7 +6,7 @@ Pontos importantes antes de iniciar
 - O prazo médio de entrega do teste é de 7 dias mas caso você tenha algum imprevisto sinalize o novo prazo e o motivo;
 - Pra gente é mais importante você desenvolver algumas das skills solicitadas ou passar um tempo mais demonstrando suas habilidades do que entregar algo incompleto ou que não atenda todos os requisitos do teste.
 
-Teste para a vaga de front end júnior
+Teste para a vaga de Frontend Júnior
 
 - Codificar layout seguindo o [wireframe](https://drive.google.com/file/d/10xpr_7qaEXNBT4v2dOKqanS4_tOcgEJs/view)
 - Você pode gerar uma paleta de cores que te agrade nesse site (https://coolors.co). Clique em "Start the generator".
