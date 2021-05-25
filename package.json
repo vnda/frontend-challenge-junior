@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "moment": "^2.29.1",
+    "swiper": "^6.6.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2"
+  }
+}

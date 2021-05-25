@@ -1,0 +1,176 @@
+.products-desktop {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+
+    
+    img {
+        border-radius: 50%;  
+        width: 150px;
+        height: 150px;
+        margin: 0 30px;
+        cursor: pointer;
+    }
+}
+.products-mobile {
+        display: none;
+    }
+#new-movies {
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    background: #f6f6f6;
+    margin-bottom: 200px;
+
+    .x-new-movies {
+        display: flex;
+        max-width: 1200px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    p {
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    .x-movie-left {
+        width: 50%;
+        padding-left: 40px;
+        padding-top: 150px;
+
+        p {
+            width: 250px;
+        }
+        h1 {
+            width: 250px;
+        }
+    }
+    .x-movie-middle {
+        width: 300px;
+        height: 400px;
+        padding: 0 16px;
+        background: #f6f6f6;
+        text-align: center;
+        transform: translateY(250px);
+
+        img {
+            width: 276px;
+        }
+    }
+    .movie-infos {
+        text-align: center;
+
+        p {
+            font-size: 11px;
+        }
+        h1 {
+            font-size: 15px;
+        }
+    }
+    .x-movie-right{
+        width: 310px;
+        transform: translateY(56px);
+    }
+
+    .x-second-movie{
+        transform: translateY(41px);
+        background: #f6f6f6;
+        padding: 15px 40px;
+    }
+    .imgs-marvel {
+        display: flex;
+        justify-content:center;
+    }
+    .movie img{
+        background: #f6f6f6;
+    }
+
+}
+#informations-stories {
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 28px;
+
+    .x-information-stories {
+        display: flex;
+        max-width: 1200px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    button {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        text-transform: lowercase;
+        padding: 10px 40px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    p {
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+
+    .left{
+        display: flex;
+        padding: 27px;
+        padding-right: 150px;
+        background: #f6f6f6;
+    }
+
+    .x-middle {
+        margin-left: 17px;
+        color: #272727;
+        width: 350px;
+    }
+    .right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -245px;
+    }
+    .swiper-container {
+        width: 450px;
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            width: calc(var(--swiper-navigation-size)/ 11 * 27);
+            --swiper-navigation-size: 23px;
+            --swiper-navigation-color: white;
+        }
+    }
+}
+#insta-brand{
+    padding-bottom: 80px;
+    border-bottom: 1px solid #d9d9d9;
+
+    h1 {
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 100;
+        text-align: center;
+        color: #272727;
+    }
+    .brands{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        
+        .x-brand {
+            width: 250px;
+            background-color: #f6f6f6;
+            margin: 0 30px;
+            padding: 26px;
+        }
+    }
+}
