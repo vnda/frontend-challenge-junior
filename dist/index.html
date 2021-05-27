@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/15c64909e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>modeloLoja1</title>
+</head>
+<body>
+    <!---------------------navigation bar------------------------>
+    <header class="container">
+        <nav class="navigation-content">
+            <a href="#"><strong>LOGO</strong></a>
+            <button id="btn-mobile" aria-expanded="false" aria-label="Open menu"><span id="hamburguer"></span></button>
+            <ul class="navigation-center">
+               <li><a href="#">MENU</a></li>
+               <li><a href="#">MENU</a></li> 
+               <li><a href="#">MENU</a></li> 
+               <li><a href="#">MENU</a></li> 
+               <li><a href="#">MENU</a></li>   
+            </ul>
+            <div class="navigation-right">
+                <a href=""><i class="fas fa-search"></i></a>
+                <div class="navigation-icon">
+                    <a href=""><i class="fas fa-user fa-sm"></i></a>   
+                </div>
+                <a href=""><i class="fas fa-shopping-basket"></i></a>      
+            </div>
+        </nav>
+        
+    </header>
+    <!---------------------image banner------------------------>
+    <section class="content-image">
+        <picture>
+            <source media="(max-width: 375px)" srcset="https://picsum.photos/375/400">
+            <source media="(max-width: 426px)" srcset="https://picsum.photos/426/400">
+            <source media="(max-width: 768px)" srcset="https://picsum.photos/800/400">
+            <source media="(min-width: 769px)" srcset="https://picsum.photos/1280/400">
+            <img src="https://picsum.photos/1280/400" alt="imagem principal">
+        </picture>       
+    </section>
+    
+    <!---------------------6 circles------------------------>
+    <section class="round-container">
+        <div class="round-content"></div>
+        <div class="round-content"></div>
+        <div class="round-content"></div>
+        <div class="round-content"></div>
+        <div class="round-content"></div>
+        <div class="round-content"></div>
+    </section>
+
+    <!---------------------banners section------------------------>
+    <section class="banner-container">
+        <div class="banner-content">
+            <div class="banner-content-left">
+                <p>Lorem ipsum lorem dolor</p>
+                <h1>Lorem ipsum </br> dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Incidunt impedit facere, sed quisquam facilis nemo odio similique
+                    ab enim excepturi fuga dolore labore non assumenda.
+                </p>
+            </div>   
+
+            <div class="banner-content-right">
+                <div class="banner-medium1">
+                    <div class="banner-image-medium">
+                        <picture>
+                            <source media="(max-width: 1080px)" srcset="https://picsum.photos/300/400">
+                            <source media="(min-width: 1081px)" srcset="https://picsum.photos/350/400">
+                            <img src="https://picsum.photos/350/400" alt="banner médio">
+                        </picture>
+                        
+                    </div>
+                    <div class="banner-text">
+                        <strong>Título do banner</strong>
+                        <p>Incidunt impedit facere, sed quisquam facilis nemo odio similique
+                            ab enim. 
+                        </p> 
+                    </div>
+                </div>
+            
+                <div class="banner-small">
+                    <div class="banner-image-small">
+                        <picture>
+                            <source media="(max-width: 1080px)" srcset="https://picsum.photos/300/200">
+                            <source media="(min-width: 1081px)" srcset="https://picsum.photos/350/200">
+                            <img src="https://picsum.photos/350/200" alt="banner pequeno">
+                        </picture>
+                        
+                    </div>
+                <div class="banner-text">
+                    <strong>Título do banner</strong>
+                    <p>Incidunt impedit facere, sed quisquam facilis nemo odio similique
+                    ab enim. 
+                    </p> 
+                </div>
+            </div>
+
+                    <div class="banner-medium2">
+                        <div class="banner-image-medium">
+                            <picture>
+                                <source media="(max-width: 1080px)" srcset="https://picsum.photos/300/400">
+                                <source media="(min-width: 1081px)" srcset="https://picsum.photos/350/400">
+                                <img src="https://picsum.photos/350/400" alt="banner médio">
+                            </picture>
+                        </div>
+                        <div class="banner-text">
+                            <p><strong>Título do banner</strong></p>
+                            <p>Incidunt impedit facere, sed quisquam facilis nemo odio similique
+                                ab enim. 
+                            </p> 
+                        </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------swipper section------------------------>
+    <section class="wrapper">
+        <div class="call-to-action-container">
+            <div class="call-to-action-content">
+                <div class="call-to-action-image">
+                    <img src="https://picsum.photos/300/380" alt="imagem pequena">
+                </div>
+                <div class="call-to-action-middle">
+                        <div class="call-to-action-text">
+                            <p>Lorem ipsum lorem dolor</p>
+                            <h1>Lorem ipsum dolor sit amet</h1>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur 
+                                adipisicing elit. Porro obcaecati odio, sunt rem fugiat natus 
+                                reprehenderit fuga asperiores aliquam debitis animi dignissimos quidem. 
+                                Nobis eius doloremque perspiciatis obcaecati ratione rerum!
+                            </p> 
+                            <button type="button">
+                                Call-to-action > 
+                            </button> 
+                        </div>     
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">Product 1</div>
+                    <div class="swiper-slide">Product 2</div>
+                    <div class="swiper-slide">Product 3</div>
+                    <div class="swiper-slide">Product 4</div>
+                    <div class="swiper-slide">Product 5</div>
+                    <div class="swiper-slide">Product 6</div>
+                    </div>
+                
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------instagram section------------------------>
+    <section class="insta-section">
+        <div class="insta-content">
+            <div class="insta-userlink">
+                <p>@instadamarca</p>
+            </div>
+            <div class="insta-pictures">
+                <div class="insta-picture">
+                    <a href="#">
+                        <img src="https://picsum.photos/300/300" alt="instagram">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Quaerat officiis aliquam tempore necessitatibus nihil, 
+                            inventore id placeat consectetur ea, dolorum distinctio tempora accusamus! 
+                        </p>
+                    </a>
+                    
+                </div>
+                <div class="insta-picture insta-text">
+                    <a href="#">
+                        <img src="https://picsum.photos/300/300" alt="instagram">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Quaerat officiis aliquam tempore necessitatibus nihil, 
+                            inventore id placeat consectetur ea, dolorum distinctio tempora accusamus! 
+                        </p>
+                    </a>
+                </div>
+                <div class="insta-picture">
+                    <a href="#">
+                        <img src="https://picsum.photos/300/300" alt="instagram">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Quaerat officiis aliquam tempore necessitatibus nihil, 
+                            inventore id placeat consectetur ea, dolorum distinctio tempora accusamus! 
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------footer------------------------>
+    <footer>
+        <div class="footer-container">
+            <p><strong>LOGO</strong></p>  
+            <div class="footer-menus">
+                <div class="footer-menu-left">
+                    <a href=""><h3>MENU</h3></a>
+                    <div class="footer-submenu-left">
+                        <div>
+                            <a href=""><p>Submenu</p></a>
+                            <a href=""><p>Submenu</p></a>
+                        </div>
+                        <div>
+                            <a href=""><p>Submenu</p></a>
+                            <a href=""><p>Submenu</p></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-menu-middle">
+                    <a href=""><h3>MENU</h3></a>
+                    <form>
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                        <input type="submit" value="Enviar >" id="submit-button">
+                    </form>
+                </div>
+
+                <div class="footer-menu-right">  
+                    <div class="footer-submenu-right">
+                        <a href=""><h3>MENU</h3></a>
+                        <div class="icon-container">
+                            <div class="icon-content">
+                                <i class="fab fa-instagram fa-sm"></i>
+                            </div>
+                            <a href=""><p>Submenu</p></a>
+                        </div>
+                        <div class="icon-container">
+                            <div class="icon-content">
+                                <i class="fab fa-facebook-f fa-xs"></i>
+                            </div>
+                            <a href=""><p>Submenu</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>@Vnda - Tecnologia para ecommerce - CNPJ 00.0000.000/0001.00</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
+//# sourceMappingURL=index.html.map

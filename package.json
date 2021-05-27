@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "postcss": "^8.2.15",
+    "sass": "^1.32.13"
+  },
+  "devDependencies": {
+    "cssnano": "^5.0.2",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^2.0.1"
+  }
+}
