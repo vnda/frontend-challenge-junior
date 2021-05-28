@@ -1,0 +1,27 @@
+@import "colors";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'PT Sans', serif;
+}
+
+html, body {
+    position: relative;
+    --swiper-theme-color: $eerieBlack;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
