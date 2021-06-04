@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <title>Challenge</title>  
+</head>
+<body>
+  <nav class="headerContainer">
+    <div class="headerContent">
+      <input type="checkbox" id="check" onClick="changeClass()">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <img src="public/images/logo.png" width="50" alt="logo" id="logo"/>
+      <ul>
+        <li><a>Menu</a></li>
+        <li><a>Menu</a></li>
+        <li><a>Menu</a></li>
+        <li><a>Menu</a></li>
+        <li><a>Menu</a></li>
+      </ul>
+      <div class="headerIcons">
+        <a href=""><img src="public/images/search.svg" alt="logo" /></a>
+        <a href=""><img src="public/images/cart.svg" alt="logo" /></a>
+        <a href=""><img src="public/images/profile.svg" alt="logo" /></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mainBanner content-headline">
+    <img src="public/images/banner.jpg" alt="">
+  </div>
+
+  <div class="persons content-headline">
+    <ul>
+      <li><img src="https://picsum.photos/id/1025/410" alt=""></li>
+      <li><img src="https://picsum.photos/id/1062/410" alt=""></li>
+      <li><img src="https://picsum.photos/id/237/410" alt=""></li>
+      <li><img src="https://picsum.photos/id/1025/410" alt=""></li>
+      <li><img src="https://picsum.photos/id/1062/410" alt=""></li>
+      <li><img src="https://picsum.photos/id/237/410" alt=""></li>
+    </ul>
+  </div>
+
+  <section class="information content-headline">
+    <article class="text-container">
+      <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
+      <h2>Titulo do texto</h2>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+    
+      <a href="#collection" class="arrow"><img src="public/images/arrow.png" alt=""></a>
+    </article>
+
+    <div class="card-container">
+      <div class="card-item first">
+        <div class="img-content">
+          <img src="https://picsum.photos/id/1062/410" alt="">
+        </div>
+        <div class="text-content">
+          <h4>Titulo do banner</h5>
+          <p>Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet psum dolor sit amet </p>
+        </div>
+      </div>
+      <div class="box-group">
+        <div class="card-item second">
+          <div class="img-content">
+            <img src="https://picsum.photos/id/237/410" alt="">
+          </div>
+          <div class="text-content">
+            <h4>Titulo do banner</h5>
+            <p>Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet psum dolor sit amet </p>
+          </div>
+        </div>
+        <div class="card-item third">
+          <div class="img-content">
+            <img src="https://picsum.photos/id/1025/410" alt="">
+          </div>
+          <div class="text-content">
+            <h4>Titulo do banner</h5>
+            <p>Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet psum dolor sit amet </p>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+
+  <section class="showcase collection content-headline" id="collection">
+    <div class="showcase-container">
+      <div class="showcase-information">
+        <div class="image-content">
+          <img src="https://picsum.photos/id/1058/300/300" alt="">
+        </div>
+        <div class="text-content">
+          <span>Lorem ipsum dolor sit amet</span>
+          <h1>Titulo do texto</h1>
+          <p>Lorem ipsum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet psum dolor sit amet, ipsum dolor sit amet, ipsum dolor sit amet psum dolor sit amet </p>
+          <button>Call-to-action ></button>
+        </div>
+      </div>
+      <div class="swiper-container swiper-showcase">
+        <div class="slider swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/1025/410/270" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/237/410/270" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/1062/410/270" alt="">
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="social content-headline">
+    <div class="text-content"><p>@instadamarca</p></div>
+    <div class="social-content">
+      <div class="box">
+        <img src="https://picsum.photos/id/1025/410/270" alt="">
+      </div>
+      <div class="box centered-box">
+        <img src="https://picsum.photos/id/237/410/270" alt="">
+      </div>
+      <div class="box">
+        <img src="https://picsum.photos/id/1062/410/270" alt="">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container content-headline">
+      <div class="logo">
+        <a href="">
+          <h3>Logo</h3>
+        </a>
+      </div>
+
+      <div class="content-container">
+        <div class="box-content">
+          <h3>MENU</h3>
+          <ul>
+            <li><a href="">Submenu</a></li>
+            <li><a href="">Submenu</a></li>
+            <li><a href="">Submenu</a></li>
+            <li><a href="">Submenu</a></li>
+          </ul>
+        </div>
+
+        <div class="box-content">
+          <h3>MENU</h3>
+          <div class="infos">
+            <form action="" class="form">
+              <input type="text" placeholder="Email">
+              <a href="">Enviar ></a>
+            </form>
+          </div>          
+        </div>
+
+        <div class="box-content">
+          <h3>MENU</h3>
+          <a href=""><img src="public/images/face.svg" width="16px" height="16px" alt="logo" /></a>
+          <a href=""><img src="public/images/insta.svg" width="16px" height="16px" alt="logo" /></a>
+        </div>
+      </div>
+
+      <p class="copyright">
+        @Loja - Tecnologia para ecommerce - CNPJ
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="dist/js/main.min.js"></script>
+
+</body>
+</html>

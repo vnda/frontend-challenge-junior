@@ -1,0 +1,140 @@
+.information {
+  padding: 100px 0px;
+  background-color: var(--cultured);
+
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+
+  .text-container {
+    width: 18rem;
+    margin: 20px;
+
+    span, h2, p {
+      letter-spacing: 1px;
+      margin-top: 20px;
+    }
+
+    .arrow img {
+      width: 80px;
+      height: 110px;
+
+      margin-top: 210px;
+    }
+
+    @media (max-width: 991px) {
+      .arrow {
+        display: none;
+      }
+    }
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    
+    .card-item {
+      margin: 20px 10px;
+
+      .img-content {
+        height: calc(100% - 110px);
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .text-content {
+        background-color: var(--cultured);
+        padding: 15px;
+        height: 110px;
+        text-align: center;
+
+        h4 {
+          padding-bottom: 10px;
+          font-weight: bold;
+        }
+      }      
+    }
+
+    .first {
+      width: 410px;
+      height: 560px;
+    }
+
+    .box-group {
+      position: relative;
+      top: -5rem;
+
+      .second {
+        width: 410px;
+        height: 350px;
+      }
+  
+      .third {
+        width: 410px;
+        height: 560px;
+      }      
+    } 
+    
+    @media (max-width: 1200px) {
+      .first {
+        width: 320px;
+      }
+
+      .box-group {
+        .second, .third {
+          width: 320px;
+        }
+      }
+    }
+
+    @media (max-width: 350px) {
+      .first {
+        width: 270px;
+      }
+
+      .box-group {
+        .second, .third {
+          width: 270px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    display: grid;
+
+    .card-container {
+      justify-content: center;
+      
+      .box-group{
+        top: -17rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: grid;
+    background-color: var(--white);
+
+    .card-container {
+      display: grid;
+
+      .card-item{
+        margin: 20px 0px;
+      }
+      
+      .box-group{
+        top: 0;
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    .text-container {
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --white: #FFFFFF;
+  --cultured: #F6F6F6;
+  --almond: #F5E5D9;
+  --eerie-black: #272727;
+  --black: #000000;
+  --swiper-theme-color: var(--white) !important;
+}
+
+html {
+  @media (max-width: 1080px) {
+    html {
+      font-size: 93.75%;
+    }
+  }
+
+  @media (max-width: 720px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
