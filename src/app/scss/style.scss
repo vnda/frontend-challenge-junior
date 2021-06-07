@@ -1,0 +1,28 @@
+/* Arquivo SCSS Principal */  
+//reset
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+// Base 
+@import "variables";
+@import "hero";
+@import "navbar";
+@import "services";
+@import "products";
+@import "productsinstagram";
+@import "swiper";
+@import "footer";
+@import "responsive";
+
+
+
+
+
