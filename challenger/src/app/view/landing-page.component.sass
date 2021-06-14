@@ -1,0 +1,333 @@
+$primeira-cor: #FFFFFF
+$segunda-cor: #F6F6F6
+$terceira-cor: #F5E5D9
+$quarta-cor: #272727
+$quinta-cor: #000000
+
+.background-cor-1
+    background-color: $primeira-cor
+.background-cor-2
+    background-color: $segunda-cor
+.background-cor-3
+    background-color: $terceira-cor
+.background-cor-4
+    background-color: $quarta-cor
+.background-cor-5
+    background-color: $quinta-cor
+.cor-1
+    color: $primeira-cor
+.cor-2
+    color: $segunda-cor
+.cor-3
+    color: $terceira-cor
+.cor-4
+    color: $quarta-cor
+.cor-5
+    color: $quinta-cor
+.h-60
+    height: 60px
+.d-flex
+    display: flex
+.justify-between
+    justify-content: space-between
+.container
+    max-width: 90%
+.m-0
+    margin: 0
+.ml-0
+    margin-left: 0
+.ml-30
+    margin-left: 30px
+.mr-0
+    margin-right: 0
+.m-auto
+    margin: auto
+.ml-auto
+    margin-left: auto
+.mr-auto
+    margin-right: auto
+.mt-30
+    margin-top: 30px
+.mt-50
+    margin-top: 50px
+.mt-100
+    margin-top: 100px
+.mt-200
+    margin-top: 200px
+.mb-30
+    margin-bottom: 30px
+.mb-50
+    margin-bottom: 50px
+.w-max-100
+    max-width: 100%
+.p-40
+    padding: 40px
+.pl-0
+    padding-left: 0
+.pt-30
+    padding-top: 30px
+.pt-50
+    padding-top: 50px
+.d-inline-block
+    display: inline-block
+.align-center
+    align-items: center
+.text-left
+    text-align: left
+.text-center
+    text-align: center
+.position-relative
+    position: relative
+.position-absolute
+    position: absolute
+.w-25
+    width: 25%
+.w-75
+    width: 75%
+.w-90
+    width: 90%
+.p-10
+    padding: 10px 
+.p-20
+    padding: 20px
+.top--160
+    top: -160px
+.top--200
+    top: -230px
+
+
+.header
+    background-color: #F6F6F6
+    line-height: 30px
+nav ul li
+    display: inline
+    margin: 0 5px
+.links a
+    text-decoration: none
+    color: $quinta-cor
+.links a:hover
+    color: $quarta-cor
+    text-decoration: underline
+.img-fluid
+    width: 100%
+.lista-no-style
+    list-style: none
+    li
+        display: inline
+.img-rouded li img
+    border-radius: 100%
+    width: 120px
+.secao-3
+    background-color: $terceira-cor
+    height: 550px
+.secao-3-fake
+    background-color: white
+    height: 720px
+.linha
+    width: 90%
+.parte1
+    display: inline-block
+    width: 30%
+.parte2
+    display: inline-block
+    width: 70%
+.parte2-1
+    width: 55%
+    max-width: 50%
+    display: inline-block
+.parte2-2
+    width: 45%
+    max-width: 50%
+    display: inline-block
+.li-item-max-w-30 li
+    max-width: 30%
+
+.wh-390
+    height: 390px
+    width: 390px
+.h-30
+    height: 30px
+.hr
+    bottom: 0px
+.hr-logo
+    bottom: 5px
+    z-index: 0
+    margin-left: 45%
+    background-color: $primeira-cor
+.input-container 
+    position: relative
+    width: 300px
+input 
+    border: 0
+    border-bottom: 1px solid $quarta-cor
+    outline: none
+    background-color: $primeira-cor
+    transition: .2s ease-in-out
+    box-sizing: border-box
+label 
+    top: 0
+    left: 0
+    right: 0
+    display: flex
+    align-items: center
+    position: absolute
+    font-size: 1rem
+    cursor: text
+    transition: .2s ease-in-out
+    box-sizing: border-box
+    color: $quinta-cor
+input,
+label 
+    width: 100%
+    height: 3rem
+    font-size: 1rem
+input:valid,
+input:focus 
+    border-bottom: 1px solid $quinta-cor
+input:valid + label,
+input:focus + label
+    color: $quarta-cor
+    font-size: .8rem
+    top: -30px
+    pointer-events: none
+.botao-enviar
+    border: 0
+    border-bottom: 1px solid $quarta-cor
+    outline: none
+    background-color: $primeira-cor
+    color: $quinta-cor
+    height: 48px
+.align-end
+    align-items: flex-end
+.botao-acao
+    border-radius: 5px
+    border: 1px solid $quinta-cor
+    background-color: $quinta-cor
+    padding: 10px 30px
+    color: $primeira-cor
+.swiper-container
+    width: 400px
+    height: 250px
+.bottom-15
+    bottom: 15px
+.left-700
+    left: 700px
+
+
+@media screen and (max-width: 1800px)
+    .left-700
+        left: 600px
+    .secao-imagens
+        flex-wrap: wrap
+    .secao-3-fake
+        height: 680px
+@media screen and (max-width: 1670px)
+    .left-700
+        left: 500px
+    .secao-3-fake
+        height: 600px
+@media screen and (max-width: 1550px)
+    .left-700
+        left: 400px
+    .wh-390
+        width: 370px
+        height: 370px
+    .secao-3-fake
+        height: 550px
+@media screen and (max-width: 1450px)
+    .wh-390
+        width: 350px
+        height: 350px
+@media screen and (max-width: 1400px)
+    .left-700
+        left: 300px
+    .wh-390
+        width: 320px
+        height: 320px
+@media screen and (max-width: 1340px)
+    .wh-390
+        width: 300px
+        height: 300px
+@media screen and (max-width: 1280px)
+    .left-700
+        left: 200px
+    .secao-3-fake
+        height: 500px
+@media screen and (max-width: 1220px)
+    .wh-390
+        width: 270px
+        height: 270px
+@media screen and (max-width: 1150px)
+    .left-700
+        left: 100px
+    .wh-390
+        width: 250px
+        height: 250px
+@media screen and (max-width: 1050px)
+    .left-700
+        left: 50px
+    .wh-390
+        width: 220px
+        height: 220px
+@media screen and (max-width: 950px)
+    .left-700
+        left: 0px
+    .wh-390
+        width: 200px
+        height: 200px
+    .secao-3-fake
+        height: 450px
+@media screen and (max-width: 900px)
+@media screen and (max-width: 863px)
+    .secao-carousel .w-25
+        width: 50%
+    .secao-carousel .position-relative
+        width: 100%
+    .secao-carousel .position-relative .position-absolute
+        position: relative
+        margin-top: 50px
+    .wh-390
+        width: 190px
+        height: 190px
+    .parte1
+        display: inline-block
+        width: 100%
+    .parte2
+        display: flex
+        width: 100%
+    .primeira-figura
+        display: inline-block
+        width: 100%
+        .position-absolute
+            position: relative
+        .top--160
+            top: 0
+    .segunda-figura
+        display: inline-block
+        .position-absolute
+            position: relative
+        .top--200
+            top: 0
+    .secao-3
+        height: 100%
+        padding-bottom: 20px
+    .secao-3-fake
+        height: 50px
+@media screen and (max-width: 850px)
+    .secao-footer
+        flex-wrap: wrap
+    .secao-insta
+        display: block
+    .wh-390
+        width: 90%
+    .frase-insta
+        margin: 20px 0
+        .d-flex
+            width: 90%
+            margin-right: 0
+@media screen and (max-width: 644px)
+    .secao-carousel
+        margin-left: 30px
+@media screen and (max-width: 619px)
+    .input-footer
+        padding-left: 45px
