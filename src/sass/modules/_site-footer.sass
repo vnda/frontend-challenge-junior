@@ -1,0 +1,126 @@
+.site-footer
+    border-top: 1px solid rgba(0, 0, 0, 0.2)
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    padding-bottom: 5rem
+
+    a
+        color: $gray
+
+    ul
+        list-style: none
+
+        li
+            margin-bottom: 1rem
+
+    .container
+        max-width: $xl
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+        width: 90%
+
+        @media screen and (max-width: $md)
+            width: 80%
+
+        @media screen and (max-width: $sm)
+            justify-content: center
+
+    
+    .title
+        font-size: 1.5rem
+        margin-bottom: 3rem
+        opacity: 0.7
+        font-style: italic
+        color: $gray
+        font-family: 'PT Sans', sans-serif
+
+    &__logo
+        background-color: $white
+        padding: 1rem
+        margin-top: -2rem
+        margin-bottom: 3rem
+                
+        img
+            height: 2rem
+            width: auto
+            filter: grayscale(1)
+            
+    nav.footer-navigation
+        a
+            text-decoration: none
+
+        @media screen and (max-width: $lg)
+            width: 50%
+            order: 2
+
+        @media screen and (max-width: $sm)
+            width: 60%
+            text-align: center
+            margin-bottom: 3rem
+
+    
+    .contact-form
+        width: 450px
+
+        @media screen and (max-width: $lg)
+            width: 100%
+            order: 1
+        
+        @media screen and (max-width: $sm)
+            .title
+                text-align: center
+
+        form
+            display: flex
+            border-bottom: 1px solid $gray
+            margin-top: 4rem
+            padding-bottom: 0.5rem
+            transition: all 0.2s
+
+            &.active
+                border-bottom-width: 2px
+
+            @media screen and (max-width: $sm)
+                margin-top: 2rem
+                margin-bottom: 3rem
+
+        input
+            display: inline
+            border: 0
+            width: 100%
+            color: rgba(0,0,0,0.7)
+
+            &:focus
+                border: 0          
+        
+        button[type="submit"]
+            border: 0
+            background-color: $white
+            display: inline
+    
+    .social-links
+        margin-top: 0
+
+        @media screen and (max-width: $lg)
+            width: 50%
+            order: 3
+
+        @media screen and (max-width: $sm)
+            width: 60%
+            text-align: center
+            
+            
+        a
+            display: flex
+            align-items: center
+            
+            @media screen and (max-width: $sm)
+                justify-content: center
+
+            i
+                font-size: 1.5rem
+                margin-right: 0.5rem

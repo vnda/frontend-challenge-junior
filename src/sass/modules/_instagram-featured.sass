@@ -1,0 +1,92 @@
+.instagram-featured
+    padding: 5rem 0 10rem
+
+    .container
+        max-width: $xl
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+    
+    &__title
+        background-color: $almond
+        color: $gray
+        padding: 0.5rem
+        font-size: 3rem
+        text-shadow: 3px 3px 0 rgba(255, 255, 255, 1)
+        margin-bottom: 0
+        font-family: 'PT Sans', sans-serif
+
+        @media screen and (max-width: $lg)
+            font-size: 2.7rem
+
+    &__posts
+        display: flex
+        justify-content: space-between
+        width: 100%
+
+        @media screen and (max-width: $md)
+            flex-wrap: wrap
+
+        @media screen and (max-width: $lg)
+            margin-top: 1rem
+
+        .post
+            position: relative
+            width: 30%
+            height: 100%
+
+            &:nth-child(2)
+                @media screen and ( min-width: $lg  )
+                    margin-top: 4rem
+                    margin-left: 3%
+                    margin-right: 3%
+
+                @media screen and (min-width: $md) and (max-width: $lg)
+                    margin-top: 2rem
+
+            @media screen and (max-width: $md)
+                width: 80%
+                margin: 0 auto
+            
+            .overlay
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 0
+                width: 1px
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                background-color: rgba($almond, 0.7)
+                opacity: 0
+                transition: all 0.1s ease-out
+
+                span
+                    text-align: center
+                    padding: 2.5rem
+                    display: block
+                    opacity: 0
+                    transition: all 0.1s linear
+                    font-size: 0.1rem
+
+
+            &:hover .overlay
+                opacity: 1
+                width: 100%
+                height: 100%
+
+                span
+                    opacity: 1
+                    font-size: 1.2rem      
+
+        
+
+        img
+            position: relative
+            width: 100%
+            object-fit: cover
+
+    

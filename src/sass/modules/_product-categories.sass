@@ -1,0 +1,58 @@
+.product-categories
+    padding: 4rem 0
+    background-color: $white
+    color: $gray
+    
+    .container
+        padding: 0 5rem
+
+        @media screen and (max-width: $sm)
+            padding: 0 2rem
+
+.product-category-list
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    max-width: $xl
+    margin: 0 auto
+    
+    
+    &__category
+        display: flex
+        flex-direction: column
+        text-align: center
+        width: 15%
+        margin-right: 2%
+        height: 6rem
+        margin-bottom: 6rem
+        
+        &:last-child
+            margin-right: 0
+
+        @media (max-width: $lg)
+            width: 30%
+            margin-right: 5%
+
+            &:nth-of-type(3n)
+                margin-right: 0
+
+        @media (max-width: $sm)
+            width: 47%
+            margin-right: 6%
+
+            &:nth-of-type(2n)
+                margin-right: 0
+
+        img
+            border-radius: 100%
+            max-width: 100px
+            margin: 0 auto 1rem
+            border: 2px solid $almond        
+        p
+            margin-top: 0
+            padding: 0.5rem
+            padding-top: 0
+
+

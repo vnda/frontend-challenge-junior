@@ -1,0 +1,70 @@
+.hero-unit
+    width: 100%
+    background: #eaeaea
+    color: #333
+
+    .swiper-container
+        width: 100%
+        height: 65vh
+
+        .swiper-slide
+            background-size: cover
+            background-position: center
+            display: flex
+
+            @media screen and (max-width: $md)
+                justify-content: center
+
+            p   
+                color: #fff
+                font-size: 3.3rem
+                font-weight: bolder
+                max-width: 560px
+                text-shadow: 2px 2px 2px $gray
+                align-self: flex-end
+
+                @media screen and (min-width: $sm)
+                    margin-left: 3rem
+
+                @media screen and (max-width: $md)
+                    align-self: center
+                    font-size: 2rem
+                    max-width: 70%
+                    text-align: center
+
+            &.melon
+                justify-content: center
+                @media screen and (min-width: $md)
+                    justify-content: flex-end
+
+                    p
+                        margin-right: 3rem
+                        text-align: right
+
+                        @media screen and (max-width: $md)
+                            align-self: center
+                            text-align: center
+                            margin-right: 0
+
+            &.pineapple
+                @media screen and (min-width: $sm)
+                    justify-content: flex-end
+
+                    p
+                        align-self: flex-start
+                        text-align: right
+                        margin-right: 5rem
+
+                        @media screen and (max-width: $md)
+                            align-self: center
+                            text-align: center
+
+
+                    
+
+
+
+                
+
+                
+    
