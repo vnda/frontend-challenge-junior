@@ -1,0 +1,10 @@
+//Variables imports
+@import '../assets/scss/main.variables.scss';
+
+//Modules imports
+@import './header.scss';
+@import './body.scss';
+@import './footer.scss';
+
+@import './media-queries/desktop.scss';
+@import './media-queries/phone.scss';

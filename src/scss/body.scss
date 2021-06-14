@@ -1,0 +1,285 @@
+/* General definitions */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  overflow: auto;
+}
+
+p, span, h2, button {
+  font-family: "PTSans-Regular";
+  font-weight: 500;
+  margin: 0;
+}
+
+h4, h1 {
+  font-family: "PTSans-Bold";
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 46px;
+  margin: $grid-8pt*3 0;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $dark-gray-color;
+}
+
+/* Class definitions */
+
+.container {
+  margin: 0;
+  min-height: 50vh;
+  min-width: 100vw;
+  overflow: hidden;
+}
+
+.section {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  padding: 0 $bordas;
+}
+
+.banner {
+  height: 100vh;
+  background-color: $dark-gray-color;
+  padding: 0;
+  padding-top: 90px;
+  position: relative;
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+
+    .swiper-wrapper {
+      .swiper-slide {
+        img {
+          object-fit: cover;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+        background: $light-gray-color;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: $light-pink-color;
+      }
+    }
+  }
+}
+
+.items {
+  height: 55vh;
+  background-color: $light-gray-color;
+  
+  .container-items {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      margin: 0 $grid-8pt*2;
+      object-fit: cover;
+    }
+  }
+}
+
+.about {
+  height: 160vh;
+  background: linear-gradient(0deg, $white-color 40%, $light-pink-color 40%);
+
+  .container-text {
+    height: 60%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    padding-right: $bordas;
+    margin-top: $bordas*2;
+    position: relative;
+
+    img {
+      height: 80px;
+      position: absolute;
+      bottom: 100px;
+    }
+  }
+
+  .container-cards {
+    flex: 3;
+    display: flex;
+    flex-flow: column wrap-reverse;
+    align-content: flex-start;
+
+    .card {
+      margin-left: $grid-8pt*2;
+      margin-top: $grid-8pt*2;
+      width: $grid-8pt*48;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+
+      .card-description {
+        background-color: $light-gray-color;
+        padding: $grid-8pt*2 $grid-8pt*3;
+
+        h4 {
+          margin: 0;
+          padding-bottom: $grid-8pt*2;
+          font-size: 18px;
+        }
+      }
+
+      &:first-of-type{
+        margin-top: $bordas;
+      }
+
+      &:last-of-type {
+        margin-top: $bordas*2;
+      }
+    }
+  }
+}
+
+.products {
+  padding: $grid-8pt*7 0;
+
+  .container-products {
+    background: linear-gradient(270deg, $white-color 16%, $light-pink-color 16%);
+    width: 100%;
+    padding: $bordas;
+    display: flex;
+
+    img {
+      height: 100%;
+    }
+
+    .container-text {
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: $grid-8pt*4;
+
+      .button-products {
+        height: $grid-8pt*7;
+        width: $grid-8pt*27;
+        background-color: $black-color;
+        color: $white-color;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        margin-top: $grid-8pt*2;
+        cursor: pointer;
+
+        &:hover {
+          border: 2px solid $dark-gray-color;
+          background-color: $light-pink-color;
+          color: $dark-gray-color;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .swiper-products {
+      height: 100%;
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .swiper-container {
+        height: 250px;
+        width: 450px;
+    
+        .swiper-wrapper {
+          .swiper-slide {
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              vertical-align: middle;
+            }
+          }
+        }
+    
+        .swiper-button-prev, .swiper-button-next {
+          color: $light-gray-color;
+        }
+      }
+    }
+  }
+}
+
+.instagram {
+  height: 100vh;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  padding: $bordas $bordas;
+
+  %box-size {
+    height: 384px;
+    width: 384px;
+  }
+
+  img {
+    @extend %box-size;
+  }
+
+  .container-text {
+    .instagram-text {
+      text-align: center;
+      margin-bottom: $grid-8pt*10;
+      font-size: 40px;
+
+      &:hover {
+        text-shadow: 0px 0px 5px $light-pink-color;
+        cursor: default;
+      }
+    }
+  
+    .paragraph-container {
+      @extend %box-size;
+      margin: 0;
+      background-color: $light-pink-color;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: $grid-8pt*4;
+      cursor: pointer;
+  
+      .paragraph {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+/* Header definitions*/
+
+.header {
+  padding: 0 $bordas;
+  height: 90px;
+  width: 100%;
+  background: $light-gray-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 2;
+
+  .logo-header {
+    font-size: 48px;
+    font-family: "PTSans-Bold";
+    flex: 1;
+  }
+
+  nav[role="full-horizontal"] {
+    flex: 2;
+
+    ul {
+      width:100%;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 0;
+      padding: 0;
+      
+      > li {
+        position: relative;
+        float: left;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-align: center;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: color, padding, border-radius;
+
+        a {
+          font-family: "PTSans-Regular";
+          text-decoration: none;
+          color: $dark-gray-color;
+        }
+    
+        &:after {
+          position: absolute;
+          z-index: -1;
+          content: "";
+          right: 0;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  nav[role="full-vertical"] {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 200px;
+    background-color: $light-pink-color;
+
+    ul {
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 0;
+      padding: 0;
+      
+      > li {
+        position: relative;
+        float: left;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-align: center;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: color, padding, border-radius;
+
+        a {
+          font-family: "PTSans-Regular";
+          text-decoration: none;
+          color: $dark-gray-color;
+        }
+    
+        &:after {
+          position: absolute;
+          z-index: -1;
+          content: "";
+          right: 0;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  img { 
+    flex: 1;
+  }
+
+  .container-icons {
+    flex: 1;
+    text-align: end;
+
+    .menu-icon {
+      display: none;
+    }
+
+    .menu-icon-open {
+      display: none;
+    }
+
+    span {
+      cursor: pointer;
+      padding-left: $grid-8pt*2;
+      font-size: 32px;
+    }
+  }
+}
