@@ -98,7 +98,7 @@
 
     > .arrowleft:hover > svg > path,
     > .arrowright:hover > svg > path {
-        fill: $secondary;
+        fill: $primary;
     }
 }
 
@@ -156,7 +156,7 @@
 
     > .content-care > .details > .arrowdown:hover {
         opacity: 0.7;
-        color: $secondary;
+        color: $primary;
         transform: rotate(90deg) translateX(10px);
     }
 
