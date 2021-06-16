@@ -1,5 +1,5 @@
 <h4 align="center">
-  <img src="https://github.com/gustavo-nt/podcastr/blob/main/public/logo.svg" alt="logo" height="50"/>
+  <img src="https://github.com/gustavo-nt/frontend-challenge-junior/blob/master/src/assets/logo/logo.png" alt="logo" height="60"/>
 </h4>
 
 <h1 align="center">
@@ -39,7 +39,7 @@
 Landing Page para apoiar as causas animais, diminuir o impacto gerado pelo contrabando e tráfico de animais silvestres, e conscientizar as pessoas a salvarem "vidas". Aplicação realizada como teste técnico da [Vnda](https://www.vnda.com.br/).  
 
 ### ✅ Demonstração
-<img src="https://github.com/gustavo-nt/podcastr/blob/main/src/assets/home.png" />
+<img src="https://github.com/gustavo-nt/frontend-challenge-junior/blob/master/src/assets/home.png" />
 
 ### ⚙ Pré-requisitos
 
