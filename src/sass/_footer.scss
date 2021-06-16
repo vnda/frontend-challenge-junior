@@ -1,0 +1,252 @@
+.logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > .line {
+        width: 100%;
+        background-color: $gray;
+    }
+
+    > .img {
+        max-width: 50px;
+        margin-right: 10px;
+        margin-left: 13px;
+    }
+}
+
+.content-footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    padding-top: 40px;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .title {
+        font-size: 18px;
+        font-family: $font-family-pt;
+        color: $gray-dark;
+    }
+}
+
+.section-menu {
+    > .box {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    > .box > .boxsubmenu {
+        color: $gray;
+        font-size: 14px;
+    }
+
+    > .box > .boxsubmenu:first-child {
+        margin-right: 40px;
+    }
+
+    > .box > .boxsubmenu .submenu {
+        margin: 5px 0;
+        cursor: pointer;
+        position: relative;
+        width: max-content;
+    }
+
+    > .box > .boxsubmenu .submenu:before {
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 3px;
+        content: "";
+        background: $secondary;
+        position: absolute;
+        transform-origin: right;
+        transition: transform 0.6s ease-out;
+        transform: scaleX(0);
+    }
+
+    > .box > .boxsubmenu .submenu:hover:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+
+.section-newsletter {
+    > .form {
+        width: 410px;
+        margin-top: 12px;
+        position: relative;
+    }
+
+    > .form > .button {
+        position: absolute;
+        top: 22px;
+        right: 0;
+        border: 0;
+        z-index: 3;
+        color: $gray;
+        cursor: pointer;
+        font-size: 13px;
+        background: transparent;
+        transition: all ease 0.3s;
+    }
+
+    > .form > .button:hover {
+        color: $secondary;
+    }
+
+    > .form > .search {
+        position: relative;
+        display: block;
+        height: 45px;
+        text-align: left;
+        line-height: normal;
+        border-bottom: solid 1px #9ca1ab;
+        font-family: $font-family-pt;
+    }
+
+    // Default Style
+    > .form > .search > .input {
+        position: absolute;
+        border: none;
+        padding: 0;
+        bottom: 0;
+        z-index: 2;
+        width: 100%;
+        color: $gray;
+        font-size: 14px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        font-family: $font-family-pt;
+        background-color: transparent;
+    }
+
+    > .form > .search > .label {
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        left: 0;
+        top: 20px;
+        font-size: 14px;
+        color: $gray;
+        transition: all 0.3s ease-in-out;
+    }
+
+    // Events
+    > .form > .search > .input:focus {
+        outline: 0;
+    }
+
+    > .form > .search > .input:-webkit-autofill,
+    > .form > .search > .input:-webkit-autofill:hover,
+    > .form > .search > .input:-webkit-autofill:focus,
+    > .form > .search > .input:-webkit-autofill:active {
+        box-shadow: 0 0 0 30px white inset !important;
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+
+    > .form > .search > .input ~ .span,
+    > .form > .search.active > .span {
+        position: absolute;
+        display: block;
+        bottom: -1px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: $gray-dark;
+        transition: all 0.3s ease-in-out;
+    }
+
+    > .form > .search > .input:focus ~ .span,
+    > .form > .search.active {
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    > .form > .search > .input:focus ~ .label,
+    > .form > .search.active > .label {
+        top: 15px;
+        font-size: 11px;
+        color: $gray-dark;
+        transform: translateY(-100%);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.section-sociais {
+    > .box {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    > .box > .boxsubsocial {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    > .box > .boxsubsocial > .imgsocial {
+        width: 17px;
+    }
+
+    > .box > .boxsubsocial > .imgsocial > path {
+        fill: $gray;
+        transition: all 0.3s ease-in-out;
+    }
+
+    > .box > .boxsubsocial > .imgsocial > g > circle {
+        fill: $gray !important;
+        transition: all 0.3s ease-in-out;
+    }
+
+    > .box > .boxsubsocial > .namesocial {
+        color: $gray;
+        font-size: 14px;
+        margin-left: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    > .box > .boxsubsocial:first-child {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    > .box > .boxsubsocial:hover > .namesocial {
+        color: $gray-dark;
+    }
+
+    > .box > .boxsubsocial:hover > .imgsocial > path {
+        fill: $blue;
+    }
+
+    > .box > .boxsubsocial:hover > .imgsocial > g > circle {
+        fill: $blue !important;
+    }
+}
+
+.copyright-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+
+    cursor: pointer;
+    font-size: 12px;
+    font-family: $font-family-playfair;
+    margin: 40px 0;
+    color: $gray;
+
+    &:hover {
+        color: $gray-dark;
+    }
+}

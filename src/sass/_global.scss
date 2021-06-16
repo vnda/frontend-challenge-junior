@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, span, label, input {
+    font-family: $font-family-pt;
+}
+
+body {
+    background: $light;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+.hd {
+    display: none;
+}
