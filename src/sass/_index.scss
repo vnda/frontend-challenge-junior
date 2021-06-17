@@ -1,0 +1,506 @@
+.main-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-fullbanner {
+    margin: 0;
+    padding: 0;
+
+    .imgslide {
+        width: 100%;
+        height: auto;
+        max-height: 460px;
+        object-fit: cover;
+        filter: brightness(0.8);
+    }
+
+    .swiper-button-prev.-white,
+    .swiper-button-next.-white {
+        color: $white;
+    }
+}
+
+.section-cards {
+    max-width: 775px;
+    padding: 35px 0;
+    margin: 0 auto;
+    position: relative;
+
+    > .rowlistarea {
+        overflow-x: hidden;
+        margin-left: 3.5%;
+        margin-right: 3.5%;
+    }
+
+    > .rowlistarea > .rowlist {
+        transition: all ease .5s;
+        margin-left: 0px;
+        width: 740px;
+    }
+}
+
+.card-spotlight {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    > .imgcard {
+        border-radius: 50%;
+        max-width: -webkit-fill-available;
+        transition: all 0.3s ease-in-out;
+    }
+
+    > .imgcard:hover {
+        transform: scale(1.1);
+    }
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.container-arrows {
+    align-items: center;
+    justify-content: center;
+    display: none;
+    margin-top: 5px;
+
+    > .arrowleft {
+        width: 30px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    > .arrowright {
+        width: 30px;
+        height: 26px;
+        cursor: pointer;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    > .arrowleft > svg > path,
+    > .arrowright > svg > path {
+        transition: all 0.3s ease-in-out;
+    }
+
+    > .arrowleft:hover > svg > path,
+    > .arrowright:hover > svg > path {
+        fill: $primary;
+    }
+}
+
+.section-care {
+    position: relative;
+    padding: 50px 0;
+
+    > .content-care {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        padding-left: 3.5%;
+        padding-right: 3.5%;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    > .content-care > .details {
+        max-width: 300px;
+        max-height: 550px;
+        transform: translateY(50px);
+        
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    > .content-care > .details > .detailscontent > .subtitle {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    > .content-care > .details > .detailscontent > .title {
+        font-size: 24px;
+        margin: 25px 0;
+    }
+
+    > .content-care > .details > .detailscontent > .description {
+        font-size: 14px;
+    }
+    
+    > .content-care > .details > .arrowdown {
+        width: 80px;
+        height: 80px;
+        font-size: 80px;
+        cursor: pointer;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        transition: all 0.5s ease-in-out;
+    }
+
+    > .content-care > .details > .arrowdown:hover {
+        opacity: 0.7;
+        color: $primary;
+        transform: rotate(90deg) translateX(10px);
+    }
+
+    > .content-care > .examples {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-start;
+    }
+
+    > .content-care > .examples > .folder-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    > .content-care > .examples .folder-example {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: $box-shadow;
+    }
+
+    > .content-care > .examples .folder-example > .folderimg {
+        max-width: 300px;
+    }
+
+    > .content-care > .examples .folder-example > .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        max-width: 300px;
+        background-color: $gray-light;
+    }
+
+    > .content-care > .examples .folder-example > .info > .title {
+        font-size: 16px;
+        padding-top: 15px;
+        font-weight: bold;
+        font-family: $font-family-pt;
+    }
+
+    > .content-care > .examples .folder-example > .info > .description {
+        text-align: center;
+        padding: 15px 15px 20px;
+    }
+
+    > .content-care > .examples .folder-example.-horizontal > .folderimg {
+        height: 180px;
+        width: fit-content;
+        object-fit: cover;
+    }
+
+    > .content-care > .examples .folder-example.-translate {
+        transform: translateY(50px)
+    }
+
+    > .bgcare {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 620px;
+        z-index: -5;
+        background-color: $gray-ultra-light;
+    }
+}
+
+.section-pet {
+    position: relative;
+
+    > .content-pet {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 45px 0;
+        z-index: 1;
+    }
+
+    > .content-pet > .box {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        padding-right: 3.5%;
+        padding-left: 3.5%;
+    }
+
+    > .content-pet > .bgpet {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 72%;
+        height: 100%;
+        z-index: -5;
+        max-width: 1300px;
+        background-color: $gray-ultra-light;
+    }
+}
+
+.content-record {
+    display: flex;
+    justify-content: center;
+
+    > .image {
+        max-height: 300px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    > .image:hover {
+        transform: scale(1.05);
+    }
+
+    > .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20px;
+        max-width: 305px;
+    }
+
+    > .description > .alert {
+        font-size: 13px;
+    }
+
+    > .description > .content {
+        font-size: 15px;
+    }
+
+    > .description > .button {
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        padding: 15px 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        opacity: 0.7;
+        color: $white;
+        max-width: max-content;
+        background-color: $gray-dark;
+        transition: all 0.3s ease-in-out;
+    }
+
+    > .description > .button > .arrow {
+        margin-left: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    > .description > .button:hover {
+        opacity: 1;
+    }
+
+    > .description > .button:hover > .arrow {
+        transform: translateX(5px);
+    }
+}
+
+.mini-banner {
+    margin-left: 20px;
+
+    .swiper-container > .swiper-wrapper {
+        max-width: 320px;
+        position: relative;
+    }
+
+    .swiper-container > .elprev,
+    .swiper-container > .elnext {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        cursor: pointer;
+        z-index: 9;
+        top: 45%;
+    }
+
+    .swiper-container > .elprev > svg,
+    .swiper-container > .elnext > svg {
+        width: 18px;
+        fill: $white;
+    }
+
+    .swiper-container > .elprev {
+        left: 0;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .swiper-container > .elprev:hover {
+        transform: scale(1.3) rotate(180deg);
+    }
+
+    .swiper-container > .elnext {
+        right: 0;
+    }
+
+    .swiper-container > .elnext:hover {
+        transform: scale(1.3);
+    }
+
+    .imgslide {
+        width: 320px;
+        max-height: 195px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+}
+
+.section-instagram {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding-right: 3.5%;
+    padding-left: 3.5%;
+    padding-top: 40px;
+    padding-bottom: 120px;
+    
+    > .user {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    > .user > .company {
+        color: $gray;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    > .user > .company:hover {
+        color: $gray-dark;
+    }
+}
+
+.instagram-feed {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.like-post {
+    cursor: pointer;
+    position: relative;
+    
+    > .imgfeed {
+        transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+        max-width: 270px;
+        height: auto;
+    }
+
+    > .details {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        bottom: 30px;
+        right: 15px;
+        left: 15px;
+        opacity: 0;
+    }
+
+    > .details > .titlefeed {
+        color: $light;
+        margin-bottom: 3px;
+    }
+    
+    > .details > .description {
+        color: $light;
+        display: block;
+        overflow: hidden;
+        line-height: 22px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+    }
+
+    &.-main {
+        transform: translateY(65px);
+    }   
+
+    &:hover {
+        > .imgfeed {
+            filter: brightness(0.5);
+        }
+
+        > .details {
+            opacity: 1;
+        }
+    }
+}
+
+.carousel-instagram {
+    display: none;
+
+    .postslide {
+        max-width: 100%;
+        cursor: pointer;
+    }
+
+    .postslide:hover > .imgslide {
+        filter: brightness(0.5);
+    }
+
+    .postslide:hover > .details {
+        opacity: 1;
+    }
+
+    .postslide > .imgslide {
+        max-height: 340px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        max-width: -webkit-fill-available;
+    }
+
+    .postslide > .details {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        bottom: 30px;
+        right: 15px;
+        left: 15px;
+        opacity: 0;
+    }
+
+    .postslide > .details > .titleslide {
+        color: $light;
+        margin-bottom: 3px;
+    }
+    
+    .postslide > .details > .descriptionslide {
+        color: $light;
+        display: block;
+        overflow: hidden;
+        line-height: 22px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+    }
+}

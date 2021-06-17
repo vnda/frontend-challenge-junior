@@ -1,36 +1,92 @@
-# Frontend challenge júnior
+<h4 align="center">
+  <img src="https://github.com/gustavo-nt/frontend-challenge-junior/blob/master/src/assets/logo/logo.png" alt="logo" height="60"/>
+</h4>
 
-Pontos importantes antes de iniciar
+<h1 align="center">
+    🚀 Desafio Técnico - Vnda
+</h1>
 
-- Sinalizar por e-mail para a pessoa que está fazendo o seu recrutamento a data de ínicio e a expectativa de entrega;
-- O prazo médio de entrega do teste é de 7 dias mas caso você tenha algum imprevisto sinalize o novo prazo e o motivo;
-- Pra gente é mais importante você desenvolver algumas das skills solicitadas ou passar um tempo mais demonstrando suas habilidades do que entregar algo incompleto ou que não atenda todos os requisitos do teste.
+<p align="center">Aplicação desenvolvida para fins técnicos</p>
 
-Teste para a vaga de Frontend Júnior
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=html&message=5.0&color=61DAFB&logo=html" />
+  <img src="https://img.shields.io/static/v1?label=css&message=3.0&color=0088CC&logo=css" />
+  <img src="https://img.shields.io/static/v1?label=js&message=ES6&color=yellow&logo=javascript" />
+  <img src="https://img.shields.io/badge/last%21commit-june-important" />
+</p>
 
-- Codificar layout seguindo o [wireframe](https://drive.google.com/file/d/10xpr_7qaEXNBT4v2dOKqanS4_tOcgEJs/view)
-- Você pode gerar uma paleta de cores que te agrade nesse site (https://coolors.co). Clique em "Start the generator".
-- Fontes: [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) e [PT Sans](https://fonts.google.com/specimen/PT+Sans)
-- O wireframe representa o layout macro do site, você tem liberdade para escolher os espaçamentos, tamanho de fontes, uso das cores, efeitos e outros detalhes.
-- Para as imagens, pode ser usado geradores de imagens por dimensão, como o [picsum](https://picsum.photos/) e o [placeholder](https://placeholder.com/), ou se preferir você pode adicionar imagens de sua escolha.
-- No fullbanner com slider, usar o [swiper](http://idangero.us/swiper/), mas utilizar o swiper de forma inteligente em outras seções contam pontos.
-- Deve ser feito o responsivo, mantendo as mesmas sessões do desktop. Você tem liberdade para decidir os pontos de quebra e o estilo das sessões no mobile, mas é importante que o site se adapte e fique legível.
-- Você tem total liberdade para criar efeitos nas sessões do site, explore o artista dentro de você;
-- O envio deve ser feito através dos arquivos zipados ou no github (pode ser feito pull request para esse repositório);
-- Deve ser utilizado sass e gulp para o pré-processamento do código;
-- Entregar uma pasta com os arquivos de desenvolvimento e outra pasta com os arquivos minificados e comprimidos (src/dist);
--- Na pasta **src** ficam os arquivos de desenvolvimento.
--- Na pasta **dist** ficam os arquivos finais (comprimidos e minificados).
-- Não deve ser usado nenhum framework de css (Bootstrap entre outros) nem de js (React, Vue, Angular entre outros), para que possamos avaliar melhor a sua qualidade técnica;
+<p align="center">
+  <a href="#-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-pré-requisitos">Pré-Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licença">Lincença</a>
+</p>
 
-Dicas
+<h3 align="center"> 
+🚧  Finalizado  🚧
+</h3>
 
-- Navegue pelo site da https://www.vnda.com.br/ e visite também o site de nossos clientes;
-- Capriche, demonstre suas habilidades CSS, brinque com os efeitos, utilize em todas as seções e seja detalhista. Queremos saber seu repertório;
-- Utilizar um padrão de código como o RSCSS conta muitos pontos;
-- Tente dar sua cara pro projeto, imagine uma marca fictícia ou não, dê uma identidade visual pra ela;
-- Tente utilizar o JS além do Swiper e Menu Mobile, veja algumas seções em que você possa inserir algumas funções. Não precisa ser nada complexo;
-- Plugins JS são bem vindos contanto que sejam utilizados de forma inteligente;
-- Ainda não tem dominada algumas das skills? Foque primeiro no que você sabe. Vá o mais longe possível e utilize o tempo restante pra aprender o que não sabe, afinal essas habilidades serão utilizadas na sua rotina de trabalho;
- 
-- Passe seu café e acredite no seu potencial!
+### 📎 Features 
+
+- [x] Menu Mobile
+- [x] Full Banner
+- [x] Detalhes dos animais
+- [x] Espécies de animais
+- [x] Input para envio de email
+
+### 💻 Projeto
+
+Landing Page para apoiar as causas animais, diminuir o impacto gerado pelo contrabando e tráfico de animais silvestres, e conscientizar as pessoas a salvarem "vidas". Aplicação realizada como teste técnico da [Vnda](https://www.vnda.com.br/).  
+
+### ✅ Demonstração
+<img src="https://github.com/gustavo-nt/frontend-challenge-junior/blob/master/src/assets/home.png" />
+
+### ⚙ Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com) e [Node.js](https://nodejs.org/en/). Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+### 📗 Rodando a Aplicação (web)
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/gustavo-nt/frontend-challenge-junior
+
+# Instale as dependências
+$ npm
+
+# Wacth gulp
+$ gulp
+```
+
+### 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- HTML
+- JavaScript
+- Sass
+
+### 📕 Bibliotecas
+
+Esse projeto foi utilizou das seguintes lib:
+
+- gulp
+- gulp-concat
+- gulp-rename
+- gulp-sass
+- gulp-uglify
+- node-sass
+- swiper-js
+
+### ⚖ Direitos
+
+Todos direitos são reservados a Vnda.
+
+### 📝 Licença
+
+Esse projeto está sob a licença MIT.
+
+<hr/>
+
+Feito por Gustavo Teixeira
