@@ -70,7 +70,7 @@ const carouselMini = new Swiper('.carousel-mini', {
     },
 
     navigation: {
-        nextEl: '.el-next',
-        prevEl: '.el-prev',
+        nextEl: '.elnext',
+        prevEl: '.elprev',
     }
 });
