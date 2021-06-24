@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Challenge Frontend Júnior | VNDA</title>
+    <link rel="shortcut icon" href="src/images/favicon-vnda.png" type="image/x-icon">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!-- Swiper CSS -->
+</head>
+
+<body>
+    <header id="header">
+        <div class="menu">
+            <span class="logo">
+                <a href="index.html">LOGO</a>
+            </span>
+            <ul class="lista-menu">
+                <li class="item-menu"><a href="#">Menu</a></li>
+                <li class="item-menu"><a href="#">Menu</a></li>
+                <li class="item-menu"><a href="#">Menu</a></li>
+                <li class="item-menu"><a href="#">Menu</a></li>
+                <li class="item-menu"><a href="#">Menu</a></li>
+            </ul>
+            <div class="botoes">
+                <button id="botao-pesquisa"><img src="src/images/lupa-icon.png" alt=""></button>
+                <button id="botao-perfil"><img src="src/images/profile-icon.png" alt=""></button>
+                <button id="botao-sacola"><img src="src/images/bag-icon.png" alt=""></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section1 ">
+            <!-- Banner sem slider
+            <div class="banner">
+                <img src="https://picsum.photos/id/1062/1350/500">
+            </div> -->
+
+            <!-- Slider main container -->
+            <div class="banner">
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="https://picsum.photos/1600/600?random=1"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/1600/600?random=2"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/1600/600?random=3"></div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div class="banner">
+
+            <div class="circulos">
+                <div class="circulo"><img src="https://picsum.photos/145?random=1" alt="imagem-random"></div>
+                <div class="circulo"><img src="https://picsum.photos/145?random=2" alt="imagem-random"></div>
+                <div class="circulo"><img src="https://picsum.photos/145?random=3" alt="imagem-random"></div>
+                <div class="circulo"><img src="https://picsum.photos/145?random=4" alt="imagem-random"></div>
+                <div class="circulo"><img src="https://picsum.photos/145?random=5" alt="imagem-random"></div>
+                <div class="circulo"><img src="https://picsum.photos/145?random=6" alt="imagem-random"></div>
+            </div>
+        </section>
+        
+        <section class="section2">
+            <div class="textoSection2">
+                <p>Lorem ipsum lorem dolor</p>
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Praesent
+                    semper feugiat nibh sed pulvinar proin gravida.</p>
+                    <a href="#setaAncora"><i class="fas fa-long-arrow-alt-down seta"></i></a>
+            </div>
+            <div class="leftBannerSection2">
+                <img src="https://picsum.photos/345/400?random=1">
+                <div class="bannerTitle">
+                    <h1>Título do banner</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+                </div>
+            </div>
+            <div class="rightBannersSection2">
+                <div class="rightBanner1Section2 bannerSection2">
+                    <img src="https://picsum.photos/345/200">
+                    <div class="bannerTitle">
+                        <h1>Título do banner</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+                    </div>
+                </div>
+                <div class="rightBanner2Section2 bannerSection2">
+                    <img src="https://picsum.photos/345/400?random=2">
+                    <div class="bannerTitle">
+                        <h1>Título do banner</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section3" id="setaAncora">
+            <div class="bannerSection3">
+                <img src="https://picsum.photos/300/400">
+            </div>
+            <div class="textoSection3">
+                <span>Lorem ipsum lorem dolor</span>
+                <h1>Lorem Ipsum dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Praesent
+                    semper feugiat nibh sed pulvinar proin gravida.
+                </p>
+                <button class="callAction">Call-to-action ></button>
+            </div>
+            
+            <!-- Slider main container -->
+            <div class="bannerCarrossel">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://picsum.photos/460/270?random=1"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/460/270?random=2"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/460/270?random=3"></div>
+                        ...
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section4">
+            <h1>@instadamarca</h1>
+            <div class="instagramMarca">
+                <div class="fotoInsta">
+                    <img src="https://picsum.photos/400/400?random=1" id="fotoInsta1" alt="">
+                    <div class="textoInsta">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum.
+                            Praesent semper feugiat nibh sed pulvinar proin gravida.
+                        </p>
+                    </div>
+                </div>
+                <div class="fotoInsta" id="fotoInsta2">
+                    <img src="https://picsum.photos/400/400?random=2" id="fotoInsta1" alt="">
+                    <div class="textoInsta">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum.
+                            Praesent semper feugiat nibh sed pulvinar proin gravida.
+                        </p>
+                    </div>
+                </div>
+                <div class="fotoInsta">
+                    <img src="https://picsum.photos/400/400?random=3" id="fotoInsta1" alt="">
+                    <div class="textoInsta">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum.
+                            Praesent semper feugiat nibh sed pulvinar proin gravida.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <span class="logo">
+            <a href="index.html">LOGO</a>
+        </span>
+        <div class="secaoFooter">
+            <div class="menuFooter">
+                <h2>MENU</h2>
+                <ul class="submenus">
+                    <li><a href="#">Submenu</a></li>
+                    <li><a href="#">Submenu</a></li>
+                    <li><a href="#">Submenu</a></li>
+                    <li><a href="#">Submenu</a></li>
+                </ul>
+            </div>
+
+            <div class="emailFooter">
+                <h2>MENU</h2>
+                <input type="email" class="email" placeholder="Email">
+                <input type="button" class="btnEnviar" value="ENVIAR >">
+            </div>
+
+            <div class="redesFooter">
+                <h2>MENU</h2>
+                <a href="http://instagram.com" target="_blank"><img src="src/images/instagram-icon2.png" alt="">Submenu</a>
+                <a href="http://facebook.com" target="_blank"><img src="src/images/facebook-icon2.png" alt="">Submenu</a>
+            </div>
+        </div>
+
+        <p class="assinatura">@Vnda - Tecnologia para ecommerce - CNPJ 00.0000.000/0001-00</p>
+    </footer>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="/src/js/swiper.js"></script>
+</body>
+</html>
