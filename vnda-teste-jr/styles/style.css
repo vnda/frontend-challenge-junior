@@ -1,0 +1,727 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+button,
+input {
+    border: none;
+    background: none;
+}
+
+html,
+body {
+    font-family: 'PT Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 9vh;
+    border-bottom: 2px inherit #272727;
+}
+
+.logo {
+    padding: 25px 55px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    color: #272727;
+}
+
+.nav-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-main li {
+    margin: 10px;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 2px solid #272727;
+    transition: 0.2s all;
+    transition-timing-function: ease-in;
+}
+
+.nav-main li:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.nav-right .icons-container span {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #272727;
+}
+
+.nav-right .icons-container span:hover {
+    color: #ffffff;
+}
+
+.nav-right .icons-container span:last-of-type {
+    margin-right: 40px;
+}
+
+.banner {
+    width: 100%;
+    height: 50vh;
+}
+
+.banner img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.categories-container {
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(6, 125px);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
+
+.categories-container .category {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.categories-container .category:hover {
+    transform: scale(1.35);
+    opacity: 0.65;
+}
+
+.categories-container .category img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+main {
+    width: 100vw;
+    height: 1200px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+main .main-wrapper {
+    display: flex;
+    background: #f6f6f6;
+    max-height: 600px;
+}
+
+main .main-wrapper .summary-container {
+    margin-top: 100px;
+    padding: 40px 100px 150px 100px;
+    width: 45%;
+    position: relative;
+}
+
+main .main-wrapper .summary-container p {
+    width: 55%;
+}
+
+main .main-wrapper .summary-container>h1 {
+    width: 60%;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin: 40px 0;
+}
+
+main .main-wrapper .summary-container>i {
+    position: absolute;
+    bottom: -100px;
+    left: 100px;
+    font-size: 10rem;
+    cursor: pointer;
+}
+
+main .main-wrapper .center-card {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    margin: 250px 30px 0 0;
+}
+
+main .main-wrapper .side-cards {
+    padding: 30px 150px 30px 0;
+}
+
+main .main-wrapper .card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 550px;
+    margin-top: 30px;
+}
+
+main .main-wrapper .card img {
+    box-shadow: 0 0 0.2em #f6f6f6;
+    width: 350px;
+    height: 400px;
+}
+
+main .main-wrapper .card.card-small {
+    height: 325px;
+}
+
+main .main-wrapper .card .card-footer {
+    box-shadow: 0 0 0.2em #272727;
+    padding: 15px;
+    background: #272727;
+    text-align: center;
+    color: #f6f6f6;
+}
+
+main .main-wrapper .card .card-footer>h1 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.product-section {
+    padding: 40px 100px;
+    width: 85vw;
+    height: 75vh;
+    background: #f6f6f6;
+    display: flex;
+}
+
+.product-section .product-container {
+    display: flex;
+}
+
+.product-section .product-container .product-image-container {
+    margin-right: 70px;
+    align-self: center;
+}
+
+.product-section .product-container .product-image-container img {
+    box-shadow: 0 0 0.2em #272727;
+}
+
+.product-section .product-summary {
+    margin-right: 15vw;
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-section .product-summary p {
+    color: #272727;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+.product-section .product-summary h1 {
+    font-size: 2.5rem;
+    margin: 40px 0;
+    line-height: 2.3rem;
+}
+
+.product-section .product-summary .btn-action {
+    background: #272727;
+    color: #f6f6f6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 48px;
+    border: 2px solid #272727;
+    transition: 0.5s all;
+    font-weight: 600;
+}
+
+.product-section .product-summary .btn-action:hover {
+    background: #f6f6f6;
+    color: #272727;
+}
+
+.product-section .product-carousel {
+    align-self: center;
+    width: 30vw;
+}
+
+.product-section .product-carousel .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.product-section .product-carousel .swiper-button-prev,
+.product-section .product-carousel .swiper-button-next {
+    padding: 30px;
+    color: #f6f6f6;
+}
+
+.product-section .product-carousel .swiper-button-prev:hover,
+.product-section .product-carousel .swiper-button-next:hover {
+    color: #272727;
+}
+
+.product-section .product-carousel .swiper-button-prev::after,
+.product-section .product-carousel .swiper-button-next::after {
+    font-size: 27px;
+}
+
+.instagram-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: #ffffff;
+}
+
+.instagram-section>h1 {
+    margin-top: 20vh;
+    font-size: 2.7rem;
+    font-weight: normal;
+}
+
+.instagram-section .instagram-images-container {
+    width: 85%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.instagram-section .instagram-images-container img {
+    box-shadow: 0 0 0.2em #272727;
+    
+}
+
+.instagram-section .instagram-image-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+}
+
+.instagram-section .instagram-image-container:hover img {
+    opacity: 0.6;
+}
+
+.instagram-section .instagram-image-container:hover .instagram-image-summary {
+    display: block;
+    color: #272727;
+}
+
+.instagram-section .instagram-image-container .instagram-image-summary {
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 65px;
+    text-align: left;
+}
+
+.instagram-section .instagram-image-container.center-image {
+    margin-top: 225px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+}
+
+footer .footer-logo .line {
+    background-color: #272727;
+    width: 100%;
+    height: 2px;
+}
+
+footer .footer-logo .h1 {
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+footer .menus-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .menus-container .menu {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    margin-bottom: 40px;
+}
+
+footer .menus-container .menu.menu-social-medias ul {
+    grid-template-columns: 1fr;
+}
+
+footer .menus-container .menu.menu-social-medias li {
+    display: flex;
+}
+
+footer .menus-container .menu.menu-social-medias .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F6F6;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+footer .menus-container .menu.menu-social-medias .icon-container:last-child {
+    margin-bottom: 100px;
+}
+
+footer .menus-container .menu.menu-social-medias .icon-container img {
+    width: 50%;
+    height: 50%;
+}
+
+footer .menus-container .menu>h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 20px 0 40px;
+}
+
+footer .menus-container .menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 70px;
+}
+
+footer .menus-container .menu ul li {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #272727;
+    cursor: pointer;
+    transition: 0.2s all;
+    transition-timing-function: ease-in;
+}
+
+footer .menus-container .menu ul li:hover {
+    border-bottom: 2px solid #f6f6f6;
+}
+
+footer .menus-container .menu .input-wrapper {
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #272727;
+}
+
+footer .menus-container .menu .input-wrapper input,
+footer .menus-container .menu .input-wrapper button {
+    padding-bottom: 15px;
+}
+
+footer .menus-container .menu .input-wrapper input:focus::-webkit-input-placeholder {
+    color: #272727;
+    font-weight: 700;
+}
+
+footer .menus-container .menu .input-wrapper button {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+footer .footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #272727;
+    margin: 20px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 330px) {
+    .categories-container {
+        height: 50vh;
+        gap: 5px;
+    }
+
+    .categories-container .category {
+        width: 75px;
+        height: 75px;
+    }
+
+    .product-carousel {
+        max-width: 300px;
+        margin-top: 90px;
+    }
+
+    .instagram-image-container {
+        max-width: 300px;
+    }
+
+    .instagram-image-container .summary-container {
+        padding: 10px;
+    }
+
+    .card,
+    .instagram-images-container {
+        max-width: 300px;
+    }
+
+    .card img,
+    .instagram-images-container .img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        overflow-x: hidden;
+        position: relative;
+        flex-direction: column;
+        height: 18vh;
+        border: none;
+    }
+
+    .nav .logo {
+        padding: 0;
+    }
+
+    .nav .logo h1 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .nav .nav-main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        max-width: 360px;
+        overflow-x: hidden;
+    }
+
+    .nav .nav-main li {
+        margin: 0px;
+        padding: 5px;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+    .nav .nav-right .icons-container span {
+        padding: 5px;
+    }
+
+    .nav .nav-right .icons-container span:last-of-type {
+        margin-right: 0;
+    }
+
+    .banner {
+        height: 25vh;
+    }
+
+    .categories-container {
+        height: 45vh;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(2, 150px);
+        gap: 0px 15px;
+    }
+
+    .main {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .main .main-wrapper {
+        flex-direction: column;
+        max-height: 100%;
+    }
+
+    ..main .main-wrapper .card {
+        height: 100%;
+        padding-bottom: 10px;
+    }
+
+    .main .main-wrapper .center-card {
+        width: 100%;
+        margin-top: 70px;
+        justify-content: center;
+    }
+
+    .main .main-wrapper .side-cards {
+        flex-direction: column;
+        padding: 5px;
+        align-self: center;
+    }
+
+    .main .main-wrapper .summary-container {
+        margin: 0;
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+    main .main-wrapper .summary-container .p,
+    .main .main-wrapper .summary-container .h1 {
+        width: 100%;
+    }
+
+    main .main-wrapper .summary-container .i {
+        font-size: 6rem;
+        bottom: -80px;
+        left: 20px;
+    }
+
+    .product-section {
+        overflow: hidden;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        padding: 0;
+        background: #272727;
+    }
+
+    .product-section .product-container {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-section .product-container .product-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0 10px 0;
+        width: 350px;
+    }
+
+    .product-section .product-container .product-image-container .img {
+        width: 350px;
+    }
+
+    .product-section .product-container .product-carousel {
+        width: 100vw;
+        padding: 20px;
+    }
+
+    .product-section .product-container .product-summary {
+        width: 100vw;
+        padding: 30px;
+        margin: 0;
+    }
+
+    .instagram-section {
+        height: 100%;
+    }
+
+    .instagram-section .h1 {
+        margin: 20px 0 30px 0;
+    }
+
+    .instagram-section .instagram-images-container {
+        width: 100vw;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instagram-section .instagram-images-container .instagram-image-container {
+        width: 350px;
+    }
+
+    .instagram-section .instagram-images-container .center-image {
+        margin-top: 0;
+    }
+
+    .instagram-section .instagram-images-container .img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .footer .menus-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer .menus-container .menu .input-wrapper {
+        width: 90vw;
+    }
+
+    .footer .menus-container h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    .nav .logo h1 {
+        font-size: 1rem;
+    }
+
+    .nav .nav-main li {
+        margin: 0;
+        padding: 5px;
+    }
+
+    .banner {
+        height: 20vh;
+    }
+
+    .categories-container {
+        height: 15vh;
+        justify-items: center;
+        gap: 0;
+    }
+
+    .categories-container .category {
+        width: 75px;
+        height: 75px;
+    }
+
+    .categories-container .category img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .instagram-images-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    .main .main-wrapper .summary-container p,
+    .main .main-wrapper .summary-container h1 {
+        width: 100%;
+    }
+
+    .product-section .product-container .product-summary {
+        margin-right: 100px;
+    }
+
+    .instagram-image-container.center-image {
+        margin: 0px 25px;
+    }
+}
