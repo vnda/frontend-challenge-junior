@@ -1,0 +1,20 @@
+{
+  "name": "nova-pasta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-babel-minify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

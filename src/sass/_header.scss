@@ -1,0 +1,160 @@
+ header {
+  background-color: $background-body;
+  position: fixed;
+  width: 100vw;
+  height: 102px;
+  z-index: 3000;
+}
+
+.header-content {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    .logo-img {
+      @media (max-width: 660px) {
+        max-width: 140px;
+      }
+
+      @media (max-width: 578px) {
+        max-width: 120px;
+      }
+    }
+  }
+
+  .menu-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-list {
+      display: flex;
+
+      .nav-links {
+        font-weight: bold;
+        padding: 5px 10px;
+        margin: 0 10px 0 10px;
+        border-radius: 5px;
+        transition-duration: 0.3s;
+        letter-spacing: 1px;
+
+        &:hover {
+          color: $white;
+          background-color: $strong-pink;
+        }
+      }
+    }
+  }
+
+  .header-icons {
+    height: 28px;
+    width: 130px;
+    min-width: 130px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      order: 2;
+      height: 25px;
+      max-width: 100px;
+    }
+
+    @media (max-width: 400px) {
+      min-width: 90px;
+      width: 90px;
+    }
+
+    .icon {
+      width: 28px;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.15);
+      }
+
+      .icon-img {
+        width: 100%;
+        height: 100%;
+        transition-duration: 0.3s;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    .navbar {
+      display: none;
+    }
+
+    .menu-section {
+      order: 3;
+    }
+  
+    .menu-toggle {
+      width: 30px;
+      height: 26px;
+  
+      @media (max-width: 400px) {
+        width: 20px;
+      }
+  
+      .one, .two, .three {
+        width: 100%;
+        height: 1px;
+        background-color: $black;
+        margin-top: 6px;
+        transition-duration: 0.3s;
+      }
+    }
+
+    .menu-section.on {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 50vh;
+      background-color: $background-body;
+      z-index: 1600;
+  
+      .navbar {
+        display: block;
+        z-index: 11;
+  
+        .nav-list {
+          flex-direction: column;
+          text-align: center;
+  
+          .nav-links {
+            font-size: 20px;
+            line-height: 4rem;
+            margin-left: 0;
+          }
+        }
+      }
+  
+      .menu-toggle {
+        position: absolute;
+        top: 38px;
+        right: 20px;
+  
+        .one {
+          transform: rotate(45deg) translate(6px, 7px);
+        }
+  
+        .two {
+          opacity: 0;
+        }
+  
+        .three {
+          transform: rotate(-45deg) translate(3px, -4px);
+        }
+      }
+    }
+  }
+}
