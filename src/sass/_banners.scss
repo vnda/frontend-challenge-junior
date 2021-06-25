@@ -1,0 +1,117 @@
+.banners-background {
+  background-color: $background-pink;
+  display: flex;
+
+  .banners-flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+
+    @media (max-width: 1200px) {
+      padding-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .text-introduction {
+      margin-top: -100px;
+      position: relative;
+  
+      @media (max-width: 768px) {
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
+    }
+  
+    .arrow {
+      width: 112px;
+      height: 112px;
+      position: absolute;
+      bottom: -230px;
+      cursor: pointer;
+      transform: rotateZ(270deg);
+      animation: pulse 0.7s infinite;
+      animation-direction: alternate;
+  
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .banners {
+      display: flex;
+      height: 483px;
+      margin-left: 30px;
+
+      @media (max-width: 1200px) {
+        flex-direction: column;
+        height: 939px;
+      }
+
+      @media (max-width: 768px) {
+        margin-left: 0;
+      }
+
+      .banners-img {
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        height: 430px;
+        object-fit: cover;
+
+        @media (max-width: 1200px) {
+          height: 375px;
+        }
+      }
+  
+      .banner-text {
+        background-color: $background-text;
+        font-size: 14px;
+        text-align: center;
+        padding: 20px 25px;
+        border-radius: 0 0 5px 5px;
+        max-width: 350px;
+  
+        .banner-title {
+          font-size: 18px;
+          margin: -4px 0 8px 0;
+        }
+      }
+
+      .aside-banners {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+
+        @media (max-width: 1200px) {
+          margin-top: 30px;
+          margin-left: 0;
+        }
+
+        .small-banner {
+          margin-bottom: 30px;
+          max-width: 350px;
+
+          .small-img {
+            width: 100%;
+            display: block;
+            height: 225px;
+
+            @media (max-width: 1200px) {
+              height: 200px;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.space-height {
+  height: 539px;
+}

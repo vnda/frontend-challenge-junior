@@ -1,0 +1,31 @@
+@keyframes pulse {
+  from {
+    transform: rotateZ(270deg) translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: rotateZ(270deg) translate3d(50px, 0, 0);
+  }
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: 0.4s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(100px, 0, 0);
+}
+
+[data-anime="up"] {
+  transform: translate3d(0, 100px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
