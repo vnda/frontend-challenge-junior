@@ -1,0 +1,78 @@
+.banner {
+    width: 100%;
+    height: fit-content;
+    max-width: 530px;
+    border-radius: 8px;
+    border: 1px solid $colorTertiary;
+    overflow: hidden;
+    &-containerimg {
+        overflow: hidden;
+    }
+    &-img {
+        display: block;
+        transition: transform 0.5s;
+        &:hover {
+            transform:scale(1.05);
+        }
+    }
+    &.-big {
+        .banner-img {
+            max-height: 400px;
+        }
+    }
+    &.-small {
+        .banner-img {
+            max-height: 220px;
+        }
+    }
+    &.-insta {
+        position: relative;
+        .banner-img {
+            max-height: 350px;
+            border-radius: 8px;
+            @include bkp(md) {
+                max-height: 315px;
+            }
+        }
+        .-overlay {
+            opacity: 0;
+            transition: opacity ease 0.5s;
+            background: #f09433; 
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+            background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );   
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+            border-radius: 8px;
+            @extend %flex-centered;
+            &-text {
+                text-align: center;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 30px;
+                color: #fff;
+            }
+        }
+        &:hover {
+            .-overlay {
+                opacity: 1;
+            }
+        }
+    }
+    &-footer {
+        background-color: $colortxtOne;
+        width: 100%;
+        padding: 20px 15px;
+        text-align: center;
+        font-size: 16px;
+    }
+    &-title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+}

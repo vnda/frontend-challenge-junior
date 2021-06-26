@@ -1,0 +1,24 @@
+<div class="cart-overlay"></div>
+<aside class="cart">
+    <header class="cart-header">
+        <span class="cart-close">
+            <i class="fas fa-times"></i>    
+        </span>
+        <h3 class="cart-title">Carrinho <span class="cart-qntd cartqntd" data-qnt="0"></span></h3>
+    </header>
+    <div class="cart-body">
+        <!-- CARDS CART -->	
+        @@include('../components/cardCart.html', {
+            "nameProd":"Prod1",
+            "infoProd":"lorem ipsun dolor sit amet consectetur adipisicing",
+        })
+        @@include('../components/cardCart.html', {
+            "nameProd":"Prod2",
+            "infoProd":"lorem ipsun dolor sit amet consectetur adipisicing",
+        })
+        @@include('../components/cardCart.html', {
+            "nameProd":"Prod3",
+            "infoProd":"lorem ipsun dolor sit amet consectetur adipisicing",
+        })
+    </div>
+</aside>

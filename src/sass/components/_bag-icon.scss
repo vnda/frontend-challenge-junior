@@ -1,0 +1,29 @@
+.bag-buy {
+    &:hover {
+      transform: scale(1.1);
+    }
+    span[data-qnt] {
+      content: "";
+      width: 18px;
+      height: 15px;
+      background-color: #2d004d;
+      border-radius: 100%;
+      padding: 10px;
+      position: absolute;
+      margin-left: -13px;
+      margin-top: 10px;
+      pointer-events: none;
+      font-weight: 700;
+    }
+    span[data-qnt]::after {
+      content: attr(data-qnt);
+      text-align: center;
+      font-size: 11px;
+      position: relative;
+      top: -18px;
+      margin-left: -2.5px;
+      color: #FFFFFF;
+      letter-spacing: 0px;
+      z-index: 3;
+    }
+}

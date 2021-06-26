@@ -1,0 +1,32 @@
+@import "./base/reset";
+@import "./base/media";
+@import "./base/font";
+@import "./base/z-index";
+@import "./base/helpers";
+@import "./base/colors";
+@import "./base/global";
+
+@import "./components/controls";
+
+
+@import "./components/header";
+@import "./components/menu-icon";
+@import "./components/searchbar";
+
+@import "./components/bag-icon";
+@import "./components/cart";
+@import "./components/cardCart";
+
+@import "./components/hero";
+@import "./components/pit-bar";
+
+@import "./components/blocktxt";
+
+@import "./components/banners";
+@import "./components/sectionThreeBanner";
+
+@import "./components/sectionWithSlider";
+
+@import "./components/sectionInstagram";
+
+@import "./components/footer";
