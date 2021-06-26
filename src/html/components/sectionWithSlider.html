@@ -1,0 +1,32 @@
+<section class="sectionwithslider">
+    <div class="sectionwithslider-container">
+        <div class="sectionwithslider-inner">
+            <div class="sectionwithslider-banner">
+                <figure class="sectionwithslider-bannercontainer"  data-aos="fade-right">
+                    <img src="./src/assets/ricky-3.jpeg" alt="img">
+                </figure>
+            </div>
+            @@include('../components/blocktext.html', {
+                "txttop": "Lorem ipsum dolor",
+                "title": "Título 2",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit odio aspernatur tenetur mollitia cum sunt, facere sapiente rem, delectus voluptas et. Similique suscipit illum mollitia eligendi, ea non corrupti ipsum?",
+                "hasbtn": true
+            })
+            <div class="swiper-container sectionwithslider-slider"  data-aos="fade-left">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./src/assets/ricky2.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/assets/ricky1.jpg" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/assets/ricky.jpeg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+</section>

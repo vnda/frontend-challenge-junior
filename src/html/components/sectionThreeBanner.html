@@ -1,0 +1,52 @@
+<section class="threebaner">
+    <div class="threebaner-container -one">
+        @@include('../components/blocktext.html', {
+            "txttop": "Lorem ipsum dolor",
+            "title": "Título 1",
+            "aosConfig": "fade-up",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit odio aspernatur tenetur mollitia cum sunt, facere sapiente rem, delectus voluptas et. Similique suscipit illum mollitia eligendi, ea non corrupti ipsum?Lorem ipsum dolor sit",
+            "hasbtn": false
+        })
+        <img class="threebaner-arrow" src="./src/assets/arrow-down.png" alt="arrow down">
+    </div>
+    <div class="threebaner-container -two glob-slider">
+        <div class="swiper-slide threebaner-container -banner1">
+            @@include('./banner.html', {
+                "class": "-big",
+                "img": "./src/assets/city5.jpeg",
+                "title": "Título do Banner1",
+                "aosConfig": "fade-up",
+                "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                "hasfooter": true,
+                "hasoverlay": false
+            })	
+        </div>
+        <div class="swiper-slide threebaner-container -banner2">
+            @@include('./banner.html', {
+                "class": "-small",
+                "hideClass": "is-desktop",
+                "aosConfig": "fade-up",
+                "img": "./src/assets/city2.jpeg",
+                "imgMobile": "./src/assets/city2.jpeg",
+                "hasImgMobile": true,
+                "title": "Título do Banner2",
+                "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                "hasfooter": true,
+                "hasoverlay": false            
+            })	
+        </div>
+        <div class="swiper-slide threebaner-container -banner3">
+            @@include('./banner.html', {
+                "class": "-big",
+                "img": "./src/assets/city1.jpeg",
+                "title": "Título do Banner3",
+                "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                "hasfooter": true,
+                "hasoverlay": false
+            })	
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <div class="threebaner-container -three"></div>
+</section>

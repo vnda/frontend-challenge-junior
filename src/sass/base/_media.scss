@@ -1,0 +1,27 @@
+@mixin bkp($bkp) {
+    @if $bkp==sm {
+        @media (max-width: 500px) {
+            @content;
+        }
+    }
+    @else if $bkp==sm2 {
+        @media (max-width: 620px) {
+            @content;
+        }
+    }
+    @else if $bkp==md {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+    @else if $bkp==lg {
+        @media (max-width: 1099px) {
+            @content;
+        }
+    }
+    @else if $bkp==xl {
+        @media (min-width: 1100px) {
+            @content;
+        }
+    }
+}

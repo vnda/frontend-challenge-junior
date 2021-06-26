@@ -1,0 +1,40 @@
+%flex-centered {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+%flex-center-between {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+%-noscroll {
+    overflow: hidden;
+}
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: #00000070;
+    z-index: $overlay-index
+}
+.overlay.-open {
+    display: block;
+}
+.is-mobile {
+    display: none !important;
+}
+.is-desktop {
+    display: block !important;
+}
+@include bkp(md) {
+    .is-mobile {
+        display: inline-block !important;
+    } 
+    .is-desktop {
+        display: none !important;
+    }
+}

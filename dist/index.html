@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire me</title>
+    <!-- Font Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font PT Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <!-- AOS - Lib Scrolling -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./src/min/style.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+    <div class="header-containerimg">
+        <img class="header-logo" src="./src/assets/Hire-Me-Logotipo.png" alt="hire me logo">
+    </div>
+    <nav class="header-nav">
+        <ul class="header-list">
+            <span class="close-menu">
+                <i class="fas fa-times"></i>
+            </span>
+            <li class="header-item">MENU</li>
+            <li class="header-item">MENU</li>
+            <li class="header-item">MENU</li>
+            <li class="header-item">MENU</li>
+            <li class="header-item">MENU</li>
+        </ul>
+        <div class="menu-icon is-mobile">
+            <div class="stripe1"></div>
+            <div class="stripe2"></div>
+            <div class="stripe3"></div>
+        </div>
+    </nav> 
+    <ul class="header-listicons">
+        <li class="header-icon" id="iconsearch"><i class="fas fa-search"></i></li>
+        <li class="header-icon" id="iconuser"><i class="fas fa-user-circle"></i></li>
+        <li class="header-icon bag-buy" id="iconbag">
+            <i class="fas fa-shopping-basket" id="cartBag"></i>
+            <span id="cart-qnt" class="cartqntd" data-qnt="0" ></span>
+        </li>
+    </ul>
+    <form class="searchbar" id="searchbar">
+        <label class="searchbar-container" for="search">
+            <i id="searchiconSubmit" class="fas fa-search"></i>
+            <input class="searchbar-input" type="text" name="search" id="search" placeholder="Buscar">
+        </label>
+    </form>
+</header> 
+    <!-- CART -->	
+    <div class="cart-overlay"></div>
+<aside class="cart">
+    <header class="cart-header">
+        <span class="cart-close">
+            <i class="fas fa-times"></i>    
+        </span>
+        <h3 class="cart-title">Carrinho <span class="cart-qntd cartqntd" data-qnt="0"></span></h3>
+    </header>
+    <div class="cart-body">
+        <!-- CARDS CART -->	
+        <div class="card">
+    <span class="card-close">
+        <i class="fas fa-trash-alt"></i>
+    </span>
+    <div class="card-img"></div>
+    <div class="card-body">
+        <h2>Prod1</h2>
+        <p>lorem ipsun dolor sit amet consectetur adipisicing</p>
+    </div>
+</div>
+        <div class="card">
+    <span class="card-close">
+        <i class="fas fa-trash-alt"></i>
+    </span>
+    <div class="card-img"></div>
+    <div class="card-body">
+        <h2>Prod2</h2>
+        <p>lorem ipsun dolor sit amet consectetur adipisicing</p>
+    </div>
+</div>
+        <div class="card">
+    <span class="card-close">
+        <i class="fas fa-trash-alt"></i>
+    </span>
+    <div class="card-img"></div>
+    <div class="card-body">
+        <h2>Prod3</h2>
+        <p>lorem ipsun dolor sit amet consectetur adipisicing</p>
+    </div>
+</div>
+    </div>
+</aside>	
+    <!-- HERO -->	
+    <section class="hero">
+    <div class="swiper-container hero-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="hero-item">
+                    <img class="hero-img" src="./src/assets/banner.jpg" alt="Hero Image" title="Hero Image">
+                </div>
+                <div class="hero-overlay">
+                    <img class="hero-logo" src="./src/assets/Hire-Me-Logotipo.png" alt="hire me logo">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="hero-item">
+                    <img class="hero-img" src="./src/assets/banner.jpg" alt="Hero Image" title="Hero Image">
+                </div>
+                <div class="hero-overlay">
+                    <img class="hero-logo" src="./src/assets/Hire-Me-Logotipo.png" alt="hire me logo">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="hero-item">
+                    <img class="hero-img" src="./src/assets/banner.jpg" alt="Hero Image" title="Hero Image">
+                </div>
+                <div class="hero-overlay">
+                    <img class="hero-logo" src="./src/assets/Hire-Me-Logotipo.png" alt="hire me logo">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>	
+    <!-- PITBAR -->	
+    <section class="pitbar" data-aos="fade-up">
+    <div class="swiper-container pitbar-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="pitbar-item">
+                    <img class="pitbar-img" src="./src/assets/Hire-Me-Logotipo.png" alt="pitbar Image" title="pitbar Image">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="pitbar-item">
+                    <img class="pitbar-img" src="./src/assets/Hire-Me-Logotipo.png" alt="pitbar Image" title="pitbar Image">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="pitbar-item">
+                    <img class="pitbar-img" src="./src/assets/Hire-Me-Logotipo.png" alt="pitbar Image" title="pitbar Image">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="pitbar-item">
+                    <img class="pitbar-img" src="./src/assets/Hire-Me-Logotipo.png" alt="pitbar Image" title="pitbar Image">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="pitbar-item">
+                    <img class="pitbar-img" src="./src/assets/Hire-Me-Logotipo.png" alt="pitbar Image" title="pitbar Image">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="pitbar-item">
+                    <img class="pitbar-img" src="./src/assets/Hire-Me-Logotipo.png" alt="pitbar Image" title="pitbar Image">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>	
+    <!-- THREE BANNER -->	
+    <section class="threebaner">
+    <div class="threebaner-container -one">
+        <div class="blocktxt" data-aos="fade-right">
+    <p class="blocktxt-texttop">Lorem ipsum dolor</p>
+    <h1 class="blocktxt-title">Título 1</h1>
+    <p class="blocktxt-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit odio aspernatur tenetur mollitia cum sunt, facere sapiente rem, delectus voluptas et. Similique suscipit illum mollitia eligendi, ea non corrupti ipsum?Lorem ipsum dolor sit
+    </p>
+    
+</div>
+        <img class="threebaner-arrow" src="./src/assets/arrow-down.png" alt="arrow down">
+    </div>
+    <div class="threebaner-container -two glob-slider">
+        <div class="swiper-slide threebaner-container -banner1">
+            <div class="banner -big" data-aos="fade-up">
+    <div class="banner-containerimg">
+        <img class="banner-img @@hideClass" src="./src/assets/city5.jpeg" alt="img">
+        
+    </div>
+    
+        <div class="banner-footer">
+            <h4 class="banner-title">
+                Título do Banner1
+            </h4>
+            <p class="banner-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+    
+    
+</div>	
+        </div>
+        <div class="swiper-slide threebaner-container -banner2">
+            <div class="banner -small" data-aos="fade-up">
+    <div class="banner-containerimg">
+        <img class="banner-img is-desktop" src="./src/assets/city2.jpeg" alt="img">
+        
+            <img class="banner-img is-mobile" src="./src/assets/city2.jpeg" alt="img">
+        
+    </div>
+    
+        <div class="banner-footer">
+            <h4 class="banner-title">
+                Título do Banner2
+            </h4>
+            <p class="banner-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+    
+    
+</div>	
+        </div>
+        <div class="swiper-slide threebaner-container -banner3">
+            <div class="banner -big" data-aos="@@aosConfig">
+    <div class="banner-containerimg">
+        <img class="banner-img @@hideClass" src="./src/assets/city1.jpeg" alt="img">
+        
+    </div>
+    
+        <div class="banner-footer">
+            <h4 class="banner-title">
+                Título do Banner3
+            </h4>
+            <p class="banner-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+    
+    
+</div>	
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <div class="threebaner-container -three"></div>
+</section>
+    <!-- BANNER WITH SLIDER -->	
+    <section class="sectionwithslider">
+    <div class="sectionwithslider-container">
+        <div class="sectionwithslider-inner">
+            <div class="sectionwithslider-banner">
+                <figure class="sectionwithslider-bannercontainer"  data-aos="fade-right">
+                    <img src="./src/assets/ricky-3.jpeg" alt="img">
+                </figure>
+            </div>
+            <div class="blocktxt" data-aos="fade-right">
+    <p class="blocktxt-texttop">Lorem ipsum dolor</p>
+    <h1 class="blocktxt-title">Título 2</h1>
+    <p class="blocktxt-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit odio aspernatur tenetur mollitia cum sunt, facere sapiente rem, delectus voluptas et. Similique suscipit illum mollitia eligendi, ea non corrupti ipsum?
+    </p>
+    
+        <button class="blocktxt-btn">Call-to-action</button>
+    
+</div>
+            <div class="swiper-container sectionwithslider-slider"  data-aos="fade-left">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./src/assets/ricky2.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/assets/ricky1.jpg" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/assets/ricky.jpeg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- INSTAGRAM -->	
+    <section class="instagram">
+    <h3 class="instagram-title"><span>@hire</span>me</h3>
+    <div class="swiper-container instagram-container glob-slider">
+        <div class="swiper-wrapper insta-slides">
+                <div class="banner -insta" data-aos="fade-right">
+    <div class="banner-containerimg">
+        <img class="banner-img @@hideClass" src="./src/assets/animal1.jpeg" alt="img">
+        
+    </div>
+    
+    
+        <div class="-overlay">
+            <p class="-overlay-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Sint voluptates corrupti asperiores labore ea 
+                aliquid tempora quos atque veritatis
+            </p> 
+        </div>
+    
+</div>
+                <div class="banner -insta" data-aos="fade-up">
+    <div class="banner-containerimg">
+        <img class="banner-img @@hideClass" src="./src/assets/animal3.jpeg" alt="img">
+        
+    </div>
+    
+    
+        <div class="-overlay">
+            <p class="-overlay-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Sint voluptates corrupti asperiores labore ea 
+                aliquid tempora quos atque veritatis
+            </p> 
+        </div>
+    
+</div>
+                <div class="banner -insta" data-aos="fade-left">
+    <div class="banner-containerimg">
+        <img class="banner-img @@hideClass" src="./src/assets/animal2.jpeg" alt="img">
+        
+    </div>
+    
+    
+        <div class="-overlay">
+            <p class="-overlay-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Sint voluptates corrupti asperiores labore ea 
+                aliquid tempora quos atque veritatis
+            </p> 
+        </div>
+    
+</div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>		
+   
+    <footer class="footer">
+        <!-- INSTAGRAM -->	
+        <div class="footer-containerlogo">
+    <img class="footer-logo" src="./src/assets/Hire-Me-Logotipo.png" alt="hire me logo">
+</div>
+<div class="footer-grid">
+    <div class="footer-item">
+        <h6 class="footer-itemtitle">Menu</h6>
+        <div class="footer-item -flex">
+            <ul class="footer-itemlist">
+                <li>Submenu</li>
+                <li>Submenu</li>
+            </ul>
+            <ul class="footer-itemlist">
+                <li>Submenu</li>
+                <li>Submenu</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-item">
+        <h6 class="footer-itemtitle">Menu</h6>
+        <form class="footer-groupinput">
+            <input type="text" id="footerinput" placeholder="Insira seu e-mail">
+            <label for="footerinput">
+                Enviar</i>
+            </label>
+        </label>
+    </div>
+    <div class="footer-item">
+        <h6 class="footer-itemtitle">Menu</h6>
+        <ul class="footer-itemlist">
+            <li>
+                <i class="fab fa-instagram iconinsta"></i>
+                Submenu
+            </li>
+            <li>
+                <i class="fab fa-facebook iconfacebook"></i>
+                Submenu
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer-copy">
+    @HireMe - Tecnologia para ecommerce - CNPJ 00.0000.000/0001-00
+</div>	
+        <div class="overlay"></div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./src/min/index.min.js"></script>
+    </footer>
+</body>
+</html>

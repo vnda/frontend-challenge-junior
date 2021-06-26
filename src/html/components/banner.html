@@ -1,0 +1,27 @@
+<div class="banner @@class" data-aos="@@aosConfig">
+    <div class="banner-containerimg">
+        <img class="banner-img @@hideClass" src="@@img" alt="img">
+        @@if ( context.hasImgMobile === true) {
+            <img class="banner-img is-mobile" src="@@imgMobile" alt="img">
+        }
+    </div>
+    @@if ( context.hasfooter === true) {
+        <div class="banner-footer">
+            <h4 class="banner-title">
+                @@title
+            </h4>
+            <p class="banner-text">
+                @@text
+            </p>
+        </div>
+    }
+    @@if ( context.hasoverlay === true) {
+        <div class="-overlay">
+            <p class="-overlay-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Sint voluptates corrupti asperiores labore ea 
+                aliquid tempora quos atque veritatis
+            </p> 
+        </div>
+    }
+</div>

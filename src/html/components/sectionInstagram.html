@@ -1,0 +1,36 @@
+<section class="instagram">
+    <h3 class="instagram-title"><span>@hire</span>me</h3>
+    <div class="swiper-container instagram-container glob-slider">
+        <div class="swiper-wrapper insta-slides">
+                @@include('./banner.html', {
+                    "class": "-insta",
+                    "img": "./src/assets/animal1.jpeg",
+                    "title": "Título do Banner1",
+                    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "hasfooter": false,
+                    "aosConfig": "fade-right",
+                    "hasoverlay": true
+                })
+                @@include('./banner.html', {
+                    "class": "-insta",
+                    "img": "./src/assets/animal3.jpeg",
+                    "title": "Título do Banner1",
+                    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "hasfooter": false,
+                    "aosConfig": "fade-up",
+                    "hasoverlay": true
+                })
+                @@include('./banner.html', {
+                    "class": "-insta",
+                    "img": "./src/assets/animal2.jpeg",
+                    "title": "Título do Banner1",
+                    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "hasfooter": false,
+                    "aosConfig": "fade-left",
+                    "hasoverlay": true
+                })
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>

@@ -1,0 +1,26 @@
+.swiper-button-next,
+.swiper-button-prev {
+    border-radius: 50%;
+    padding: 2px 23px;
+    z-index: 100;
+    color: $colorExtra1;
+    &:after {
+        font-size: 24px;
+    }
+}
+.swiper-button-next {
+    right: -5px;
+}
+.swiper-button-prev {
+    left: -5px;
+}
+.swiper-pagination-bullet {
+    background-color: $colorExtra1;
+    opacity: 1;
+    transition: width 0.3s;
+    &-active {
+        width: 37px;
+        border-radius: 4px;
+        background-color:$colorPrimary;
+    }
+}

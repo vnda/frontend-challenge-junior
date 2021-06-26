@@ -1,0 +1,47 @@
+.blocktxt {
+    width: 35%;
+    padding: 20px;
+    letter-spacing: 0.5px;
+    &-texttop {
+        margin-top: 75px;
+        color: $colorSecondary;
+        font-weight: 700;
+    }
+    &-title {
+        font-size: 45px;
+        margin: 20px 0;
+        font-weight: 700;
+        color: $colortxtOne;
+    }
+    &-text {
+        line-height: 25px;
+        color: $colortxtOne;
+        font-family: $fontSecondary;
+        font-style: italic;
+    }
+    &-btn {
+        @extend %flex-centered;
+        height: 50px;
+        width: 100%;
+        max-width: 200px;
+        background-color: $colorSecondary;
+        border: none;
+        color: $colortxtOne;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 30px;
+        transition: background 0.6s;
+        &:hover {
+            border-color: $colorSecondary;
+            background-color: $colortxtOne;
+            color: $colorSecondary;
+        }
+    }
+    @media (max-width: 1100px) {
+        width: 50%;
+    }
+    @include bkp(sm2) {
+        width: 100%;
+    }
+}
