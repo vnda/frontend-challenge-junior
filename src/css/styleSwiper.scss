@@ -1,0 +1,44 @@
+.swiper-container{
+    height: 500px;
+    position: relative;
+    .swiper-slide{
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 60px;
+        color: #ffffff;
+        font-size: 18px;
+        -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 40px 60px;
+    }
+    .parallax-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 130%;
+      height: 100%;
+      //background-image:url(../img/banner/banner.jpg);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+    }
+    .swiper-slide .title{
+      font-size: 41px;
+      font-weight: 300;
+    }  
+    .swiper-slide .subtitle {
+    font-size: 21px;
+    }  
+    .swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+  }
+
+}
+
+
+
+

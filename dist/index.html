@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Junior - Gabriela R. Neto</title>
+
+    <link rel="icon" href="img/icons/logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleSwiper.css">
+    <link rel="stylesheet" href="css/styleSwiper.min.css">
+    <link rel="stylesheet" href="css/styleSwiper.scss">
+
+    <!-- Swipper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="js/menu-mob.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/seta-scroll.js"></script>
+</head>
+
+<body>
+  <!-- Menu -->
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="larg-interna">
+        <a href="#" class="logo"></a>
+        <button class="menu-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navbar-menu">
+          <a href="#home">Home</a>
+          <a href="#conceito">Conceito</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#midia">Midia</a>
+        </div>
+        <div class="barra-icones">
+          <input id="myInput" class="myInput" type="text">
+          <img src="img/icons/loupe-icon.png"/>
+          <div class="espacX"></div>
+          <img src="img/icons/profile-icon.png"/>
+          <div class="espacX"></div>
+          <img src="img/icons/basket-icon.png"/>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <!-- <section id="home"></section>-->
+
+<!-- Swiper -->
+<div class="swiper-container">
+  <div class="parallax-bg" style="background-image:url(img/banner/banner.jpg)" data-swiper-parallax="-23%"></div>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="title" data-swiper-parallax="-300">Slide 1</div>
+      <div class="subtitle" data-swiper-parallax="-200"></div>
+      <div class="text" data-swiper-parallax="-100"></div>
+    </div>
+    <div class="swiper-slide">
+      <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Slide 2</div>
+      <div class="subtitle" data-swiper-parallax="-200"></div>
+      <div class="text" data-swiper-parallax="-100"></div>
+    </div>
+    <div class="swiper-slide">
+      <div class="title" data-swiper-parallax="-300">Slide 3</div>
+      <div class="subtitle" data-swiper-parallax="-200"></div>
+      <div class="text" data-swiper-parallax="-100"></div>
+    </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination swiper-pagination-white"></div>
+  <!-- Add Navigation -->
+  <div class="swiper-button-prev swiper-button-white"></div>
+  <div class="swiper-button-next swiper-button-white"></div>
+</div>
+    <!-- Conceito -->
+    <section id="conceito">
+        <div class="larg-interna">
+          <div class="container-sessao">
+            <div class="conceito-item">
+                <img src="img/conceito/conc-1.jpg" alt="" class="conceito-item-img">
+            </div>
+            <div class="conceito-item">
+                <img src="img/conceito/conc-2.jpg" alt="" class="conceito-item-img">
+            </div>
+            <div class="conceito-item">
+                <img src="img/conceito/conc-3.jpg" alt="" class="conceito-item-img">
+            </div>
+            <div class="conceito-item">
+                <img src="img/conceito/conc-4.jpg" alt="" class="conceito-item-img">
+            </div>
+            <div class="conceito-item">
+                <img src="img/conceito/conc-5.jpg" alt="" class="conceito-item-img">
+            </div>
+            <div class="conceito-item">
+                <img src="img/conceito/conc-6.jpg" alt="" class="conceito-item-img">
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <div class="larg-interna">    
+          <div class="container">
+            <div class="conteudo-sobre">
+              <h1>Hi! I'm Darkcode</h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed fuga eaque, culpa cupiditate animi laborum natus! Similique odio sit facilis dolorum dicta velit provident sequi iusto, est pariatur quisquam corrupti animi necessitatibus aliquid deserunt reprehenderit voluptatibus? Exercitationem deserunt fugit dicta nesciunt velit quae tempora eius praesentium odio est, voluptatem vero incidunt omnis ad iure, soluta maiores nostrum inventore alias culpa. Nihil suscipit possimus est harum accusamus impedit libero deleniti repellat.
+                </p>
+              <button onclick="flechaScroll()" class="flecha fas fa-arrow-down" aria-hidden="true"></button>
+            </div>
+
+            <div class="card">
+              <img src="img/sobre/about-1.jpg">
+              <div class="formaText-card0">
+                <h3>Software engineering</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>    
+              </div> 
+            </div>
+
+            <div class="card0">
+              <img src="img/sobre/about-2.jpg"> 
+              <div class="formaText">
+                <h3>Software engineering</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>    
+              </div> 
+
+            <div class="card1">
+              <img src="img/sobre/about-3.jpg">
+              <div class="formaText">
+                <h3>Software engineering</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla aperiam enim eveniet adipisci ipsum.</p>  
+                <div class="espacY"></div>
+              </div> 
+            </div>
+          </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos">
+        <img src="img/produtos/ideia-produto.jpg" class="col-esquerda">
+        
+        <div class="col-direita" id="myDiv">
+          <h4>Lorem ipsum lorem dolor</h4>
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Metus vulputate eu scelerisque
+            felis imperdiet proin fermentum. Praesent
+            semper feugiat nibh sed pulvinar proin
+            gravida.</p>
+          
+          <!-- Modal -->
+          <div id="popup" class="popup">
+            <button onclick="fecharModal()" class="fecharPop fa fa-times"></button>
+            <div class="slides">
+              <div class="slide">
+                <img src="img/produtos/prod-1.jpg" alt="Produto 1">
+              </div>
+          
+              <div class="slide">
+                <img src="img/produtos/prod-2.jpg" alt="Produto 2">
+              </div>
+          
+              <div class="slide">
+                <img src="img/produtos/prod-3.jpg" alt="Produto 3">
+              </div>
+          
+              <div class="slide">
+                <img src="img/produtos/prod-4.jpg" alt="Produto 4">
+              </div>
+
+              <div onclick="setaEsquerda()" class="btnLeft fas fa-chevron-left"></div>
+              <div onclick="setaDireita()" class="btnRight fas fa-chevron-right"></div>
+            </div>		
+          </div><div class="espacY"></div>
+
+          <button onclick="abrirModal()" class="btn">Clique Aqui</button>
+        
+        </div>
+          </div>
+        </div>
+    </section>
+    
+    <!-- Midia -->
+    <section id="midia">
+        <div class="larg-interna">
+          <h1 class="section-title">@instadamarca</h1>
+          <div class="container-midia">
+            <div class="item">
+              <img src="img/midia/mid-1.jpg" class="insta-img">
+            </div>
+    
+            <div class="item">
+              <img src="img/midia/mid-2.jpg" class="insta-img">
+            </div>
+    
+            <div class="item">
+              <img src="img/midia/mid-3.jpg" class="insta-img">
+            </div>
+          </div>
+    
+        </div>
+    </section>
+      
+    <!-- Footer -->
+    <footer id="footer">
+      <a class="section-title" href="#" title="Voltar ao topo da página">
+        <img src="img/icons/logo.png">
+      </a>
+
+      <div class="rodape-conteudo" role="presentation">      
+        <section class="col1-footer">
+          <h1 class="rodape-titulo">MENU</h1>
+            <div class="coluninhas">
+              <ul>submenu</ul>
+              <ul>submenu</ul>
+              <ul>submenu</ul>
+              <ul>submenu</ul>
+            </div>
+        </section> 
+            
+        <section class="col2-footer">
+          <h1 class="rodape-titulo">MENU</h1>
+            <div class="login-box">
+              <div class="textbox">
+                <i class="fa fa-envelope"></i>
+                <input type="email" class="campo-email" id="campo-email" placeholder="E-mail">
+                <button type="email" class="btn">E-mail <i class='fas fa-angle-right'></i></button>
+              </div>
+            </div><br><br>
+            <ul>@Vnda - Tecnologia para ecommerce - CNPJ 00.0000.000/0001-00</ul>
+        </section>
+
+        <section class="col3-footer">
+          <h1 class="rodape-titulo">MENU</h1>
+            <ul><a href="#" class="fab fa-instagram"></a>  Submenu</ul>
+            <ul><a href="#" class="fab fa-facebook-f"></a>   Submenu</ul>
+        </section>
+      </div>
+    </footer>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      speed: 600,
+      parallax: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+</body>
+</html>
