@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Challenge Júnior</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+</head>
+<body>
+
+  <!-- MENU -->
+  <nav class="main-nav">
+    <div class="container">
+      <div class="nav-content">
+        <div class="hamburger">
+          <div class="hamburger-bar"></div>
+        </div>
+        <h1>
+          <a href="#" class="nav-logo">
+            Logo
+          </a>
+        </h1>
+        <ul class="nav-menu">
+          <li class="nav-menu_item"><a href="#">MENU</a></li>
+          <li class="nav-menu_item"><a href="#">MENU</a></li>
+          <li class="nav-menu_item"><a href="#">MENU</a></li>
+          <li class="nav-menu_item"><a href="#">MENU</a></li>
+          <li class="nav-menu_item"><a href="#">MENU</a></li>
+        </ul>
+        <ul class="nav-buttons">
+          <li class="nav-menu_item">
+            <button class="btn-busca"><i class="fas fa-search"></i></button>
+          </li>
+          <li class="nav-menu_item"><a href="#"><i class="fas fa-user-circle"></i></a></li>
+          <li class="nav-menu_item"><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FORM BUSCA -->
+  <div class="form-busca">
+    <div class="container">
+      <form action="" class="busca">
+        <div class="input-group">
+          <input type="search" name="search" id="busca" placeholder=" ">
+          <label for="busca">Buscar</label>
+        </div>
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- HEADER CHAMADA -->
+  <header class="chamada-home">
+    <div class="slider-home">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://picsum.photos/1200/500?random=1" class="slider-1">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://picsum.photos/1200/500?random=2" class="slider-2">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://picsum.photos/1200/500?random=3" class="slider-3">
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </header>
+
+  <!-- SECTION MARCAS -->
+  <section class="marcas">
+    <div class="container">
+      <div class="marcas-content slider-marcas">
+        <div class="swiper-wrapper">
+          <div class="marcas-item swiper-slide"><img src="https://picsum.photos/200/200?random=4" alt=""></div>
+          <div class="marcas-item swiper-slide"><img src="https://picsum.photos/200/200?random=5" alt=""></div>
+          <div class="marcas-item swiper-slide"><img src="https://picsum.photos/200/200?random=6" alt=""></div>
+          <div class="marcas-item swiper-slide"><img src="https://picsum.photos/200/200?random=7" alt=""></div>
+          <div class="marcas-item swiper-slide"><img src="https://picsum.photos/200/200?random=8" alt=""></div>
+          <div class="marcas-item swiper-slide"><img src="https://picsum.photos/200/200?random=9" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION DESTAQUE -->
+  <section class="destaque">
+    <div class="container linha-beetween">
+      <div class="destaque-info">
+        <h5>Lorem ipsum lorem dolor</h5>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Praesent semper feugiat nibh sed pulvinar proin gravida.</p>
+      </div>
+      <div class="destaque-content">
+        <div class="col-50 col-mb-100">
+          <div class="destaque-item destaque-1">
+            <img src="https://picsum.photos/270/600?random=10" alt="Banner">
+            <div class="item-info">
+              <h3>Título do banner</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-50 col-mb-100">
+          <div class="destaque-item destaque-2">
+            <img src="https://picsum.photos/270/600?random=11" alt="Banner">
+            <div class="item-info">
+              <h3>Título do banner</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+          </div>
+          <div class="destaque-item destaque-3">
+            <img src="https://picsum.photos/270/600?random=12" alt="Banner">
+            <div class="item-info">
+              <h3>Título do banner</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PRODUTOS -->
+  <section class="produtos">
+    <div class="container">
+      <div class="linha">
+        <div class="col-25 col-mb-100">
+          <img src="https://picsum.photos/315/410?random=4" class="produtos-img">
+        </div>
+        <div class="col-25 col-mb-100">
+          <div class="produtos-info">
+            <h5>Lorem ipsum lorem dolor</h5>
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Praesent semper feugiat nibh sed pulvinar proin gravida.</p>
+            <a href="#" class="btn-dark">Call-to-action ></a>
+          </div>
+        </div>
+        <div class="col-50 col-mb-100">
+          <div class="slider-produtos">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="https://picsum.photos/600/400?random=15" class="slider-1">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="https://picsum.photos/600/400?random=16" class="slider-1">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="https://picsum.photos/600/400?random=17" class="slider-1">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION INSTAGRAM -->
+  <section class="instagram">
+    <div class="container">
+      <h2>@instadamarca</h2>
+      <div class="slider-insta">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="https://picsum.photos/500/410?random=41" alt="Instagram">
+              <div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Praesent semper feugiat nibh sed pulvinar proin gravida.
+                </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="https://picsum.photos/500/410?random=42" alt="Instagram">
+              <div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Praesent semper feugiat nibh sed pulvinar proin gravida.
+                </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="https://picsum.photos/500/410?random=43" alt="Instagram">
+              <div class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Praesent semper feugiat nibh sed pulvinar proin gravida.
+                </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo"><h2>Logo</h2></div>
+    <div class="container linha-beetween">
+      <div class="col-20 col-mb-100">
+        <h4>MENU</h4>
+        <ul class="footer-menu">
+          <li><a href="#">Submenu</a></li>
+          <li><a href="#">Submenu</a></li>
+          <li><a href="#">Submenu</a></li>
+          <li><a href="#">Submenu</a></li>
+        </ul>
+      </div>
+      <div class="col-50 col-mb-100">
+        <h4>Menu</h4>
+        <form action="" class="newsletter">
+          <div class="input-group">
+            <input type="email" name="email" id="email" placeholder=" ">
+            <label for="email">Email</label>
+          </div>
+          <button type="submit">Enviar ></button>
+        </form>
+      </div>
+      <div class="col-20 col-mb-100">
+        <h4>Menu</h4>
+        <ul class="footer-redes">
+          <li><a href=""><span><i class="fab fa-fw fa-instagram"></i></span>Submenu</a></li>
+          <li><a href=""><span><i class="fab fa-fw fa-facebook-f"></i></span>Submenu</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>@Vnda - Tecnologia para ecommerce - CNPJ 00.0000.000/0001-00</p>
+    </div>
+  </footer>
+  <!-- Jquery -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

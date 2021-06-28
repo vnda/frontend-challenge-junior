@@ -1,0 +1,123 @@
+// @import "node_modules/swiper/swiper.scss";
+@import 'mixin';
+
+
+@include font-face("PlayfairDisplay", "PlayfairDisplay-Regular", 400, normal);
+@include font-face("PlayfairDisplay", "PlayfairDisplay-Medium", 500, normal);
+@include font-face("PlayfairDisplay", "PlayfairDisplay-MediumItalic", 500, italic);
+@include font-face("PlayfairDisplay", "PlayfairDisplay-SemiBold", 600, normal);
+@include font-face("PlayfairDisplay", "PlayfairDisplay-SemiBoldItalic", 600, italic);
+@include font-face("PlayfairDisplay", "PlayfairDisplay-Bold", 700, normal);
+@include font-face("PlayfairDisplay", "PlayfairDisplay-BoldItalic", 700, italic);
+@include font-face("PlayfairDisplay", "PlayfairDisplay-ExtraBold", 800, normal);
+@include font-face("PlayfairDisplay", "PlayfairDisplay-ExtraBoldItalic", 800, italic);
+@include font-face("PlayfairDisplay", "PlayfairDisplay-Black", 900, normal);
+@include font-face("PlayfairDisplay", "PlayfairDisplay-BlackItalic", 900, italic);
+
+@include font-face("PTSans", "PTSans-Regular", 400, normal);
+@include font-face("PTSans", "PTSans-Italic", 400, italic);
+@include font-face("PTSans", "PTSans-Bold", 700, normal);
+@include font-face("PTSans", "PTSans-BoldItalic", 700, italic);
+
+@import 'fontawesome/scss/fontawesome.scss';
+@import 'fontawesome/scss/regular.scss';
+@import 'fontawesome/scss/brands.scss';
+@import 'fontawesome/scss/solid.scss';
+
+
+.container {
+  max-width: 1400px;
+  padding: 0 2rem;
+  margin: auto;
+}
+
+/*Linhas*/
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.linha-beetween {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Colunas */
+
+.col-20 {
+  max-width: 20%;
+  flex: 1 1 20%;
+  padding: 0 20px;
+}
+
+.col-25 {
+  max-width: 25%;
+  flex: 1 1 25%;
+  padding: 0 20px;
+}
+
+.col-33 {
+  max-width: 33.33333%;
+  flex: 1 1 33.33333%;
+  padding: 0 20px;
+}
+
+.col-50 {
+  max-width: 50%;
+  flex: 1 1 50%;
+  padding: 0 20px;
+}
+.col-66 {
+  max-width: 66.66666%;
+  flex: 1 1 66.66666%;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .col-mb-100 {
+    max-width: 100%;
+    flex: 1 1 100%;
+    padding: 0;
+  }
+}
+
+// BUTTONS
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: set-text-color($main-color);
+    background-color: $main-color;
+  }
+
+  &-light {
+    @extend %btn-shared;
+    color: set-text-color($light-color);;
+    background-color: $light-color;
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    color: set-text-color($dark-color);;
+    background-color: $dark-color;
+  }
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $main-color;
+  color: set-text-color($main-color);
+}

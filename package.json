@@ -1,0 +1,30 @@
+{
+  "name": "frontend-challenge-junior",
+  "version": "1.0.0",
+  "description": "Frontend challenge júnior",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erlijunior/frontend-challenge-junior.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erlijunior/frontend-challenge-junior/issues"
+  },
+  "homepage": "https://github.com/erlijunior/frontend-challenge-junior#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-terser": "^1.2.0"
+  },
+  "dependencies": {
+    "swiper": "^5.3.6"
+  }
+}
