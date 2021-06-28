@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_10" data-name="Retângulo 10" width="22" height="22" transform="translate(897 1253)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="userDark" transform="translate(-897 -1253)" clip-path="url(#clip-path)">
+    <path id="user" d="M27.762,40.467a9,9,0,0,0,11.93,0c-.293-1.053-2.4-1.74-5.965-1.74S28.055,39.414,27.762,40.467Zm-1.434-1.615c1.125-1.487,3.769-2.125,7.4-2.125s6.274.638,7.4,2.125a9,9,0,1,0-14.8,0Zm7.4,5.875a11,11,0,1,1,11-11A11,11,0,0,1,33.727,44.727Zm-4-13a3.852,3.852,0,0,1,4-4,4,4,0,0,1,4,4.2c0,3.28-1.782,4.8-4,4.8C31.487,36.727,29.727,35.154,29.727,31.727Zm2,0c0,2.27.818,3,2,3s2-.7,2-2.8a2.018,2.018,0,0,0-2-2.2A1.864,1.864,0,0,0,31.727,31.727Z" transform="translate(874.273 1230.273)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>
