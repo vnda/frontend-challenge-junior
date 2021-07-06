@@ -335,7 +335,7 @@ a {
       .insta-images {
         &:nth-of-type(2) {
           position: relative;
-          top: none;
+          top: unset;
         }
       }
     }
