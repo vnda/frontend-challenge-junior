@@ -1,0 +1,17 @@
+{
+  "name": "challenge-jr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "gulp": "4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "5.0.0",
+    "prettier": "2.3.2",
+    "sass": "1.35.1"
+  }
+}
