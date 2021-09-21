@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
-    clean = require('gulp-clean');
+    clean = require('gulp-clean'),
+    sass = require('gulp-sass');
 
 gulp.task('copy', ['clean'], function() { 
     
