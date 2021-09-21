@@ -49,8 +49,6 @@ gulp.task('server', function() {
             }
     });
     
-    gulp.watch('src/**/*').on('change', browserSync.reload);
-    
     gulp.watch('src/js/**/*.js').on('change', function(event) {
         console.log("Linting " + event.path);
         gulp.src(event.path)
@@ -72,6 +70,7 @@ gulp.task('server', function() {
                console.log(erro.message);
              }))
              .pipe(gulp.dest('src/css'));
-     }); 
-    
+     });
+     
+    gulp.watch('src/**/*').on('change', browserSync.reload);
 });
