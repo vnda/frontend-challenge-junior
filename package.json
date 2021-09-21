@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/natalia-lavarda/frontend-challenge-junior/issues"
   },
-  "homepage": "https://github.com/natalia-lavarda/frontend-challenge-junior#readme"
+  "homepage": "https://github.com/natalia-lavarda/frontend-challenge-junior#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
 }
