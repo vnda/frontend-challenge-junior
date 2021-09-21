@@ -1,0 +1,246 @@
+.footer {
+    @include for-mobile-only {
+        margin-top: 10vh;
+    }
+    width: 100%;
+    @include flx(justify-content, center);
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30vh;
+    font-family: $family-default;
+
+    >.footerLogo {
+    width: 100%;
+
+        >.line {
+            border-top: 1px solid $secondary;
+            @include flx(justify-content, center);
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 5vh;
+
+            >.darkLogo {
+                @include for-mobile-only {
+                    margin-top: -2vh;
+                    width: 30%;
+                }
+                width: 15%;
+                margin-top: -55px;
+                background-color: $white;
+            }
+        } 
+    }
+        >.blocks {
+            @include for-mobile-only {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            width: 90%;
+            @include flx(justify-content, space-between);
+            align-items: flex-end;
+            position: relative;
+
+            >.productBlock {
+                @include for-mobile-only {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+                    margin-top: 0;
+                    margin-bottom: 30px;
+                }
+                width: 25%;
+                @include flx(justify-content, space-between);
+                align-items: flex-end;
+                @extend %four-margin-top;
+
+                >.submenuTitle {
+                    @include for-mobile-only {
+                        position: static;
+                        margin-bottom: 30px;
+                    }
+                    @include flx(justify-content, flex-start);
+                    align-items: flex-start;
+                    position: absolute;
+                    top: 0;
+                    color: $secondary;
+                    text-transform: uppercase;
+                    @include font-size(20px);
+                }
+                
+                >.products {
+                    width: 80%;
+                    >.listProducts {
+                        @include for-mobile-only {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+
+                        >.links {
+                            padding-bottom: 5px;
+                            padding-top: 5px;
+
+                            >.link {
+                                text-decoration: none;
+                                color: $secondary;
+                                @include transition(0.5s all);
+                                &:hover {
+                                    color: $quaternary;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            >.subscribeBlock {
+                @include for-mobile-only {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+                    margin-top: 0;
+                    margin-bottom: 30px;
+                }
+                width: 40%;
+
+                >.submenuTitle {
+                    @include for-mobile-only {
+                        position: static;
+                        margin-bottom: 30px;
+                    }
+                    @include flx(justify-content, flex-start);
+                    align-items: flex-start;
+                    position: absolute;
+                    top: 0;
+                    color: $secondary;
+                    text-transform: uppercase;
+                    @include font-size(20px);
+                }
+
+                >.subscribe {
+                    color: $secondary;
+                    @include flx(justify-content, space-between);
+                    align-items: flex-end;
+
+                    >.contact {
+                        border-bottom: 1px solid $secondary;
+                        padding-bottom: 10px;
+                        width: 100%;
+                        @include flx(justify-content, space-between);
+                        align-items: flex-end;
+
+                        >.emailInput {
+                            border: 0;
+                            &:focus {
+                                box-shadow: 0 0 0 0;
+                                outline: 0;
+                            }
+                        }
+
+                        >.send {
+                            background-color: $white;
+                            border: 0;
+                            width: 15%;
+                            color: $secondary;
+                            text-transform: uppercase;
+                            @include flx(justify-content, flex-end);
+                            align-items: center;
+                            cursor: pointer;
+                            @include transition(0.5s all);
+                            &:hover {
+                                color: $tertiary;
+                                transform: scale(1.1);
+                            }
+
+                            >.blackArrow {
+                                width: 15%;
+                                @extend %default-margin-left;
+                            }
+                        }
+                    }
+                }
+            }
+
+            >.socialBlock {
+                @include for-mobile-only {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+                    margin-top: 0;
+                }
+                width: 15%;
+
+                >.submenuTitle {
+                    @include for-mobile-only {
+                        position: static;
+                        margin-bottom: 30px;
+                    }
+                    @include flx(justify-content, flex-start);
+                    align-items: flex-start;
+                    position: absolute;
+                    top: 0;
+                    color: $secondary;
+                    text-transform: uppercase;
+                    @include font-size(20px);
+                }
+
+                >.social-media {
+                    @include for-mobile-only {
+                        width: 100%;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
+                    @include flx(align-items, flex-end);
+                    flex-direction: column;
+
+                    >.media {
+                        @include for-mobile-only {
+                            width: 100%;
+                            justify-content: flex-start;
+                        }
+                        margin-top: 5px;
+                        @include flx(align-items, center);
+                        justify-content: flex-start;
+
+                        >.icon {
+                            width: 12%;
+                        }
+
+                        >.mediaLinks {
+                            margin-left: 5px;
+                            text-decoration: none;
+                            color: $secondary;
+                            @include transition(0.5s all);
+                            &:hover {
+                                color: $quaternary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    >.cc {
+        @include for-mobile-only {
+            margin-top: 5vh;
+        }
+        width: 100%;
+        text-align: center;
+        margin-top: 15vh;
+        padding-bottom: 5vh;
+
+        >.vnda {
+            text-decoration: none;
+            color: $secondary;
+            @include transition(0.5s all);
+            &:hover {
+                color: orange;
+            }
+        }
+    }
+}

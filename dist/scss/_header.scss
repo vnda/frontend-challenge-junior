@@ -1,0 +1,78 @@
+.header {
+    font-family: $family-default;
+
+    >.menu {
+        @include for-mobile-only {
+            position: absolute;
+        }
+        z-index: 2;
+        width: 100%;
+        background-color: $secondary;
+        position: fixed;
+        top: 0;
+        height: 10vh;
+        @include flx(justify-content, center);
+        align-items: center;
+
+        >.contents {
+            width: 95%;
+            @include flx(justify-content, space-between);
+            align-items: center;
+
+            >.lightLogo {
+                @include for-mobile-only {
+                    width: 18%;
+                }
+                width: 5%;
+                @extend %half-margin-top, %half-margin-bottom;
+            }
+
+            >.list {
+                @include for-mobile-only {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-column-gap: 20px;
+                }
+                @include flx(justify-content, center);
+                align-items: center;
+
+                >.links {
+                    @include for-mobile-only {
+                        padding: 0;
+                    }
+                    padding: 15px;
+
+                    >.link {
+                        @include for-mobile-only {
+                            font-size: 10px;
+                        }
+                        color: $white;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        @include transition(1s all);
+                        &:hover {
+                            color: $primary;
+                            border-bottom: 1px solid $primary;
+                        }
+                    }
+                }
+            }
+
+            >.icons {
+                @include for-mobile-only {
+                    width: 20%;
+                }
+                @include flx(justify-content, center);
+                align-items: center;
+
+                >.icon {
+                    padding: 5px;
+                    @include transition(1s all);
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}
