@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Loja</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> <!-- Swiper -->
+	
+	<!-- Mover para script individual depois? -->
+	<script type="module"> 
+		import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js';
+
+		const swiper = new Swiper('.swiper', {
+			// Optional parameters
+			// direction: 'vertical',
+			// loop: true,
+
+			// If we need pagination
+			// pagination: {
+			// 	el: '.swiper-pagination',
+			// },
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+
+			// And if we need scrollbar
+			// scrollbar: {
+			//	el: '.swiper-scrollbar',
+			// },
+		});
+
+		const swiper2 = new Swiper('.swiper-insta', {
+			direction: 'vertical',
+			effect: 'fade',
+			autoplay: true
+		});
+	</script>
+
+</head>
+<body>
+	<header class='header-title page-padding'>
+		<h1 class='page-logo'>LOGO</h1>
+		<ul class='header-menu'>
+			<li><a class='link' href="#">MENU</a></li>
+			<li><a class='link' href="#">MENU</a></li>
+			<li><a class='link' href="#">MENU</a></li>
+			<li><a class='link' href="#">MENU</a></li>
+			<li><a class='link' href="#">MENU</a></li>
+		</ul>
+		<ul class='header-right'>
+			<li><a href="#"><img class='header-icons' src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/35/000000/external-magnifying-glass-interface-kiranshastry-solid-kiranshastry.png"/></a></li>
+			<li><a href="#"><img class='header-icons' src="https://img.icons8.com/ios-filled/35/000000/cat-profile.png"/></a></li>
+			<li><a href="#"><img class='header-icons' src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/35/000000/external-shopping-cart-miscellaneous-kiranshastry-lineal-kiranshastry.png"/></a></li>
+		</ul>
+	</header>
+	<img class='banner' src="https://via.placeholder.com/1908x636">
+	<div class='circles page-padding'>
+		<div><img src="https://via.placeholder.com/120x120"></div>
+		<div><img src="https://via.placeholder.com/120x120"></div>
+		<div><img src="https://via.placeholder.com/120x120"></div>
+		<div><img src="https://via.placeholder.com/120x120"></div>
+		<div><img src="https://via.placeholder.com/120x120"></div>
+		<div><img src="https://via.placeholder.com/120x120"></div>
+	</div>
+	<div class='middle-section page-padding'>
+		<div class='left-middle-section'>
+			<div class='left-text'>
+				<p>Lorem ipsum lorem dolor</p>
+				<h2>Lorem ipsum dolor sit amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et felis pellentesque metus laoreet volutpat quis eu urna. Vestibulum sapien felis, bibendum in turpis quis, finibus auctor ipsum. Aliquam molestie odio velit, eget tempus erat malesuada id. Donec vitae erat semper, malesuada justo quis, accumsan augue. Integer eleifend odio at arcu varius, et placerat mauris semper. Etiam volutpat tempor turpis, sed iaculis ligula tincidunt vel. Sed imperdiet ante eget scelerisque feugiat. Proin sem turpis, cursus in sapien ut, dignissim malesuada lectus. Sed ac lacus tellus.</p>
+			</div>
+			<div class='label-container'>	
+				<!--<div class='label-container'> -->
+					<img src="https://via.placeholder.com/360x400">
+					<h3>Título do banner</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sapien felis.</p>
+				<!-- </div> -->
+			</div>
+		</div>
+		<div class='right-banner'>
+			<div class='label-container'>
+				<img src="https://via.placeholder.com/360x250">
+				<h3>Título do banner</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sapien felis.</p>
+			</div>
+			<div class='label-container'>
+				<img src="https://via.placeholder.com/360x400">
+				<h3>Título do banner</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sapien felis.</p>
+			</div>
+		</div>
+	</div>
+	<div class='clear'></div>
+	<img class='arrow-down' src="https://img.icons8.com/ios/100/000000/long-arrow-down.png"/>
+	<div class='white-space'></div>
+	<div class='white-space'></div>
+	<div class='white-space'></div>
+	<div class='swiper-general'>
+		<div class='swiper-space'>
+			<div class='swiper-content-left'>
+				<img class='swiper-img' src="https://via.placeholder.com/320x400">
+				<div class='swiper-text'>
+					<p>Lorem ipsum lorem dolor</p>
+					<h2>Lorem ipsum dolor sit amet</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et felis pellentesque metus laoreet volutpat quis eu urna. Vestibulum sapien felis, bibendum in turpis quis, finibus auctor ipsum. Aliquam molestie odio velit, eget tempus erat malesuada id. Donec vitae erat semper, malesuada justo quis, accumsan augue. Integer eleifend odio at arcu varius, et placerat mauris semper. Etiam volutpat tempor turpis, sed iaculis ligula tincidunt vel. Sed imperdiet ante eget scelerisque feugiat. Proin sem turpis, cursus in sapien ut, dignissim malesuada lectus. Sed ac lacus tellus.</p>
+					<a href="#"><div class='swiper-button'>Call to action ></div>
+				</div>
+			</div>
+		</div>
+			<!-- Slider main container -->
+			<div class="swiper">
+	  			<!-- Additional required wrapper -->
+	  			<div class="swiper-wrapper">
+	    			<!-- Slides -->
+	    			<div class="swiper-slide"><img src="https://via.placeholder.com/600x300"></div>
+	    			<div class="swiper-slide"><img src="https://via.placeholder.com/600x300"></div>
+	    			<div class="swiper-slide"><img src="https://via.placeholder.com/600x300"></div>
+	  			</div>
+	  			<!-- If we need navigation buttons -->
+	  			<div class="swiper-button-prev"></div>
+	  			<div class="swiper-button-next"></div>
+			</div>
+		</div>
+	<div class='clear'></div>
+	<div class='white-space'></div>
+	<p class='insta-username page-padding'>@instadamarca</p>
+	<div class='instagram-section page-padding'>
+		<img src="https://via.placeholder.com/400x400">
+		<div class='instagram-at'>
+			<div class='gap'></div>
+			<div class="swiper-insta">
+	  			<!-- Additional required wrapper -->
+	  			<div class="swiper-wrapper">
+	    			<!-- Slides -->
+	    			<div class="swiper-slide"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et felis pellentesque metus laoreet volutpat quis eu urna. Vestibulum sapien felis, bibendum in turpis quis, finibus auctor ipsum. Aliquam molestie odio velit, eget tempus erat malesuada id. Donec vitae erat semper, malesuada justo quis, accumsan augue. Integer eleifend odio at arcu varius, et placerat mauris semper.</p></div>
+				<div class="swiper-slide"><img src="https://via.placeholder.com/400x400"></div>
+				</div>
+	  			</div>
+			</div>
+		<img src="https://via.placeholder.com/400x400">
+	</div>
+		<div class='clear'></div>
+		<div class='white-space'></div>
+	<div class='footer-logo'>
+		<div></div>
+		<p>LOGO</p>
+		<div></div>
+	</div>
+	<footer class='footer page-padding'>
+		<div class='footer-menus'>
+			<div class='footer-menu-left'>
+				<p class='footer-titles'>MENU</p>
+				<div class='footer-menu-left-options'>
+					<ul>
+						<li>Submenu</li>
+						<li>Submenu</li>
+					</ul>
+					<ul>
+						<li>Submenu</li>
+						<li>Submenu</li>
+					</ul>
+				</div>
+			</div>
+			<div class='footer-menu-center'>
+				<p class='footer-titles'>MENU</p>
+				<form>
+					<label for='email'>E-mail</label>
+					<input type="email">
+					<button><a href="#">ENVIAR ></a></button>
+				</form>
+				<div class='footer-copyright'>
+					<p>@ Vnda - Tecnologia para ecommerce - CNPJ 00.0000.000/0001-00</p>
+					<a href="https://icons8.com">Icons by Icons8</a>
+				</div>
+			</div>
+			<div class='footer-menu-right'>
+				<p class='footer-titles'>MENU</p>
+				<ul>
+					<li><img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png"/>Submenu</li>
+					<li><img src='https://img.icons8.com/material-rounded/24/000000/facebook.png'>Submenu</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

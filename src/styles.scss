@@ -1,0 +1,576 @@
+$cinza-claro: #d8d8d8;
+$cinza-escuro: #e3e3e3;
+$branco: #ffffff;
+$fonte-botao: "PT Sans", sans-serif;
+$fonte-pagina: "Open Sans", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+body {
+	background-color: $branco;
+	margin: 0px;
+	padding: 0px;
+	font-family: $fonte-pagina;
+}
+
+/* Imagens auto-ajustáveis */
+img {
+	width: auto;
+	height: 100%;
+}
+
+/* Mais fácil do que setar padding pra página inteira e ter que ficar overflowando tudo */
+.page-padding {
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* ============== HEADER ============== */
+
+.header-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $cinza-claro;
+}
+
+.page-logo {
+	font-weight: bold;
+	float: left;
+}
+
+.header-menu {
+	> ul {
+		list-style: none;
+		text-align: center;
+	}
+
+	> li {
+		display: inline;
+		padding: 30px;
+	}
+}
+
+.link {
+	text-decoration: none;
+	color: black;
+	transition: 0.5s ease;
+}
+
+.link:hover {
+	color: blue;
+	border-bottom: 2px;
+	text-decoration: underline;
+}
+
+.header-right {
+	> ul {
+		list-style: none;
+		text-align: center;
+	}
+
+	> li {
+		display: inline;
+		padding: 10px;
+		padding-left: 0;
+	}
+}
+
+.header-icons {
+	height:  25px;
+	width:  25px;
+
+	transition: transform 0.7s;
+}
+
+.header-icons:hover {
+	transform: scale(1.3);
+}
+
+/* ============== BANNER ============== */
+
+.banner {
+	width: 100%;
+	height: auto;
+}
+
+/* ============== CIRCLES ============== */
+
+.circles {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+	flex-wrap: wrap;
+	background-color: $branco;
+}
+
+.circles > div {
+	width: 120px;
+	height: 120px;
+	margin: 20px;
+}
+
+.circles > div > img {
+	border-radius: 50%;
+}
+
+/* ============== MIDDLE-SECTION ============== */
+
+.middle-section {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	align-items: flex-start;
+	background-color: $cinza-claro;
+	height: 600px;
+}
+
+.left-middle-section {
+	padding: 10px;
+	padding-top: 90px;
+	gap: 100px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.left-text {
+	text-align: justify;
+	margin-top: 0px;
+}
+
+.right-banner > div {
+	margin-bottom: 10px;
+}
+
+.label-container {
+	display: flex;
+	flex-direction: column;
+
+	p {
+		margin: 0;
+		padding: 30px;
+		padding-top: 10px;
+		background-color: $cinza-escuro;
+		border-top: 0px;
+		text-align: center;
+	}
+
+	h3 {
+		text-align: center;
+		background-color: $cinza-escuro;
+		margin: 0;
+		border-bottom: none;
+		padding-top: 20px;
+	}
+}
+
+.right-banner {
+	display: block;
+	padding-top: 30px;
+	margin: 0;
+}
+
+.arrow-down {
+	width:  100px;
+	height:  100px;
+	margin-left:  5%;
+	margin-top:  -20px;
+	top:  50%;
+}
+
+/* ============== SWIPER SECTION ============== */
+
+.swiper-general {
+	display: inline-flex;
+}
+
+.swiper-space {
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	flex-direction: row;
+	padding-left: 5%;
+	width: 60%;
+	background-color: $cinza-escuro;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.swiper-content-left {
+	display: flex;
+}
+
+.swiper-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-right: 200px;
+	margin-left: 20px;
+	margin-right: 50px;
+}
+
+.swiper-text > a {
+	text-decoration: none;
+}
+
+.swiper-button {
+	padding: 15px;
+	border-radius: 12px;
+	color: white;
+	background-color: black;
+	transition: 0.5s ease;
+	border: 1px solid black;
+}
+
+.swiper-button:hover {
+	color: black;
+	background: $cinza-claro;
+	border-radius: 15px;
+}
+
+.swiper {
+	width: 600px;
+	height: 300px;
+	align-self: center;
+	left: -200px;
+}
+
+/* Troca cor das setas do Swiper */
+:root {
+	--swiper-theme-color: #000 !important;
+}
+
+/* ============== INSTAGRAM ============== */
+
+.white-space {
+	width: auto;
+	padding: 70px;
+	margin-top: -200px;
+	margin-bottom: 200px;
+}
+
+.instagram-section {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.instagram-at {
+	display: flex;
+	flex-direction: column;
+}
+
+.gap {
+	margin-bottom: 50px;
+}
+
+.insta-username {
+	font-size: 40px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.swiper-insta {
+	margin-top: -10px;
+	width: 400px;
+	height: 400px;
+}
+
+.swiper-insta > .swiper-wrapper > .swiper-slide {
+	background-color: $cinza-claro;
+	text-align: center;
+
+	> p {
+		padding: 50px;
+		text-align: center;
+	}
+}
+
+/* ============== FOOTER ============== */
+
+.footer-logo {
+	display: flex;
+	align-items: center;
+
+	div {
+		height: 1px;
+		background-color: black;
+		width: 100%;
+	}
+
+	p {
+		font-size: 25px;
+		weight: 700;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.footer-menus {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-titles {
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+
+.footer-menu-left {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-menu-left-options {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0px;
+
+	> ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		padding-right: 70px;
+	}
+
+	> ul + ul {
+		padding-right: 0;
+	}
+
+	> ul > li {
+		padding-bottom: 10px;
+	}
+}
+
+.footer-menu-center {
+	form {
+		padding-bottom: 5px;
+		border-bottom: 1px solid black;
+	}
+
+	input {
+		border: none;
+		width: 300px;
+
+		font-family: $fonte-pagina;
+	}
+
+	button {
+		font-family: $fonte-pagina;
+		background: none;
+		border: none;
+	}
+
+	button > a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+.footer-menu-right {
+	ul {
+	list-style: none;
+	padding-left: 0;
+	}
+
+	li {
+		display:  flex;
+		gap:  5px;
+	}
+}
+
+
+.footer-copyright {
+	padding-top:  20px;
+	padding-bottom:  20px;
+
+	a {
+		text-decoration:  none;
+		color:  inherit;
+	}
+}
+
+/* ============== HELPERS ============== */
+
+.clear {
+	clear: both;
+}
+
+.white-space {
+	width: auto;
+	padding: 100px;
+	margin: 0px;
+}
+
+/* ============== MOBILE ============== */
+
+@media screen and (max-width: 1227px) {
+	/* Ocultando coisas */
+	.header-menu,
+	.left-middle-section > .label-container {
+		display: none;
+	}
+
+	.arrow-down {
+		display:  none;
+	}
+
+	.instagram-section > img,
+	.instagram-section > img + img + img {
+		display: none;
+	}
+
+
+	.footer {
+		flex-wrap:  wrap;
+	}
+
+	.footer-menus {
+		flex-wrap:  wrap;
+	}
+
+	.swiper-img {
+		display: none;
+	}
+
+	.white-space {
+		width: auto;
+		padding: 20px;
+		margin: 0px;
+	}
+
+	.middle-section,
+	.left-middle-section,
+	.left-text {
+		text-align: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+	.label-container {
+		max-width: 360px;
+		height: auto;
+	}
+
+	.right-banner {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+		margin: auto;
+		padding: auto;
+		gap: 5px;
+	}
+
+	.middle-section {
+		margin: 0;
+		padding: 5%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+
+	.swiper-general {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.swiper-space {
+		padding: 0px;
+		padding-bottom: 10px;
+		margin: 0px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		background-color: $cinza-escuro;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+
+	.swiper-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		margin: 5%;
+		padding: 0;
+		text-align: justify;
+	}
+
+	.swiper {
+		margin: auto;
+		padding: auto;
+		left: 0px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.swiper {
+		width: 400px;
+		height: 200px;
+		margin: auto;
+		padding: auto;
+		left: 0px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.swiper {
+		width: 300px;
+		height: 150px;
+		margin: auto;
+		padding: auto;
+		left: 0px;
+	}
+
+	.swiper-insta {
+		margin-top: -10px;
+		width: 300px;
+		height: 300px;
+	}
+
+	.swiper-insta > .swiper-wrapper > .swiper-slide {
+		> p {
+			text-align: center;
+			padding: 0px;
+		}
+	}
+
+	.circles > div {
+		width: 120px;
+		height: 120px;
+		margin: 5px;
+	}
+
+	.circles {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 10px;
+		flex-wrap: wrap;
+		background-color: $branco;
+	}
+}
