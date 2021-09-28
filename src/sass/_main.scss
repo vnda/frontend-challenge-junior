@@ -1,0 +1,67 @@
+$background-body: #fff;
+$background-shop: #DDDDDD;
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $background-body;
+}
+
+.space {
+  height: 539px;
+}	
+
+.container {
+  max-width: 1500px;
+  padding: 0 50px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+}
+
+.text-case {
+  max-width: 405px;
+
+  @media (max-width: 830px) {
+    max-width: 345px;
+  }
+
+  .title-case {
+    font-size: 220%;
+    margin: 25px 0;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: rotateZ(270deg) translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: rotateZ(270deg) translate3d(50px, 0, 0);
+  }
+}
+
+#division {
+  display: flex;
+  align-items: center;
+  
+}
+
+hr {
+  border-color:#aaa;
+  box-sizing:border-box;
+  width:100%;  
+}
+
+.logo-footer {
+  width: 100px;
+  height: 90px;
+}
+
+
+
