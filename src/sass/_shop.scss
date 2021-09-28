@@ -1,0 +1,135 @@
+*{
+	box-sizing: border-box;
+}
+#shop {
+	max-width: 90%;
+	background: #DDDDDD;
+	display: flex;
+	flex-wrap: wrap;
+	padding:  80px;
+	font-size: 1.2em;
+	align-items: center;
+
+
+	h1 {
+		font-size: 3em;		
+	}
+	p {
+		line-height: 1.3em;
+	}
+
+	@media (max-width: 1000px) {
+		max-width: 100%;
+		h1 { font-size: 1em;}
+		p { font-size: .8em;}
+		text-align: center;
+		padding:  10px;
+
+	}
+
+/*=========================*/
+
+.swiper-shop {
+	flex: 1 1 350px;
+	margin-right: -14%;
+
+	@media (max-width: 768px) {
+		margin-right: 0;
+		max-width: 100%;
+		height: auto;
+		margin: 20px 0;
+	}
+
+
+	.swiper {
+		width: 500px;
+		max-width: 100%;
+		height: auto;
+		background-size:100%;
+		background-repeat: no-repeat;
+	}
+	
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+		width: 100%;
+		background-repeat: no-repeat;
+	
+	/* Center slide text vertically */
+	
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+	}
+	
+	.swiper-slide img {
+		width: 100%;
+	}
+}
+	
+}
+
+/*=========================*/
+
+.shop-img {
+	flex: 1 1 300px;
+	margin: 0 10px;
+	max-width: 100%;
+
+	@media (max-width: 1024px) {
+		padding: 1.3em;
+	}
+	@media (max-width: 768px) {
+		padding: 0;
+	}
+}
+
+.shop-about {
+	flex: 3 1 300px;
+	margin: 0 10px;
+	padding-right: 20%;
+
+	@media (max-width: 768px) {
+		padding: 0;
+	}
+	@media (max-width: 1024px) {
+		font-size: .8em;
+		padding: .5em;
+	} 
+
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.btn-shop {
+	width: 80%;
+	margin-top: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #000;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      padding: 10px 30px;
+      cursor: pointer;
+      transition-duration: 0.3s;
+
+      &:hover {
+        color: #000;
+        background-color: #fff;
+      }
+}
+
