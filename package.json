@@ -1,0 +1,27 @@
+{
+  "name": "challenge-vnda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "challenge",
+    "vnda",
+    "frontend"
+  ],
+  "author": "Caroline Maia [carolmas99@gmail.com]",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^5.0.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "swiper": "^7.2.0"
+  }
+}
