@@ -316,11 +316,9 @@ main{
     } 
 
     .slider {
-      // display: flex;
-      // margin-left: 96px;
       display: flex;
-      position: relative;
-      left: 17rem;
+      position: absolute;
+      right: 12rem;
 
       .swiper {
         width: 300px;
@@ -340,6 +338,8 @@ main{
     }
 
     .slider {
+      position: relative!important;
+      right: 0;
       left: 0!important;
       margin: 30px;
     }
