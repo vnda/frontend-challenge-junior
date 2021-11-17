@@ -1,0 +1,98 @@
+.infos-container {
+    display: flex;
+    padding: 10px 2%;
+    background: #c4c4c4;
+    justify-content: space-around;
+    height: 400px;
+    margin: 0 0 30% 0;
+    > .description {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        > .title {
+            margin: 0 0 20px 0;
+        }
+    }
+    > .banner-container {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        .imgBanner {
+            width: 400px;
+            height: 460px;
+        }
+        > .infoBanner {
+            background: #d4d4d4;
+            transform: translateY(15%);
+            margin: 0 50px 0 0;
+            padding: 20px;
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        > .infoBanner2 {
+            transform: translateY(0);
+            padding: 20px;
+            background: #d4d4d4;
+            height: 850px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            > .descBanner {
+                margin: 0 0 15% 0;
+            }
+        }
+    }
+    @media (max-width:1024px) {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        flex-direction: column;
+        height: auto;
+        > .description {
+            width: 100%;
+        }
+        > .banner-container {
+            width: 100%;
+            .imgBanner {
+                width: auto;
+                height: auto;
+            }
+            > .infoBanner {
+                transform: translateY(0);
+                margin: 0;
+                height: auto;
+            }
+            > .infoBanner2 {
+                height: auto;
+            }
+        }
+    }
+    @media (max-width:991px) {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        flex-direction: column;
+        height: auto;
+        > .description {
+            width: 100%;
+        }
+        > .banner-container {
+            width: 100%;
+            .imgBanner {
+                width: auto;
+                height: auto;
+            }
+            > .infoBanner {
+                transform: translateY(0);
+                margin: 0;
+                height: auto;
+            }
+            > .infoBanner2 {
+                height: auto;
+            }
+        }
+    }
+}

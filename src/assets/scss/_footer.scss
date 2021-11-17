@@ -1,0 +1,143 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #c4c4c4;
+    padding: 10px 0 0 0;
+    > .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        > .logo {
+            width: 200px;
+        }
+        > .menu {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        &.-menu {
+            justify-content: space-between;
+            margin: 20px 0 0 0;
+        }
+        > .subMenu,.newsLetter,.redesSociais{
+            width: 33.333%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            > .title {
+                margin: 0 0 20px 0;
+            }
+        }
+        > .subMenu {
+            > .subMenus {
+                column-count: 1;
+                > li {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                .link {
+                    color: #333;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    &::after {
+                        content: '';
+                        width: 0;
+                        height: 2px;
+                        background: transparent;
+                        transition: .5s;
+                    }
+                    &:hover::after {
+                        width: 60%;
+                        background:rgb(0, 122, 197) ;
+                    }
+                }
+            }
+        }
+        > .newsLetter {
+            > .formNews {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                #btnNews {
+                    background: #d4d4d4;
+                    border: 2px solid #333;
+                    width: 60px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: .5s;
+                    &:hover {
+                        box-shadow: inset #fff 6px 6px 12px;
+                        transform: scale(1.01);
+                    }
+                }
+                #emailNews {
+                    width: 60%;
+                    background: none;
+                    border: none;
+                    border-bottom: 2px solid grey;
+                    padding: 10px;
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+        &.-copyright {
+            margin: 20px 0 20px 0;
+        }
+        .redesSociais {
+            > .icons {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                > .icon {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    margin: 0 0 5px 0;
+                    &:last-child {
+                        margin: 0;
+                    }
+                    > .link {
+                        color: #333;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        transition: .5s;
+                        > .name {
+                            margin: 0 0 0 10px;
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        width: 0;
+                        height: 2px;
+                        margin: 5px 0 0 0;
+                        background: transparent;
+                        transition: .5s;
+                    }
+                    &:hover::after {
+                        width: 60%;
+                        background:rgb(0, 122, 197) ;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:991px) {
+        > .container {
+            width: 100%;
+            &.-menu {
+                align-items: center;
+                flex-direction: column;
+                margin: 0;
+            }
+            > .subMenu,.newsLetter,.redesSociais{
+                width: 100%;
+                margin: 20px 0 0 0;
+            }
+        }
+    }
+}
