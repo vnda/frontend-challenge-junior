@@ -1,0 +1,107 @@
+.modalBG {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: flex;
+    background: rgba(0,0,0,.7);
+    visibility: hidden;
+    > .modal-confirmation {
+        position: relative;
+        margin: 70px auto;
+        background: #fff;
+        height: 120px;
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #333;
+        border-radius: 10px;
+        > .head {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            width: 30px;
+            height: 30px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+    @media (max-width:991px) {
+        
+    }
+}
+.modal-cadastro {
+    position: fixed;
+    top:0;
+    transform: translateY(-1000px);
+    right: 10%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,.7);
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+    border-left: 2px solid #333;
+    border-radius: 0 0 10px 10px;
+    transition: .5s;
+    > .head {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        width: 30px;
+        height: 30px;
+        border: 2px solid #000;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .formCadastro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        
+        > .inputCadastro {
+            border: none;
+            padding: 5px;
+            border-bottom: 2px solid #333;
+            width: 80%;
+            color: #333;
+            border-radius: 10px;
+            &::placeholder {
+                color: #333;
+            }
+        }
+        #cadastro {
+            background: #d4d4d4;
+            border: 2px solid #333;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 10px;
+            &:hover {
+                box-shadow: inset #fff 6px 6px 12px;
+                transform: scale(1.01);
+            }
+        }
+    }
+    @media (max-width:991px) {
+        background:#fff;
+        margin: 0 auto;
+        right: 12%;
+    }
+}
