@@ -19,8 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 
     <!--swiper-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     <header class="header">
         <div class="logo">
             <a href="#">
-                <h1>Logo</h1>
+                <h2>Logo</h2>
             </a>
         </div>
 
@@ -53,7 +53,7 @@
             <ul>
                 <li>
                     <input id="search-field" type="search" placeholder="Busca . . .">
-                    <a id="search-icon" class="user-nav-link" href="javascript:void(0)" alt="pesquisar">
+                    <a id="search-icon" class="link" href="javascript:void(0)" alt="pesquisar">
                         <svg class="user-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
                             <path id="Icon_awesome-search" data-name="Icon awesome-search"
                                 d="M24.66,21.614l-4.869-4.868a1.171,1.171,0,0,0-.83-.342h-.8a10.153,10.153,0,1,0-1.758,1.758v.8a1.171,1.171,0,0,0,.342.83l4.869,4.868a1.167,1.167,0,0,0,1.655,0l1.382-1.382a1.177,1.177,0,0,0,0-1.66ZM10.157,16.4a6.249,6.249,0,1,1,6.25-6.249A6.246,6.246,0,0,1,10.157,16.4Z"
@@ -62,7 +62,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="user-nav-link" alt="usuario">
+                    <a href="#" class="link" alt="usuario">
                         <svg class="user-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
                             <path id="Icon_awesome-user-circle" data-name="Icon awesome-user-circle"
                                 d="M12.5.562A12.5,12.5,0,1,0,25,13.062,12.5,12.5,0,0,0,12.5.562Zm0,4.839A4.435,4.435,0,1,1,8.065,9.837,4.436,4.436,0,0,1,12.5,5.4Zm0,17.339A9.659,9.659,0,0,1,5.116,19.3a5.62,5.62,0,0,1,4.965-3.014,1.233,1.233,0,0,1,.358.055,6.673,6.673,0,0,0,2.061.348,6.648,6.648,0,0,0,2.061-.348,1.233,1.233,0,0,1,.358-.055A5.62,5.62,0,0,1,19.884,19.3,9.659,9.659,0,0,1,12.5,22.74Z"
@@ -71,7 +71,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="user-nav-link" alt="sacola">
+                    <a href="#" class="link" alt="sacola">
                         <svg class="user-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
                             <path id="Icon_material-shopping-basket" data-name="Icon material-shopping-basket"
                                 d="M19.92,12.224,14.943,3.583A1.087,1.087,0,0,0,14,3.03a1.074,1.074,0,0,0-.943.566L8.08,12.224H2.636A1.241,1.241,0,0,0,1.5,13.541a1.273,1.273,0,0,0,.045.356l2.886,12.21A2.341,2.341,0,0,0,6.614,28.03H21.386a2.363,2.363,0,0,0,2.193-1.923L26.466,13.9l.034-.356a1.241,1.241,0,0,0-1.136-1.317Zm-9.33,0L14,6.428l3.409,5.8ZM14,22.761a2.481,2.481,0,0,1-2.273-2.634A2.481,2.481,0,0,1,14,17.493a2.481,2.481,0,0,1,2.273,2.634A2.481,2.481,0,0,1,14,22.761Z"
@@ -87,19 +87,17 @@
     <!--fullbanner-->
     <section class="fullbanner">
 
-        <div class="swiper-container swiper-container-main">
-
+        <div class="swiper swiper-container-main">
             <div class="swiper-wrapper">
-
                 <div class="swiper-slide">
                     <a href="#">
-                        <h1 class="full-banner-title">Lorem ipsum sit amet</h1>
+                        <h2 class="title">Lorem ipsum sit amet</h2>
                     </a>
                     <img src="src/img/full_banner_1.jpeg" alt="mulher com casaco de inverno">
                 </div>
                 <div class="swiper-slide">
                     <a href="#">
-                        <h1 class="full-banner-title">Sit amet lorem ipsum</h1>
+                        <h2 class="title">Sit amet lorem ipsum</h2>
                     </a>
                     <img src="src/img/full_banner_2.jpeg" alt="mulher com casaco de inverno">
                 </div>
@@ -113,7 +111,7 @@
 
     <!--thumbnails-->
     <section class="thumbnails">
-        <div class="swiper-container swiper-container-thumbnails">
+        <div class="swiper swiper-container-thumbnails">
 
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -173,10 +171,17 @@
     <!--catalog-->
     <section class="catalog">
         <article class="text-container">
-            <div class="text-wrapper">
-                <p class="text-sup">Lorem ipsum lorem dolor</p>
-                <h1 class="text-title">Lorem ipsum dolor sit amet</h1>
-                <p class="text-description">Lorem ipsum dolor sit amet, consectetur
+            <div class="wrapper">
+                <p class="sup">Lorem ipsum lorem dolor</p>
+                <h2 class="title">Lorem ipsum dolor sit amet</h2>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua. Metus vulputate eu scelerisque
+                    felis imperdiet proin fermentum. Praesent
+                    semper feugiat nibh sed pulvinar proin
+                    gravida.</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna
                     aliqua. Metus vulputate eu scelerisque
@@ -184,40 +189,38 @@
                     semper feugiat nibh sed pulvinar proin
                     gravida.</p>
             </div>
-            <a class="catalog-arrow" href="#collection"><img src="src/img/icons/icon-arrow-down.svg" alt=""></a>
+            <a class="arrow" href="#collection"><img src="src/img/icons/icon-arrow-down.svg" alt=""></a>
         </article>
         <div class="card-container">
-            <div class="catalog-card first">
+            <div class="card -first">
                 <div class="image-wrapper">
                     <img src="src/img/catalog_1.png" alt="mulher com casaco marrom">
                     <img class="b-side" src="src/img/catalog_1b.jpg" alt="mulher com casaco amarelo">
                     <a href="#"></a>
                 </div>
-                <h2 class="card-title">Título do banner</h2>
-                <p class="card-description">Lorem ipsum dolor sit amet, consectetur
+                <h2 class="title">Título do banner</h2>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempo.</p>
             </div>
-
-
-            <div class="catalog-card second">
+            <div class="card -second">
                 <div class="image-wrapper">
                     <img src="src/img/catalog_2.png" alt="mulher com casaco de lã">
                     <img class="b-side" src="src/img/catalog_2b.jpg" alt="mulher com casaco amarelo">
                     <a href="#"></a>
                 </div>
-                <h2 class="card-title">Título do banner</h2>
-                <p class="card-description">Lorem ipsum dolor sit amet, consectetur
+                <h2 class="title">Título do banner</h2>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempo.</p>
 
             </div>
-            <div class="catalog-card third">
+            <div class="card -third">
                 <div class="image-wrapper">
                     <img src="src/img/catalog_3.png" alt="mulher com casaco amarelo">
                     <img class="b-side" src="src/img/catalog_3b.jpg" alt="mulher com casaco amarelo">
                     <a href="#"></a>
                 </div>
-                <h2 class="card-title">Título do banner</h2>
-                <p class="card-description">Lorem ipsum dolor sit amet, consectetur
+                <h2 class="title">Título do banner</h2>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempo.</p>
             </div>
 
@@ -227,75 +230,76 @@
     <!--collection-->
     <section class="collection" id="collection">
         <div class="content-container">
-            <div class="collection-image">
-                <img src="src/img/collection_1.jpg" alt="">
-                <img class="b-side" src="src/img/collection_1b.jpg" alt="">
-            </div>
-            <article class="text-container">
-                <div class="text-wrapper">
-                    <p class="text-sup">Lorem ipsum lorem dolor</p>
-                    <h1 class="text-title">Lorem ipsum dolor sit amet</h1>
-                    <p class="text-description">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna
-                        aliqua. Metus vulputate eu scelerisque
-                        felis imperdiet proin fermentum. Praesent
-                        semper feugiat nibh sed pulvinar proin
-                        gravida.</p>
-                    <button class="collection-btn">Call to action</button>
+            <div class="introduction">
+                <div class="image">
+                    <img src="src/img/collection_1.jpg" alt="">
+                    <img class="b-side" src="src/img/collection_1b.jpg" alt="">
                 </div>
-            </article>
-
-            <div class="swiper-container swiper-container-collection">
-
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <img src="src/img/collection_1_a.jpeg" alt="">
+                <article class="text">
+                    <div class="wrapper">
+                        <p class="sup">Lorem ipsum lorem dolor</p>
+                        <h2 class="title">Lorem ipsum dolor sit amet</h2>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna
+                            aliqua. Metus vulputate eu scelerisque
+                            felis imperdiet proin fermentum. Praesent
+                            semper feugiat nibh sed pulvinar proin
+                            gravida.</p>
+                        <button class="collection-btn">Call to action</button>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="src/img/collection_1_b.jpeg" alt="">
-                    </div>
-
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                </article>
             </div>
+            <div class="exhibition">
+                <div class="swiper swiper-container-collection">
+
+                    <div class="swiper-wrapper">
+    
+                        <div class="swiper-slide">
+                            <img src="src/img/collection_1_a.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="src/img/collection_1_b.jpeg" alt="">
+                        </div>
+    
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            
         </div>
-
-
-
     </section>
 
     <!--instagram-->
     <section class="instagram">
 
-        <div class="instagram-title">
+        <div class="title">
             <a href="#">
-                <h1>@instadamarca</h1>
+                <h2>@instadamarca</h2>
             </a>
         </div>
 
         <div class="cards-container">
-            <div class="instagram-card">
+            <div class="card">
                 <img src="src/img/insta_1.jpg" alt="mulher com casaco rosa">
-                <p class="insta-text">Lorem ipsum dolor sit amet, consectetur
+                <p class="text">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna
                     aliqua.</p>
                 <a href="#"></a>
             </div>
-            <div class="instagram-card">
+            <div class="card">
                 <img src="src/img/insta_2.jpg" alt="mulher com casaco branco">
-                <p class="insta-text">Lorem ipsum dolor sit amet, consectetur
+                <p class="text">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna
                     aliqua.</p>
                 <a href="#"></a>
             </div>
-            <div class="instagram-card">
+            <div class="card">
                 <img src="src/img/insta_3.jpg" alt="mulher com casaco rosa">
-                <p class="insta-text">Lorem ipsum dolor sit amet, consectetur
+                <p class="text">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna
                     aliqua.</p>
@@ -306,7 +310,7 @@
 
     <!--footer-->
     <footer>
-        <div class="footer-wrapper">
+        <div class="wrapper">
 
             <div class="logo">
                 <a href="#">
@@ -314,27 +318,27 @@
                 </a>
             </div>
 
-            <div class="content-container">
-                <div class="content-wrapper">
+            <div class="content">
+                <div class="wrapper">
                     <h3>Menu</h3>
-                    <ul class="footer-nav">
+                    <ul class="nav">
                         <li><a href="">Submenu</a></li>
                         <li><a href="">Submenu</a></li>
                         <li><a href="">Submenu</a></li>
                         <li><a href="">Submenu</a></li>
                     </ul>
                 </div>
-                <div class="content-wrapper">
+                <div class="wrapper">
                     <h3>Menu</h3>
-                    <form class="footer-form">
+                    <form class="form">
                         <input type="text" placeholder="Email">
                         <a class="form-btn" href="">Enviar ></a>
                     </form>
 
                 </div>
-                <div class="content-wrapper">
+                <div class="wrapper">
                     <h3>Menu</h3>
-                    <ul class="footer-social-media">
+                    <ul class="social-media">
                         <li>
                             <svg class="footer-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
                                 <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram"
@@ -361,24 +365,8 @@
         </div>
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!--swiper-->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <script src="dist/js/main.min.js"></script>
 </body>

@@ -7,14 +7,14 @@
         padding: 1rem;
     }
     //tittle
-    .instagram-title {
+    >.title {
         text-align: center;
 
         > a {
             display: inline-block;
             transition: all 0.3s ease-in-out;
 
-            > h1 {
+            > h2 {
                 font-size: 3rem;
             }
 
@@ -27,7 +27,6 @@
     //cards
     .cards-container {
         height: 100vh;
-
         @include flex-between-center;
 
         @media screen and (max-width: $medium) {
@@ -39,7 +38,7 @@
             flex-wrap: wrap;
         }
 
-        .instagram-card {
+        >.card {
             width: 30%;
             height: 80%;
             overflow: hidden;
@@ -59,7 +58,7 @@
             }
 
             //hover content
-            > .insta-text {
+            > .text {
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -102,12 +101,12 @@
                 transform: scale(1.1);
             }
 
-            &:hover .insta-text {
+            &:hover .text {
                 opacity: 1;
             }
         }
 
-        .instagram-card:nth-child(2) {
+        .card:nth-child(2) {
             align-self: flex-end;
         }
     }

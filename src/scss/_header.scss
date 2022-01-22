@@ -2,15 +2,25 @@
     //container
     height: 10vh;
     width: 100%;
-
     @include flex-between-center;
-
     padding: 2rem 5rem;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 9;
     transition: background-color 0.3s ease;
+
+    //header background
+    &.-bg {
+        background-color: var(--primary-color);
+    }
+
+    //Header sticky
+    &.-sticky {
+        position: sticky;
+        background-color: var(--primary-color);
+        box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
+    }
 
     @media screen and (max-width: $small) {
         padding: 1rem;
@@ -22,7 +32,7 @@
 
     //logo
     .logo {
-        > a > h1 {
+        >a>h2 {
             display: inline-block;
             font-size: 4rem;
             line-height: 4.5rem;
@@ -39,13 +49,13 @@
         .navbar {
             @include flex-between-center;
 
-            > li {
+            >li {
                 margin: 0 1.5rem;
                 position: relative;
                 padding: 0.6rem 0;
                 @include letter-transform;
 
-                > a {
+                >a {
                     @include navUnderline;
                 }
             }
@@ -62,6 +72,11 @@
                 background-color: var(--primary-color);
                 transition: transform 0.3s ease-in-out;
             }
+
+            //responsive nav
+            &.-open {
+                transform: translateX(100%);
+            }
         }
 
         //burger nav
@@ -73,7 +88,8 @@
             .line {
                 width: 25px;
                 height: 2px;
-                background-color: var(--secondary-color);;
+                background-color: var(--secondary-color);
+                ;
                 margin: 5px;
                 transition: all 0.3s ease;
             }
@@ -81,23 +97,20 @@
             @media screen and (max-width: $large) {
                 display: block;
             }
-        }
-    }
 
-    //responsive nav
-    .nav-open {
-        transform: translateX(100%);
-    }
+            &.-rotate {
+                .line:nth-child(1) {
+                    transform: rotate(-45deg) translate(-4px, 5px);
+                }
 
-    .burger-rotate {
-        .line:nth-child(1) {
-            transform: rotate(-45deg) translate(-4px, 5px);
-        }
-        .line:nth-child(2) {
-            opacity: 0;
-        }
-        .line:nth-child(3) {
-            transform: rotate(45deg) translate(-5px, -6px);
+                .line:nth-child(2) {
+                    opacity: 0;
+                }
+
+                .line:nth-child(3) {
+                    transform: rotate(45deg) translate(-5px, -6px);
+                }
+            }
         }
     }
 
@@ -107,10 +120,10 @@
             order: 3;
         }
 
-        ul {
+        >ul {
             @include flex-between-center;
 
-            .user-nav-link {
+            .link {
                 transition: all 0.3s ease;
                 display: block;
                 margin: 0 0.6rem;
@@ -149,23 +162,11 @@
                 }
             }
 
-            input.show {
+            input.-show {
                 opacity: 1;
                 pointer-events: initial;
                 background: var(--primary-color);
             }
         }
     }
-}
-
-//Header sticky
-.header.sticky {
-    position: sticky;
-    background-color: var(--primary-color);
-    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
-}
-
-//header background
-header.bg {
-    background-color: var(--primary-color);
 }

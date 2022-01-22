@@ -5,6 +5,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    margin: 70px 0;
 
     @media screen and (max-width: $large) {
         padding: 4rem;
@@ -25,6 +26,7 @@
     //card container
     .card-container {
         width: 50%;
+
         @media screen and (max-width: $medium) {
             width: 100%;
             height: 100%;
@@ -35,7 +37,7 @@
         }
 
         //card
-        .catalog-card {
+        >.card {
             position: absolute;
             width: 28%;
             text-align: center;
@@ -63,10 +65,25 @@
                 }
             }
 
-            .image-wrapper {
+            &.-first {
+                top: 20%;
+                right: 32%;
+            }
+
+            &.-second {
+                top: 0%;
+                right: 2%;
+            }
+
+            &.-third {
+                top: 75%;
+                right: 2%;
+            }
+
+            >.image-wrapper {
                 position: relative;
 
-                > img {
+                >img {
                     display: block;
                     width: 100%;
                     object-fit: cover;
@@ -83,8 +100,8 @@
             }
 
             //Card text
-            > .card-title {
-                font-size: 2.5rem;
+            >.title {
+                font-size: 2rem;
                 margin: 1rem 0;
 
                 @media screen and (max-width: $medium) {
@@ -92,9 +109,11 @@
                 }
             }
 
-            > .card-description {
+            >.description {
                 margin-bottom: 1rem;
+                padding: 1.5rem;
                 font-size: 1.6rem;
+
             }
 
             a {
@@ -111,86 +130,71 @@
             }
         }
 
-
-        .catalog-card.first {
-            top: 20%;
-            right: 32%;
-        }
-
-        .catalog-card.second {
-            top: 0%;
-            right: 2%;
-        }
-
-        .catalog-card.third {
-            top: 75%;
-            right: 2%;
-        }
-    }
-}
-
-//collections text
-.text-container {
-    width: 30%;
-    margin-right: 5rem;
-
-    @media screen and (max-width: $large) {
-        margin: 2rem 0;
     }
 
-    @media screen and (max-width: $medium) {
-        margin: 4rem 0;
-        width: 75%;
-    }
-
-    @media screen and (max-width: $small) {
-        width: 90%;
-    }
-
-    //container
-    .text-wrapper {
-        width: 100%;
-        height: 100%;
-
+    //collections text
+    .text-container {
+        width: 30%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
+        align-self: center;
+        @media screen and (max-width: $large) {
+            margin: 2rem 0;
+        }
 
         @media screen and (max-width: $medium) {
-            align-items: center;
-            text-align: center;
+            margin: 4rem 0;
+            width: 75%;
         }
 
-        .text-sup {
-            font-size: 1.8rem;
+        @media screen and (max-width: $small) {
+            width: 90%;
         }
 
-        .text-title {
-            font-size: 4rem;
-            margin: 1.5rem 0;
+        //container
+        >.wrapper {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
 
             @media screen and (max-width: $medium) {
-                margin: 1rem 0;
+                align-items: center;
+                text-align: center;
+            }
+
+            >.sup {
+                font-size: 1.8rem;
+            }
+
+            >.title {
+                font-size: 3.2rem;
+                margin: 1.5rem 0;
+
+                @media screen and (max-width: $medium) {
+                    margin: 1rem 0;
+                }
+            }
+
+            >.description {
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+                margin-bottom: 2rem;
             }
         }
 
-        .text-description {
-            font-size: 2rem;
-            line-height: 2.5rem;
-            margin-bottom: 2rem;
-        }
-    }
+        //Arrow
+        >.arrow {
+            position: absolute;
+            top: 110%;
+            left: 60px;
+            animation: catalog-arrow 1s infinite alternate ease-in-out;
 
-    //Arrow
-    .catalog-arrow {
-        position: absolute;
-        top: 110%;
-        left: 60px;
-        animation: catalog-arrow 1s infinite alternate ease-in-out;
-
-        @media screen and (max-width: $medium) {
-            display: none;
+            @media screen and (max-width: $medium) {
+                display: none;
+            }
         }
     }
 }

@@ -2,16 +2,15 @@ footer {
     background: var(--primary-color);
 
     //Container
-    .footer-wrapper {
+    >.wrapper {
         padding: 2rem;
         margin-top: 7rem;
-
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
 
-        .logo {
+        >.logo {
             position: relative;
             > a > h3 {
                 position: absolute;
@@ -30,7 +29,7 @@ footer {
         }
 
         //content
-        .content-container {
+        >.content {
             border-top: solid 1px;
             width: 100%;
             @include flex-between-center;
@@ -42,7 +41,7 @@ footer {
                 align-items: center;
             }
 
-            .content-wrapper {
+            >.wrapper {
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
@@ -73,7 +72,7 @@ footer {
                 }
 
                 //nav
-                .footer-nav {
+                >.nav {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     grid-template-rows: 1fr 1fr;
@@ -83,7 +82,6 @@ footer {
                         justify-content: center;
                         align-items: center;
                         flex-direction: column;
-
                         order: 1;
                     }
 
@@ -103,7 +101,7 @@ footer {
                 }
 
                 //newsletter
-                .footer-form {
+                >.form {
                     width: 30vw;
                     display: flex;
                     justify-content: space-evenly;
@@ -148,7 +146,7 @@ footer {
                 }
 
                 //social media
-                .footer-social-media {
+                >.social-media {
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
@@ -173,7 +171,7 @@ footer {
                 }
 
                 a {
-                    font-size: 1.8rem;
+                    font-size: 1.4rem;
                     line-height: 2.5rem;
                 }
             }
