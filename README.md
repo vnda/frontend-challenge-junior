@@ -1,6 +1,6 @@
 # :desktop_computer: Estrutura de site/ecommerce :dollar:
 
-Estrutura básica de ecommerce
+Estrutura básica de ecommerce: [Ver projeto publicado](https://akistapace.github.io/site-simples-Jr/)
 
 ## :mag_right:  Foi utilizado no site:
 
