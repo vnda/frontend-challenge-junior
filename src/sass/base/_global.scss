@@ -5,6 +5,8 @@ html {
 
 body {
     font-family: $fontPrimary;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 h1,
@@ -46,4 +48,9 @@ img {
 ::-webkit-scrollbar-thumb {
     background-color: $colorPrimary;
     outline: 1px solid $colorPrimary;
+}
+
+.swiper-container {
+    overflow: hidden;
+    position: relative;
 }

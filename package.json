@@ -4,9 +4,12 @@
   "main": "index.js",
   "author": "Fernando <fernando.akistapace@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "@babel/core": "^7.14.6",
-    "browser-sync": "^2.26.14",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp Build"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
@@ -14,11 +17,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-file-include": "^2.3.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-uglify": "^3.0.2"
-  },
-  "scripts": {
-    "dev": "gulp",
-    "build": "gulp Build"
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.50.1"
   }
 }

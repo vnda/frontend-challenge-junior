@@ -30,6 +30,7 @@
         .banner-img {
             max-height: 350px;
             border-radius: 8px;
+            object-fit: cover;
             @include bkp(md) {
                 max-height: 315px;
             }

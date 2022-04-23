@@ -72,6 +72,7 @@
             }
             &.-two {
                 width: 40%;
+                margin: auto;
             }
             &.-three {
                 height: 10vh;
@@ -92,6 +93,7 @@
                 width: 90%;
                 position: relative;
                 right: 0;
+                margin: auto;
                 .banner {
                     img {
                         max-height: 450px !important;
