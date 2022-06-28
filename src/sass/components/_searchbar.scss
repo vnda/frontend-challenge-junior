@@ -1,0 +1,38 @@
+.searchbar {
+    background-color: $colorPrimary;
+    position: absolute;
+    left: 0;
+    top: 11.5%;
+    z-index: $base-index;
+    margin: auto;
+    width: 100%;
+    padding: 5px 20px;
+    height: 0px;
+    opacity: 0;
+    transition: opacity 0.8s, height 0.3s;
+    &.-open {
+        height: 60px;
+        opacity: 1;
+    }
+    &-container {
+        background-color: $colorSecondary;
+        width: 100%;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 8px;
+        i {
+            cursor: pointer;
+        }
+    }
+    &-input {
+        width: 90%;
+        padding: 0 10px;
+        border: none;
+        font-size: 16px;
+        background-color: $colorSecondary;
+        color: $colortxtOne;
+        &::placeholder {
+            color: $colortxtOne;
+        }
+    }
+}

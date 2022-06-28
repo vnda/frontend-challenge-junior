@@ -1,0 +1,27 @@
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    .stripe1, .stripe2, .stripe3 {
+        width: 35px;
+        height: 5px;
+        background-color: $colorExtra1;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    &.-open {
+        .stripe1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+            transform: rotate(-45deg) translate(-9px, 6px) ;
+        }
+        .stripe2 {
+            opacity: 0;
+        }
+        .stripe3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+            transform: rotate(45deg) translate(-8px, -8px) ;
+        }
+    }
+  }
+
+  
+  
