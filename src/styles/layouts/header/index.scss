@@ -1,0 +1,11 @@
+@import "../../tools/index.scss";
+
+.header-container {
+	@include full-w-container;
+
+	> .content {
+		@include content-wrapper;
+		background-color: aquamarine;
+		display: flex;
+	}
+}

@@ -1,0 +1,15 @@
+.navmenu-container {
+	width: 100%;
+
+	> .navmenu-list {
+		display: flex;
+		gap: 16px;
+	}
+
+	> .navmenu-item {
+		a {
+			letter-spacing: 32px;
+			color: red;
+		}
+	}
+}
