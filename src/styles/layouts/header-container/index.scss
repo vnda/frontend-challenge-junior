@@ -1,0 +1,5 @@
+@import "../../tools/index.scss";
+
+.header-container {
+	@include full-w-container;
+}

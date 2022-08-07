@@ -1,0 +1,11 @@
+@import "../../tools/index.scss";
+
+.banner-container {
+	@include full-w-container;
+	background-color: rebeccapurple;
+	min-height: 480px;
+
+	@media (min-width: 1920px) {
+		@include content-wrapper;
+	}
+}

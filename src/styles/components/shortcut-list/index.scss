@@ -1,0 +1,12 @@
+.shortcut-list {
+	display: flex;
+	background-color: blue;
+	gap: 16px;
+	align-items: center;
+
+	> .item {
+		font-size: 24px;
+		display: flex;
+		align-items: center;
+	}
+}

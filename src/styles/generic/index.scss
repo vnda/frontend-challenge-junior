@@ -12,6 +12,9 @@ body {
 	@include body-font;
 	overflow-x: hidden;
 	background-color: $bg-color;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 h1,
