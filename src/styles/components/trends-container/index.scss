@@ -1,0 +1,15 @@
+@import "../../tools/index.scss";
+@import "../../settings/index.scss";
+@import "./trend-texts/index.scss";
+@import "../trend-card/index.scss";
+@import "../trendcards-container/index.scss";
+
+.trend-container {
+	@include content-wrapper;
+	background-color: $color-white;
+	min-height: 600px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
