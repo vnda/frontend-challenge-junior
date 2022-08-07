@@ -1,0 +1,7 @@
+@import "../../tools/index.scss";
+
+.product-gallery {
+	@include content-wrapper;
+	background-color: aquamarine;
+	min-height: 240px;
+}

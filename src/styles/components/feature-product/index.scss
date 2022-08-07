@@ -1,0 +1,7 @@
+@import "../../tools/index.scss";
+
+.feature-product {
+	@include content-wrapper;
+	min-height: 240px;
+	background-color: bisque;
+}

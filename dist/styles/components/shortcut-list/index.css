@@ -1,1 +1,1 @@
-.shortcut-list{display:flex;background-color:blue;gap:16px;align-items:center}.shortcut-list>.item{font-size:24px;display:flex;align-items:center}
+.shortcut-list{flex:1}.shortcut-list>.list{display:flex;justify-content:flex-end;gap:24px}.shortcut-list>.item{font-size:24px;display:flex;align-items:center}

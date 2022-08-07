@@ -2,14 +2,11 @@
 
 .header-content {
 	@include content-wrapper;
-	background-color: aqua;
 	display: flex;
 	align-items: center;
 	gap: 24px;
-	padding: 16px;
 
 	> .navmenu-container {
 		flex: 1;
-		background-color: red;
 	}
 }

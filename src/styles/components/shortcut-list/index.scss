@@ -1,8 +1,11 @@
 .shortcut-list {
-	display: flex;
-	background-color: blue;
-	gap: 16px;
-	align-items: center;
+	flex: 1;
+
+	> .list {
+		display: flex;
+		justify-content: flex-end;
+		gap: 24px;
+	}
 
 	> .item {
 		font-size: 24px;

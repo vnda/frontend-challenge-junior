@@ -1,11 +1,25 @@
 @import "../../tools/index.scss";
+@import "./swiper/index.scss";
+@import "../../settings/index.scss";
 
 .banner-container {
 	@include full-w-container;
-	background-color: rebeccapurple;
-	min-height: 480px;
+	max-height: 480px;
+	display: flex;
+	justify-content: center;
 
 	@media (min-width: 1920px) {
 		@include content-wrapper;
+	}
+
+	> .swiper {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		.swiper-button-prev,
+		.swiper-button-next {
+			color: $color-primary-low;
+		}
 	}
 }

@@ -11,6 +11,10 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./dist/styles/index.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
 		<title>A.E - Crochê Studio</title>
 	</head>
 	<body>
@@ -19,15 +23,15 @@
 				<div class="logo"><h1>Logo</h1></div>
 				<nav class="navmenu-container">
 					<ul class="navmenu-list">
-						<li class="navmenu-item">
-							<a href="#"></a>Moda e Acessórios
+						<li class="item">
+							<a href="#">Moda e Acessórios</a>
 						</li>
-						<li class="navmenu-item"><a href="#"></a>Decoração</li>
-						<li class="navmenu-item"><a href="#"></a>Contato</li>
+						<li class="item"><a href="#">Decoração</a></li>
+						<li class="item"><a href="#">Contato</a></li>
 					</ul>
 				</nav>
-				<div class="shortcuts">
-					<ul class="shortcut-list">
+				<div class="shortcut-list">
+					<ul class="list">
 						<li class="item">
 							<button class="button">b</button>
 						</li>
@@ -42,13 +46,72 @@
 			</div>
 		</header>
 		<main class="main-container">
-			<section class="banner-container">banner</section>
+			<section class="banner-container">
+				<div class="swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<img
+								src="https://i.ytimg.com/vi/5q-OidRAnxk/maxresdefault.jpg"
+								alt="imagem bolsa de croche amarela"
+							/>
+						</div>
+
+						<div class="swiper-slide">
+							<img
+								src="https://i.ytimg.com/vi/5q-OidRAnxk/maxresdefault.jpg"
+								alt="imagem bolsa de croche amarela"
+							/>
+						</div>
+
+						<div class="swiper-slide">
+							<img
+								src="https://i.ytimg.com/vi/5q-OidRAnxk/maxresdefault.jpg"
+								alt="imagem bolsa de croche amarela"
+							/>
+						</div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+					<!-- If we need scrollbar -->
+					<div class="swiper-scrollbar"></div>
+				</div>
+			</section>
 			<section class="product-gallery">product-gallery</section>
 			<section class="about-container">about</section>
 			<section class="feature-product">feature</section>
 			<section class="instagram-posts"></section>
 		</main>
-		<footer></footer>
-		<script type="modules" src="./public/index.js"></script>
+		<footer class="footer-container">
+			<section class="footer-content">
+				<div class="logo">
+					<h1>logo</h1>
+				</div>
+				<div class="menu-footer">
+					<nav>
+						<a href="#">MENU</a>
+						<a href="#">MENU</a>
+						<a href="#">MENU</a>
+					</nav>
+				</div>
+				<div class="footer-copyright">
+					<small
+						>@Vnda - Tecnologia para ecommerce - CNPJ:
+						00.000.00/0001-00</small
+					>
+				</div>
+			</section>
+		</footer>
+		<script type="module" src="./main.js"></script>
+		<script
+			type="module"
+			src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+		></script>
 	</body>
 </html>

@@ -1,5 +1,7 @@
 @import "../../tools/index.scss";
+@import "../../settings/index.scss";
 
 .header-container {
 	@include full-w-container;
+	box-shadow: $shadow-header;
 }
