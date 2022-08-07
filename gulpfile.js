@@ -9,34 +9,29 @@ sass.compiler = require("node-sass");
 
 function compileSass() {
 	return gulp
-		.src("src/styles/*.scss")
+		.src("src/**/*.scss")
 		.pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
-		.pipe(gulp.dest("dist/styles"));
+		.pipe(gulp.dest("dist"));
 }
 
 function compileHtml() {
 	return gulp
-		.src("public/*.html")
+		.src("**/*.html")
 		.pipe(htmlmin({ collapseWhitespace: true }))
-		.pipe(gulp.dest("dist/public"));
+		.pipe(gulp.dest("dist"));
 }
 
 function compileJs() {
-	return gulp
-		.src("src/scripts/*.js")
-		.pipe(minify())
-		.pipe(gulp.dest("dist/scripts"));
+	return gulp.src("src/**/*.js").pipe(minify()).pipe(gulp.dest("dist"));
 }
 
 function watch() {
-	gulp.watch("src/styles/*.scss", compileSass);
-	gulp.watch("public/*.html", compileHtml);
-	gulp.watch("src/scripts/*.js", compileJs);
+	gulp.watch("src/**/*.scss", compileSass);
+	gulp.watch("src/**/*.html", compileHtml);
+	gulp.watch("src/**/*.js", compileJs);
 }
 
-// gulp.task("css", compileSass);
-// gulp.task("html", compileHtml);
-// gulp.task("js", compileJs);
+gulp.task("css", compileSass);
+gulp.task("html", compileHtml);
+gulp.task("js", compileJs);
 gulp.task("default", watch);
-
-// exports.default = watch();
