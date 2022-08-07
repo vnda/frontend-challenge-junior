@@ -1,5 +1,4 @@
 @import "../../tools/index.scss";
-@import "./swiper/index.scss";
 @import "../../settings/index.scss";
 
 .banner-container {
@@ -10,16 +9,5 @@
 
 	@media (min-width: 1920px) {
 		@include content-wrapper;
-	}
-
-	> .swiper {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-
-		.swiper-button-prev,
-		.swiper-button-next {
-			color: $color-primary-low;
-		}
 	}
 }
