@@ -1,8 +1,6 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
 // import "swiper/swiper-bundle.css";
 
-const swiper = new Swiper();
-
 window.onload = () => {
 	const bannerSwiper = new Swiper(".banner-swiper", {
 		slidesPerView: 1,
@@ -18,7 +16,7 @@ window.onload = () => {
 		},
 	});
 
-	var swiper = new Swiper(".products-swiper", {
+	const swiper = new Swiper(".products-swiper", {
 		slidesPerView: 6,
 		spaceBetween: 30,
 		pagination: {
@@ -45,6 +43,17 @@ window.onload = () => {
 				slidesPerView: 6,
 				spaceBetween: 30,
 			},
+		},
+	});
+
+	const featureProductSwiper = new Swiper(".feature-swiper", {
+		pagination: {
+			el: ".swiper-pagination",
+			type: "fraction",
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
 		},
 	});
 };

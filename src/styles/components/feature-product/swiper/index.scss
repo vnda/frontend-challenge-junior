@@ -1,0 +1,32 @@
+.feature-swiper {
+	background-color: aquamarine;
+	position: relative;
+	width: 50%;
+
+	> .swiper-button-next {
+		color: red;
+
+		position: absolute;
+		right: 108px;
+	}
+
+	> .swiper-button-prev {
+		color: red;
+
+		position: absolute;
+		left: 108px;
+	}
+	> .swiper-wrapper {
+		> .swiper-slide {
+			max-height: 340px;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+
+			.image {
+				max-width: 400px;
+				object-fit: cover;
+			}
+		}
+	}
+}

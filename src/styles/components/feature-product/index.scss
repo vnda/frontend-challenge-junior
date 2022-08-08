@@ -1,7 +1,22 @@
 @import "../../tools/index.scss";
+@import "./info/index.scss";
+@import "./swiper/index.scss";
 
 .feature-product {
 	@include content-wrapper;
-	min-height: 240px;
+	min-height: 340px;
 	background-color: bisque;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 40px;
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+
+	> .image {
+		max-width: 200px;
+		height: 340px;
+		top: -40px;
+	}
 }
