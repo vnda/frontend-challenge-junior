@@ -1,0 +1,25 @@
+@import "../../tools/index.scss";
+@import "../../settings/index.scss";
+@import "./trend-texts/index.scss";
+@import "../trend-card/index.scss";
+@import "../trendcards-container/index.scss";
+
+.trend-container {
+	position: relative;
+	@include content-wrapper;
+	min-height: 600px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 70%;
+		border-radius: 4px;
+		background-color: $color-primary-high;
+		z-index: 1;
+	}
+}

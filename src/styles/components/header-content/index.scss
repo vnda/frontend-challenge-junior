@@ -1,0 +1,12 @@
+@import "../../tools/index.scss";
+
+.header-content {
+	@include content-wrapper;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+
+	> .navmenu-container {
+		flex: 1;
+	}
+}

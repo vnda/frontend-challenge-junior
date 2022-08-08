@@ -1,0 +1,20 @@
+@mixin body-font {
+	font-family: "PT Sans", sans-serif;
+}
+
+@mixin heading-font {
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+}
+
+@mixin full-w-container {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+@mixin content-wrapper {
+	max-width: 1440px;
+	width: 100%;
+	padding: 16px;
+}

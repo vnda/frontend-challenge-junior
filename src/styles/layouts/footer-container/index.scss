@@ -1,0 +1,5 @@
+@import "../../tools/index.scss";
+
+.footer-container {
+	@include full-w-container;
+}

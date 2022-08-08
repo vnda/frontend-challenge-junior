@@ -10,10 +10,291 @@
 			href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,600&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="./dist/styles/index.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
 		<title>A.E - Crochê Studio</title>
 	</head>
 	<body>
-		teste
-		<script type="modules" src="./public/index.js"></script>
+		<header class="header-container">
+			<div class="header-content">
+				<div class="logo"><h1>Logo</h1></div>
+				<nav class="navmenu-container">
+					<ul class="navmenu-list">
+						<li class="item">
+							<a href="#">Moda e Acessórios</a>
+						</li>
+						<li class="item"><a href="#">Decoração</a></li>
+						<li class="item"><a href="#">Contato</a></li>
+					</ul>
+				</nav>
+				<div class="shortcut-list">
+					<ul class="list">
+						<li class="item">
+							<button class="button">b</button>
+						</li>
+						<li class="item">
+							<button class="button">b</button>
+						</li>
+						<li class="item">
+							<button class="button">b</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<main class="main-container">
+			<!-- BANNER -->
+			<section class="banner-container">
+				<div class="banner-swiper swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<img
+								src="https://i.ytimg.com/vi/5q-OidRAnxk/maxresdefault.jpg"
+								alt="imagem bolsa de croche amarela"
+							/>
+						</div>
+
+						<div class="swiper-slide">
+							<img
+								src="https://i.ytimg.com/vi/5q-OidRAnxk/maxresdefault.jpg"
+								alt="imagem bolsa de croche amarela"
+							/>
+						</div>
+
+						<div class="swiper-slide">
+							<img
+								src="https://i.ytimg.com/vi/5q-OidRAnxk/maxresdefault.jpg"
+								alt="imagem bolsa de croche amarela"
+							/>
+						</div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+					<!-- If we need scrollbar -->
+					<div class="swiper-scrollbar"></div>
+				</div>
+			</section>
+
+			<!-- PRODUCT GALLERY -->
+			<section class="product-gallery">
+				<h2 class="title">Produtos em destaque</h2>
+				<div class="products-swiper swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<article class="product-card">
+								<div class="productthumb">
+									<img
+										class="product"
+										src="https://http2.mlstatic.com/D_NQ_NP_696179-MLB48892196738_012022-O.webp"
+										alt="product thumbnail"
+									/>
+								</div>
+								<div class="product-label">
+									<button class="buttoncart">botao</button>
+									<h4 class="title">Product Title</h4>
+									<span class="price">preco</span>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="product-card">
+								<div class="productthumb">
+									<img
+										class="product"
+										src="https://http2.mlstatic.com/D_NQ_NP_696179-MLB48892196738_012022-O.webp"
+										alt="product thumbnail"
+									/>
+								</div>
+								<div class="product-label">
+									<button class="buttoncart">botao</button>
+									<h4 class="title">Product Title</h4>
+									<span class="price">preco</span>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="product-card">
+								<div class="productthumb">
+									<img
+										class="product"
+										src="https://http2.mlstatic.com/D_NQ_NP_696179-MLB48892196738_012022-O.webp"
+										alt="product thumbnail"
+									/>
+								</div>
+								<div class="product-label">
+									<button class="buttoncart">botao</button>
+									<h4 class="title">Product Title</h4>
+									<span class="price">preco</span>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="product-card">
+								<div class="productthumb">
+									<img
+										class="product"
+										src="https://http2.mlstatic.com/D_NQ_NP_696179-MLB48892196738_012022-O.webp"
+										alt="product thumbnail"
+									/>
+								</div>
+								<div class="product-label">
+									<button class="buttoncart">botao</button>
+									<h4 class="title">Product Title</h4>
+									<span class="price">preco</span>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="product-card">
+								<div class="productthumb">
+									<img
+										class="product"
+										src="https://http2.mlstatic.com/D_NQ_NP_696179-MLB48892196738_012022-O.webp"
+										alt="product thumbnail"
+									/>
+								</div>
+								<div class="product-label">
+									<button class="buttoncart">botao</button>
+									<h4 class="title">Product Title</h4>
+									<span class="price">preco</span>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="product-card">
+								<div class="productthumb">
+									<img
+										class="product"
+										src="https://http2.mlstatic.com/D_NQ_NP_696179-MLB48892196738_012022-O.webp"
+										alt="product thumbnail"
+									/>
+								</div>
+								<div class="product-label">
+									<button class="buttoncart">botao</button>
+									<h4 class="title">Product Title</h4>
+									<span class="price">preco</span>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="product-card">
+								<div class="productthumb">
+									<img
+										class="product"
+										src="https://http2.mlstatic.com/D_NQ_NP_696179-MLB48892196738_012022-O.webp"
+										alt="product thumbnail"
+									/>
+								</div>
+								<div class="product-label">
+									<button class="buttoncart">botao</button>
+									<h4 class="title">Product Title</h4>
+									<span class="price">preco</span>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+
+			<!-- TRENDS -->
+			<section class="trend-container">
+				<div class="trend-texts">
+					<small class="pretext">Crochê não é tendência</small>
+					<h2 class="title">Crochê é moda.</h2>
+					<p class="paragraph">
+						Lorem ipsum dolor sit amet. Qui quis et repellendus
+						quibusdam sed adipisci iste eum quasi totam ex
+						perspiciatis debitis ut voluptatem iste et adipisci
+						quos. 33 fugiat sint in optio quidem qui accusamus
+						culpa.
+					</p>
+				</div>
+				<div class="trendcards-container">
+					<article class="trend-card -first">
+						<img
+							src="https://www.fashionbubbles.com/wp-content/uploads/2022/02/bolsa-de-croche-dolce-gabbana.jpg"
+							alt="imagem sobre crochê"
+							class="image"
+						/>
+						<h4 class="title">Título do banner</h4>
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet. Qui quis et repellendus
+							quibusdam sed adipisci iste eum quasi totam
+						</p>
+					</article>
+
+					<article class="trend-card -second">
+						<img
+							src="https://blog.malupires.com.br/wp-content/uploads/2022/02/malu_pires-2022-02-02T124118.169.jpg"
+							alt="imagem sobre crochê"
+							class="image"
+						/>
+						<h4 class="title">Título do banner</h4>
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet. Qui quis et repellendus
+							quibusdam sed adipisci iste eum quasi totam
+						</p>
+					</article>
+
+					<article class="trend-card -third">
+						<img
+							src="https://i0.wp.com/anatomiadeumaleitora.com/wp-content/uploads/2020/03/3f7277ad132617bbfa9dfcccff1786b9.jpg?fit=564%2C564&ssl=1"
+							alt="imagem sobre crochê"
+							class="image"
+						/>
+						<h4 class="title">Título do banner</h4>
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet. Qui quis et repellendus
+							quibusdam sed adipisci iste eum quasi totam
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<!-- FEATURE PRODUCT -->
+			<section class="feature-product">feature</section>
+
+			<!-- INSTAGRAM POSTS -->
+			<section class="instagram-posts"></section>
+		</main>
+
+		<footer class="footer-container">
+			<section class="footer-content">
+				<div class="logo">
+					<h1>logo</h1>
+				</div>
+				<div class="menu-footer">
+					<nav>
+						<a href="#">MENU</a>
+						<a href="#">MENU</a>
+						<a href="#">MENU</a>
+					</nav>
+				</div>
+				<div class="footer-copyright">
+					<small
+						>@Vnda - Tecnologia para ecommerce - CNPJ:
+						00.000.00/0001-00</small
+					>
+				</div>
+			</section>
+		</footer>
+		<script type="module" src="./main.js"></script>
+		<script
+			type="module"
+			src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+		></script>
 	</body>
 </html>

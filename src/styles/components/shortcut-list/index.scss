@@ -1,0 +1,15 @@
+.shortcut-list {
+	flex: 1;
+
+	> .list {
+		display: flex;
+		justify-content: flex-end;
+		gap: 24px;
+	}
+
+	> .item {
+		font-size: 24px;
+		display: flex;
+		align-items: center;
+	}
+}

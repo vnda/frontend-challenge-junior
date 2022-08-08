@@ -1,0 +1,40 @@
+@import "../tools/index.scss";
+@import "../settings/index.scss";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	@include body-font;
+	overflow-x: hidden;
+	background-color: $bg-color;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: $color-gray-dark-strong;
+}
+
+h1,
+h2,
+h3 {
+	@include heading-font;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
