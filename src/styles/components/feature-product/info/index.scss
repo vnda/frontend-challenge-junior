@@ -4,14 +4,18 @@
 .info-card {
 	display: flex;
 	width: 50%;
-
+	height: 100%;
 	gap: 16px;
-	max-height: 320px;
+	max-height: 400px;
+	z-index: 1;
+	padding-left: 40px;
 
-	> .image {
-		height: 100%;
-		width: 40%;
-		object-fit: cover;
+	> .image-box {
+		> .image {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
 	}
 
 	> .cta {
@@ -23,10 +27,11 @@
 		> .titlegroup {
 			> .productname {
 				@include body-font;
-				font-size: 24px;
+				font-size: 20px;
 				padding: 4px;
 				display: inline-block;
 				color: $color-secondary-high;
+				font-weight: 500;
 			}
 
 			> .title {

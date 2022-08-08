@@ -3,9 +3,10 @@
 @import "./swiper/index.scss";
 
 .feature-product {
+	position: relative;
 	@include content-wrapper;
-	min-height: 340px;
-	background-color: bisque;
+	height: 100%;
+	display: flex;
 	padding-top: 80px;
 	padding-bottom: 80px;
 	padding-left: 40px;
@@ -14,9 +15,13 @@
 	justify-content: space-between;
 	gap: 16px;
 
-	> .image {
-		max-width: 200px;
-		height: 340px;
-		top: -40px;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 80%;
+		height: 100%;
+		top: 0;
+		border: 2px solid $color-secondary-low;
+		border-radius: 4px;
 	}
 }

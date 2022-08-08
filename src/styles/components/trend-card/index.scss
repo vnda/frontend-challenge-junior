@@ -3,12 +3,13 @@
 .trend-card {
 	max-width: 364px;
 	background-color: $color-primary-low;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 	text-align: center;
 	max-height: 500px;
 	border-radius: 4px;
 	overflow: hidden;
+	border-left: 4px solid $color-primary-high;
 
 	&.-first {
 		grid-area: first;

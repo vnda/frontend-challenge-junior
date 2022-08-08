@@ -1,0 +1,16 @@
+.posts-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
+	margin-top: 80px;
+	z-index: 50;
+
+	> .post-card {
+		max-width: 320px;
+		max-height: 320px;
+
+		&:nth-child(2n) {
+			margin-top: 40px;
+		}
+	}
+}

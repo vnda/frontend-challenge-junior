@@ -47,6 +47,7 @@ window.onload = () => {
 	});
 
 	const featureProductSwiper = new Swiper(".feature-swiper", {
+		autoHeight: true,
 		pagination: {
 			el: ".swiper-pagination",
 			type: "fraction",

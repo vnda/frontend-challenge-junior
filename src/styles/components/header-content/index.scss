@@ -6,6 +6,14 @@
 	align-items: center;
 	gap: 24px;
 
+	> .logo-box {
+		flex: 1;
+
+		> .logo {
+			max-width: 240px;
+		}
+	}
+
 	> .navmenu-container {
 		flex: 1;
 	}

@@ -1,0 +1,1 @@
+.posts-container{display:flex;flex-wrap:wrap;gap:32px;margin-top:80px;z-index:50}.posts-container>.post-card{max-width:320px;max-height:320px}.posts-container>.post-card:nth-child(2n){margin-top:40px}
