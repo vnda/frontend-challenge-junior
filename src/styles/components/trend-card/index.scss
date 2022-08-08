@@ -2,11 +2,13 @@
 
 .trend-card {
 	max-width: 364px;
-	background-color: $color-gray-light;
-	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
-		rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+	background-color: $color-primary-low;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 	text-align: center;
-	max-height: 560px;
+	max-height: 500px;
+	border-radius: 4px;
+	overflow: hidden;
 
 	&.-first {
 		grid-area: first;
@@ -15,13 +17,10 @@
 
 	&.-second {
 		grid-area: second;
-		height: 300px;
-		margin-bottom: 80px;
 	}
 
-	&.third {
+	&.-third {
 		grid-area: third;
-		margin-top: -80px;
 	}
 
 	> .title {
@@ -29,12 +28,12 @@
 	}
 
 	> .paragraph {
-		padding: 0 16px 16px 16px;
+		padding: 0 24px 24px 24px;
 	}
 
 	> .image {
 		width: 100%;
-		height: 70%;
+		height: 240px;
 		object-fit: cover;
 		object-position: center;
 	}

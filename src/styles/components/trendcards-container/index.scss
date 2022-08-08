@@ -1,8 +1,9 @@
 .trendcards-container {
 	display: grid;
-	background-color: antiquewhite;
 	justify-items: end;
 	gap: 16px;
+	z-index: 1;
+	margin-top: 80px;
 
 	grid-template-areas:
 		"first second"

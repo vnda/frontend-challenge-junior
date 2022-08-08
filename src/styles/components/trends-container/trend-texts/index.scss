@@ -2,13 +2,13 @@
 
 .trend-texts {
 	max-width: 480px;
-	align-self: center;
+	margin-top: 108px;
 	padding-left: 40px;
+	z-index: 1;
 
 	> .pretext {
 		font-size: 18px;
 		text-decoration: line-through;
-		color: $color-gray-mid;
 	}
 
 	> .title {
