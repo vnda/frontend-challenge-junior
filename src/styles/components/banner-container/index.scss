@@ -1,0 +1,13 @@
+@import "../../tools/index.scss";
+@import "../../settings/index.scss";
+
+.banner-container {
+	@include full-w-container;
+	max-height: 480px;
+	display: flex;
+	justify-content: center;
+
+	@media (min-width: 1920px) {
+		@include content-wrapper;
+	}
+}

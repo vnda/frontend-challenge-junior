@@ -1,0 +1,28 @@
+@import "../../../../settings/colors.scss";
+
+.nav-list {
+	width: 100%;
+	min-width: 200px;
+
+	> .list {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		width: 100%;
+
+		> .item {
+			color: $color-gray-dark;
+			width: 100%;
+
+			&:nth-child(2n) {
+				border-top: 1px solid $color-gray-light;
+				border-bottom: 1px solid $color-gray-light;
+				padding: 8px 0;
+			}
+
+			&:hover {
+				color: $color-secondary-high;
+			}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+const ShowElementController=(e,t,n)=>{const l=document.getElementById(e),o=document.getElementById(t),d=document.getElementById(n);return{close:()=>{o.addEventListener("click",()=>{d.style.width="0",d.style.display="none"})},open:()=>{l.addEventListener("click",()=>{d.style.width="340px",d.style.display="block"})}}};export{ShowElementController};

@@ -1,0 +1,1 @@
+const Order=()=>{return{totalAmount:()=>items.length,totalPrice:e=>e.reduce((e,r)=>r.price+e,0).toLocaleString("pt-br",{style:"currency",currency:"BRL"}),createOrder:e=>{if(e)return`https://api.whatsapp.com/send?phone=5532988555409&text=${`Pedido%20via%20site,%20para%20os%20produtos:%20${e.map(e=>`${e.name}%20/%20`)}`}`;return""}}};export{Order};

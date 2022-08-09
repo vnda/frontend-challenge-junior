@@ -1,0 +1,38 @@
+@import "./nav-list/index.scss";
+@import "../../settings/colors.scss";
+
+.navmenu-mobile {
+	position: fixed;
+	min-height: 100vh;
+	height: 100%;
+	width: 300px;
+	left: 0;
+	background-color: $color-white;
+	border-right: 6px solid $color-primary-bg;
+	opacity: 0.98;
+	z-index: 1000;
+	padding: 40px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+	transition: all 0.4s ease;
+
+	display: none;
+
+	> .title {
+		color: $color-secondary-high;
+	}
+
+	> .button {
+		position: absolute;
+		right: 40px;
+		background-color: transparent;
+		font-size: 24px;
+
+		&:hover {
+			color: $color-secondary-high;
+		}
+	}
+
+	@media (max-width: 900px) {
+		padding: 16px;
+	}
+}

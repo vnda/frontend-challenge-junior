@@ -1,0 +1,25 @@
+@import "../../settings/index.scss";
+
+.buttoncart {
+	width: 48px;
+	height: 48px;
+	align-self: center;
+	border-radius: 50%;
+	margin-top: -16px;
+	background-color: $color-primary-low;
+	padding: 16px;
+	margin-bottom: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $color-gray-dark;
+
+	&:hover {
+		background-color: $color-primary-high;
+		color: $color-gray-dark;
+	}
+
+	> .fa-solid {
+		font-size: 20px;
+	}
+}
