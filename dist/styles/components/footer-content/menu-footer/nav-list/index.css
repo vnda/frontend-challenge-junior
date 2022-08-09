@@ -1,0 +1,1 @@
+.nav-list{width:100%;min-width:200px}.nav-list>.list{display:flex;flex-direction:column;gap:8px;width:100%}.nav-list>.list>.item{color:#4d4d4d;width:100%}.nav-list>.list>.item:nth-child(2n){border-top:1px solid #ea876c;border-bottom:1px solid #ea876c;padding:8px 0}.nav-list>.list>.item:hover{color:#b7503e}

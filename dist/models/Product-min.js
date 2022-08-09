@@ -1,0 +1,1 @@
+const Product=({id:r,name:i,price:c,imgUrl:e})=>({id:r,name:i,price:c,imgUrl:e});export{Product};

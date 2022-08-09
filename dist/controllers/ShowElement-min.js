@@ -1,0 +1,1 @@
+const ShowElement=(e,t,n)=>{const l=document.getElementById(e),d=document.getElementById(t),o=document.getElementById(n);return{close:()=>{d.addEventListener("click",()=>{o.style.width="0",o.style.display="none"})},open:()=>{l.addEventListener("click",()=>{o.style.width="300px",o.style.display="block"})}}};export{ShowElement};

@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/2ad3dc6460.js"
+			crossorigin="anonymous"
+		></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -19,6 +23,58 @@
 	</head>
 	<body>
 		<header class="header-container">
+			<!-- CART CONTAINER -->
+			<aside class="cart-container" id="cart-container">
+				<div class="cart-content">
+					<div class="header">
+						<h3 class="title">Carrinho</h3>
+						<button class="button" id="cart-button-close">
+							clse
+						</button>
+					</div>
+					<!-- <div class="status">
+						<i class="fa-solid fa-basket-shopping-simple"></i>
+						<p class="status">Seu carrinho está vazio</p>
+					</div> -->
+					<ul class="items-list" id="cart-items-list">
+						<li class="item">
+							<img />
+							<div class="description">
+								<h5 class="name">Nome</h5>
+								<span class="price">R$59,99</span>
+							</div>
+						</li>
+					</ul>
+					<div class="price-total">
+						<span class="total">Preço total:</span>
+						<span class="amount">Quantidade de itens:</span>
+					</div>
+					<div class="budget-button"></div>
+				</div>
+			</aside>
+
+			<!-- NAVMENU MOBILE -->
+			<nav class="navmenu-mobile" id="navmenu-mobile">
+				<button class="button" id="nav-button-close">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+				<h2 class="title">Menu</h2>
+				<ul class="nav-list">
+					<li class="item">
+						<a class="link -active" href="#">Home</a>
+					</li>
+					<li class="item">
+						<a class="link" href="#">Moda</a>
+					</li>
+					<li class="item">
+						<a class="link" href="#">Decoração</a>
+					</li>
+					<li class="item">
+						<a class="link" href="#">Contato</a>
+					</li>
+				</ul>
+			</nav>
+
 			<div class="header-content">
 				<div class="logo-box">
 					<img
@@ -27,25 +83,46 @@
 						class="logo"
 					/>
 				</div>
+
+				<div class="navbutton">
+					<button id="nav-button-open">
+						<i class="fa-solid fa-bars"></i>
+					</button>
+				</div>
+
 				<nav class="navmenu-container">
 					<ul class="navmenu-list">
 						<li class="item">
-							<a href="#">Moda e Acessórios</a>
+							<a class="link -active" href="#">Home</a>
 						</li>
-						<li class="item"><a href="#">Decoração</a></li>
-						<li class="item"><a href="#">Contato</a></li>
+						<li class="item">
+							<a class="link" href="#">Moda</a>
+						</li>
+						<li class="item">
+							<a class="link" href="#">Decoração</a>
+						</li>
+						<li class="item">
+							<a class="link" href="#">Contato</a>
+						</li>
 					</ul>
 				</nav>
+
 				<div class="shortcut-list">
 					<ul class="list">
 						<li class="item">
-							<button class="button">b</button>
+							<button class="button">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</button>
 						</li>
 						<li class="item">
-							<button class="button">b</button>
+							<button class="button">
+								<i class="fa-solid fa-user"></i>
+							</button>
 						</li>
 						<li class="item">
-							<button class="button">b</button>
+							<button class="button" id="cart-button-open">
+								<i class="fa-solid fa-cart-shopping"></i>
+							</button>
 						</li>
 					</ul>
 				</div>
@@ -107,12 +184,15 @@
 									/>
 								</div>
 								<div class="product-label">
-									<button class="buttoncart">botao</button>
+									<button class="buttoncart">
+										<i class="fa-solid fa-cart-plus"></i>
+									</button>
 									<h4 class="title">Product Title</h4>
 									<span class="price">preco</span>
 								</div>
 							</article>
 						</div>
+
 						<div class="swiper-slide">
 							<article class="product-card">
 								<div class="productthumb">
@@ -123,12 +203,15 @@
 									/>
 								</div>
 								<div class="product-label">
-									<button class="buttoncart">botao</button>
+									<button class="buttoncart">
+										<i class="fa-solid fa-cart-plus"></i>
+									</button>
 									<h4 class="title">Product Title</h4>
 									<span class="price">preco</span>
 								</div>
 							</article>
 						</div>
+
 						<div class="swiper-slide">
 							<article class="product-card">
 								<div class="productthumb">
@@ -139,12 +222,15 @@
 									/>
 								</div>
 								<div class="product-label">
-									<button class="buttoncart">botao</button>
+									<button class="buttoncart">
+										<i class="fa-solid fa-cart-plus"></i>
+									</button>
 									<h4 class="title">Product Title</h4>
 									<span class="price">preco</span>
 								</div>
 							</article>
 						</div>
+
 						<div class="swiper-slide">
 							<article class="product-card">
 								<div class="productthumb">
@@ -155,12 +241,15 @@
 									/>
 								</div>
 								<div class="product-label">
-									<button class="buttoncart">botao</button>
+									<button class="buttoncart">
+										<i class="fa-solid fa-cart-plus"></i>
+									</button>
 									<h4 class="title">Product Title</h4>
 									<span class="price">preco</span>
 								</div>
 							</article>
 						</div>
+
 						<div class="swiper-slide">
 							<article class="product-card">
 								<div class="productthumb">
@@ -171,12 +260,15 @@
 									/>
 								</div>
 								<div class="product-label">
-									<button class="buttoncart">botao</button>
+									<button class="buttoncart">
+										<i class="fa-solid fa-cart-plus"></i>
+									</button>
 									<h4 class="title">Product Title</h4>
 									<span class="price">preco</span>
 								</div>
 							</article>
 						</div>
+
 						<div class="swiper-slide">
 							<article class="product-card">
 								<div class="productthumb">
@@ -187,12 +279,15 @@
 									/>
 								</div>
 								<div class="product-label">
-									<button class="buttoncart">botao</button>
+									<button class="buttoncart">
+										<i class="fa-solid fa-cart-plus"></i>
+									</button>
 									<h4 class="title">Product Title</h4>
 									<span class="price">preco</span>
 								</div>
 							</article>
 						</div>
+
 						<div class="swiper-slide">
 							<article class="product-card">
 								<div class="productthumb">
@@ -203,19 +298,23 @@
 									/>
 								</div>
 								<div class="product-label">
-									<button class="buttoncart">botao</button>
+									<button class="buttoncart">
+										<i class="fa-solid fa-cart-plus"></i>
+									</button>
 									<h4 class="title">Product Title</h4>
 									<span class="price">preco</span>
 								</div>
 							</article>
 						</div>
 					</div>
+
 					<!-- Add Pagination -->
 					<div class="swiper-pagination"></div>
 				</div>
 			</section>
 
 			<!-- TRENDS -->
+
 			<section class="trend-container">
 				<div class="trend-texts">
 					<small class="pretext">Crochê não é tendência</small>
@@ -273,31 +372,28 @@
 
 			<!-- FEATURE PRODUCT -->
 			<section class="feature-product">
-				<div class="info-card">
-					<div class="image-box">
-						<img
-							src="https://img.ltwebstatic.com/images3_pi/2022/03/22/1647936934a3121f070651339f46cdba932c266c9c_thumbnail_900x.webp"
-							alt="bolsa clutch"
-							class="image"
-						/>
-					</div>
-					<div class="cta">
-						<hgroup class="titlegroup">
-							<h3 class="productname">Bolsa clutch crochê</h3>
-							<h4 class="title">
-								Especial pra qualquer ocasião.
-							</h4>
-						</hgroup>
-						<p class="paragraph">
-							Lorem ipsum dolor sit amet. Qui quis et repellendus
-							quibusdam sed adipisci iste eum quasi totam ex
-							perspiciatis debitis ut voluptatem iste et adipisci
-							quos. 33 fugiat sint in optio quidem qui accusamus
-							culpa.
-						</p>
-						<button class="button">Encomende a sua</button>
-					</div>
+				<div class="image-box">
+					<img
+						src="https://img.ltwebstatic.com/images3_pi/2022/03/22/1647936934a3121f070651339f46cdba932c266c9c_thumbnail_900x.webp"
+						alt="bolsa clutch"
+						class="image"
+					/>
 				</div>
+
+				<hgroup class="titlegroup">
+					<h3 class="productname">Bolsa clutch crochê</h3>
+					<h4 class="title">Especial pra qualquer ocasião.</h4>
+				</hgroup>
+
+				<p class="paragraph">
+					Lorem ipsum dolor sit amet. Qui quis et repellendus
+					quibusdam sed adipisci iste eum quasi totam ex perspiciatis
+					debitis ut voluptatem iste et adipisci quos. 33 fugiat sint
+					in optio quidem qui accusamus culpa.
+				</p>
+
+				<button class="button">Encomende a sua</button>
+
 				<div class="feature-swiper swiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -322,15 +418,20 @@
 							/>
 						</div>
 					</div>
+
 					<!-- Add Pagination -->
+
 					<div class="swiper-pagination"></div>
+
 					<!-- Add Arrows -->
+
 					<div class="swiper-button-next"></div>
 					<div class="swiper-button-prev"></div>
 				</div>
 			</section>
 
 			<!-- INSTAGRAM POSTS -->
+
 			<section class="instagram-posts">
 				<small class="call">siga no instagram</small>
 				<h2 class="title">@ale.usecroche</h2>
@@ -362,23 +463,88 @@
 
 		<footer class="footer-container">
 			<section class="footer-content">
-				<div class="logo">
-					<h1>logo</h1>
+				<!-- LOGO DIVIDER -->
+
+				<div class="logo-divider">
+					<div class="logo">
+						<div class="divider"></div>
+						<img
+							src="./public/assets/logo_simb.svg"
+							alt="logo"
+							class="symbol"
+						/>
+						<div class="divider"></div>
+					</div>
 				</div>
+
+				<!-- MENU FOOTER -->
+
 				<div class="menu-footer">
-					<nav>
-						<a href="#">MENU</a>
-						<a href="#">MENU</a>
-						<a href="#">MENU</a>
-					</nav>
-				</div>
-				<div class="footer-copyright">
-					<small
-						>@Vnda - Tecnologia para ecommerce - CNPJ:
-						00.000.00/0001-00</small
-					>
+					<div class="navmenu">
+						<h4 class="title">Menu</h4>
+
+						<nav class="nav-list">
+							<ul class="list">
+								<li class="item">
+									<a href="#"> Home </a>
+								</li>
+								<li class="item">
+									<a href="#"> Moda </a>
+								</li>
+								<li class="item">
+									<a href="#"> Decoração</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="email">
+						<h4 class="title">Email</h4>
+						<form class="form">
+							<input
+								class="input"
+								type="text"
+								placeholder="Informe seu email"
+							/>
+							<textarea
+								class="textarea"
+								name="email"
+								id=""
+								cols="30"
+								rows="3"
+								placeholder="Deixe sua mensagem"
+							></textarea>
+
+							<button class="button">Enviar</button>
+						</form>
+					</div>
+
+					<div class="social">
+						<h4 class="title">Social</h4>
+						<div class="links">
+							<a href="#">
+								<button>
+									<i class="fa-brands fa-instagram"></i
+									>ale.usecroche
+								</button>
+							</a>
+							<a href="#">
+								<button>
+									<i class="fa-brands fa-whatsapp"></i>(32)
+									99999-9999
+								</button>
+							</a>
+						</div>
+					</div>
 				</div>
 			</section>
+
+			<!-- <div class="footer-copyright">
+				<small
+					>@Vnda - Tecnologia para ecommerce - CNPJ:
+					00.000.00/0001-00</small
+				>
+			</div> -->
 		</footer>
 		<script type="module" src="./main.js"></script>
 		<script

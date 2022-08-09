@@ -1,16 +1,30 @@
+@import "../../settings/index.scss";
+
 .navmenu-container {
 	width: 100%;
+	display: flex;
+	justify-content: center;
 
 	> .navmenu-list {
 		display: flex;
 		gap: 40px;
-		justify-content: center;
 
 		.item {
-			a {
+			width: 100%;
+
+			> .link {
 				letter-spacing: 2px;
 				text-transform: uppercase;
 				font-size: 14px;
+				font-weight: 500;
+
+				&:hover {
+					color: $color-primary-high;
+				}
+
+				&.-active {
+					color: $color-secondary-high;
+				}
 			}
 		}
 	}

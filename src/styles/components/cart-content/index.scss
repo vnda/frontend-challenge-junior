@@ -1,0 +1,54 @@
+@import "../../settings/index.scss";
+@import "./price-total/index.scss";
+
+@mixin paddingLeft {
+	padding-left: 16px;
+}
+
+.cart-content {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	> .header {
+		background-color: $color-primary-high;
+		height: 40px;
+		display: flex;
+		@include paddingLeft;
+		align-items: center;
+	}
+
+	> .status {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	> .items-list {
+		@include paddingLeft;
+		flex: 1;
+		height: 100%;
+		width: 100%;
+		background-color: blue;
+		display: block;
+
+		> .item {
+			img {
+				max-height: 60px;
+			}
+		}
+	}
+
+	> .price-total {
+		@include paddingLeft;
+		height: 40px;
+		background-color: red;
+	}
+
+	> .budget-button {
+		@include paddingLeft;
+		height: 40px;
+		background-color: green;
+	}
+}

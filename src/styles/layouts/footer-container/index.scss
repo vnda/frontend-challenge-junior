@@ -1,5 +1,15 @@
 @import "../../tools/index.scss";
+@import "../../settings/index.scss";
 
 .footer-container {
 	@include full-w-container;
+	margin-top: 80px;
+	flex-direction: column;
+	align-items: center;
+
+	> .footer-copyright {
+		width: 100%;
+		text-align: center;
+		padding: 12px;
+	}
 }

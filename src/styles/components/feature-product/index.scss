@@ -6,14 +6,18 @@
 	position: relative;
 	@include content-wrapper;
 	height: 100%;
-	display: flex;
-	padding-top: 80px;
-	padding-bottom: 80px;
-	padding-left: 40px;
-	margin-top: 80px;
-	display: flex;
-	justify-content: space-between;
+
+	display: grid;
+	grid-template-columns: 25% 25% 50%;
 	gap: 16px;
+	padding: 40px;
+	margin: 80px 0;
+	align-content: stretch;
+
+	grid-template-areas:
+		"img titlegroup swiper"
+		"img paragraph  swiper"
+		"img btn        swiper  ";
 
 	&::before {
 		content: "";
@@ -23,5 +27,115 @@
 		top: 0;
 		border: 2px solid $color-secondary-low;
 		border-radius: 4px;
+
+		@media (max-width: 1440px) {
+			border: none;
+		}
+	}
+
+	> .image-box {
+		width: 100%;
+		max-width: 400px;
+		height: 100%;
+
+		grid-area: img;
+
+		> .image {
+			width: 100%;
+		}
+	}
+
+	> .titlegroup {
+		grid-area: titlegroup;
+
+		@include heading-font;
+		font-size: 40px;
+
+		> .productname {
+			color: $color-secondary-high;
+			font-size: 24px;
+		}
+	}
+
+	> .paragraph {
+		grid-area: paragraph;
+	}
+
+	> .button {
+		grid-area: btn;
+		display: inline-block;
+		width: 80%;
+		height: 40px;
+		background-color: $color-secondary-high;
+		color: $color-white;
+		font-size: 16px;
+		border-radius: 2px;
+		align-self: end;
+		cursor: pointer;
+		@include body-font;
+
+		&:hover {
+			background-color: $color-primary-high;
+		}
+	}
+
+	> .feature-swiper {
+		grid-area: swiper;
+		width: 100%;
+	}
+
+	@media (max-width: 1440px) {
+		grid-template-columns: 40% 60%;
+		grid-template-areas:
+			"titlegroup paragraph"
+			"img        swiper"
+			"img        swiper"
+			"img        btn";
+
+		> .image-box {
+			width: 100%;
+		}
+
+		> .titlegroup {
+			margin-left: 0;
+		}
+
+		> .paragraph {
+			margin-left: 0;
+		}
+
+		> .button {
+			margin-left: 0;
+			width: 100%;
+		}
+
+		> .feature-swiper {
+			height: 100%;
+		}
+	}
+
+	@media (max-width: 900px) {
+		padding: 16px;
+		height: auto;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"titlegroup img"
+			"paragraph  img"
+			"swiper swiper"
+			"btn    btn";
+	}
+
+	@media (max-width: 600px) {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"titlegroup"
+			"paragraph"
+			"img"
+			"swiper"
+			"btn";
+
+		> .image-box {
+			width: 100%;
+		}
 	}
 }

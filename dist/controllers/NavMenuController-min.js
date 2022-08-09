@@ -1,0 +1,1 @@
+import{ShowElement}from"./ShowElement.js";const NavMenuController=()=>{const{open:o,close:e}=ShowElement("nav-button-open","nav-button-close","navmenu-mobile");o(),e()};export{NavMenuController};

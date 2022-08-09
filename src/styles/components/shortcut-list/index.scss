@@ -1,5 +1,6 @@
 .shortcut-list {
-	flex: 1;
+	width: 25%;
+	background-color: aqua;
 
 	> .list {
 		display: flex;
@@ -11,5 +12,20 @@
 		font-size: 24px;
 		display: flex;
 		align-items: center;
+	}
+
+	@media (max-width: 900px) {
+		position: fixed;
+		width: 100vw;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		z-index: 100;
+		padding: 24px;
+
+		> .list {
+			justify-content: center;
+		}
 	}
 }
