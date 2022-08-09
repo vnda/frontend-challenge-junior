@@ -12,7 +12,7 @@
 	height: 100%;
 
 	> .header {
-		background-color: $color-primary-high;
+		background-color: $bg-color;
 		height: 80px;
 		display: flex;
 		@include paddingLeft;

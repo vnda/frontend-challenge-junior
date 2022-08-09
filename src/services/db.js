@@ -3,7 +3,7 @@ const items = [
 		id: 1,
 		name: "Produto 1",
 		img_url:
-			"https://i.pinimg.com/736x/7b/d7/b3/7bd7b3d2ada8f13114a4edd200e527e1.jpg",
+			"https://img.ltwebstatic.com/images3_pi/2021/12/06/163875263034f79c428a5a6cdb33c248dc71f7701a_thumbnail_600x.webp",
 		price: 59.9,
 	},
 	{

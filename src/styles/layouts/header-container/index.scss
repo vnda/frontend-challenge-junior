@@ -5,4 +5,10 @@
 	@include full-w-container;
 	box-shadow: $shadow-header;
 	height: 80px;
+	background-color: $bg-color;
+
+	@media (max-width: 900px) {
+		position: fixed;
+		z-index: 300;
+	}
 }

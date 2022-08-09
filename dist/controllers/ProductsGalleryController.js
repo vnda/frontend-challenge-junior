@@ -1,10 +1,8 @@
-import { Cart } from "../models/Cart.js";
 import { CartController } from "./CartController.js";
 
 const ProductsGalleryController = (items, cart) => {
 	const galleryElement = document.getElementById("gallery");
 	const itemsList = items;
-	// const cart = Cart();
 	const cartController = CartController(cart);
 
 	const createElement = (id, name, price, img_url) => {

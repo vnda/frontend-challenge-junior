@@ -3,8 +3,6 @@ const ShowElementController = (openButtonId, closeButtonId, elementId) => {
 	const closeButton = document.getElementById(closeButtonId);
 	const element = document.getElementById(elementId);
 
-	console.log(element);
-
 	const close = () => {
 		closeButton.addEventListener("click", () => {
 			element.style.width = "0";

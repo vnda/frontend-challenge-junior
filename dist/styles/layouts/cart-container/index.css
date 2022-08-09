@@ -1,1 +1,1 @@
-.cart-container{position:fixed;min-height:100vh;height:100%;width:300px;background-color:#fff;z-index:300;right:0;display:none}
+.cart-container{position:fixed;min-height:100vh;height:100%;width:300px;background-color:#fff;z-index:300;right:0;box-shadow:rgba(17,17,26,0.1) 0px 0px 16px;transition:all 0.4s ease;display:none}

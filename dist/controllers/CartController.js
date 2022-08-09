@@ -4,7 +4,6 @@ const CartController = (cart) => {
 	const element = document.getElementById("cart-items-list");
 	const total = document.getElementById("total");
 	const orderLink = document.getElementById("order-link");
-
 	const order = Order();
 
 	const setEvents = () => {
@@ -71,8 +70,6 @@ const CartController = (cart) => {
 
 			total.innerHTML = `<span id="total-price" class="total">Preço total:</span>`;
 			total.appendChild(totalPriceElement);
-
-			console.log(order.createOrder(cart.getItemsList()));
 
 			orderLink.href = order.createOrder(cart.getItemsList());
 			return;

@@ -12,16 +12,16 @@ const FormEmailController = () => {
 	};
 
 	const isValidFields = () => {
+		if (element.classList.contains("error-text")) alert("tem");
+
 		if (!emailField.value) {
 			createElementError(emailField, "Este campo não pode ficar vazio");
+			return;
 		}
 
 		if (!emailIsValid(emailField.value)) {
 			createElementError(emailField, "Digite um email válido");
-		}
-
-		if (!messageField.value) {
-			createElementError(messageField, "Este campo não pode ficar vazio");
+			return;
 		}
 
 		const errorMessages = document.querySelectorAll(".error-field");
@@ -32,29 +32,26 @@ const FormEmailController = () => {
 	};
 
 	const createElementError = (element, message) => {
-		console.log("Element", element);
 		if (element) {
 			const div = document.createElement("div");
 			div.innerText = message;
 			div.classList.add("error-text");
 			element.insertAdjacentElement("afterend", div);
 			element.classList.add("error-field");
-
-			element.addEventListener("focus", () => {
-				if (element.classList.contains("error-field")) {
-					element.classList.remove("error-field");
-					element.parentNode.removechild(div);
-				}
-			});
 		}
 	};
 
 	const events = () => {
 		sendButton.addEventListener("click", (event) => {
 			event.preventDefault();
-			console.log("Email field", emailField.value);
-			console.log("Email textarea", messageField.value);
-			if (isValidFields()) alert("Email enviado!");
+
+			if (isValidFields()) {
+				alert("Email enviado!");
+				if (element.classList.contains("error-field")) {
+					element.classList.remove("error-field");
+					element.parentNode.removechild(element);
+				}
+			}
 		});
 	};
 
