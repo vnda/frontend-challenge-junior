@@ -9,4 +9,12 @@
 		margin-bottom: 40px;
 		text-align: center;
 	}
+
+	> .products-swiper {
+		position: relative;
+		> .swiper-pagination {
+			position: absolute;
+			margin-bottom: -12px;
+		}
+	}
 }

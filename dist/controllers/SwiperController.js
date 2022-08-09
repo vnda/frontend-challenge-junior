@@ -56,8 +56,6 @@ const SwiperController = () => {
 			prevEl: ".swiper-button-prev",
 		},
 	});
-
-	return { bannerSwiper, productsSwiper, featureProductSwiper };
 };
 
 export { SwiperController };

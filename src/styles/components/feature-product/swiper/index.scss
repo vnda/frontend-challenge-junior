@@ -12,6 +12,7 @@
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
 	grid-area: swiper;
+
 	> .swiper-button-next {
 		color: $color-secondary-low;
 
@@ -42,5 +43,21 @@
 
 	@media (max-width: 1440px) {
 		width: 100%;
+	}
+
+	@media (max-width: 900px) {
+		> .swiper-button-next {
+			color: $color-secondary-low;
+
+			position: absolute;
+			right: 40px;
+		}
+
+		> .swiper-button-prev {
+			color: $color-secondary-low;
+
+			position: absolute;
+			left: 40px;
+		}
 	}
 }

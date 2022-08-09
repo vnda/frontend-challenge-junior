@@ -13,7 +13,7 @@
 
 	> .header {
 		background-color: $color-primary-high;
-		height: 60px;
+		height: 80px;
 		display: flex;
 		@include paddingLeft;
 		align-items: center;
@@ -52,23 +52,28 @@
 		}
 	}
 
-	> .price-total {
+	> .total {
 		@include paddingLeft;
-		height: 130px;
-		background-color: $color-primary-bg;
 		display: flex;
-		flex-direction: column;
-		font-size: 14px;
+		background-color: rgb(238, 238, 238);
+		justify-content: space-between;
 
-		> .total {
-			font-weight: 700;
+		> .total-price {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		> .-empty {
+			width: 100%;
+			font-size: 18px;
 		}
 	}
 
 	> .budget-button {
 		@include paddingLeft;
 		height: 80px;
-		background-color: $color-primary-bg;
+		background-color: rgb(238, 238, 238);
 		display: flex;
 		justify-content: center;
 

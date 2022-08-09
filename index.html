@@ -8,6 +8,10 @@
 			src="https://kit.fontawesome.com/2ad3dc6460.js"
 			crossorigin="anonymous"
 		></script>
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -32,16 +36,13 @@
 							<i class="fa-solid fa-xmark"></i>
 						</button>
 					</div>
-					<!-- <div class="status">
-						<i class="fa-solid fa-basket-shopping-simple"></i>
-						<p class="status">Seu carrinho está vazio</p>
-					</div> -->
+
 					<ul class="items-list" id="cart-items-list"></ul>
+
 					<div class="total" id="total">
-						<span id="total-amout" class="amount"
-							>Quantidade de itens:</span
+						<span id="total-price" class="total -empty"
+							>Carrinho vazio</span
 						>
-						<span id="total-price" class="total">Preço total:</span>
 					</div>
 					<div class="budget-button">
 						<a
@@ -52,7 +53,7 @@
 						>
 							<button class="button">
 								<i class="fa-brands fa-whatsapp"></i>
-								Solicitar orçamento
+								Faça seu pedido
 							</button>
 						</a>
 					</div>
@@ -91,7 +92,7 @@
 				</div>
 
 				<div class="navbutton">
-					<button id="nav-button-open">
+					<button class="button" id="nav-button-open">
 						<i class="fa-solid fa-bars"></i>
 					</button>
 				</div>
@@ -179,140 +180,7 @@
 			<section class="product-gallery">
 				<h2 class="title">Produtos em destaque</h2>
 				<div class="products-swiper swiper">
-					<div class="swiper-wrapper" id="gallery">
-						<!-- <div class="swiper-slide">
-							<article class="product-card">
-								<div class="productthumb">
-									<img
-										class="product"
-										src="https://http2.mlstatic.com/D_NQ_NP_696179-MLB48892196738_012022-O.webp"
-										alt="product thumbnail"
-									/>
-								</div>
-								<div class="product-label">
-									<button class="buttoncart">
-										<i class="fa-solid fa-cart-plus"></i>
-									</button>
-									<h4 class="title">Product Title</h4>
-									<span class="price">preco</span>
-								</div>
-							</article>
-						</div>
-
-						<div class="swiper-slide">
-							<article class="product-card">
-								<div class="productthumb">
-									<img
-										class="product"
-										src="https://http2.mlstatic.com/D_NQ_NP_696179-MLB48892196738_012022-O.webp"
-										alt="product thumbnail"
-									/>
-								</div>
-								<div class="product-label">
-									<button class="buttoncart">
-										<i class="fa-solid fa-cart-plus"></i>
-									</button>
-									<h4 class="title">Product Title</h4>
-									<span class="price">preco</span>
-								</div>
-							</article>
-						</div>
-
-						<div class="swiper-slide">
-							<article class="product-card">
-								<div class="productthumb">
-									<img
-										class="product"
-										src="https://http2.mlstatic.com/D_NQ_NP_696179-MLB48892196738_012022-O.webp"
-										alt="product thumbnail"
-									/>
-								</div>
-								<div class="product-label">
-									<button class="buttoncart">
-										<i class="fa-solid fa-cart-plus"></i>
-									</button>
-									<h4 class="title">Product Title</h4>
-									<span class="price">preco</span>
-								</div>
-							</article>
-						</div>
-
-						<div class="swiper-slide">
-							<article class="product-card">
-								<div class="productthumb">
-									<img
-										class="product"
-										src="https://http2.mlstatic.com/D_NQ_NP_696179-MLB48892196738_012022-O.webp"
-										alt="product thumbnail"
-									/>
-								</div>
-								<div class="product-label">
-									<button class="buttoncart">
-										<i class="fa-solid fa-cart-plus"></i>
-									</button>
-									<h4 class="title">Product Title</h4>
-									<span class="price">preco</span>
-								</div>
-							</article>
-						</div>
-
-						<div class="swiper-slide">
-							<article class="product-card">
-								<div class="productthumb">
-									<img
-										class="product"
-										src="https://http2.mlstatic.com/D_NQ_NP_696179-MLB48892196738_012022-O.webp"
-										alt="product thumbnail"
-									/>
-								</div>
-								<div class="product-label">
-									<button class="buttoncart">
-										<i class="fa-solid fa-cart-plus"></i>
-									</button>
-									<h4 class="title">Product Title</h4>
-									<span class="price">preco</span>
-								</div>
-							</article>
-						</div>
-
-						<div class="swiper-slide">
-							<article class="product-card">
-								<div class="productthumb">
-									<img
-										class="product"
-										src="https://http2.mlstatic.com/D_NQ_NP_696179-MLB48892196738_012022-O.webp"
-										alt="product thumbnail"
-									/>
-								</div>
-								<div class="product-label">
-									<button class="buttoncart">
-										<i class="fa-solid fa-cart-plus"></i>
-									</button>
-									<h4 class="title">Product Title</h4>
-									<span class="price">preco</span>
-								</div>
-							</article>
-						</div>
-
-						<div class="swiper-slide">
-							<article class="product-card">
-								<div class="productthumb">
-									<img
-										class="product"
-										src="https://http2.mlstatic.com/D_NQ_NP_696179-MLB48892196738_012022-O.webp"
-										alt="product thumbnail"
-									/>
-								</div>
-								<div class="product-label">
-									<button class="buttoncart">
-										<i class="fa-solid fa-cart-plus"></i>
-									</button>
-									<h4 class="title">Product Title</h4>
-									<span class="price">preco</span>
-								</div>
-							</article>
-						</div> -->
-					</div>
+					<div class="swiper-wrapper" id="gallery"></div>
 
 					<!-- Add Pagination -->
 					<div class="swiper-pagination"></div>
@@ -334,7 +202,11 @@
 					</p>
 				</div>
 
-				<div class="trendcards-container">
+				<div
+					class="trendcards-container"
+					data-aos="fade-up"
+					data-aos-duration="3000"
+				>
 					<article class="trend-card -first">
 						<img
 							src="https://www.fashionbubbles.com/wp-content/uploads/2022/02/bolsa-de-croche-dolce-gabbana.jpg"
@@ -348,7 +220,11 @@
 						</p>
 					</article>
 
-					<article class="trend-card -second">
+					<article
+						class="trend-card -second"
+						data-aos="fade-up"
+						data-aos-duration="3000"
+					>
 						<img
 							src="https://blog.malupires.com.br/wp-content/uploads/2022/02/malu_pires-2022-02-02T124118.169.jpg"
 							alt="imagem sobre crochê"
@@ -361,7 +237,11 @@
 						</p>
 					</article>
 
-					<article class="trend-card -third">
+					<article
+						class="trend-card -third"
+						data-aos="fade-up"
+						data-aos-duration="3000"
+					>
 						<img
 							src="https://i0.wp.com/anatomiadeumaleitora.com/wp-content/uploads/2020/03/3f7277ad132617bbfa9dfcccff1786b9.jpg?fit=564%2C564&ssl=1"
 							alt="imagem sobre crochê"
@@ -387,7 +267,15 @@
 				</div>
 
 				<hgroup class="titlegroup">
-					<h3 class="productname">Bolsa clutch crochê</h3>
+					<h3
+						class="productname"
+						data-aos="fade-zoom-in"
+						data-aos-easing="ease-in-back"
+						data-aos-delay="1200"
+						data-aos-offset="0"
+					>
+						Bolsa clutch crochê
+					</h3>
 					<h4 class="title">Especial pra qualquer ocasião.</h4>
 				</hgroup>
 
@@ -440,23 +328,59 @@
 
 			<section class="instagram-posts">
 				<small class="call">siga no instagram</small>
-				<h2 class="title">@ale.usecroche</h2>
+
+				<a class="title" href="#" target="_blank"
+					><h2>@ale.usecroche</h2></a
+				>
 				<div class="posts-container">
-					<article class="post-card">
+					<article
+						class="post-card"
+						data-aos="fade-up"
+						data-aos-duration="3000"
+					>
+						<p class="hovertext">
+							Lorem ipsum dolor sit amet. Qui quis et repellendus
+							quibusdam sed adipisci iste eum quasi totam ex
+							perspiciatis debitis ut voluptatem iste et adipisci
+							quos. 33 fugiat sint in optio quidem qui accusamus
+							culpa.
+						</p>
 						<img
 							src="https://i.pinimg.com/736x/43/47/9a/43479a0b690845935c8b50dc144dd4fc.jpg"
 							alt="Postagem do instagram"
 							class="image"
 						/>
 					</article>
-					<article class="post-card">
+					<article
+						class="post-card"
+						data-aos="fade-up"
+						data-aos-duration="3000"
+					>
+						<p class="hovertext border">
+							Lorem ipsum dolor sit amet. Qui quis et repellendus
+							quibusdam sed adipisci iste eum quasi totam ex
+							perspiciatis debitis ut voluptatem iste et adipisci
+							quos. 33 fugiat sint in optio quidem qui accusamus
+							culpa.
+						</p>
 						<img
 							src="https://i0.wp.com/anatomiadeumaleitora.com/wp-content/uploads/2020/03/img889990000000.png?resize=475%2C475&ssl=1"
 							alt="Postagem do instagram"
 							class="image"
 						/>
 					</article>
-					<article class="post-card">
+					<article
+						class="post-card"
+						data-aos="fade-up"
+						data-aos-duration="3000"
+					>
+						<p class="hovertext">
+							Lorem ipsum dolor sit amet. Qui quis et repellendus
+							quibusdam sed adipisci iste eum quasi totam ex
+							perspiciatis debitis ut voluptatem iste et adipisci
+							quos. 33 fugiat sint in optio quidem qui accusamus
+							culpa.
+						</p>
 						<img
 							src="https://crochedavan.com/wp-content/uploads/2020/08/la_bags_handmade_20200420_152611_0-e1596655565776.jpg"
 							alt="Postagem do instagram"
@@ -531,14 +455,14 @@
 					<div class="social">
 						<h4 class="title">Social</h4>
 						<div class="links">
-							<a href="#">
-								<button>
+							<a href="#" target="_blank" class="socialbutton">
+								<button class="button">
 									<i class="fa-brands fa-instagram"></i
 									>ale.usecroche
 								</button>
 							</a>
-							<a href="#">
-								<button>
+							<a href="#" target="_blank" class="socialbutton">
+								<button class="button">
 									<i class="fa-brands fa-whatsapp"></i>(32)
 									99999-9999
 								</button>
@@ -548,17 +472,21 @@
 				</div>
 			</section>
 
-			<!-- <div class="footer-copyright">
-				<small
+			<div class="footer-copyright">
+				<small class="text"
 					>@Vnda - Tecnologia para ecommerce - CNPJ:
 					00.000.00/0001-00</small
 				>
-			</div> -->
+			</div>
 		</footer>
 		<script type="module" src="./main.js"></script>
 		<script
 			type="module"
 			src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
 		></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>

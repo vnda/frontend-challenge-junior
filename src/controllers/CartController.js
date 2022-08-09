@@ -5,7 +5,7 @@ const CartController = (cart) => {
 	const total = document.getElementById("total");
 	const orderLink = document.getElementById("order-link");
 
-	const order = Order(cart.getItemsList());
+	const order = Order();
 
 	const setEvents = () => {
 		const removeButtons = Array.from(document.querySelectorAll(".remove"));
@@ -60,27 +60,25 @@ const CartController = (cart) => {
 		});
 
 		createTotal();
-		// setOrderLink();
+
 		setEvents();
 	};
 
 	const createTotal = () => {
-		const totalPrice = document.createElement("span");
-		const totalAmount = document.createElement("span");
-		totalPrice.innerText = order.totalPrice();
-		totalAmount.innerHTML = order.totalAmount();
+		if (cart.getItemsList().length > 0) {
+			const totalPriceElement = document.createElement("span");
+			totalPriceElement.innerText = order.totalPrice(cart.getItemsList());
 
-		total.appendChild(totalPrice);
-		total.appendChild(totalAmount);
+			total.innerHTML = `<span id="total-price" class="total">Preço total:</span>`;
+			total.appendChild(totalPriceElement);
+
+			console.log(order.createOrder(cart.getItemsList()));
+
+			orderLink.href = order.createOrder(cart.getItemsList());
+			return;
+		}
+		total.innerHTML = `<span id="total-price" class="total -empty">Carrinho vazio</span>`;
 	};
-
-	// const setOrderLink = () => {
-	// 	cart.getItemsList.map((item) => `- ${item.name} / `);
-	// 	const sentence = `Pedido de orçamento via site, sobre os seguintes produtos: ${items}`;
-
-	// 	const whatsappLink = `https://api.whatsapp.com/send?phone=5532988555409&text=${sentence}`;
-	// 	orderLink.href = whatsappLink;
-	// };
 
 	return {
 		createList,

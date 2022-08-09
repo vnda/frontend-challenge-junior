@@ -20,5 +20,13 @@
 	> .title {
 		font-size: 40px;
 		color: $color-primary-high;
+
+		&:hover {
+			color: $color-secondary-high;
+		}
+
+		@media (max-width: 600px) {
+			font-size: 24px;
+		}
 	}
 }

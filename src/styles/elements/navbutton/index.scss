@@ -1,0 +1,12 @@
+@import "../../settings/index.scss";
+
+.navbutton {
+	> .button {
+		background-color: transparent;
+
+		> .fa-solid {
+			font-size: 24px;
+			color: $color-primary-high;
+		}
+	}
+}

@@ -38,4 +38,10 @@
 		object-fit: cover;
 		object-position: center;
 	}
+
+	@media (max-width: 600px) {
+		> .paragraph {
+			padding: 0 16px 16px 16px;
+		}
+	}
 }

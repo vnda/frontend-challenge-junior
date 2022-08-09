@@ -1,6 +1,7 @@
 @import "../../settings/index.scss";
 
 .banner-swiper {
+	position: relative;
 	.swiper-button-prev,
 	.swiper-button-next {
 		color: $color-primary-low;
@@ -14,5 +15,12 @@
 				margin-top: -32px;
 			}
 		}
+	}
+
+	> .swiper-pagination {
+		position: absolute;
+		filter: brightness(0.8);
+		bottom: 0;
+		margin-bottom: -5px;
 	}
 }
