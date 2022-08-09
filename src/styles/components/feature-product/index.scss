@@ -30,6 +30,7 @@
 
 		@media (max-width: 1440px) {
 			border: none;
+			display: none;
 		}
 	}
 
@@ -73,6 +74,7 @@
 		align-self: end;
 		cursor: pointer;
 		@include body-font;
+		z-index: 5;
 
 		&:hover {
 			background-color: $color-primary-high;

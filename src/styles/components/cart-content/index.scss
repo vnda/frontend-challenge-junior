@@ -1,8 +1,9 @@
 @import "../../settings/index.scss";
 @import "./price-total/index.scss";
+@import "./items-list/index.scss";
 
 @mixin paddingLeft {
-	padding-left: 16px;
+	padding: 16px;
 }
 
 .cart-content {
@@ -12,10 +13,16 @@
 
 	> .header {
 		background-color: $color-primary-high;
-		height: 40px;
+		height: 60px;
 		display: flex;
 		@include paddingLeft;
 		align-items: center;
+		justify-content: space-between;
+
+		> .button {
+			background: transparent;
+			font-size: 16px;
+		}
 	}
 
 	> .status {
@@ -30,25 +37,51 @@
 		flex: 1;
 		height: 100%;
 		width: 100%;
-		background-color: blue;
-		display: block;
+		overflow-y: auto;
 
-		> .item {
-			img {
-				max-height: 60px;
-			}
+		display: block;
+		padding-top: 40px;
+
+		> .carditem {
+			padding: 0 16px;
+		}
+
+		> .carditem:not(:last-child) {
+			border-bottom: 1px solid $color-gray-mid;
+			padding-bottom: 8px;
 		}
 	}
 
 	> .price-total {
 		@include paddingLeft;
-		height: 40px;
-		background-color: red;
+		height: 130px;
+		background-color: $color-primary-bg;
+		display: flex;
+		flex-direction: column;
+		font-size: 14px;
+
+		> .total {
+			font-weight: 700;
+		}
 	}
 
 	> .budget-button {
 		@include paddingLeft;
-		height: 40px;
-		background-color: green;
+		height: 80px;
+		background-color: $color-primary-bg;
+		display: flex;
+		justify-content: center;
+
+		> .link .button {
+			padding: 8px 16px;
+			margin-bottom: 24px;
+			background-color: rgb(103, 185, 44);
+			font-size: 18px;
+			color: $color-white;
+
+			&:hover {
+				filter: brightness(1.1);
+			}
+		}
 	}
 }

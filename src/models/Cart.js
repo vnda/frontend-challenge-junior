@@ -1,26 +1,15 @@
 import { CartController } from "../controllers/CartController.js";
 import { ShowElementController } from "../controllers/ShowElementController.js";
 
-const Cart = (items = []) => {
-	let itemsList = items;
-
-	const getItems = () => {
-		return [...items];
-	};
-
-	const clear = () => {
-		itemsList = [];
-	};
+const Cart = () => {
+	let itemsList = [];
 
 	const addItem = (item) => {
-		itemsList = [...itemsList, item];
+		itemsList.push(item);
 	};
 
 	const removeItem = (id) => {
-		const newList = itemsList.filter((item) => item.id !== id);
-		console.log("Newlist", newList);
-		itemsList = [...newList];
-		console.log("items list", itemsList);
+		itemsList = itemsList.filter((item) => item.id !== +id);
 	};
 
 	const { open, close } = ShowElementController(
@@ -34,11 +23,10 @@ const Cart = (items = []) => {
 		close();
 	};
 
-	console.log("Lista carrinho", itemsList);
-
 	return {
-		startEvents,
+		addItem,
 		removeItem,
+		startEvents,
 		getItemsList: () => itemsList,
 	};
 };

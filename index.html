@@ -29,27 +29,26 @@
 					<div class="header">
 						<h3 class="title">Carrinho</h3>
 						<button class="button" id="cart-button-close">
-							clse
+							<i class="fa-solid fa-xmark"></i>
 						</button>
 					</div>
 					<!-- <div class="status">
 						<i class="fa-solid fa-basket-shopping-simple"></i>
 						<p class="status">Seu carrinho está vazio</p>
 					</div> -->
-					<ul class="items-list" id="cart-items-list">
-						<li class="item">
-							<img />
-							<div class="description">
-								<h5 class="name">Nome</h5>
-								<span class="price">R$59,99</span>
-							</div>
-						</li>
-					</ul>
+					<ul class="items-list" id="cart-items-list"></ul>
 					<div class="price-total">
-						<span class="total">Preço total:</span>
 						<span class="amount">Quantidade de itens:</span>
+						<span class="total">Preço total:</span>
 					</div>
-					<div class="budget-button"></div>
+					<div class="budget-button">
+						<a class="link" href="#">
+							<button class="button">
+								<i class="fa-brands fa-whatsapp"></i>
+								Solicitar orçamento
+							</button>
+						</a>
+					</div>
 				</div>
 			</aside>
 
@@ -109,17 +108,17 @@
 
 				<div class="shortcut-list">
 					<ul class="list">
-						<li class="item">
-							<button class="button">
+						<li class="shortcutitem">
+							<button class="button -inactive">
 								<i class="fa-solid fa-magnifying-glass"></i>
 							</button>
 						</li>
-						<li class="item">
-							<button class="button">
+						<li class="shortcutitem">
+							<button class="button -inactive">
 								<i class="fa-solid fa-user"></i>
 							</button>
 						</li>
-						<li class="item">
+						<li class="shortcutitem">
 							<button class="button" id="cart-button-open">
 								<i class="fa-solid fa-cart-shopping"></i>
 							</button>
@@ -173,8 +172,8 @@
 			<section class="product-gallery">
 				<h2 class="title">Produtos em destaque</h2>
 				<div class="products-swiper swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
+					<div class="swiper-wrapper" id="gallery">
+						<!-- <div class="swiper-slide">
 							<article class="product-card">
 								<div class="productthumb">
 									<img
@@ -305,7 +304,7 @@
 									<span class="price">preco</span>
 								</div>
 							</article>
-						</div>
+						</div> -->
 					</div>
 
 					<!-- Add Pagination -->
@@ -505,17 +504,20 @@
 								class="input"
 								type="text"
 								placeholder="Informe seu email"
+								id="email-input"
 							/>
 							<textarea
 								class="textarea"
 								name="email"
-								id=""
 								cols="30"
 								rows="3"
 								placeholder="Deixe sua mensagem"
+								id="email-textarea"
 							></textarea>
 
-							<button class="button">Enviar</button>
+							<button id="send-email-button" class="button">
+								Enviar
+							</button>
 						</form>
 					</div>
 

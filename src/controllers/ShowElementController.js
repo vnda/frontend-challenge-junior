@@ -7,7 +7,6 @@ const ShowElementController = (openButtonId, closeButtonId, elementId) => {
 
 	const close = () => {
 		closeButton.addEventListener("click", () => {
-			console.log(element);
 			element.style.width = "0";
 			element.style.display = "none";
 		});
@@ -15,8 +14,7 @@ const ShowElementController = (openButtonId, closeButtonId, elementId) => {
 
 	const open = () => {
 		openButton.addEventListener("click", () => {
-			console.log(element);
-			element.style.width = "300px";
+			element.style.width = "340px";
 			element.style.display = "block";
 		});
 	};

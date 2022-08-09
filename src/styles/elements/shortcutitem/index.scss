@@ -1,0 +1,18 @@
+@import "../../settings/index.scss";
+
+.shortcutitem {
+	> .button {
+		font-size: 16px;
+		background-color: transparent;
+		color: $color-secondary-high;
+
+		&:hover {
+			color: $color-primary-high;
+		}
+	}
+
+	> .-inactive {
+		cursor: not-allowed;
+		opacity: 0.5;
+	}
+}

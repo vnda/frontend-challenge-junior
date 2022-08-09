@@ -1,15 +1,26 @@
 import { Cart } from "../models/Cart.js";
 
-const CartController = () => {
+const CartController = (cart) => {
 	//recebe um array de Products
 
 	const element = document.getElementById("cart-items-list");
-	element.innerHTML = "";
+
+	const setEvents = () => {
+		const removeButtons = Array.from(document.querySelectorAll(".remove"));
+
+		for (let button of removeButtons) {
+			button.addEventListener("click", () => {
+				console.log("CART", cart.getItemsList());
+				cart.removeItem(button.id);
+				console.log("CART REMOVE", cart.getItemsList());
+				createList(cart.getItemsList());
+			});
+		}
+	};
 
 	const createList = (items) => {
+		element.innerHTML = "";
 		const list = items;
-		console.log("Criando ...");
-		console.log("Lista:", list);
 
 		list.map((item) => {
 			const li = document.createElement("li");
@@ -17,15 +28,21 @@ const CartController = () => {
 			const description = document.createElement("div");
 			const name = document.createElement("h5");
 			const price = document.createElement("span");
+			const button = document.createElement("button");
 
-			li.classList.add("item");
+			li.classList.add("carditem");
 			img.classList.add("image");
+			name.classList.add("name");
+			price.classList.add("price");
+			button.classList.add("remove");
 			description.classList.add("description");
 
-			li.id = item.id;
-			img.src = item.url;
+			img.src = item.url_img;
 			name.innerText = item.name;
 			price.innerText = item.price;
+
+			button.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
+			button.id = item.id;
 
 			li.appendChild(img);
 
@@ -33,10 +50,13 @@ const CartController = () => {
 			description.appendChild(price);
 
 			li.appendChild(description);
+			li.appendChild(button);
 
 			element.appendChild(li);
 			console.log(element);
 		});
+
+		setEvents();
 	};
 
 	return {
