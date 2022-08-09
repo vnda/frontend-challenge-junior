@@ -5,7 +5,7 @@ const Cart = () => {
 	let itemsList = [];
 
 	const addItem = (item) => {
-		itemsList.push(item);
+		if (!itemsList.find((i) => i.id === +item.id)) itemsList.push(item);
 	};
 
 	const removeItem = (id) => {

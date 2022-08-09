@@ -1,26 +1,27 @@
-import { Cart } from "../models/Cart.js";
+import { Order } from "../models/Order.js";
 
 const CartController = (cart) => {
-	//recebe um array de Products
-
 	const element = document.getElementById("cart-items-list");
+	const total = document.getElementById("total");
+	const orderLink = document.getElementById("order-link");
+
+	const order = Order(cart.getItemsList());
 
 	const setEvents = () => {
 		const removeButtons = Array.from(document.querySelectorAll(".remove"));
 
 		for (let button of removeButtons) {
 			button.addEventListener("click", () => {
-				console.log("CART", cart.getItemsList());
 				cart.removeItem(button.id);
-				console.log("CART REMOVE", cart.getItemsList());
 				createList(cart.getItemsList());
 			});
 		}
 	};
 
-	const createList = (items) => {
+	const createList = () => {
 		element.innerHTML = "";
-		const list = items;
+		total.innerHTML = "";
+		const list = cart.getItemsList();
 
 		list.map((item) => {
 			const li = document.createElement("li");
@@ -37,9 +38,12 @@ const CartController = (cart) => {
 			button.classList.add("remove");
 			description.classList.add("description");
 
-			img.src = item.url_img;
+			img.src = item.img_url;
 			name.innerText = item.name;
-			price.innerText = item.price;
+			price.innerText = item.price.toLocaleString("pt-br", {
+				style: "currency",
+				currency: "BRL",
+			});
 
 			button.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
 			button.id = item.id;
@@ -53,11 +57,30 @@ const CartController = (cart) => {
 			li.appendChild(button);
 
 			element.appendChild(li);
-			console.log(element);
 		});
 
+		createTotal();
+		// setOrderLink();
 		setEvents();
 	};
+
+	const createTotal = () => {
+		const totalPrice = document.createElement("span");
+		const totalAmount = document.createElement("span");
+		totalPrice.innerText = order.totalPrice();
+		totalAmount.innerHTML = order.totalAmount();
+
+		total.appendChild(totalPrice);
+		total.appendChild(totalAmount);
+	};
+
+	// const setOrderLink = () => {
+	// 	cart.getItemsList.map((item) => `- ${item.name} / `);
+	// 	const sentence = `Pedido de orçamento via site, sobre os seguintes produtos: ${items}`;
+
+	// 	const whatsappLink = `https://api.whatsapp.com/send?phone=5532988555409&text=${sentence}`;
+	// 	orderLink.href = whatsappLink;
+	// };
 
 	return {
 		createList,

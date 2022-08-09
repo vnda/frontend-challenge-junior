@@ -9,7 +9,7 @@ import { items } from "./src/services/db.js";
 window.onload = () => {
 	const cart = Cart();
 	cart.startEvents();
-	console.log(cart.getItemsList());
+
 	const productsGallery = ProductsGalleryController(items, cart);
 	// const cartController = CartController(cart);
 	const navMenu = NavMenu();

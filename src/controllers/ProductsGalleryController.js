@@ -22,7 +22,10 @@ const ProductsGalleryController = (items, cart) => {
                     <i class="fa-solid fa-cart-plus"></i>
                 </button>
                 <h4 class="title">${name}</h4>
-                <span class="price">${price}</span>
+                <span class="price">${price.toLocaleString("pt-br", {
+					style: "currency",
+					currency: "BRL",
+				})}</span>
             </div>
         </article>
     </div>`;
@@ -46,7 +49,7 @@ const ProductsGalleryController = (items, cart) => {
 			button.addEventListener("click", () => {
 				const item = itemsList.find((item) => item.id === +button.id);
 				cart.addItem(item);
-				cartController.createList(cart.getItemsList());
+				cartController.createList(cart);
 			});
 		}
 	};

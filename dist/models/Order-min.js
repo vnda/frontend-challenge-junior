@@ -1,0 +1,1 @@
+const Order=e=>{return{totalAmount:()=>e.length,totalPrice:()=>e.reduce((e,r)=>r.price+e,0).toLocaleString("pt-br",{style:"currency",currency:"BRL"}),createOrder:()=>{if(e){const e=e.map(e=>`- ${e.name} / `);return`Pedido de orçamento via site, sobre os seguintes produtos: ${e}`}return""}}};export{Order};
